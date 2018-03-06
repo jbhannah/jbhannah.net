@@ -1,13 +1,20 @@
-# gatsby-starter-default
-The default Gatsby starter
+# jbhannah.net
 
-For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/)
+Built with [Gatsby](https://www.gatsbyjs.org).
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
+## Development
+
+```bash
+yarn install
+gatsby develop
 ```
-gatsby new gatsby-example-site
+
+## Deployment
+
+```bash
+gatsby build
 ```
 
-## Deploy
+## Copyright
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+Copyright © 2018 Jesse B. Hannah. Licensed under the MIT License.
