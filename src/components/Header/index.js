@@ -1,7 +1,8 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 
-const Header = () => (
+const Header = ({ title }) => (
   <div
     style={{
       background: 'rebeccapurple',
@@ -23,11 +24,15 @@ const Header = () => (
             textDecoration: 'none',
           }}
         >
-          Gatsby
+          {title}
         </Link>
       </h1>
     </div>
   </div>
 )
+
+Header.propTypes = {
+  title: PropTypes.string,
+}
 
 export default Header
