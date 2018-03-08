@@ -3,12 +3,7 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 
 const Header = ({ title }) => (
-  <div
-    style={{
-      background: 'rebeccapurple',
-      marginBottom: '1.45rem',
-    }}
-  >
+  <div>
     <div
       style={{
         margin: '0 auto',
@@ -19,10 +14,6 @@ const Header = ({ title }) => (
       <h1 style={{ margin: 0 }}>
         <Link
           to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
         >
           {title}
         </Link>
