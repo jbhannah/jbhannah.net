@@ -10,6 +10,14 @@ module.exports = {
         pathToConfigModule: 'src/utils/typography.js',
       }
     },
-    'gatsby-plugin-netlify'
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'articles',
+        path: `${__dirname}/src/articles/`,
+      },
+    },
+    'gatsby-transformer-remark',
+    'gatsby-plugin-netlify',
   ],
 }
