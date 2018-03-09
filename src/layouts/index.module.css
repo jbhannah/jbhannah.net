@@ -30,6 +30,41 @@
   font-size: 1rem;
 }
 
+.header ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  list-style-type: none;
+  margin: 0;
+  margin-top: 2.37rem;
+}
+
+.header ul li {
+  float: right;
+  margin-bottom: 0;
+  margin-right: 0.5rem;
+  width: 1.25em;
+  height: 1.25rem;
+}
+
+.header ul li:last-child {
+  margin-right: 0;
+}
+
+.header ul li a {
+  background: none;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.header ul li img {
+  display: block;
+  height: 100%;
+  margin: 0;
+  width: 100%;
+}
+
 .content, .footer {
   margin: 0 auto;
   max-width: var(--content-width);
@@ -64,6 +99,15 @@
     margin: 0;
     text-align: right;
     width: var(--header-width);
+  }
+
+  .header ul {
+    margin-top: 0;
+  }
+
+  .header ul li {
+    height: 1.5rem;
+    width: 1.5rem;
   }
 
   .content {
