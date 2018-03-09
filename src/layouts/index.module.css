@@ -1,73 +1,27 @@
-@custom-media --break-sm only screen and (min-width: 28rem);
-@custom-media --break-md only screen and (min-width: 38rem);
-@custom-media --break-lg only screen and (min-width: 59rem);
-@custom-media --break-xl only screen and (min-width: 70rem);
+@value break-sm: only screen and (min-width: 28rem);
+@value break-md: only screen and (min-width: 38rem);
+@value break-lg: only screen and (min-width: 59rem);
+@value break-xl: only screen and (min-width: 70rem);
 
-:root {
-  --header-width: 12rem;
-  --content-width: 42rem;
-}
+@value content-width: 42rem;
+@value header-width: 12rem;
+
+@custom-media --break-sm break-sm;
+@custom-media --break-md break-md;
+@custom-media --break-lg break-lg;
+@custom-media --break-xl break-xl;
 
 .container {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  max-width: calc(var(--header-width) + var(--content-width));
+  max-width: calc(header-width + content-width);
   min-height: 100vh;
-}
-
-.header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 0 auto;
-  max-width: var(--content-width);
-  padding: 0 1rem;
-  width: 100%;
-}
-
-.header h1 {
-  font-size: 1rem;
-}
-
-.header ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  list-style-type: none;
-  margin: 0;
-  margin-top: 2.37rem;
-}
-
-.header ul li {
-  float: right;
-  margin-bottom: 0;
-  margin-right: 0.5rem;
-  width: 1.25em;
-  height: 1.25rem;
-}
-
-.header ul li:last-child {
-  margin-right: 0;
-}
-
-.header ul li a {
-  background: none;
-  display: block;
-  height: 100%;
-  width: 100%;
-}
-
-.header ul li img {
-  display: block;
-  height: 100%;
-  margin: 0;
-  width: 100%;
 }
 
 .content, .footer {
   margin: 0 auto;
-  max-width: var(--content-width);
+  max-width: content-width;
   padding: 0 1rem;
   width: 100%;
 }
@@ -82,32 +36,9 @@
   margin: 1rem auto;
 }
 
-@media (--break-sm) {
-  .header h1 {
-    font-size: calc(7rem / 6);
-  }
-}
-
 @media (--break-lg) {
   .container {
     flex-flow: row wrap;
-  }
-
-  .header {
-    flex-direction: column;
-    justify-content: flex-start;
-    margin: 0;
-    text-align: right;
-    width: var(--header-width);
-  }
-
-  .header ul {
-    margin-top: 0;
-  }
-
-  .header ul li {
-    height: 1.5rem;
-    width: 1.5rem;
   }
 
   .content {
@@ -115,17 +46,13 @@
   }
 
   .footer {
-    margin-left: var(--header-width);
+    margin-left: header-width;
   }
 }
 
 @media (--break-xl) {
   .container {
-    max-width: var(--content-width);
-  }
-
-  .header {
-    margin-left: calc(-1 * var(--header-width));
+    max-width: content-width;
   }
 
   .footer {

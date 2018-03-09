@@ -15,7 +15,7 @@ const TemplateWrapper = ({ children, data }) => (
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
-    <Header className={styles.header} title={data.site.siteMetadata.title} />
+    <Header title={data.site.siteMetadata.title} />
     <main className={styles.content}>
       {children()}
     </main>
