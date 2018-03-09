@@ -49,11 +49,16 @@
 }
 
 .icon img {
+  transition: border-radius 0.5s;
   border-radius: 50%;
   display: block;
   height: 100%;
   margin: 0;
   width: 100%;
+}
+
+.icon:hover img {
+  border-radius: 15%; /* closest match to actual radius of icon corners */
 }
 
 @media (--break-sm) {
