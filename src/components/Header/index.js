@@ -5,6 +5,7 @@ import Link from 'gatsby-link'
 import styles from './styles.module.css'
 
 import github from '../../images/github.svg'
+import keybase from '../../images/keybase.svg'
 import linkedin from '../../images/linkedin.svg'
 import twitter from '../../images/twitter.svg'
 
@@ -19,6 +20,11 @@ const Header = ({ title }) => (
       <li className={styles.icon}>
         <a href="https://github.com/jbhannah" target="_blank">
           <img alt="jbhannah on GitHub" src={github} />
+        </a>
+      </li>
+      <li className={styles.icon}>
+        <a href="https://keybase.io/jbhannah" target="_blank">
+          <img alt="jbhannah on Keybase" src={keybase} />
         </a>
       </li>
       <li className={styles.icon}>
