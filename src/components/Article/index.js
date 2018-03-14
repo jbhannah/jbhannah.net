@@ -33,9 +33,7 @@ const Article = ({ data, list }) => {
         </p>
         { list && <MarginFix /> }
       </header>
-      <section>
-        {data.content}
-      </section>
+      <section dangerouslySetInnerHTML={{ __html: data.content }} />
     </article>
   )
 }
