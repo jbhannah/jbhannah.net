@@ -1,15 +1,16 @@
 import React from 'react'
 // import Link from 'gatsby-link'
 
+import styles from './index.module.css'
 import Article from '../components/Article'
 
 const IndexPage = ({ data }) => (
   <div>
-    <h2>Recent Articles</h2>
-    <ul>
+    <h1>Recent Articles</h1>
+    <ul className={styles.articleList}>
       {data.articles.edges.map(({ node: { id, childMarkdownRemark } }) => (
         <li key={id}>
-          <Article data={childMarkdownRemark} />
+          <Article data={childMarkdownRemark} list={true} />
         </li>
       ))}
     </ul>
@@ -25,9 +26,13 @@ export const query = graphql`
         node {
           id
           childMarkdownRemark {
+            fields {
+              slug
+            }
             frontmatter {
               title
               date
+              link
             }
             content: excerpt
             timeToRead
