@@ -12,8 +12,10 @@ const Article = ({ data, list }) => {
   const TitleHeader = list ? 'h2' : 'h1'
   let title
 
-  if (list) {
-    title = <a href="#">{data.frontmatter.title}</a>
+  if (data.frontmatter.link) {
+    title = <a href={data.frontmatter.link}>{data.frontmatter.title}</a>
+  } else if (list) {
+    title = <a href={'/' + data.fields.slug}>{data.frontmatter.title}</a>
   } else {
     title = data.frontmatter.title
   }
