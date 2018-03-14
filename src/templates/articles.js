@@ -1,0 +1,23 @@
+import React from 'react'
+
+import Article from '../components/Article'
+
+const Template = ({ data }) => (
+  <Article data={data.markdownRemark} />
+)
+
+export default Template
+
+export const query = graphql`
+  query ArticlesQuery($slug: String) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
+      frontmatter {
+        title
+        date
+        link
+      }
+      content: html
+      timeToRead
+    }
+  }
+`
