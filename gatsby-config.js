@@ -1,3 +1,5 @@
+const excerpt = require('./src/utils/excerpt')
+
 module.exports = {
   siteMetadata: {
     title: 'Jesse B. Hannah',
@@ -24,7 +26,12 @@ module.exports = {
         path: `${__dirname}/src/articles/`,
       },
     },
-    'gatsby-transformer-remark',
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        excerpt: excerpt
+      }
+    },
     'gatsby-plugin-netlify',
   ],
 }

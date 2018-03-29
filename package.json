@@ -13,7 +13,10 @@
     "gatsby-transformer-remark": "^1.7.36",
     "luxon": "^1.0.0",
     "react-helmet": "^5.2.0",
-    "typography-theme-lincoln": "^0.15.11"
+    "remark-html": "^7.0.0",
+    "remark-parse": "^5.0.0",
+    "typography-theme-lincoln": "^0.15.11",
+    "unified": "^6.1.6"
   },
   "keywords": [
     "gatsby"
