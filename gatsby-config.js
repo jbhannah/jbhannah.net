@@ -29,7 +29,10 @@ module.exports = {
     {
       resolve: 'gatsby-transformer-remark',
       options: {
-        excerpt: excerpt
+        excerpt: excerpt,
+        plugins: [
+          'gatsby-remark-prismjs'
+        ]
       }
     },
     'gatsby-plugin-netlify',
