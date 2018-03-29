@@ -31,6 +31,7 @@ module.exports = {
       options: {
         excerpt: excerpt,
         plugins: [
+          'gatsby-remark-numbered-footnotes',
           'gatsby-remark-prismjs'
         ]
       }

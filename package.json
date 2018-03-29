@@ -9,6 +9,7 @@
     "gatsby-plugin-netlify": "^1.0.19",
     "gatsby-plugin-react-helmet": "^2.0.6",
     "gatsby-plugin-typography": "^1.7.18",
+    "gatsby-remark-numbered-footnotes": "^1.0.0",
     "gatsby-remark-prismjs": "^1.2.21",
     "gatsby-source-filesystem": "^1.5.27",
     "gatsby-transformer-remark": "^1.7.36",

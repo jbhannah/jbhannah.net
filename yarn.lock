@@ -3466,6 +3466,12 @@ gatsby-react-router-scroll@^1.0.12:
     scroll-behavior "^0.9.9"
     warning "^3.0.0"
 
+gatsby-remark-numbered-footnotes@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-numbered-footnotes/-/gatsby-remark-numbered-footnotes-1.0.0.tgz#39f181c9af77c9da184b88ef239fce2b55c69e3e"
+  dependencies:
+    remark-numbered-footnotes "^1.0.1"
+
 gatsby-remark-prismjs@^1.2.21:
   version "1.2.21"
   resolved "https://registry.yarnpkg.com/gatsby-remark-prismjs/-/gatsby-remark-prismjs-1.2.21.tgz#48c94066703ec46d76e56d6f0fbae33f16391849"
@@ -7424,6 +7430,12 @@ remark-html@^7.0.0:
     mdast-util-to-hast "^3.0.0"
     xtend "^4.0.1"
 
+remark-numbered-footnotes@^1.0.1:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/remark-numbered-footnotes/-/remark-numbered-footnotes-1.0.5.tgz#3b0f7436ebe9280502f4d543f34ef56b68d65dbc"
+  dependencies:
+    unist-util-visit "^1.1.3"
+
 remark-parse@^3.0.0:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/remark-parse/-/remark-parse-3.0.1.tgz#1b9f841a44d8f4fbf2246850265459a4eb354c80"
@@ -8969,7 +8981,7 @@ unist-util-visit-children@^1.0.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/unist-util-visit-children/-/unist-util-visit-children-1.1.1.tgz#eba63b371116231181068837118b6e6e10ec8844"
 
-unist-util-visit@^1.0.0, unist-util-visit@^1.1.0, unist-util-visit@^1.1.1, unist-util-visit@^1.3.0:
+unist-util-visit@^1.0.0, unist-util-visit@^1.1.0, unist-util-visit@^1.1.1, unist-util-visit@^1.1.3, unist-util-visit@^1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/unist-util-visit/-/unist-util-visit-1.3.0.tgz#41ca7c82981fd1ce6c762aac397fc24e35711444"
   dependencies:

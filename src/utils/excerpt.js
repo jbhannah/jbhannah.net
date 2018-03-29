@@ -17,7 +17,7 @@ function excerpt (file) {
   } else {
     file.excerpt = output
       .slice(output.indexOf('<p>'), output.indexOf('</p>') + 4)
-      .replace(/<sup id="fnref-\S+">.+?<\/sup>/, '')
+      .replace(/<sup id="fnref-\d+">.+?<\/sup>/, '')
       .replace(/<a href="\S+">([\S\s]+?)<\/a>/g, '$1')
   }
 }
