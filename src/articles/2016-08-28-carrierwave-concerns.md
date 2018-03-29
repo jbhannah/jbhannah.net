@@ -18,7 +18,7 @@ Let's start at the bottom with the `Uploadable` module. Generate it as a
 CarrierWave uploader with:
 
 ```bash
-$ bin/rails g uploader uploadable
+bin/rails g uploader uploadable
 ```
 
 Then move it into `app/uploaders/concerns` (you'll have to create this
@@ -103,8 +103,6 @@ class ImageUploader < CarrierWave::Uploader::Base
 end
 ```
 
-
-
 [^raise]: You can even add a check to make sure this doesn't get included
     anywhere unexpected, but it's entirely a matter of taste:
 
@@ -114,14 +112,14 @@ end
     end
     ```
 
-    This is more informative and a better safeguard than waitng for an undefined
-    method error if your base uploader specifies any versions or processing and
-    gets included in a model on accident.
+    This is more informative and a better safeguard than waiting for an
+    undefined method error if your base uploader specifies any versions
+    or processing and gets included in a model on accident.
 
 [^inc]: Remember that Ruby includes are evaluated top-to-bottom, meaning that
-`included` blocks are run starting from the first `include`, and method
-definitions are found starting from the last `include`. In this example,
-`ImageUploader` will convert to JPG before creating the thumbnail.
+    `included` blocks are run starting from the first `include`, and method
+    definitions are found starting from the last `include`. In this example,
+    `ImageUploader` will convert to JPG before creating the thumbnail.
 
 [CarrierWave]: https://github.com/carrierwaveuploader/carrierwave
 [override the storage directory]: https://github.com/carrierwaveuploader/carrierwave/issues/1064

@@ -27,7 +27,7 @@ another `button` to reset the form:
 But buttons have other purposes too; if your form is in a modal, you might have
 a "Cancel" button that closes the modal instead of just a "Reset" button:
 
-```html
+```html{3}
 <form>
     <input type="text" name="name" value="Jesse B. Hannah">
     <button onclick="dismissModal()">Cancel</button>
@@ -42,10 +42,10 @@ buttons have a [default `type` of `submit`][], so the first `button` in the form
 catches the enter keypress and, in this case, closes the modal. Solve this by
 remembering to explicitly give every button a `type`:
 
-```html
+```html{3}
 <form>
     <input type="text" name="name" value="Jesse B. Hannah">
-    <button **type="button"** onclick="dismissModal()">Cancel</button>
+    <button type="button" onclick="dismissModal()">Cancel</button>
     <button type="submit">Submit</button>
 </form>
 ```
@@ -58,13 +58,11 @@ buttons specifically, any button that is not the submit or reset button of the
 form should be given `type="button"`. Remember to do that upfront, and it will
 save you from a lot of weird and tricky-to-spot bugs later.
 
-
-
 [^kd]: I know, but it's a weird form where "Enter" is supposed to do different
-things in different inputs. Namely, in some inputs it fills in the current
-autocomplete value, where in others it submits the form immediately even if an
-autocomplete value is selected. Generally speaking, you should use a `button
-type="submit"` to handle submitting forms on "Enter."
+    things in different inputs. Namely, in some inputs it fills in the current
+    autocomplete value, where in others it submits the form immediately even if
+    an autocomplete value is selected. Generally speaking, you should use a
+    `button type="submit"` to handle submitting forms on "Enter."
 
 [accordion]: http://angular-ui.github.io/bootstrap/#/accordion
 [dropdown]: http://angular-ui.github.io/bootstrap/#/dropdown

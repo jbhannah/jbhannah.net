@@ -31,7 +31,5 @@ arguments over who's right or wrong. The result is a unique insight into the
 operations of the modern-day conservative political machine and the worldview
 that drives it.
 
-
-
 [The Ezra Klein Show]: https://itunes.apple.com/us/podcast/the-ezra-klein-show/id1081584611
 [interview with Heritage Action for America CEO Michael Needham]: https://soundcloud.com/panoply/michael-needham-on-the-republican-partys-crack-up

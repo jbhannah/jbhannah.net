@@ -11,10 +11,8 @@ various tools that try to make things easier—[RVM][], [Vagrant][],
 [Cloud9][]—I've finally settled on [Docker][] as my preferred basis for a solid,
 low-friction, reproducible Rails development environment.
 
-<aside>
 Note that this is only a guide to Rails development with Docker, not production
 deployment.
-</aside>
 
 ## Problems with working on multiple Rails sites at once
 
@@ -22,49 +20,49 @@ deployment.
 want it to be as easy as possible to start working on and switch between
 different sites.
 
- - **Ruby versions and gem bloat**: Each site might run on a different version
-     of Ruby and its own sets of gems. There are a number of tools for managing
-     multiple Ruby versions, and RVM attempts to control the jumble of gems and
-     dependencies with its gemsets, but that adds another tooling dependency
-     that increases…
+- **Ruby versions and gem bloat**: Each site might run on a different version
+    of Ruby and its own sets of gems. There are a number of tools for managing
+    multiple Ruby versions, and RVM attempts to control the jumble of gems and
+    dependencies with its gemsets, but that adds another tooling dependency
+    that increases…
 
- - **Onboarding time**: Greater application complexity and more care taken to
-     keep the developer experience as frictionless as possible usually means
-     more time for a new developer to get set up with all the dependencies and
-     tooling. The `bin/setup` script introduced with Rails 4 created a
-     conventional place to start, but then you have to deal with having so many…
+- **Onboarding time**: Greater application complexity and more care taken to
+    keep the developer experience as frictionless as possible usually means
+    more time for a new developer to get set up with all the dependencies and
+    tooling. The `bin/setup` script introduced with Rails 4 created a
+    conventional place to start, but then you have to deal with having so many…
 
- - **Services**: Is Redis already running? What about Postgres? Back over to the
-     site that uses [Neo4j][]—oh, I need to start both the development and test
-     instances[^n4j]—shoot, I left those running on the *other* site that uses
-     Neo4j, and now my development data is all mixed together. Keeping track of
-     what's running, and for which sites, can be a pain, and often results in…
+- **Services**: Is Redis already running? What about Postgres? Back over to the
+    site that uses [Neo4j][]—oh, I need to start both the development and test
+    instances[^n4j]—shoot, I left those running on the *other* site that uses
+    Neo4j, and now my development data is all mixed together. Keeping track of
+    what's running, and for which sites, can be a pain, and often results in…
 
- - **Port conflicts**: Unless you manually configure the ports for each
-     application's servers (and services), you'll run into conflicts if you try
-     to start up one when another is already running.
+- **Port conflicts**: Unless you manually configure the ports for each
+    application's servers (and services), you'll run into conflicts if you try
+    to start up one when another is already running.
 
- - **Cleanup**: Good luck keeping track of which gems or services were only
-     installed for a single project that died off months ago and are just
-     cluttering up your system.[^cleanup]
+- **Cleanup**: Good luck keeping track of which gems or services were only
+    installed for a single project that died off months ago and are just
+    cluttering up your system.[^cleanup]
 
 ## What we'll end up with
 
- - **No extra setup steps**: Once Docker is installed, simply pull and `cd`,
-     bundle, migrate. Just like any other Rails application.
+- **No extra setup steps**: Once Docker is installed, simply pull and `cd`,
+    bundle, migrate. Just like any other Rails application.
 
- - **One-command start and stop**: No need to remember to start up and tear down
-     each service individually.
+- **One-command start and stop**: No need to remember to start up and tear down
+    each service individually.
 
- - **[Persistent gems container][]**: No need to rebuild the entire image to
-     install a new gem, just `bundle install` in the container.
+- **[Persistent gems container][]**: No need to rebuild the entire image to
+    install a new gem, just `bundle install` in the container.
 
- - **Persistent data**: Unlike with a separate VM, no losing your data if you
-     need to rebuild the image.
+- **Persistent data**: Unlike with a separate VM, no losing your data if you
+    need to rebuild the image.
 
- - **Minimal resource overhead**: Also unlike using separate VMs, Docker has
-     minimal overhead (albeit slightly more on OS X than Linux), so running
-     multiple development sites at once is much easier.
+- **Minimal resource overhead**: Also unlike using separate VMs, Docker has
+    minimal overhead (albeit slightly more on OS X than Linux), so running
+    multiple development sites at once is much easier.
 
 ## Getting started with Docker
 
@@ -74,9 +72,9 @@ installed[^win]. If you're on Linux, just follow the official documentation for
 [Homebrew][] to install [DLite][][^dlite], Docker, and Docker Compose:
 
 ```bash
-$ brew install dlite docker docker-compose
-$ sudo dlite install
-$ dlite start
+brew install dlite docker docker-compose
+sudo dlite install
+dlite start
 ```
 
 If all you're doing is setting up a project that followed these instructions to
@@ -216,13 +214,10 @@ container, you can remove and re-create the container without having to
 reinstall all of the gems, and you don't have to rebuild the `web` image if you
 add or update any gems.
 
-<aside>
 If you have multiple Rails applications that you're working on, you can just
-copy the <code>Dockerfile</code> and <code>docker-comopse.yml</code>, and as
-long as you change <code>3001</code> in the <code>web</code> container's
-<code>ports</code> configuration to something else, you'll never run into any
-port conflicts when trying to run multiple apps at the same time.
-</aside>
+copy the `Dockerfile` and `docker-comopse.yml`, and as long as you change `3001`
+in the `web` container's `ports` configuration to something else, you'll never
+run into any port conflicts when trying to run multiple apps at the same time.
 
 ### Initializing Rails (a brief detour)
 
@@ -241,8 +236,8 @@ gem 'rails'
 Then install the bundle in the `web` container and generate the application:
 
 ```bash
-$ docker-compose run --rm web bundle install
-$ docker-compose run --rm web bundle exec rails new . -d postgresql
+docker-compose run --rm web bundle install
+docker-compose run --rm web bundle exec rails new . -d postgresql
 ```
 
 Be sure to overwrite the `Gemfile` when prompted to do so.
@@ -303,8 +298,8 @@ bundling the gems and setting up the database. You can add these steps to your
 `bin/setup` script to condense them down to one command.
 
 ```bash
-$ docker-compose run --rm web bundle
-$ docker-compose run --rm web bin/rake db:setup
+docker-compose run --rm web bundle
+docker-compose run --rm web bin/rake db:setup
 ```
 
 `docker-compose run --rm web bundle` means, run the `bundle` command in a
@@ -324,7 +319,7 @@ takes longer than running it all directly on a local machine, but in the same
 number of commands. All it takes now to start up the application is:
 
 ```bash
-$ docker-compose up
+docker-compose up
 ```
 
 Once you see the usual message from WEBrick (or Puma, or whatever server you're
@@ -336,9 +331,9 @@ same as it does when developing directly on your local host; you just have to
 add `docker-compose run --rm web` to the beginning:
 
 ```bash
-$ docker-compose run --rm web bin/rake routes
-$ docker-comopse run --rm web bundle update rails
-$ docker-compose run --rm web bin/rails c
+docker-compose run --rm web bin/rake routes
+docker-comopse run --rm web bundle update rails
+docker-compose run --rm web bin/rails c
 ```
 
 Your application is mounted into the `web` container as a volume, so any changes
@@ -357,7 +352,7 @@ sites at once as your system can handle. When you're done, all it takes to shut
 down the application and all its services is:
 
 ```bash
-$ docker-compose stop
+docker-compose stop
 ```
 
 Both [`pokesite`][] and [`lifeisleet`][] use this structure for development, so
@@ -366,8 +361,6 @@ deployed on [Heroku][], and containers are the best approximation I've found of
 Heroku's architecture; now that I've moved to Docker for development
 environments, I'd bet it'll be a long time before I go back to local development
 for Rails.
-
-
 
 [^n4j]: It's a quirk of Rails and Neo4j development, I've found, that it works
 better to have separate running instances of Neo4j for development and for
