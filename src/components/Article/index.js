@@ -34,11 +34,11 @@ const Article = ({ data, list }) => {
         { list && <MarginFix /> }
       </header>
       <section dangerouslySetInnerHTML={{ __html: data.content }} />
-      <footer>
-        {data.frontmatter.link && (
-          <a href={'/' + data.fields.slug}>Permalink</a>
-        )}
-      </footer>
+      {(data.frontmatter.link || list) && (
+        <footer className={styles.footer}>
+          <a href={'/' + data.fields.slug}>{ data.frontmatter.link ? 'Permalink' : 'Read More…' }</a>
+        </footer>
+      )}
     </article>
   )
 }
