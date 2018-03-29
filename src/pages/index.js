@@ -10,7 +10,7 @@ const IndexPage = ({ data }) => (
     <ul className={styles.articleList}>
       {data.articles.edges.map(({ node: { id, childMarkdownRemark } }) => (
         <li key={id}>
-          <Article data={childMarkdownRemark} list={true} />
+          <Article data={{ markdownRemark: childMarkdownRemark }} list={true} />
         </li>
       ))}
     </ul>

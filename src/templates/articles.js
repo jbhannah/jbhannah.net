@@ -3,7 +3,7 @@ import React from 'react'
 import Article from '../components/Article'
 
 const Template = ({ data }) => (
-  <Article data={data.markdownRemark} />
+  <Article data={data} />
 )
 
 export default Template
@@ -21,6 +21,11 @@ export const query = graphql`
       }
       content: html
       timeToRead
+    }
+    site {
+      siteMetadata {
+        title
+      }
     }
   }
 `
