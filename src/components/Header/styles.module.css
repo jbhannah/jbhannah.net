@@ -17,7 +17,7 @@
 }
 
 .title {
-  font-size: 1rem;
+  font-size: 1.15rem;
 }
 
 .iconList {
@@ -58,12 +58,12 @@
 }
 
 .icon:hover img {
-  border-radius: 15%; /* closest match to actual radius of icon corners */
+  border-radius: 15%; /* match actual radius of icon corners */
 }
 
 @media (--break-sm) {
   .title {
-    font-size: calc(7rem / 6);
+    font-size: 1.25rem;
   }
 }
 
