@@ -12,7 +12,7 @@
     "gatsby-remark-numbered-footnotes": "^1.0.0",
     "gatsby-remark-prismjs": "^1.2.21",
     "gatsby-source-filesystem": "^1.5.27",
-    "gatsby-transformer-remark": "^1.7.36",
+    "gatsby-transformer-remark": "^2.1.1",
     "luxon": "^1.0.0",
     "react-helmet": "^5.2.0",
     "remark-html": "^7.0.0",
