@@ -2,6 +2,12 @@
 # yarn lockfile v1
 
 
+"@babel/runtime@^7.0.0":
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.0.0.tgz#adeb78fedfc855aa05bc041640f3f6f98e85424c"
+  dependencies:
+    regenerator-runtime "^0.12.0"
+
 "@types/history@*", "@types/history@^4.6.2":
   version "4.6.2"
   resolved "https://registry.yarnpkg.com/@types/history/-/history-4.6.2.tgz#12cfaba693ba20f114ed5765467ff25fdf67ddb0"
@@ -3497,30 +3503,29 @@ gatsby-source-filesystem@^1.5.27:
     slash "^1.0.0"
     valid-url "^1.0.9"
 
-gatsby-transformer-remark@^1.7.36:
-  version "1.7.36"
-  resolved "https://registry.yarnpkg.com/gatsby-transformer-remark/-/gatsby-transformer-remark-1.7.36.tgz#896a1d0fffc624f5a7b75692ba1e92c0347944b5"
+gatsby-transformer-remark@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/gatsby-transformer-remark/-/gatsby-transformer-remark-2.1.1.tgz#7f6a26a87ba797664a70630b1d3a93d7814ce565"
   dependencies:
-    babel-runtime "^6.26.0"
+    "@babel/runtime" "^7.0.0"
     bluebird "^3.5.0"
-    graphql-type-json "^0.1.4"
-    gray-matter "^3.0.0"
+    gray-matter "^4.0.0"
     hast-util-raw "^2.0.2"
     hast-util-to-html "^3.0.0"
-    lodash "^4.17.4"
-    mdast-util-to-hast "^2.4.0"
+    lodash "^4.17.10"
+    mdast-util-to-hast "^3.0.0"
     mdast-util-toc "^2.0.1"
-    remark "^7.0.1"
-    remark-parse "^4.0.0"
+    remark "^9.0.0"
+    remark-parse "^5.0.0"
     remark-retext "^3.1.0"
-    remark-stringify "^4.0.0"
+    remark-stringify "^5.0.0"
     retext-english "^3.0.0"
-    sanitize-html "^1.14.1"
+    sanitize-html "^1.18.2"
     underscore.string "^3.3.4"
     unified "^6.1.5"
-    unist-util-remove-position "^1.1.1"
+    unist-util-remove-position "^1.1.2"
     unist-util-select "^1.5.0"
-    unist-util-visit "^1.1.1"
+    unist-util-visit "^1.3.0"
 
 gatsby@^1.9.223:
   version "1.9.224"
@@ -3877,23 +3882,19 @@ graphql-skip-limit@^1.0.11:
     babel-runtime "^6.26.0"
     graphql "^0.11.7"
 
-graphql-type-json@^0.1.4:
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/graphql-type-json/-/graphql-type-json-0.1.4.tgz#89f13f5d32ce08c9a76c79fdf9c1968384d81a4e"
-
 graphql@^0.11.3, graphql@^0.11.7:
   version "0.11.7"
   resolved "https://registry.yarnpkg.com/graphql/-/graphql-0.11.7.tgz#e5abaa9cb7b7cccb84e9f0836bf4370d268750c6"
   dependencies:
     iterall "1.1.3"
 
-gray-matter@^3.0.0:
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/gray-matter/-/gray-matter-3.1.1.tgz#101f80d9e69eeca6765cdce437705b18f40876ac"
+gray-matter@^4.0.0:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/gray-matter/-/gray-matter-4.0.1.tgz#375263c194f0d9755578c277e41b1c1dfdf22c7d"
   dependencies:
-    extend-shallow "^2.0.1"
-    js-yaml "^3.10.0"
-    kind-of "^5.0.2"
+    js-yaml "^3.11.0"
+    kind-of "^6.0.2"
+    section-matter "^1.0.0"
     strip-bom-string "^1.0.0"
 
 gray-percentage@^2.0.0:
@@ -4818,6 +4819,13 @@ js-yaml@^3.10.0, js-yaml@^3.5.2, js-yaml@^3.9.1:
     argparse "^1.0.7"
     esprima "^4.0.0"
 
+js-yaml@^3.11.0:
+  version "3.12.0"
+  resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.12.0.tgz#eaed656ec8344f10f527c6bfa1b6e2244de167d1"
+  dependencies:
+    argparse "^1.0.7"
+    esprima "^4.0.0"
+
 js-yaml@~3.7.0:
   version "3.7.0"
   resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.7.0.tgz#5c967ddd837a9bfdca5f2de84253abe8a1c03b80"
@@ -4981,7 +4989,7 @@ kind-of@^4.0.0:
   dependencies:
     is-buffer "^1.1.5"
 
-kind-of@^5.0.0, kind-of@^5.0.2:
+kind-of@^5.0.0:
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/kind-of/-/kind-of-5.1.0.tgz#729c91e2d857b7a419a1f9aa65685c4c33f5845d"
 
@@ -5242,6 +5250,10 @@ lodash@4.11.1:
   version "4.11.1"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.11.1.tgz#a32106eb8e2ec8e82c241611414773c9df15f8bc"
 
+lodash@^4.17.10:
+  version "4.17.11"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
+
 log-symbols@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/log-symbols/-/log-symbols-1.0.2.tgz#376ff7b58ea3086a0f09facc74617eca501e1a18"
@@ -5380,22 +5392,6 @@ mdast-util-definitions@^1.2.0:
   resolved "https://registry.yarnpkg.com/mdast-util-definitions/-/mdast-util-definitions-1.2.2.tgz#673f4377c3e23d3de7af7a4fe2214c0e221c5ac7"
   dependencies:
     unist-util-visit "^1.0.0"
-
-mdast-util-to-hast@^2.4.0:
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/mdast-util-to-hast/-/mdast-util-to-hast-2.5.0.tgz#f087844d255c7540f36906da30ba106c0ee5ee2f"
-  dependencies:
-    collapse-white-space "^1.0.0"
-    detab "^2.0.0"
-    mdast-util-definitions "^1.2.0"
-    mdurl "^1.0.1"
-    trim "0.0.1"
-    trim-lines "^1.0.0"
-    unist-builder "^1.0.1"
-    unist-util-generated "^1.1.0"
-    unist-util-position "^3.0.0"
-    unist-util-visit "^1.1.0"
-    xtend "^4.0.1"
 
 mdast-util-to-hast@^3.0.0:
   version "3.0.0"
@@ -7328,6 +7324,10 @@ regenerator-runtime@^0.11.0:
   version "0.11.1"
   resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.11.1.tgz#be05ad7f9bf7d22e056f9726cee5017fbf19e2e9"
 
+regenerator-runtime@^0.12.0:
+  version "0.12.1"
+  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.12.1.tgz#fa1a71544764c036f8c49b13a08b2594c9f8a0de"
+
 regenerator-transform@^0.10.0:
   version "0.10.1"
   resolved "https://registry.yarnpkg.com/regenerator-transform/-/regenerator-transform-0.10.1.tgz#1e4996837231da8b7f3cf4114d71b5691a0680dd"
@@ -7436,47 +7436,6 @@ remark-numbered-footnotes@^1.0.1:
   dependencies:
     unist-util-visit "^1.1.3"
 
-remark-parse@^3.0.0:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/remark-parse/-/remark-parse-3.0.1.tgz#1b9f841a44d8f4fbf2246850265459a4eb354c80"
-  dependencies:
-    collapse-white-space "^1.0.2"
-    has "^1.0.1"
-    is-alphabetical "^1.0.0"
-    is-decimal "^1.0.0"
-    is-whitespace-character "^1.0.0"
-    is-word-character "^1.0.0"
-    markdown-escapes "^1.0.0"
-    parse-entities "^1.0.2"
-    repeat-string "^1.5.4"
-    state-toggle "^1.0.0"
-    trim "0.0.1"
-    trim-trailing-lines "^1.0.0"
-    unherit "^1.0.4"
-    unist-util-remove-position "^1.0.0"
-    vfile-location "^2.0.0"
-    xtend "^4.0.1"
-
-remark-parse@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/remark-parse/-/remark-parse-4.0.0.tgz#99f1f049afac80382366e2e0d0bd55429dd45d8b"
-  dependencies:
-    collapse-white-space "^1.0.2"
-    is-alphabetical "^1.0.0"
-    is-decimal "^1.0.0"
-    is-whitespace-character "^1.0.0"
-    is-word-character "^1.0.0"
-    markdown-escapes "^1.0.0"
-    parse-entities "^1.0.2"
-    repeat-string "^1.5.4"
-    state-toggle "^1.0.0"
-    trim "0.0.1"
-    trim-trailing-lines "^1.0.0"
-    unherit "^1.0.4"
-    unist-util-remove-position "^1.0.0"
-    vfile-location "^2.0.0"
-    xtend "^4.0.1"
-
 remark-parse@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/remark-parse/-/remark-parse-5.0.0.tgz#4c077f9e499044d1d5c13f80d7a98cf7b9285d95"
@@ -7503,9 +7462,9 @@ remark-retext@^3.1.0:
   dependencies:
     mdast-util-to-nlcst "^3.2.0"
 
-remark-stringify@^3.0.0:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/remark-stringify/-/remark-stringify-3.0.1.tgz#79242bebe0a752081b5809516fa0c06edec069cf"
+remark-stringify@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/remark-stringify/-/remark-stringify-5.0.0.tgz#336d3a4d4a6a3390d933eeba62e8de4bd280afba"
   dependencies:
     ccount "^1.0.0"
     is-alphanumeric "^1.0.0"
@@ -7522,31 +7481,12 @@ remark-stringify@^3.0.0:
     unherit "^1.0.4"
     xtend "^4.0.1"
 
-remark-stringify@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/remark-stringify/-/remark-stringify-4.0.0.tgz#4431884c0418f112da44991b4e356cfe37facd87"
+remark@^9.0.0:
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/remark/-/remark-9.0.0.tgz#c5cfa8ec535c73a67c4b0f12bfdbd3a67d8b2f60"
   dependencies:
-    ccount "^1.0.0"
-    is-alphanumeric "^1.0.0"
-    is-decimal "^1.0.0"
-    is-whitespace-character "^1.0.0"
-    longest-streak "^2.0.1"
-    markdown-escapes "^1.0.0"
-    markdown-table "^1.1.0"
-    mdast-util-compact "^1.0.0"
-    parse-entities "^1.0.2"
-    repeat-string "^1.5.4"
-    state-toggle "^1.0.0"
-    stringify-entities "^1.0.1"
-    unherit "^1.0.4"
-    xtend "^4.0.1"
-
-remark@^7.0.1:
-  version "7.0.1"
-  resolved "https://registry.yarnpkg.com/remark/-/remark-7.0.1.tgz#a5de4dacfabf0f60a49826ef24c479807f904bfb"
-  dependencies:
-    remark-parse "^3.0.0"
-    remark-stringify "^3.0.0"
+    remark-parse "^5.0.0"
+    remark-stringify "^5.0.0"
     unified "^6.0.0"
 
 remote-redux-devtools@^0.5.7:
@@ -7840,9 +7780,9 @@ sane@^1.3.3:
     walker "~1.0.5"
     watch "~0.10.0"
 
-sanitize-html@^1.14.1:
-  version "1.18.2"
-  resolved "https://registry.yarnpkg.com/sanitize-html/-/sanitize-html-1.18.2.tgz#61877ba5a910327e42880a28803c2fbafa8e4642"
+sanitize-html@^1.18.2:
+  version "1.19.0"
+  resolved "https://registry.yarnpkg.com/sanitize-html/-/sanitize-html-1.19.0.tgz#34d8a4b864aba79602e4a32003f293fc242df0a9"
   dependencies:
     chalk "^2.3.0"
     htmlparser2 "^3.9.0"
@@ -7885,6 +7825,13 @@ scroll-behavior@^0.9.9:
   dependencies:
     dom-helpers "^3.2.1"
     invariant "^2.2.2"
+
+section-matter@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/section-matter/-/section-matter-1.0.0.tgz#e9041953506780ec01d59f292a19c7b850b84167"
+  dependencies:
+    extend-shallow "^2.0.1"
+    kind-of "^6.0.0"
 
 select@^1.1.2:
   version "1.1.2"
@@ -8959,9 +8906,15 @@ unist-util-position@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/unist-util-position/-/unist-util-position-3.0.0.tgz#e6e1e03eeeb81c5e1afe553e8d4adfbd7c0d8f82"
 
-unist-util-remove-position@^1.0.0, unist-util-remove-position@^1.1.1:
+unist-util-remove-position@^1.0.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/unist-util-remove-position/-/unist-util-remove-position-1.1.1.tgz#5a85c1555fc1ba0c101b86707d15e50fa4c871bb"
+  dependencies:
+    unist-util-visit "^1.1.0"
+
+unist-util-remove-position@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/unist-util-remove-position/-/unist-util-remove-position-1.1.2.tgz#86b5dad104d0bbfbeb1db5f5c92f3570575c12cb"
   dependencies:
     unist-util-visit "^1.1.0"
 
@@ -8981,7 +8934,7 @@ unist-util-visit-children@^1.0.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/unist-util-visit-children/-/unist-util-visit-children-1.1.1.tgz#eba63b371116231181068837118b6e6e10ec8844"
 
-unist-util-visit@^1.0.0, unist-util-visit@^1.1.0, unist-util-visit@^1.1.1, unist-util-visit@^1.1.3, unist-util-visit@^1.3.0:
+unist-util-visit@^1.0.0, unist-util-visit@^1.1.0, unist-util-visit@^1.1.3, unist-util-visit@^1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/unist-util-visit/-/unist-util-visit-1.3.0.tgz#41ca7c82981fd1ce6c762aac397fc24e35711444"
   dependencies:
