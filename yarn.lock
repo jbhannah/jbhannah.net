@@ -3451,8 +3451,8 @@ gatsby-plugin-netlify@^1.0.19:
     webpack-assets-manifest "^1.0.0"
 
 gatsby-plugin-react-helmet@^2.0.6:
-  version "2.0.6"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-react-helmet/-/gatsby-plugin-react-helmet-2.0.6.tgz#974d7450aba01868b4800135120032941668ca51"
+  version "2.0.11"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-react-helmet/-/gatsby-plugin-react-helmet-2.0.11.tgz#a2db81755f5b41d54e0e535ca1d9a008d3ccff0a"
   dependencies:
     babel-runtime "^6.26.0"
 
