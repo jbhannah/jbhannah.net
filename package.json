@@ -1,8 +1,12 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "jbhannah.net",
+  "description": "Jesse B. Hannah",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Jesse B. Hannah <jesse@jbhannah.net>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jbhannah/jbhannah.net"
+  },
   "dependencies": {
     "acorn": "^6.0.5",
     "gatsby": "^2.0.91",
