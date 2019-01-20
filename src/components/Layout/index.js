@@ -1,13 +1,14 @@
+import { graphql, StaticQuery } from "gatsby"
 import "prismjs/themes/prism-solarizedlight.css"
 import PropTypes from "prop-types"
 import React from "react"
 import Helmet from "react-helmet"
-import Footer from "../components/Footer"
-import Header from "../components/Header"
+import Footer from "../Footer"
+import Header from "../Header"
 import "./index.css"
-import styles from "./index.module.css"
+import styles from "./styles.module.css"
 
-const TemplateWrapper = ({ children, data }) => (
+const Layout = ({ children, data }) => (
   <div className={styles.container}>
     <Helmet title={data.site.siteMetadata.title} />
     <Header title={data.site.siteMetadata.title} />
@@ -16,13 +17,7 @@ const TemplateWrapper = ({ children, data }) => (
   </div>
 )
 
-TemplateWrapper.propTypes = {
-  children: PropTypes.func,
-}
-
-export default TemplateWrapper
-
-export const query = graphql`
+const query = graphql`
   query LayoutQuery {
     site {
       siteMetadata {
@@ -31,3 +26,14 @@ export const query = graphql`
     }
   }
 `
+
+export default props => (
+  <StaticQuery
+    query={query}
+    render={data => <Layout data={data} {...props} />}
+  />
+)
+
+Layout.propTypes = {
+  children: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
+}

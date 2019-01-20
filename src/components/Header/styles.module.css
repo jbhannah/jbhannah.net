@@ -1,5 +1,10 @@
-@value layout: "../../layouts/index.module.css";
-@value break-sm, break-md, break-lg, break-xl, content-width, header-width from layout;
+@value layout: "../Layout/styles.module.css";
+@value break-sm,
+break-md,
+break-lg,
+break-xl,
+content-width,
+header-width from layout;
 
 @custom-media --break-sm break-sm;
 @custom-media --break-md break-md;
@@ -58,7 +63,8 @@
 }
 
 .icon:hover img {
-  border-radius: 15%; /* match actual radius of icon corners */
+  border-radius: 15%;
+  /* match actual radius of icon corners */
 }
 
 @media (--break-sm) {

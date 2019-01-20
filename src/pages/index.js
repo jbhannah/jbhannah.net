@@ -1,11 +1,11 @@
+import { graphql } from "gatsby"
 import React from "react"
-// import Link from 'gatsby-link'
-
-import styles from "./index.module.css"
 import Article from "../components/Article"
+import Layout from "../components/Layout"
+import styles from "./index.module.css"
 
 const IndexPage = ({ data }) => (
-  <div>
+  <Layout>
     <h1>Recent Articles</h1>
     <ul className={styles.articleList}>
       {data.articles.edges.map(({ node: { id, childMarkdownRemark } }) => (
@@ -14,7 +14,7 @@ const IndexPage = ({ data }) => (
         </li>
       ))}
     </ul>
-  </div>
+  </Layout>
 )
 
 export default IndexPage
