@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "acorn": "^6.0.5",
+    "ajv": "^6.7.0",
     "gatsby": "^2.0.91",
     "gatsby-link": "^2.0.8",
     "gatsby-plugin-netlify": "^2.0.6",
@@ -37,13 +38,14 @@
   "main": "n/a",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
+    "format": "prettier --write \"**/*.js\"",
+    "start": "gatsby develop",
     "test": "gatsby build"
   },
   "devDependencies": {
     "eslint": "^5.12.1",
     "eslint-loader": "^2.0.0",
+    "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-react": "^7.7.0",
     "prettier": "^1.11.1"
   }

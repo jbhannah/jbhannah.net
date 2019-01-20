@@ -1,41 +1,38 @@
-const excerpt = require('./src/utils/excerpt')
+const excerpt = require("./src/utils/excerpt")
 
 module.exports = {
   siteMetadata: {
-    title: 'Jesse B. Hannah',
+    title: "Jesse B. Hannah",
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
+    "gatsby-plugin-react-helmet",
     {
-      resolve: 'gatsby-plugin-typography',
+      resolve: "gatsby-plugin-typography",
       options: {
-        pathToConfigModule: 'src/utils/typography.js',
-      }
+        pathToConfigModule: "src/utils/typography.js",
+      },
     },
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: 'pages',
+        name: "pages",
         path: `${__dirname}/src/pages`,
       },
     },
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: 'articles',
+        name: "articles",
         path: `${__dirname}/src/articles/`,
       },
     },
     {
-      resolve: 'gatsby-transformer-remark',
+      resolve: "gatsby-transformer-remark",
       options: {
         excerpt: excerpt,
-        plugins: [
-          'gatsby-remark-numbered-footnotes',
-          'gatsby-remark-prismjs'
-        ]
-      }
+        plugins: ["gatsby-remark-numbered-footnotes", "gatsby-remark-prismjs"],
+      },
     },
-    'gatsby-plugin-netlify',
+    "gatsby-plugin-netlify",
   ],
 }

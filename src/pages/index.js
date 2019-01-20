@@ -1,8 +1,8 @@
-import React from 'react'
+import React from "react"
 // import Link from 'gatsby-link'
 
-import styles from './index.module.css'
-import Article from '../components/Article'
+import styles from "./index.module.css"
+import Article from "../components/Article"
 
 const IndexPage = ({ data }) => (
   <div>
@@ -21,7 +21,13 @@ export default IndexPage
 
 export const query = graphql`
   query IndexQuery {
-    articles: allFile(filter: { internal: { mediaType: { eq: "text/markdown" } }, sourceInstanceName: { eq: "articles" } }, sort: { fields: [name], order: DESC }) {
+    articles: allFile(
+      filter: {
+        internal: { mediaType: { eq: "text/markdown" } }
+        sourceInstanceName: { eq: "articles" }
+      }
+      sort: { fields: [name], order: DESC }
+    ) {
       edges {
         node {
           id

@@ -1,10 +1,8 @@
-import React from 'react'
+import React from "react"
 
-import Article from '../components/Article'
+import Article from "../components/Article"
 
-const Template = ({ data }) => (
-  <Article data={data} />
-)
+const Template = ({ data }) => <Article data={data} />
 
 export default Template
 

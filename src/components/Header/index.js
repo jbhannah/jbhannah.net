@@ -1,20 +1,18 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Link from 'gatsby-link'
+import React from "react"
+import PropTypes from "prop-types"
+import Link from "gatsby-link"
 
-import styles from './styles.module.css'
+import styles from "./styles.module.css"
 
-import github from '../../images/github.svg'
-import keybase from '../../images/keybase.svg'
-import linkedin from '../../images/linkedin.svg'
-import twitter from '../../images/twitter.svg'
+import github from "../../images/github.svg"
+import keybase from "../../images/keybase.svg"
+import linkedin from "../../images/linkedin.svg"
+import twitter from "../../images/twitter.svg"
 
 const Header = ({ title }) => (
   <header className={styles.header}>
     <h1 className={styles.title}>
-      <Link to="/">
-        {title}
-      </Link>
+      <Link to="/">{title}</Link>
     </h1>
     <ul className={styles.iconList}>
       <li className={styles.icon}>

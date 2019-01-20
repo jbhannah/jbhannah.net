@@ -1,22 +1,22 @@
-const path = require('path')
+const path = require("path")
 
 exports.modifyWebpackConfig = ({ config, stage }) => {
-  if (stage === 'develop') {
-    config.preLoader('eslint-loader', {
+  if (stage === "develop") {
+    config.preLoader("eslint-loader", {
       test: /\.js$/,
-      exclude: /node_modules/
+      exclude: /node_modules/,
     })
     config.merge({
       eslint: {
-        emitWarning: true
-      }
+        emitWarning: true,
+      },
     })
   }
   return config
 }
 
 exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
-  if (node.internal.type === 'MarkdownRemark') {
+  if (node.internal.type === "MarkdownRemark") {
     if (node.frontmatter && !node.frontmatter.link) {
       node.frontmatter.link = null
     }
@@ -24,11 +24,18 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
     const { createNodeField } = boundActionCreators
     const fileNode = getNode(node.parent)
 
-    const base = fileNode.sourceInstanceName === 'pages' ? '' : (fileNode.sourceInstanceName + '/')
+    const base =
+      fileNode.sourceInstanceName === "pages"
+        ? ""
+        : fileNode.sourceInstanceName + "/"
     const slug = base + fileNode.name.match(/(\d{4}-\d{2}-\d{2})-(.*)/)[2]
 
-    createNodeField({ node, name: 'slug', value: slug })
-    createNodeField({ node, name: 'source', value: fileNode.sourceInstanceName })
+    createNodeField({ node, name: "slug", value: slug })
+    createNodeField({
+      node,
+      name: "source",
+      value: fileNode.sourceInstanceName,
+    })
   }
 }
 
@@ -56,7 +63,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         createPage({
           path: slug,
           component: path.resolve(`./src/templates/${node.fields.source}.js`),
-          context: { slug }
+          context: { slug },
         })
 
         resolve()
