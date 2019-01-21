@@ -36,6 +36,30 @@ const Layout = ({ children, data }) => (
         html: {
           fontSize: 16,
         },
+        ".gatsby-highlight": {
+          backgroundColor: "#fdf6e3",
+          borderRadius: "0.3em",
+          margin: "0.5em 0",
+          padding: "1em",
+          overflow: "auto",
+          "& pre[class*=language-]": {
+            backgroundColor: "transparent",
+            margin: 0,
+            padding: 0,
+            overflow: "initial",
+            float: "left",
+            minWidth: "100%",
+          },
+        },
+        ".gatsby-highlight-code-line": {
+          backgroundColor: "#feb",
+          display: "block",
+          marginRight: "-1.15em",
+          marginLeft: "-1.2em",
+          paddingRight: "1.15em",
+          paddingLeft: "0.9em",
+          borderLeft: "0.3em solid #f99",
+        },
       }}
     />
     <Helmet title={data.site.siteMetadata.title} />
