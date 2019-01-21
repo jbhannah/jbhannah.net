@@ -1,20 +1,18 @@
 # jbhannah.net
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/jbhannah/jbhannah.net.svg)](https://greenkeeper.io/)
-
 Built with [Gatsby](https://www.gatsbyjs.org).
 
 ## Development
 
 ```bash
-yarn install
-gatsby develop
+npm i
+npm start
 ```
 
 ## Deployment
 
 ```bash
-gatsby build
+npm build
 ```
 
 ## Copyright
