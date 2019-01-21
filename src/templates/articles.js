@@ -1,9 +1,12 @@
-import React from 'react'
-
-import Article from '../components/Article'
+import { graphql } from "gatsby"
+import React from "react"
+import Article from "../components/Article"
+import Layout from "../components/Layout"
 
 const Template = ({ data }) => (
-  <Article data={data} />
+  <Layout>
+    <Article data={data} />
+  </Layout>
 )
 
 export default Template

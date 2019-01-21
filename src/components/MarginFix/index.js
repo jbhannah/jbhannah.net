@@ -1,7 +1,5 @@
-import React from 'react'
+import React from "react"
 
-import styles from './styles.module.css'
-
-const MarginFix = () => (<span className={styles.marginFix}></span>)
+const MarginFix = () => <span css={{ display: "none" }} />
 
 export default MarginFix

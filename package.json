@@ -1,39 +1,52 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "jbhannah.net",
+  "description": "Jesse B. Hannah",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Jesse B. Hannah <jesse@jbhannah.net>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jbhannah/jbhannah.net"
+  },
   "dependencies": {
-    "gatsby": "^1.9.223",
-    "gatsby-link": "^1.6.38",
-    "gatsby-plugin-netlify": "^1.0.19",
-    "gatsby-plugin-react-helmet": "^2.0.6",
-    "gatsby-plugin-typography": "^1.7.18",
+    "@emotion/core": "^10.0.6",
+    "@emotion/styled": "^10.0.6",
+    "acorn": "^6.0.5",
+    "ajv": "^6.7.0",
+    "gatsby": "^2.0.91",
+    "gatsby-plugin-emotion": "^4.0.1",
+    "gatsby-plugin-netlify": "^2.0.6",
+    "gatsby-plugin-react-helmet": "^3.0.5",
+    "gatsby-plugin-typography": "^2.2.5",
     "gatsby-remark-numbered-footnotes": "^1.0.0",
-    "gatsby-remark-prismjs": "^1.2.21",
-    "gatsby-source-filesystem": "^1.5.27",
-    "gatsby-transformer-remark": "^1.7.36",
+    "gatsby-remark-prismjs": "^3.2.0",
+    "gatsby-source-filesystem": "^2.0.16",
+    "gatsby-transformer-remark": "^2.2.0",
     "luxon": "^1.0.0",
+    "prismjs": "^1.15.0",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
     "react-helmet": "^5.2.0",
-    "remark-html": "^7.0.0",
-    "remark-parse": "^5.0.0",
-    "typography-theme-lincoln": "^0.15.11",
-    "unified": "^6.1.6"
+    "react-typography": "^0.16.18",
+    "remark-html": "^9.0.0",
+    "remark-parse": "^6.0.3",
+    "typography": "^0.16.18",
+    "typography-theme-lincoln": "^0.16.18",
+    "unified": "^7.1.0"
   },
   "keywords": [
     "gatsby"
   ],
   "license": "MIT",
-  "main": "n/a",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
+    "format": "prettier --write \"**/*.js\"",
+    "start": "gatsby develop",
     "test": "gatsby build"
   },
   "devDependencies": {
-    "eslint": "^4.18.2",
+    "eslint": "^5.12.1",
     "eslint-loader": "^2.0.0",
+    "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-react": "^7.7.0",
     "prettier": "^1.11.1"
   }

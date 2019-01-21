@@ -1,24 +1,23 @@
-const unified = require('unified')
-const remark = require('remark-parse')
-const html = require('remark-html')
+const unified = require("unified")
+const remark = require("remark-parse")
+const html = require("remark-html")
 
-function excerpt (file) {
+function excerpt(file) {
   const output = unified()
     .use(remark, {
       commonmark: true,
-      footnotes: true
+      footnotes: true,
     })
     .use(html)
-    .processSync(file.content)
-    .contents
+    .processSync(file.content).contents
 
-  if (file.data.hasOwnProperty('link')) {
+  if (file.data.hasOwnProperty("link")) {
     file.excerpt = output
   } else {
     file.excerpt = output
-      .slice(output.indexOf('<p>'), output.indexOf('</p>') + 4)
-      .replace(/<sup id="fnref-\d+">.+?<\/sup>/, '')
-      .replace(/<a href="\S+">([\S\s]+?)<\/a>/g, '$1')
+      .slice(output.indexOf("<p>"), output.indexOf("</p>") + 4)
+      .replace(/<sup id="fnref-\d+">.+?<\/sup>/, "")
+      .replace(/<a href="\S+">([\S\s]+?)<\/a>/g, "$1")
   }
 }
 
