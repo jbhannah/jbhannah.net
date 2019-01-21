@@ -17,7 +17,7 @@
     "react-helmet": "^5.2.0",
     "remark-html": "^7.0.0",
     "remark-parse": "^5.0.0",
-    "typography-theme-lincoln": "^0.15.11",
+    "typography-theme-lincoln": "^0.16.18",
     "unified": "^6.1.6"
   },
   "keywords": [
