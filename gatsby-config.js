@@ -5,6 +5,7 @@ module.exports = {
     title: "Jesse B. Hannah",
   },
   plugins: [
+    "gatsby-plugin-emotion",
     "gatsby-plugin-react-helmet",
     {
       resolve: "gatsby-plugin-typography",

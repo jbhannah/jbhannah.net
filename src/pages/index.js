@@ -2,12 +2,11 @@ import { graphql } from "gatsby"
 import React from "react"
 import Article from "../components/Article"
 import Layout from "../components/Layout"
-import styles from "./index.module.css"
 
 const IndexPage = ({ data }) => (
   <Layout>
     <h1>Recent Articles</h1>
-    <ul className={styles.articleList}>
+    <ul css={{ listStyleType: "none", margin: 0 }}>
       {data.articles.edges.map(({ node: { id, childMarkdownRemark } }) => (
         <li key={id}>
           <Article data={{ markdownRemark: childMarkdownRemark }} list={true} />

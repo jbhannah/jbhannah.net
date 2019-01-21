@@ -1,27 +1,12 @@
 const path = require("path")
 
-exports.modifyWebpackConfig = ({ config, stage }) => {
-  if (stage === "develop") {
-    config.preLoader("eslint-loader", {
-      test: /\.js$/,
-      exclude: /node_modules/,
-    })
-    config.merge({
-      eslint: {
-        emitWarning: true,
-      },
-    })
-  }
-  return config
-}
-
-exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
+exports.onCreateNode = ({ node, getNode, actions }) => {
   if (node.internal.type === "MarkdownRemark") {
     if (node.frontmatter && !node.frontmatter.link) {
       node.frontmatter.link = null
     }
 
-    const { createNodeField } = boundActionCreators
+    const { createNodeField } = actions
     const fileNode = getNode(node.parent)
 
     const base =
@@ -39,8 +24,8 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
   }
 }
 
-exports.createPages = ({ graphql, boundActionCreators }) => {
-  const { createPage } = boundActionCreators
+exports.createPages = ({ graphql, actions }) => {
+  const { createPage } = actions
 
   return new Promise(resolve => {
     graphql(`

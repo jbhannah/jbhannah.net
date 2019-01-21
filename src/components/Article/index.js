@@ -1,8 +1,7 @@
+import { DateTime } from "luxon"
 import React from "react"
 import Helmet from "react-helmet"
-import { DateTime } from "luxon"
-
-import styles from "./styles.module.css"
+import Heading from "../Heading"
 import MarginFix from "../MarginFix"
 
 function localDateFromDateTime(date) {
@@ -13,7 +12,6 @@ function localDateFromDateTime(date) {
 
 const Article = ({ data, list }) => {
   const { markdownRemark: mkdn, site } = data
-  const TitleHeader = list ? "h2" : "h1"
   let title
 
   if (mkdn.frontmatter.link) {
@@ -32,8 +30,8 @@ const Article = ({ data, list }) => {
         />
       )}
       <header>
-        <TitleHeader>{title}</TitleHeader>
-        <p className={styles.metadata}>
+        <Heading level={list ? "h2" : "h1"}>{title}</Heading>
+        <p css={{ fontSize: "0.75rem", marginBottom: "0.79rem" }}>
           <time dateTime={mkdn.frontmatter.date}>
             {localDateFromDateTime(mkdn.frontmatter.date)}
           </time>
@@ -44,7 +42,7 @@ const Article = ({ data, list }) => {
       </header>
       <section dangerouslySetInnerHTML={{ __html: mkdn.content }} />
       {(mkdn.frontmatter.link || list) && (
-        <footer className={styles.footer}>
+        <footer css={{ marginTop: "1.58rem" }}>
           <a href={"/" + mkdn.fields.slug}>
             {mkdn.frontmatter.link ? "Permalink" : "Read More…"}
           </a>
