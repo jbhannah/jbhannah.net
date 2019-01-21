@@ -9,12 +9,18 @@ npm i
 npm start
 ```
 
+## Testing
+
+```bash
+npm test
+```
+
 ## Deployment
 
 ```bash
-npm build
+npm run build
 ```
 
 ## Copyright
 
-Copyright © 2018 Jesse B. Hannah. Licensed under the MIT License.
+Copyright © 2019 Jesse B. Hannah. Licensed under the MIT License.
