@@ -25,6 +25,6 @@ const Heading = ({ children, level, ...props }) => {
 export default Heading
 
 Heading.propTypes = {
-  children: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
+  children: PropTypes.node,
   level: PropTypes.oneOf(Object.keys(headings)),
 }

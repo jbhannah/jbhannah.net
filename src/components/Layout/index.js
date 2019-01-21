@@ -1,12 +1,12 @@
-import { Global } from "@emotion/core"
-import { graphql, StaticQuery } from "gatsby"
-import "prismjs/themes/prism-solarizedlight.css"
-import PropTypes from "prop-types"
-import React from "react"
-import Helmet from "react-helmet"
-import { contentWidth, headerWidth, mq } from "../../utils/styles"
-import Footer from "../Footer"
-import Header from "../Header"
+import { Global } from "@emotion/core";
+import { graphql, StaticQuery } from "gatsby";
+import "prismjs/themes/prism-solarizedlight.css";
+import PropTypes from "prop-types";
+import React from "react";
+import Helmet from "react-helmet";
+import { contentWidth, headerWidth, mq } from "../../utils/styles";
+import Footer from "../Footer";
+import Header from "../Header";
 
 const contentWidthColumn = {
   margin: "0 auto",
@@ -77,5 +77,5 @@ export default props => (
 )
 
 Layout.propTypes = {
-  children: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
+  children: PropTypes.node,
 }
