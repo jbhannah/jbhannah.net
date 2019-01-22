@@ -39,7 +39,7 @@ const Layout = ({ children, data }) => (
         ".gatsby-highlight": {
           backgroundColor: "#fdf6e3",
           borderRadius: "0.3em",
-          margin: "0.5em 0",
+          marginBottom: "1.58em",
           padding: "1em",
           overflow: "auto",
           "& pre[class*=language-]": {
