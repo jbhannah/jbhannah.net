@@ -105,25 +105,25 @@ end
 
 [^raise]:
 
-  You can even add a check to make sure this doesn't get included
-  anywhere unexpected, but it's entirely a matter of taste:
+    You can even add a check to make sure this doesn't get included anywhere
+    unexpected, but it's entirely a matter of taste:
 
-  ```ruby
-  included do |base|
-    raise 'must be included in a CarrierWave uploader' unless base.ancestors.include?(CarrierWave::Uploader::Base)
-  end
-  ```
+    ```ruby
+    included do |base|
+      raise 'must be included in a CarrierWave uploader' unless base.ancestors.include?(CarrierWave::Uploader::Base)
+    end
+    ```
 
-  This is more informative and a better safeguard than waiting for an
-  undefined method error if your base uploader specifies any versions
-  or processing and gets included in a model on accident.
+    This is more informative and a better safeguard than waiting for an
+    undefined method error if your base uploader specifies any versions or
+    processing and gets included in a model on accident.
 
 [^inc]:
 
-  Remember that Ruby includes are evaluated top-to-bottom, meaning that
-  `included` blocks are run starting from the first `include`, and method
-  definitions are found starting from the last `include`. In this example,
-  `ImageUploader` will convert to JPG before creating the thumbnail.
+    Remember that Ruby includes are evaluated top-to-bottom, meaning that
+    `included` blocks are run starting from the first `include`, and method
+    definitions are found starting from the last `include`. In this example,
+    `ImageUploader` will convert to JPG before creating the thumbnail.
 
 [carrierwave]: https://github.com/carrierwaveuploader/carrierwave
 [override the storage directory]: https://github.com/carrierwaveuploader/carrierwave/issues/1064

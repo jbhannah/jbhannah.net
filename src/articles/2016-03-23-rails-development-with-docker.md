@@ -364,29 +364,32 @@ for Rails.
 
 [^n4j]:
 
-  It's a quirk of Rails and Neo4j development, I've found, that it works
-  better to have separate running instances of Neo4j for development and for
-  testing. I'll go into further detail in a later post about Rails development
-  with Neo4j.
+    It's a quirk of Rails and Neo4j development, I've found, that it works
+    better to have separate running instances of Neo4j for development and
+    for testing. I'll go into further detail in a later post about Rails
+    development with Neo4j.
 
 [^cleanup]:
 
-  This is an ongoing struggle for many developers, including myself,
-  and is by no means exclusive to Rails development. I mention it here because it
-  was one of the driving factors behind my construction of a Docker-based Rails
-  development environment.
+    This is an ongoing struggle for many developers, including myself, and is
+    by no means exclusive to Rails development. I mention it here because it
+    was one of the driving factors behind my construction of a Docker-based
+    Rails development environment.
 
-[^win]: If you're on Windows, sorry; you're on your own for this part.
+[^win]:
+
+    If you're on Windows, sorry; you're on your own for this part.
+
 [^dlite]:
 
-  At the time of writing, DLite 2.0 is in beta and is
-  backwards-incompatible with the 1.x branch. I've only used 1.x, so you're on
-  your own if you want to try the 2.0 beta.
+    At the time of writing, DLite 2.0 is in beta and is
+    backwards-incompatible with the 1.x branch. I've only used 1.x, so you're
+    on your own if you want to try the 2.0 beta.
 
 [^nkg]:
 
-  Alpine uses [musl][] instead of glibc as its standard library, and the
-  version of `libxml2` included with Nokogiri won't build on musl.
+    Alpine uses [musl][] instead of glibc as its standard library, and the
+    version of `libxml2` included with Nokogiri won't build on musl.
 
 [`pokesite`]: https://github.com/thetallgrassnet/pokesite
 [`lifeisleet`]: https://github.com/lifeisleet/lifeisleet
