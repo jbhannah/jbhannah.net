@@ -20,49 +20,49 @@ deployment.
 want it to be as easy as possible to start working on and switch between
 different sites.
 
-- **Ruby versions and gem bloat**: Each site might run on a different version
-  of Ruby and its own sets of gems. There are a number of tools for managing
-  multiple Ruby versions, and RVM attempts to control the jumble of gems and
-  dependencies with its gemsets, but that adds another tooling dependency
-  that increases…
+-   **Ruby versions and gem bloat**: Each site might run on a different version
+    of Ruby and its own sets of gems. There are a number of tools for managing
+    multiple Ruby versions, and RVM attempts to control the jumble of gems and
+    dependencies with its gemsets, but that adds another tooling dependency
+    that increases…
 
-- **Onboarding time**: Greater application complexity and more care taken to
-  keep the developer experience as frictionless as possible usually means
-  more time for a new developer to get set up with all the dependencies and
-  tooling. The `bin/setup` script introduced with Rails 4 created a
-  conventional place to start, but then you have to deal with having so many…
+-   **Onboarding time**: Greater application complexity and more care taken to
+    keep the developer experience as frictionless as possible usually means
+    more time for a new developer to get set up with all the dependencies and
+    tooling. The `bin/setup` script introduced with Rails 4 created a
+    conventional place to start, but then you have to deal with having so many…
 
-- **Services**: Is Redis already running? What about Postgres? Back over to the
-  site that uses [Neo4j][]—oh, I need to start both the development and test
-  instances[^n4j]—shoot, I left those running on the _other_ site that uses
-  Neo4j, and now my development data is all mixed together. Keeping track of
-  what's running, and for which sites, can be a pain, and often results in…
+-   **Services**: Is Redis already running? What about Postgres? Back over to the
+    site that uses [Neo4j][]—oh, I need to start both the development and test
+    instances[^n4j]—shoot, I left those running on the _other_ site that uses
+    Neo4j, and now my development data is all mixed together. Keeping track of
+    what's running, and for which sites, can be a pain, and often results in…
 
-- **Port conflicts**: Unless you manually configure the ports for each
-  application's servers (and services), you'll run into conflicts if you try
-  to start up one when another is already running.
+-   **Port conflicts**: Unless you manually configure the ports for each
+    application's servers (and services), you'll run into conflicts if you try
+    to start up one when another is already running.
 
-- **Cleanup**: Good luck keeping track of which gems or services were only
-  installed for a single project that died off months ago and are just
-  cluttering up your system.[^cleanup]
+-   **Cleanup**: Good luck keeping track of which gems or services were only
+    installed for a single project that died off months ago and are just
+    cluttering up your system.[^cleanup]
 
 ## What we'll end up with
 
-- **No extra setup steps**: Once Docker is installed, simply pull and `cd`,
-  bundle, migrate. Just like any other Rails application.
+-   **No extra setup steps**: Once Docker is installed, simply pull and `cd`,
+    bundle, migrate. Just like any other Rails application.
 
-- **One-command start and stop**: No need to remember to start up and tear down
-  each service individually.
+-   **One-command start and stop**: No need to remember to start up and tear down
+    each service individually.
 
-- **[Persistent gems container][]**: No need to rebuild the entire image to
-  install a new gem, just `bundle install` in the container.
+-   **[Persistent gems container][]**: No need to rebuild the entire image to
+    install a new gem, just `bundle install` in the container.
 
-- **Persistent data**: Unlike with a separate VM, no losing your data if you
-  need to rebuild the image.
+-   **Persistent data**: Unlike with a separate VM, no losing your data if you
+    need to rebuild the image.
 
-- **Minimal resource overhead**: Also unlike using separate VMs, Docker has
-  minimal overhead (albeit slightly more on OS X than Linux), so running
-  multiple development sites at once is much easier.
+-   **Minimal resource overhead**: Also unlike using separate VMs, Docker has
+    minimal overhead (albeit slightly more on OS X than Linux), so running
+    multiple development sites at once is much easier.
 
 ## Getting started with Docker
 
@@ -170,7 +170,7 @@ containers to a file called `docker-compose.yml`. First, the database:
 
 ```yml
 db:
-  image: postgres:9
+    image: postgres:9
 ```
 
 That's all you need to have a PostgreSQL container that your application can
@@ -182,15 +182,15 @@ Next, the application itself:
 
 ```yml
 web:
-  build: .
-  links:
-    - db
-  ports:
-    - "3001:3000"
-  volumes:
-    - .:/usr/src/app
-  volumes_from:
-    - gems
+    build: .
+    links:
+        - db
+    ports:
+        - "3001:3000"
+    volumes:
+        - .:/usr/src/app
+    volumes_from:
+        - gems
 ```
 
 This one's a bit more complicated. It `build`s an image from the `Dockerfile` in
@@ -203,9 +203,9 @@ container:
 
 ```yml
 gems:
-  image: busybox
-  volumes:
-    - /ruby_gems
+    image: busybox
+    volumes:
+        - /ruby_gems
 ```
 
 All this container has to do is put the contents of `/ruby_gems` in a mounted
@@ -376,10 +376,7 @@ for Rails.
     was one of the driving factors behind my construction of a Docker-based
     Rails development environment.
 
-[^win]:
-
-    If you're on Windows, sorry; you're on your own for this part.
-
+[^win]: If you're on Windows, sorry; you're on your own for this part.
 [^dlite]:
 
     At the time of writing, DLite 2.0 is in beta and is

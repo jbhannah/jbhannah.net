@@ -44,9 +44,9 @@ against both Neo4j.rb and Mongoid, and against multiple versions of Rails, are
 on the roadmap. Keep an eye on the [Namekuji][] GitHub repository for updates
 and additional documentation.
 
-[Namekuji]: https://github.com/thetallgrassnet/namekuji
-[Neo4j.rb]: http://neo4jrb.io/
-[Mongoid]: https://mongoid.github.io/
-[FriendlyId]: https://github.com/norman/friendly_id
-[Pokémon website project]: https://github.com/thetallgrassnet/pokesite
+[namekuji]: https://github.com/thetallgrassnet/namekuji
+[neo4j.rb]: http://neo4jrb.io/
+[mongoid]: https://mongoid.github.io/
+[friendlyid]: https://github.com/norman/friendly_id
+[pokémon website project]: https://github.com/thetallgrassnet/pokesite
 [`parameterize`]: http://api.rubyonrails.org/classes/ActiveSupport/Inflector.html#method-i-parameterize
