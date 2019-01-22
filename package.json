@@ -40,6 +40,7 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
+    "debug": "node --inspect-brk=9229 --no-lazy node_modules/gatsby/dist/bin/gatsby develop",
     "format": "prettier --write \"**/*.js\"",
     "start": "gatsby develop",
     "test": "gatsby build"
