@@ -37,7 +37,13 @@ module.exports = {
       resolve: "gatsby-transformer-remark",
       options: {
         excerpt: excerpt,
-        plugins: ["gatsby-remark-numbered-footnotes", "gatsby-remark-prismjs"],
+        plugins: [
+          "gatsby-remark-numbered-footnotes",
+          {
+            resolve: "gatsby-remark-prismjs",
+            options: { inlineCodeMarker: "›" },
+          },
+        ],
       },
     },
     "gatsby-plugin-netlify",
