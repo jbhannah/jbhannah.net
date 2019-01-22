@@ -36,6 +36,9 @@ const Layout = ({ children, data }) => (
         html: {
           fontSize: 16,
         },
+        "a code": {
+          textShadow: "none",
+        },
         ".gatsby-highlight": {
           backgroundColor: "#fdf6e3",
           borderRadius: "0.3em",
