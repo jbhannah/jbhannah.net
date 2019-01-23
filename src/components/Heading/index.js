@@ -1,31 +1,34 @@
-import styled from "@emotion/styled"
 import PropTypes from "prop-types"
 import React from "react"
 
 const styles = {
-  "& a": {
+  a: {
     background: "none",
     textShadow: "none",
   },
+  code: {
+    fontSize: "inherit",
+  },
 }
 
-const headings = {
-  h1: styled.h1(styles),
-  h2: styled.h2(styles),
-  h3: styled.h3(styles),
-  h4: styled.h4(styles),
-  h5: styled.h5(styles),
-  h6: styled.h6(styles),
+export const Heading = ({ children, level, ...props }) => {
+  const H = level
+  return (
+    <H css={styles} {...props}>
+      {children}
+    </H>
+  )
 }
 
-const Heading = ({ children, level, ...props }) => {
-  const H = headings[level]
-  return <H {...props}>{children}</H>
-}
+export const HeadingFactory = level => ({ children, ...props }) => (
+  <Heading level={level} {...props}>
+    {children}
+  </Heading>
+)
 
 export default Heading
 
 Heading.propTypes = {
   children: PropTypes.node,
-  level: PropTypes.oneOf(Object.keys(headings)),
+  level: PropTypes.oneOf(["h1", "h2", "h3", "h4", "h5", "h6"]),
 }
