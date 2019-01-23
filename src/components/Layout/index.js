@@ -39,6 +39,11 @@ const Layout = ({ children, data }) => (
         "a code": {
           textShadow: "none",
         },
+        "code[class*=language-]": {
+          fontFeatureSettings: '"liga" 0',
+          MozFontFeatureSettings: '"liga" 0',
+          WebkitFontFeatureSettings: '"liga" 0',
+        },
         ".gatsby-highlight": {
           backgroundColor: "#fdf6e3",
           borderRadius: "0.3em",
