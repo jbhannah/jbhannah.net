@@ -3,6 +3,7 @@ import React from "react"
 import Helmet from "react-helmet"
 import Heading from "../Heading"
 import MarginFix from "../MarginFix"
+import Markdown from "../Markdown"
 
 function localDateFromDateTime(date) {
   return DateTime.fromISO(date)
@@ -40,7 +41,7 @@ const Article = ({ data, list }) => {
         </p>
         {list && <MarginFix />}
       </header>
-      <section dangerouslySetInnerHTML={{ __html: mkdn.content }} />
+      <Markdown htmlAst={mkdn.content} />
       {(mkdn.frontmatter.link || list) && (
         <footer css={{ marginTop: "1.58rem" }}>
           <a href={"/" + mkdn.fields.slug}>

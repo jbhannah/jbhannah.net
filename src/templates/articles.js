@@ -22,7 +22,7 @@ export const query = graphql`
         date
         link
       }
-      content: html
+      content: htmlAst
       timeToRead
     }
     site {
