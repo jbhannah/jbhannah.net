@@ -168,7 +168,7 @@ put together the puzzle pieces of your application, your database, and your
 persistent gems container. Docker Compose makes this easy; just add the three
 containers to a file called `docker-compose.yml`. First, the database:
 
-```yml
+```yaml
 db:
     image: postgres:9
 ```
@@ -180,7 +180,7 @@ for any other services your app uses, such as Redis.
 
 Next, the application itself:
 
-```yml
+```yaml
 web:
     build: .
     links:
@@ -201,7 +201,7 @@ to port 3000 in the container, mounts the current directory in the container at
 `/usr/src/app`, and uses volumes that are defined in your persistent `gems`
 container:
 
-```yml
+```yaml
 gems:
     image: busybox
     volumes:
@@ -257,7 +257,7 @@ listening on. To get your Rails application to connect to the `db` container,
 simply add the host and port and the `postgres` username to the `default`
 section of `config/database.yml`:
 
-```yml
+```yaml
 default: &default
   ...
   host: db
@@ -271,7 +271,7 @@ and may have a `.env` file locally that sets that variable to your local Redis
 instance. To change this to use a Redis service container, add one to your
 `docker-compose.yml`:
 
-```yml
+```yaml
 redis:
   image: redis
 
@@ -341,7 +341,7 @@ you make are reflected immediately, just the same as with local development.
 Restarting the server works exactly the same way, too. You can even use
 [Guard][], with only minor changes to your `docker-compose.yml`'s `web` section:
 
-```yml
+```yaml
 command: bin/guard -p -l 1
 stdin_open: true
 tty: true
