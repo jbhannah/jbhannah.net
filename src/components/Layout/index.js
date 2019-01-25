@@ -1,6 +1,5 @@
 import { Global } from "@emotion/core"
 import { graphql, StaticQuery } from "gatsby"
-import "prismjs/themes/prism-solarizedlight.css"
 import PropTypes from "prop-types"
 import React from "react"
 import Helmet from "react-helmet"
@@ -33,17 +32,6 @@ const Layout = ({ children, data }) => (
   >
     <Global
       styles={{
-        html: {
-          fontSize: 16,
-        },
-        "a code": {
-          textShadow: "none",
-        },
-        "code[class*=language-]": {
-          fontFeatureSettings: '"liga" 0',
-          MozFontFeatureSettings: '"liga" 0',
-          WebkitFontFeatureSettings: '"liga" 0',
-        },
         ".gatsby-highlight": {
           backgroundColor: "#fdf6e3",
           borderRadius: "0.3em",
