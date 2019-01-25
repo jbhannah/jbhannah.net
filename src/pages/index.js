@@ -32,16 +32,7 @@ export const query = graphql`
         node {
           id
           childMarkdownRemark {
-            fields {
-              slug
-            }
-            frontmatter {
-              title
-              date
-              link
-            }
-            content: excerpt
-            timeToRead
+            ...ArticleInformation
           }
         }
       }

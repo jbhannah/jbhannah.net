@@ -1,3 +1,4 @@
+import { graphql } from "gatsby"
 import { DateTime } from "luxon"
 import React from "react"
 import Helmet from "react-helmet"
@@ -41,7 +42,7 @@ const Article = ({ data, list }) => {
         </p>
         {list && <MarginFix />}
       </header>
-      <Markdown htmlAst={mkdn.content} />
+      <Markdown htmlAst={mkdn.htmlAst} />
       {(mkdn.frontmatter.link || list) && (
         <footer css={{ marginTop: "1.58rem" }}>
           <a href={"/" + mkdn.fields.slug}>
@@ -54,3 +55,18 @@ const Article = ({ data, list }) => {
 }
 
 export default Article
+
+export const query = graphql`
+  fragment ArticleInformation on MarkdownRemark {
+    fields {
+      slug
+    }
+    frontmatter {
+      title
+      date
+      link
+    }
+    htmlAst
+    timeToRead
+  }
+`

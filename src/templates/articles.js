@@ -14,16 +14,7 @@ export default Template
 export const query = graphql`
   query ArticlesQuery($slug: String) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
-      fields {
-        slug
-      }
-      frontmatter {
-        title
-        date
-        link
-      }
-      content: htmlAst
-      timeToRead
+      ...ArticleInformation
     }
     site {
       siteMetadata {
