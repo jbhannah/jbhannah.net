@@ -1,7 +1,3 @@
-import "hack-font/build/web/hack.css"
-import "prismjs/themes/prism-solarizedlight.css"
-import "typeface-lora"
-import "typeface-varela-round"
 import Typography from "typography"
 import lincolnTheme from "typography-theme-lincoln"
 
