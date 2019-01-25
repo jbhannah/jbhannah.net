@@ -2,10 +2,12 @@ import PropTypes from "prop-types"
 import React, { Fragment } from "react"
 import rehypeReact from "rehype-react"
 import { HeadingFactory } from "../Heading"
+import Link from "../Link"
 
 const renderAst = new rehypeReact({
   createElement: React.createElement,
   components: {
+    a: Link,
     h2: HeadingFactory("h2"),
     h3: HeadingFactory("h3"),
     h4: HeadingFactory("h4"),

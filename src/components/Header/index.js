@@ -1,4 +1,3 @@
-import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import github from "../../images/github.svg"
@@ -7,6 +6,7 @@ import linkedin from "../../images/linkedin.svg"
 import twitter from "../../images/twitter.svg"
 import { contentWidth, headerWidth, mq } from "../../utils/styles"
 import Heading from "../Heading"
+import Link from "../Link"
 
 const Header = ({ title }) => (
   <header
@@ -86,24 +86,24 @@ const Header = ({ title }) => (
       }}
     >
       <li>
-        <a href="https://github.com/jbhannah" target="_blank">
+        <Link href="https://github.com/jbhannah" target="_blank">
           <img alt="jbhannah on GitHub" src={github} />
-        </a>
+        </Link>
       </li>
       <li>
-        <a href="https://keybase.io/jbhannah" target="_blank">
+        <Link href="https://keybase.io/jbhannah" target="_blank">
           <img alt="jbhannah on Keybase" src={keybase} />
-        </a>
+        </Link>
       </li>
       <li>
-        <a href="https://www.linkedin.com/in/jbhannah" target="_blank">
+        <Link href="https://www.linkedin.com/in/jbhannah" target="_blank">
           <img alt="jbhannah on LinkedIn" src={linkedin} />
-        </a>
+        </Link>
       </li>
       <li>
-        <a href="https://twitter.com/jbhannah" target="_blank">
+        <Link href="https://twitter.com/jbhannah" target="_blank">
           <img alt="@jbhannah on Twitter" src={twitter} />
-        </a>
+        </Link>
       </li>
     </ul>
   </header>

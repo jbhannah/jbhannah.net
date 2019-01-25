@@ -7,13 +7,7 @@ import lincolnTheme from "typography-theme-lincoln"
 
 lincolnTheme.baseFontSize = "16px"
 lincolnTheme.googleFonts = []
-lincolnTheme.overrideThemeStyles = ({ rhythm }, options, styles) => ({
-  a: {
-    borderRadius: "0.3em",
-  },
-  "a code": {
-    textShadow: "none",
-  },
+lincolnTheme.overrideThemeStyles = () => ({
   "code[class*=language-], pre[class*=language-]": {
     fontFamily: "Hack",
     fontFeatureSettings: '"liga" 0',

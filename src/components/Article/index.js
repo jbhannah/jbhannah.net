@@ -4,6 +4,7 @@ import React from "react"
 import Helmet from "react-helmet"
 import excerpt from "../../utils/excerpt"
 import Heading from "../Heading"
+import Link from "../Link"
 import MarginFix from "../MarginFix"
 import Markdown from "../Markdown"
 
@@ -19,9 +20,9 @@ const Article = ({ data, list }) => {
     content = mkdn.htmlAst
 
   if (mkdn.frontmatter.link) {
-    title = <a href={mkdn.frontmatter.link}>{mkdn.frontmatter.title}</a>
+    title = <Link href={mkdn.frontmatter.link}>{mkdn.frontmatter.title}</Link>
   } else if (list) {
-    title = <a href={"/" + mkdn.fields.slug}>{mkdn.frontmatter.title}</a>
+    title = <Link to={"/" + mkdn.fields.slug}>{mkdn.frontmatter.title}</Link>
     content = excerpt(mkdn)
   } else {
     title = mkdn.frontmatter.title
@@ -48,9 +49,9 @@ const Article = ({ data, list }) => {
       <Markdown htmlAst={content} />
       {(mkdn.frontmatter.link || list) && (
         <footer css={{ marginTop: "1.58rem" }}>
-          <a href={"/" + mkdn.fields.slug}>
+          <Link to={"/" + mkdn.fields.slug}>
             {mkdn.frontmatter.link ? "Permalink" : "Read More…"}
-          </a>
+          </Link>
         </footer>
       )}
     </article>
