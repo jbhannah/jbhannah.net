@@ -9,12 +9,12 @@ classes small and compartmentalized. Unfortunately, one thing that gets in the
 way of that is poor support for base uploaders, where (for example) attempting
 to [override the storage directory][] for a subclassed uploader won't work in
 every case, or [enabling or disabling processing per uploader][]. My preferred
-solution to this problem is to fake it using [`ActiveSupport::Concern`][]
+solution to this problem is to fake it using [`ruby›ActiveSupport::Concern`][]
 modules, which even allows you to stack "base uploaders" as deep as you want.
 
 ## Base Uploader
 
-Let's start at the bottom with the `Uploadable` module. Generate it as a
+Let's start at the bottom with the `ruby›Uploadable` module. Generate it as a
 CarrierWave uploader with:
 
 ```bash
@@ -22,8 +22,8 @@ bin/rails g uploader uploadable
 ```
 
 Then move it into `app/uploaders/concerns` (you'll have to create this
-directory), rename it to `uploadable.rb`, and change it from a `class` to a
-`module` that `extend`s `ActiveSupport::Concern`[^raise]:
+directory), rename it to `uploadable.rb`, and change it from a `ruby›class`
+to a `ruby›module` that `ruby›extend`s `ruby›ActiveSupport::Concern`[^raise]:
 
 ```ruby
 module Uploadable
@@ -37,10 +37,11 @@ module Uploadable
 end
 ```
 
-Do whatever configuration in this module that you want all of your uploaders to
-have or be able to override. Put any CarrierWave DSL method calls (e.g.
-`process`) in the `included` block. All of this module's instance methods will
-be added to the instances of any uploader class that `include`s it.
+Do whatever configuration in this module that you want all of your uploaders
+to have or be able to override. Put any CarrierWave DSL method calls (e.g.
+`ruby›process`) in the `ruby›included` block. All of this module's instance
+methods will be added to the instances of any uploader class that
+`ruby›include`s it.
 
 ## A Basic Uploader
 
@@ -53,10 +54,10 @@ class SimpleUploader < CarrierWave::Uploaders::Base
 end
 ```
 
-This uploader uses all the defaults set in `Uploadable`, and can be
+This uploader uses all the defaults set in `ruby›Uploadable`, and can be
 mounted and used like any other CarrierWave uploader. You can add or override
-any methods (e.g. `store_dir`) or versions defined in the base uploader, and
-they will remain specific to files uploaded with this uploader.
+any methods (e.g. `ruby›store_dir`) or versions defined in the base uploader,
+and they will remain specific to files uploaded with this uploader.
 
 ## The Second Level
 
@@ -93,8 +94,8 @@ module Thumbnailable
 end
 ```
 
-Since each of these concerns also includes `Uploadable`, there's no need to
-include it in uploaders that use either or both of them[^inc]:
+Since each of these concerns also includes `ruby›Uploadable`, there's no need
+to include it in uploaders that use either or both of them[^inc]:
 
 ```ruby
 class ImageUploader < CarrierWave::Uploader::Base
@@ -121,11 +122,12 @@ end
 [^inc]:
 
     Remember that Ruby includes are evaluated top-to-bottom, meaning that
-    `included` blocks are run starting from the first `include`, and method
-    definitions are found starting from the last `include`. In this example,
-    `ImageUploader` will convert to JPG before creating the thumbnail.
+    `ruby›included` blocks are run starting from the first `ruby›include`, and
+    method definitions are found starting from the last `ruby›include`. In this
+    example, `ruby›ImageUploader` will convert to JPG before creating the
+    thumbnail.
 
 [carrierwave]: https://github.com/carrierwaveuploader/carrierwave
 [override the storage directory]: https://github.com/carrierwaveuploader/carrierwave/issues/1064
 [enabling or disabling processing per uploader]: https://github.com/carrierwaveuploader/carrierwave/issues/1349
-[`activesupport::concern`]: http://api.rubyonrails.org/classes/ActiveSupport/Concern.html
+[`ruby›activesupport::concern`]: http://api.rubyonrails.org/classes/ActiveSupport/Concern.html
