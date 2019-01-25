@@ -33,7 +33,8 @@
     "remark-parse": "^6.0.3",
     "typography": "^0.16.18",
     "typography-theme-lincoln": "^0.16.18",
-    "unified": "^7.1.0"
+    "unist-util-remove": "^1.0.1",
+    "unist-util-remove-position": "^1.1.2"
   },
   "keywords": [
     "gatsby"
@@ -41,7 +42,7 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "debug": "node --inspect-brk=9229 --no-lazy node_modules/gatsby/dist/bin/gatsby develop",
+    "debug": "rm -rf .cache && node --inspect-brk=9229 --no-lazy node_modules/gatsby/dist/bin/gatsby develop",
     "format": "prettier --write \"**/*.js\" \"**/*.md\"",
     "start": "gatsby develop",
     "test": "gatsby build"

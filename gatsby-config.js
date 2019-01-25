@@ -1,5 +1,3 @@
-const excerpt = require("./src/utils/excerpt")
-
 module.exports = {
   siteMetadata: {
     title: "Jesse B. Hannah",
@@ -36,7 +34,6 @@ module.exports = {
     {
       resolve: "gatsby-transformer-remark",
       options: {
-        excerpt: excerpt,
         plugins: [
           "gatsby-remark-numbered-footnotes",
           {

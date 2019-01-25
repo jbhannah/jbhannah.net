@@ -1,24 +1,15 @@
-const unified = require("unified")
-const remark = require("remark-parse")
-const html = require("remark-html")
+import remove from "unist-util-remove"
+import stripPosition from "unist-util-remove-position"
 
-function excerpt(file) {
-  const output = unified()
-    .use(remark, {
-      commonmark: true,
-      footnotes: true,
-    })
-    .use(html)
-    .processSync(file.content).contents
-
-  if (file.data.hasOwnProperty("link")) {
-    file.excerpt = output
-  } else {
-    file.excerpt = output
-      .slice(output.indexOf("<p>"), output.indexOf("</p>") + 4)
-      .replace(/<sup id="fnref-\d+">.+?<\/sup>/, "")
-      .replace(/<a href="\S+">([\S\s]+?)<\/a>/g, "$1")
+const excerpt = ({ htmlAst, frontmatter }) => {
+  if (frontmatter.link === null) {
+    htmlAst.children = [htmlAst.children.filter(n => n.tagName === "p")[0]]
   }
+
+  stripPosition(htmlAst, true)
+  remove(htmlAst, { tagName: "sup" })
+
+  return htmlAst
 }
 
-module.exports = excerpt
+export default excerpt
