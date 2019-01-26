@@ -1,6 +1,6 @@
-# jbhannah.net
+# [jbhannah.net][]
 
-Built with [Gatsby](https://www.gatsbyjs.org).
+Built with [Gatsby][]. Hosted on [Netlify][].
 
 ## Development
 
@@ -23,4 +23,10 @@ npm run build
 
 ## Copyright
 
-Copyright © 2019 Jesse B. Hannah. Licensed under the MIT License.
+Copyright © 2019 [Jesse B. Hannah][jbhannah.net]. Licensed under the MIT License
+(see [LICENSE][]).
+
+[jbhannah.net]: https://jbhannah.net
+[gatsby]: https://www.gatsbyjs.org
+[netlify]: https://www.netlify.com/
+[license]: LICENSE
