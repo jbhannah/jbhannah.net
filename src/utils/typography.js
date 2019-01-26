@@ -1,6 +1,7 @@
 import Typography from "typography"
 import { MOBILE_MEDIA_QUERY } from "typography-breakpoint-constants"
 import lincolnTheme from "typography-theme-lincoln"
+import { mq } from "./styles"
 
 export const linkColor = "#0f7b3b"
 
@@ -12,7 +13,9 @@ lincolnTheme.overrideThemeStyles = ({ rhythm }) => ({
     backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, ${linkColor} 1px, ${linkColor} 2px, rgba(0, 0, 0, 0) 2px)`,
   },
   blockquote: {
-    borderLeft: `${rhythm(6 / 16)} solid ${linkColor}`,
+    borderLeft: `${rhythm(3 / 16)} solid ${linkColor}`,
+    marginLeft: rhythm(-3 / 4),
+    paddingLeft: rhythm(9 / 16),
   },
   "code[class*=language-], pre[class*=language-]": {
     fontFamily: "Hack, monospace",
@@ -23,6 +26,15 @@ lincolnTheme.overrideThemeStyles = ({ rhythm }) => ({
   [MOBILE_MEDIA_QUERY]: {
     blockquote: {
       borderLeft: `${rhythm(3 / 16)} solid ${linkColor}`,
+      marginLeft: rhythm(-3 / 4),
+      paddingLeft: rhythm(9 / 16),
+    },
+  },
+  [mq.sm]: {
+    blockquote: {
+      borderLeft: `${rhythm(6 / 16)} solid ${linkColor}`,
+      marginLeft: 0,
+      paddingLeft: rhythm(10 / 16),
     },
   },
 })
