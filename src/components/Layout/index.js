@@ -1,6 +1,6 @@
 import { Global } from "@emotion/core"
 import { graphql, StaticQuery } from "gatsby"
-import "hack-font/build/web/hack.css"
+import "hack-font/build/web/hack-subset.css"
 import "prismjs/themes/prism-solarizedlight.css"
 import PropTypes from "prop-types"
 import React from "react"
