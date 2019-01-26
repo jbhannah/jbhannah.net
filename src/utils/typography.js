@@ -5,7 +5,7 @@ lincolnTheme.baseFontSize = "16px"
 lincolnTheme.googleFonts = []
 lincolnTheme.overrideThemeStyles = () => ({
   "code[class*=language-], pre[class*=language-]": {
-    fontFamily: "Hack",
+    fontFamily: "Hack, monospace",
     fontFeatureSettings: '"liga" 0',
     MozFontFeatureSettings: '"liga" 0',
     WebkitFontFeatureSettings: '"liga" 0',
