@@ -1,14 +1,29 @@
 import Typography from "typography"
+import { MOBILE_MEDIA_QUERY } from "typography-breakpoint-constants"
 import lincolnTheme from "typography-theme-lincoln"
+
+export const linkColor = "#0f7b3b"
 
 lincolnTheme.baseFontSize = "16px"
 lincolnTheme.googleFonts = []
-lincolnTheme.overrideThemeStyles = () => ({
+lincolnTheme.overrideThemeStyles = ({ rhythm }) => ({
+  a: {
+    color: linkColor,
+    backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, ${linkColor} 1px, ${linkColor} 2px, rgba(0, 0, 0, 0) 2px)`,
+  },
+  blockquote: {
+    borderLeft: `${rhythm(6 / 16)} solid ${linkColor}`,
+  },
   "code[class*=language-], pre[class*=language-]": {
     fontFamily: "Hack, monospace",
     fontFeatureSettings: '"liga" 0',
     MozFontFeatureSettings: '"liga" 0',
     WebkitFontFeatureSettings: '"liga" 0',
+  },
+  [MOBILE_MEDIA_QUERY]: {
+    blockquote: {
+      borderLeft: `${rhythm(3 / 16)} solid ${linkColor}`,
+    },
   },
 })
 
