@@ -45,9 +45,9 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "debug": "rm -rf .cache && node --inspect-brk=9229 --no-lazy node_modules/gatsby/dist/bin/gatsby develop",
+    "debug": "rm -rf .cache && node --inspect-brk=9229 --no-lazy node_modules/gatsby/dist/bin/gatsby develop --https --cert-file localhost.pem --key-file localhost-key.pem",
     "format": "prettier --write \"**/*.js\" \"**/*.md\"",
-    "start": "gatsby develop",
+    "start": "gatsby develop --https --cert-file localhost.pem --key-file localhost-key.pem",
     "test": "gatsby build"
   },
   "devDependencies": {
