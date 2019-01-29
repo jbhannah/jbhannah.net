@@ -22,7 +22,7 @@
     "gatsby-remark-prismjs": "^3.2.2",
     "gatsby-source-filesystem": "^2.0.18",
     "gatsby-transformer-remark": "^2.2.1",
-    "hack-font": "github:jbhannah/Hack#patch-1",
+    "hack-font": "github:jbhannah/Hack#font-display",
     "luxon": "^1.0.0",
     "prismjs": "^1.15.0",
     "react": "^16.7.0",
