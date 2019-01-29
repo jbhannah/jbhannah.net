@@ -42,7 +42,7 @@ const Layout = ({ children, data }) => (
           "& pre[class*=language-]": {
             backgroundColor: "transparent",
             margin: 0,
-            padding: 0,
+            padding: "0 1em 0 0",
             overflow: "initial",
             float: "left",
             minWidth: "100%",
