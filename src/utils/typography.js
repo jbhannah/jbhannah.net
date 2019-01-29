@@ -16,17 +16,11 @@ import "typeface-varela-round/files/varela-round-latin-400.woff2"
 import Typography from "typography"
 import { MOBILE_MEDIA_QUERY } from "typography-breakpoint-constants"
 import lincolnTheme from "typography-theme-lincoln"
-import { mq } from "./styles"
-
-export const linkColor = "#0f7b3b"
+import { linkColor, mq } from "./styles"
 
 lincolnTheme.baseFontSize = "16px"
 lincolnTheme.googleFonts = []
 lincolnTheme.overrideThemeStyles = ({ rhythm }) => ({
-  a: {
-    color: linkColor,
-    backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, ${linkColor} 1px, ${linkColor} 2px, rgba(0, 0, 0, 0) 2px)`,
-  },
   blockquote: {
     borderLeft: `${rhythm(3 / 16)} solid ${linkColor}`,
     marginLeft: rhythm(-3 / 4),

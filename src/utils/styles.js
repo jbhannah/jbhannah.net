@@ -7,3 +7,4 @@ export const mq = Object.assign(
 
 export const contentWidth = "42rem"
 export const headerWidth = "12rem"
+export const linkColor = "#0f7b3b"
