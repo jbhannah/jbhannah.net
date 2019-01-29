@@ -46,7 +46,7 @@ const Article = ({ data, list }) => {
         </p>
         {list && <MarginFix />}
       </header>
-      <Markdown htmlAst={content} />
+      <Markdown htmlAst={content} root="section" />
       {(mkdn.frontmatter.link || list) && (
         <footer css={{ marginTop: "1.58rem" }}>
           <Link to={"/" + mkdn.fields.slug}>
