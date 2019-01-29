@@ -23,7 +23,7 @@ export const Markdown = ({ htmlAst, root = Fragment }) => {
 
   if (html.type !== root.type) {
     const R = root
-    return <R>{html.props.children}</R>
+    return <R {...html.props} />
   }
 
   return html

@@ -11,24 +11,17 @@ const styles = {
   },
 }
 
-export const Heading = ({ children, level, ...props }) => {
+export const Heading = ({ level, ...props }) => {
   const H = level
-  return (
-    <H css={styles} {...props}>
-      {children}
-    </H>
-  )
+  return <H css={styles} {...props} />
 }
 
-export const HeadingFactory = level => ({ children, ...props }) => (
-  <Heading level={level} {...props}>
-    {children}
-  </Heading>
+export const HeadingFactory = level => props => (
+  <Heading level={level} {...props} />
 )
 
 export default Heading
 
 Heading.propTypes = {
-  children: PropTypes.node,
   level: PropTypes.oneOf(["h1", "h2", "h3", "h4", "h5", "h6"]),
 }
