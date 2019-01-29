@@ -51,9 +51,9 @@ const Layout = ({ children, data }) => (
         ".gatsby-highlight-code-line": {
           backgroundColor: "#feb",
           display: "block",
-          marginRight: "-1.15em",
+          marginRight: "-2.2em",
           marginLeft: "-1.2em",
-          paddingRight: "1.15em",
+          paddingRight: "1em",
           paddingLeft: "0.9em",
           borderLeft: "0.3em solid #f99",
         },
