@@ -21,12 +21,16 @@ import { mq } from "./styles"
 
 lincolnTheme.baseFontSize = "16px"
 lincolnTheme.googleFonts = []
-lincolnTheme.overrideThemeStyles = () => {
-  const vr = verticalRhythm({
-    baseFontSize: "17px",
-    baseLineHeight: "28px",
+
+const vr = (size = lincolnTheme.baseFontSize) =>
+  verticalRhythm({
+    baseFontSize: size,
+    baseLineHeight: lincolnTheme.baseLineHeight,
   })
-  const html = { ...vr.establishBaseline() }
+
+lincolnTheme.overrideThemeStyles = () => {
+  const html = { ...vr("17px").establishBaseline() }
+
   return {
     html,
     "code[class*=language-], pre[class*=language-]": {
@@ -40,7 +44,7 @@ lincolnTheme.overrideThemeStyles = () => {
     },
     [mq.sm]: {
       html: {
-        fontSize: "100%",
+        ...vr().establishBaseline(),
       },
     },
   }
