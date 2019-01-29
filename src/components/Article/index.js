@@ -8,11 +8,10 @@ import Link from "../Link"
 import MarginFix from "../MarginFix"
 import Markdown from "../Markdown"
 
-function localDateFromDateTime(date) {
-  return DateTime.fromISO(date)
+const localDateFromDateTime = date =>
+  DateTime.fromISO(date)
     .setZone("America/Phoenix")
     .toLocaleString(DateTime.DATE_HUGE)
-}
 
 const Article = ({ data, list }) => {
   const { markdownRemark: mkdn, site } = data
