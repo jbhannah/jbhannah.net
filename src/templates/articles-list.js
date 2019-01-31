@@ -3,7 +3,7 @@ import React from "react"
 import Article from "../components/Article"
 import Heading from "../components/Heading"
 import Layout from "../components/Layout"
-import Link from "../components/Link"
+import Paginator from "../components/Paginator"
 
 const ArticlesList = ({ data, pageContext: { page, numPages } }) => (
   <Layout>
@@ -15,42 +15,7 @@ const ArticlesList = ({ data, pageContext: { page, numPages } }) => (
         </li>
       ))}
     </ul>
-    {numPages > 1 && (
-      <footer>
-        <ul
-          css={{
-            display: "block",
-            listStyleType: "none",
-            margin: 0,
-            li: {
-              display: "inline-block",
-              marginBottom: 0,
-              marginRight: "1rem",
-              a: {
-                backgroundImage: "none",
-              },
-            },
-          }}
-        >
-          <li>{page > 1 ? <Link to="/">«</Link> : "«"}</li>
-          {Array.from({ length: numPages }).map((_, i) => {
-            const pg = i + 1
-            return (
-              <li key={`paginate-${i}`}>
-                {page === pg ? (
-                  pg
-                ) : (
-                  <Link to={i === 0 ? "/" : `/page/${pg}`}>{pg}</Link>
-                )}
-              </li>
-            )
-          })}
-          <li>
-            {page < numPages ? <Link to={`/page/${numPages}`}>»</Link> : "»"}
-          </li>
-        </ul>
-      </footer>
-    )}
+    <Paginator base="/" {...{ page, numPages }} />
   </Layout>
 )
 

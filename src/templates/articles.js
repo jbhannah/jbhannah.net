@@ -12,7 +12,7 @@ const Template = ({ data }) => (
 export default Template
 
 export const query = graphql`
-  query ArticlesQuery($slug: String) {
+  query ArticleQuery($slug: String) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       ...ArticleInformation
     }
