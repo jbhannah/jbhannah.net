@@ -43,8 +43,13 @@ exports.onCreateNode = ({ node, getNode, actions: { createNodeField } }) => {
 }
 
 exports.createPages = async ({ graphql, actions: { createPage } }) => {
-  const counts = {}
-  const perPage = 10
+  const counts = {
+    articles: 0,
+  }
+  const perPage = {
+    articles: 10,
+  }
+
   const {
     data: {
       allMarkdownRemark: { edges: pages },
@@ -52,8 +57,7 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
   } = await graphql(pageQuery)
 
   pages.forEach(({ node: { fields: { slug, source } } }) => {
-    if (!counts.hasOwnProperty(source)) counts[source] = 0
-    counts[source] += 1
+    if (counts.hasOwnProperty(source)) counts[source] += 1
 
     createPage({
       path: slug,
@@ -63,7 +67,7 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
   })
 
   for (let source in counts) {
-    const numPages = Math.ceil(counts[source] / perPage)
+    const numPages = Math.ceil(counts[source] / perPage[source])
     const root = source === "articles" ? "/" : `/${source}/`
     Array.from({ length: numPages }).forEach((_, i) => {
       const page = i + 1
@@ -73,8 +77,8 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
         context: {
           page,
           numPages,
-          limit: perPage,
-          skip: i * perPage,
+          limit: perPage[source],
+          skip: i * perPage[source],
         },
       })
     })

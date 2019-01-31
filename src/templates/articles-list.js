@@ -5,7 +5,7 @@ import Heading from "../components/Heading"
 import Layout from "../components/Layout"
 import Link from "../components/Link"
 
-const IndexPage = ({ data, pageContext: { page, numPages } }) => (
+const ArticlesList = ({ data, pageContext: { page, numPages } }) => (
   <Layout>
     <Heading level="h1">Recent Articles</Heading>
     <ul css={{ listStyleType: "none", margin: 0 }}>
@@ -54,10 +54,10 @@ const IndexPage = ({ data, pageContext: { page, numPages } }) => (
   </Layout>
 )
 
-export default IndexPage
+export default ArticlesList
 
 export const query = graphql`
-  query IndexQuery($skip: Int!, $limit: Int!) {
+  query ArticlesQuery($skip: Int!, $limit: Int!) {
     articles: allFile(
       filter: {
         internal: { mediaType: { eq: "text/markdown" } }
