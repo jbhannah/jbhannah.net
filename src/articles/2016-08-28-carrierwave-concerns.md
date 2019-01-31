@@ -7,21 +7,21 @@ date: 2016-08-28T11:25:00-07:00
 because its mountable uploader classes go nicely with my preference of keeping
 classes small and compartmentalized. Unfortunately, one thing that gets in the
 way of that is poor support for base uploaders, where (for example) attempting
-to [override the storage directory][] for a subclassed uploader won't work in
+to [override the storage directory][] for a subclassed uploader won’t work in
 every case, or [enabling or disabling processing per uploader][]. My preferred
 solution to this problem is to fake it using [`ruby›ActiveSupport::Concern`][]
-modules, which even allows you to stack "base uploaders" as deep as you want.
+modules, which even allows you to stack “base uploaders” as deep as you want.
 
 ## Base Uploader
 
-Let's start at the bottom with the `ruby›Uploadable` module. Generate it as a
+Let’s start at the bottom with the `ruby›Uploadable` module. Generate it as a
 CarrierWave uploader with:
 
 ```bash
 bin/rails g uploader uploadable
 ```
 
-Then move it into `app/uploaders/concerns` (you'll have to create this
+Then move it into `app/uploaders/concerns` (you’ll have to create this
 directory), rename it to `uploadable.rb`, and change it from a `ruby›class`
 to a `ruby›module` that `ruby›extend`s `ruby›ActiveSupport::Concern`[^raise]:
 
@@ -39,7 +39,7 @@ end
 
 Do whatever configuration in this module that you want all of your uploaders
 to have or be able to override. Put any CarrierWave DSL method calls (e.g.
-`ruby›process`) in the `ruby›included` block. All of this module's instance
+`ruby›process`) in the `ruby›included` block. All of this module’s instance
 methods will be added to the instances of any uploader class that
 `ruby›include`s it.
 
@@ -63,7 +63,7 @@ and they will remain specific to files uploaded with this uploader.
 
 The one catch with this is that versions and processors defined in the base
 uploader will be used for _every_ uploader that includes it. Sometimes this
-isn't what you want: you may want some kinds of image uploads to have a
+isn’t what you want: you may want some kinds of image uploads to have a
 thumbnail, and others to be converted to JPG on upload, and want multiple
 uploaders to use one or the other or both sets of configuration. Easy; just make
 more concern modules:
@@ -94,7 +94,7 @@ module Thumbnailable
 end
 ```
 
-Since each of these concerns also includes `ruby›Uploadable`, there's no need
+Since each of these concerns also includes `ruby›Uploadable`, there’s no need
 to include it in uploaders that use either or both of them[^inc]:
 
 ```ruby
@@ -106,8 +106,8 @@ end
 
 [^raise]:
 
-    You can even add a check to make sure this doesn't get included anywhere
-    unexpected, but it's entirely a matter of taste:
+    You can even add a check to make sure this doesn’t get included anywhere
+    unexpected, but it’s entirely a matter of taste:
 
     ```ruby
     included do |base|

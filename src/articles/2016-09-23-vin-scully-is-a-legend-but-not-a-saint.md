@@ -1,5 +1,5 @@
 ---
-title: Vin Scully Is a Legend, But He's Not a Saint
+title: Vin Scully Is a Legend, But He’s Not a Saint
 link: http://www.gq.com/story/vin-scully-is-a-legend-but-not-a-saint
 date: 2016-09-23T07:08:00-07:00
 ---
@@ -21,5 +21,5 @@ entire adult life. But the most formative part of my introduction to baseball as
 a kid and my love for the game now was sitting by the pool with my dad on Sunday
 afternoons, listening to AM radio broadcasts of Los Angeles Dodgers games called
 by Vin Scully (and sponsored by Farmer John). Every time I read about him I come
-across a story that's entirely new to me, and this tribute by Olbermann has
+across a story that’s entirely new to me, and this tribute by Olbermann has
 several good ones.

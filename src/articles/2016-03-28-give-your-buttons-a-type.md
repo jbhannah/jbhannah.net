@@ -3,7 +3,7 @@ title: Give Your Buttons a Type
 date: 2016-03-28T17:06:00-07:00
 ---
 
-I fixed a bug at work today where hitting the "Enter" key from a text input in
+I fixed a bug at work today where hitting the “Enter” key from a text input in
 an [accordion][] form, in addition to submitting the form via a `keydown`
 listener[^kd], would collapse the current section of the accordion, open the
 next section, and open a [dropdown][] attached to a button in that section. If a
@@ -12,8 +12,8 @@ entered in the first section of the form, the empty second section would be
 submitted, taking the user to an entirely different page.
 
 This is an obvious usability problem with a less obvious, but also
-usability-related solution, and it's something I had actually come across
-before. It's typical to use an HTML `button` to submit a form, and occasionally
+usability-related solution, and it’s something I had actually come across
+before. It’s typical to use an HTML `button` to submit a form, and occasionally
 another `button` to reset the form:
 
 ```html
@@ -25,7 +25,7 @@ another `button` to reset the form:
 ```
 
 But buttons have other purposes too; if your form is in a modal, you might have
-a "Cancel" button that closes the modal instead of just a "Reset" button:
+a “Cancel” button that closes the modal instead of just a “Reset” button:
 
 ```html{3}
 <form>
@@ -50,7 +50,7 @@ remembering to explicitly give every button a `type`:
 </form>
 ```
 
-In terms of both semantics and usability, it's generally a good idea to not
+In terms of both semantics and usability, it’s generally a good idea to not
 always rely on the default `type` of an element. I tend to be more explicit
 about attributes as a matter of personal preference, but also because of edge
 cases like this where the default behavior might not be what you expect. For
@@ -60,11 +60,11 @@ save you from a lot of weird and tricky-to-spot bugs later.
 
 [^kd]:
 
-    I know, but it's a weird form where "Enter" is supposed to do different
+    I know, but it’s a weird form where “Enter” is supposed to do different
     things in different inputs. Namely, in some inputs it fills in the current
     autocomplete value, where in others it submits the form immediately even if
     an autocomplete value is selected. Generally speaking, you should use a
-    `html›<button type="submit" />` to handle submitting forms on "Enter."
+    `html›<button type="submit" />` to handle submitting forms on “Enter.”
 
 [accordion]: http://angular-ui.github.io/bootstrap/#/accordion
 [dropdown]: http://angular-ui.github.io/bootstrap/#/dropdown
