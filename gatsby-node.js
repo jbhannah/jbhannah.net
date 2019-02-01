@@ -1,6 +1,6 @@
 const path = require("path")
-const slugRegex = /\d{4}-\d{2}-\d{2}-([\w-]+)/
 
+const slugRegex = /\d{4}-\d{2}-\d{2}-([\w-]+)/
 const pageQuery = `
   {
     allMarkdownRemark {
