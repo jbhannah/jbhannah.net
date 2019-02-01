@@ -1,5 +1,6 @@
 module.exports = {
   siteMetadata: {
+    siteUrl: "https://jbhannah.net",
     title: "Jesse B. Hannah",
   },
   plugins: [
@@ -41,6 +42,12 @@ module.exports = {
             options: { inlineCodeMarker: "›" },
           },
         ],
+      },
+    },
+    {
+      resolve: "gatsby-plugin-sitemap",
+      options: {
+        exclude: ["/page/*", "/*/page/*"],
       },
     },
     {
