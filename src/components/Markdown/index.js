@@ -15,11 +15,11 @@ const renderAst = htmlAst => {
     node.hasOwnProperty("tagName") &&
     node.tagName === tagName
 
-  const newSection = (children = []) => ({
-    type: "element",
-    tagName: "section",
-    children,
-  })
+  const newSection = (children = () => []) => {
+    const section = { type: "element", tagName: "section" }
+    section.children = children(section)
+    return section
+  }
 
   let currentLevel, currentParent, currentSection
 
@@ -32,12 +32,12 @@ const renderAst = htmlAst => {
       const level = node.tagName.match(headingPattern)[1]
 
       if (level > currentLevel) {
-        const section = newSection(parent.children.splice(index, 1))
+        const section = newSection(() => parent.children.splice(index, 1))
         currentSection.children.push(section)
         currentSection = section
       } else {
-        currentSection = newSection(
-          parent.children.splice(index, 1, currentSection)
+        currentSection = newSection(section =>
+          parent.children.splice(index, 1, section)
         )
       }
 
