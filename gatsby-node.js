@@ -1,6 +1,6 @@
 const path = require("path")
 
-const slugRegex = /\d{4}-\d{2}-\d{2}-([\w-]+)/
+const dateRegex = /\d{4}-\d{2}-\d{2}-/
 const pageQuery = `
   {
     allMarkdownRemark {
@@ -26,19 +26,14 @@ exports.onCreateNode = ({ node, getNode, actions: { createNodeField } }) => {
     node.frontmatter.link = null
   }
 
-  const fileNode = getNode(node.parent)
-
-  const base =
-    fileNode.sourceInstanceName === "pages"
-      ? ""
-      : fileNode.sourceInstanceName + "/"
-  const slug = base + fileNode.name.match(slugRegex)[1]
+  const { ext, relativeDirectory, relativePath } = getNode(node.parent)
+  const slug = relativePath.replace(dateRegex, "").replace(ext, "")
 
   createNodeField({ node, name: "slug", value: slug })
   createNodeField({
     node,
     name: "source",
-    value: fileNode.sourceInstanceName,
+    value: relativeDirectory === "" ? "pages" : relativeDirectory,
   })
 }
 
