@@ -13,43 +13,40 @@ const localDateFromDateTime = date =>
     .setZone("America/Phoenix")
     .toLocaleString(DateTime.DATE_HUGE)
 
-const Article = ({ data, list }) => {
-  const { markdownRemark: mkdn, site } = data
-  let title,
-    content = mkdn.htmlAst
+const Article = ({ list, article, site }) => {
+  const { fields, frontmatter, timeToRead } = article
+  const content = list ? excerpt(article) : article.htmlAst
+  let title
 
-  if (mkdn.frontmatter.link) {
-    title = <Link href={mkdn.frontmatter.link}>{mkdn.frontmatter.title}</Link>
+  if (frontmatter.link) {
+    title = <Link href={frontmatter.link}>{frontmatter.title}</Link>
   } else if (list) {
-    title = <Link to={"/" + mkdn.fields.slug}>{mkdn.frontmatter.title}</Link>
-    content = excerpt(mkdn)
+    title = <Link to={"/" + fields.slug}>{frontmatter.title}</Link>
   } else {
-    title = mkdn.frontmatter.title
+    title = frontmatter.title
   }
 
   return (
     <article>
       {list || (
-        <Helmet
-          title={mkdn.frontmatter.title + " – " + site.siteMetadata.title}
-        />
+        <Helmet title={frontmatter.title + " – " + site.siteMetadata.title} />
       )}
       <header>
         <Heading level={list ? "h2" : "h1"}>{title}</Heading>
         <p css={{ fontSize: "0.75rem", marginBottom: "0.79rem" }}>
-          <time dateTime={mkdn.frontmatter.date}>
-            {localDateFromDateTime(mkdn.frontmatter.date)}
+          <time dateTime={frontmatter.date}>
+            {localDateFromDateTime(frontmatter.date)}
           </time>
           {" — "}
-          {mkdn.timeToRead} minute read
+          {timeToRead} minute read
         </p>
         {list && <MarginFix />}
       </header>
       <Markdown htmlAst={content} />
-      {(mkdn.frontmatter.link || list) && (
+      {list && (
         <footer css={{ marginTop: "1.58rem" }}>
-          <Link to={"/" + mkdn.fields.slug}>
-            {mkdn.frontmatter.link ? "Permalink" : "Read More…"}
+          <Link to={"/" + fields.slug}>
+            {frontmatter.link ? "Permalink" : "Read More…"}
           </Link>
         </footer>
       )}

@@ -9,9 +9,9 @@ const ArticlesList = ({ data, pageContext: { page, numPages } }) => (
   <Layout>
     <Heading level="h1">Recent Articles</Heading>
     <ul css={{ listStyleType: "none", margin: 0 }}>
-      {data.articles.edges.map(({ node: { id, childMarkdownRemark } }) => (
+      {data.articles.edges.map(({ node: { id, ...article } }) => (
         <li key={id}>
-          <Article data={{ markdownRemark: childMarkdownRemark }} list={true} />
+          <Article list={true} {...{ article }} />
         </li>
       ))}
     </ul>
@@ -23,21 +23,16 @@ export default ArticlesList
 
 export const query = graphql`
   query ArticlesQuery($skip: Int!, $limit: Int!) {
-    articles: allFile(
-      filter: {
-        internal: { mediaType: { eq: "text/markdown" } }
-        sourceInstanceName: { eq: "articles" }
-      }
-      sort: { fields: [name], order: DESC }
+    articles: allMarkdownRemark(
+      filter: { fields: { source: { eq: "articles" } } }
+      sort: { fields: [frontmatter___date], order: DESC }
       limit: $limit
       skip: $skip
     ) {
       edges {
         node {
           id
-          childMarkdownRemark {
-            ...ArticleInformation
-          }
+          ...ArticleInformation
         }
       }
     }
