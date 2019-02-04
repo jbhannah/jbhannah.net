@@ -1,19 +1,15 @@
 const path = require("path")
+const { defaultFrontmatter } = require("./lib/frontmatter")
 
 const PRODUCTION = process.env.NODE_ENV === "production"
 
 const dateRegex = /\d{4}-\d{2}-\d{2}-/
-const defaultFrontmatter = {
-  title: null,
-  date: null,
-  draft: false,
-  link: null,
-}
+const pageQueryFilter = PRODUCTION
+  ? "filter: { frontmatter: { draft: { ne: true } } }"
+  : ""
 const pageQuery = `
   {
-    allMarkdownRemark${
-      PRODUCTION ? "(filter: { frontmatter: { draft: { ne: true } } })" : ""
-    } {
+    allMarkdownRemark(${pageQueryFilter}) {
       edges {
         node {
           frontmatter {
