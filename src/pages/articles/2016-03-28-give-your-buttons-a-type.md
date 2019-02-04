@@ -27,9 +27,10 @@ another `button` to reset the form:
 But buttons have other purposes too; if your form is in a modal, you might have
 a “Cancel” button that closes the modal instead of just a “Reset” button:
 
-```html{3}
+```html
 <form>
     <input type="text" name="name" value="Jesse B. Hannah" />
+    // highlight-next-line
     <button onclick="dismissModal()">Cancel</button>
     <button type="submit">Submit</button>
 </form>
@@ -42,9 +43,10 @@ buttons have a [default `type` of `submit`][], so the first `button` in the form
 catches the enter keypress and, in this case, closes the modal. Solve this by
 remembering to explicitly give every button a `type`:
 
-```html{3}
+```html
 <form>
     <input type="text" name="name" value="Jesse B. Hannah" />
+    // highlight-next-line
     <button type="button" onclick="dismissModal()">Cancel</button>
     <button type="submit">Submit</button>
 </form>
