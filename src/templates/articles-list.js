@@ -24,7 +24,10 @@ export default ArticlesList
 export const query = graphql`
   query ArticlesQuery($skip: Int!, $limit: Int!) {
     articles: allMarkdownRemark(
-      filter: { fields: { source: { eq: "articles" } } }
+      filter: {
+        frontmatter: { draft: { ne: true } }
+        fields: { source: { eq: "articles" } }
+      }
       sort: { fields: [frontmatter___date], order: DESC }
       limit: $limit
       skip: $skip

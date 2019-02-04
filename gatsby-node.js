@@ -1,11 +1,24 @@
 const path = require("path")
 
+const PRODUCTION = process.env.NODE_ENV === "production"
+
 const dateRegex = /\d{4}-\d{2}-\d{2}-/
+const defaultFrontmatter = {
+  title: null,
+  date: null,
+  draft: false,
+  link: null,
+}
 const pageQuery = `
   {
-    allMarkdownRemark {
+    allMarkdownRemark${
+      PRODUCTION ? "(filter: { frontmatter: { draft: { ne: true } } })" : ""
+    } {
       edges {
         node {
+          frontmatter {
+            draft
+          }
           fields {
             slug
             source
@@ -19,11 +32,12 @@ const pageQuery = `
 exports.onCreateNode = ({ node, getNode, actions: { createNodeField } }) => {
   if (node.internal.type !== "MarkdownRemark") return
 
-  if (
-    node.hasOwnProperty("frontmatter") &&
-    !node.frontmatter.hasOwnProperty("link")
-  ) {
-    node.frontmatter.link = null
+  if (node.hasOwnProperty("frontmatter")) {
+    for (const property in defaultFrontmatter) {
+      if (!node.frontmatter.hasOwnProperty(property)) {
+        node.frontmatter[property] = defaultFrontmatter[property]
+      }
+    }
   }
 
   const { ext, relativeDirectory, relativePath } = getNode(node.parent)
@@ -51,15 +65,22 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
     },
   } = await graphql(pageQuery)
 
-  pages.forEach(({ node: { fields: { slug, source } } }) => {
-    if (counts.hasOwnProperty(source)) counts[source] += 1
+  pages.forEach(
+    ({
+      node: {
+        frontmatter: { draft },
+        fields: { slug, source },
+      },
+    }) => {
+      if (!draft && counts.hasOwnProperty(source)) counts[source] += 1
 
-    createPage({
-      path: slug,
-      component: path.resolve(`./src/templates/${source}.js`),
-      context: { slug },
-    })
-  })
+      createPage({
+        path: slug,
+        component: path.resolve(`./src/templates/${source}.js`),
+        context: { slug },
+      })
+    }
+  )
 
   for (let source in counts) {
     const numPages = Math.ceil(counts[source] / perPage[source])
