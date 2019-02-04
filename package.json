@@ -24,7 +24,7 @@
     "gatsby-source-filesystem": "^2.0.19",
     "gatsby-transformer-remark": "^2.2.3",
     "hack-font": "github:jbhannah/Hack#font-display",
-    "luxon": "^1.0.0",
+    "luxon": "^1.11.0",
     "prismjs": "^1.15.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
