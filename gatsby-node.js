@@ -72,7 +72,7 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
 
       createPage({
         path: slug,
-        component: path.resolve(`./src/templates/${source}.js`),
+        component: path.resolve(`./src/templates/${source}.jsx`),
         context: { slug },
       })
     }
@@ -85,7 +85,7 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
       const page = i + 1
       createPage({
         path: i === 0 ? root : `${root}page/${page}`,
-        component: path.resolve(`./src/templates/${source}-list.js`),
+        component: path.resolve(`./src/templates/${source}-list.jsx`),
         context: {
           page,
           numPages,

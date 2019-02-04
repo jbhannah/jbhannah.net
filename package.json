@@ -49,7 +49,7 @@
   "scripts": {
     "build": "gatsby build",
     "debug": "rm -rf .cache && node --inspect-brk=9229 --no-lazy node_modules/gatsby/dist/bin/gatsby develop --https --cert-file localhost.pem --key-file localhost-key.pem",
-    "format": "prettier --write \"**/*.{js,md,yaml}\"",
+    "format": "prettier --write \"**/*.{js,jsx,md,yaml}\"",
     "start": "gatsby develop --https --cert-file localhost.pem --key-file localhost-key.pem",
     "test": "gatsby build"
   },
