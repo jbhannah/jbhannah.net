@@ -5,11 +5,11 @@ const PRODUCTION = process.env.NODE_ENV === "production"
 
 const dateRegex = /\d{4}-\d{2}-\d{2}-/
 const pageQueryFilter = PRODUCTION
-  ? "filter: { frontmatter: { draft: { ne: true } } }"
+  ? "(filter: { frontmatter: { draft: { ne: true } } })"
   : ""
 const pageQuery = `
   {
-    allMarkdownRemark(${pageQueryFilter}) {
+    allMarkdownRemark${pageQueryFilter} {
       edges {
         node {
           frontmatter {
