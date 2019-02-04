@@ -1,2 +1,5 @@
 .cache/
+.git/
+.vscode/
+node_modules/
 public/
