@@ -19,7 +19,11 @@ const Link = ({ to, href, ...props }) => {
   }
 
   if (domainPattern.test(href)) {
-    props.rel = "noopener"
+    if (props.hasOwnProperty("rel")) {
+      props.rel += " noopener"
+    } else {
+      props.rel = "noopener"
+    }
     props.target = "_blank"
   }
 
