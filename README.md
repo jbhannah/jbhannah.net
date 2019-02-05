@@ -26,10 +26,11 @@ npm run build
 
 ## Copyright
 
-Copyright © 2019 [Jesse B. Hannah][jbhannah.net]. Licensed under the MIT License
-(see [LICENSE][]).
+Copyright © 2019 [Jesse B. Hannah][jbhannah.net]. Code licensed under the MIT
+License (see [LICENSE][]). Text licensed under [CC BY-SA 4.0][].
 
 [jbhannah.net]: https://jbhannah.net
 [gatsby]: https://www.gatsbyjs.org
 [netlify]: https://www.netlify.com/
 [license]: LICENSE
+[cc by-sa 4.0]: https://creativecommons.org/licenses/by-sa/4.0/
