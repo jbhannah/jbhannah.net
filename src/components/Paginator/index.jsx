@@ -22,7 +22,7 @@ const Paginator = ({ base, page, numPages }) => {
             },
           }}
         >
-          <li>{page > 1 ? <Link to={`${base}`}>«</Link> : "«"}</li>
+          <li>{page > 1 ? <Link href={`${base}`}>«</Link> : "«"}</li>
           {Array.from({ length: numPages }).map((_, i) => {
             const pg = i + 1
             return (
@@ -30,14 +30,14 @@ const Paginator = ({ base, page, numPages }) => {
                 {page === pg ? (
                   pg
                 ) : (
-                  <Link to={i === 0 ? base : `${pageBase}/${pg}`}>{pg}</Link>
+                  <Link href={i === 0 ? base : `${pageBase}/${pg}`}>{pg}</Link>
                 )}
               </li>
             )
           })}
           <li>
             {page < numPages ? (
-              <Link to={`${pageBase}/${numPages}`}>»</Link>
+              <Link href={`${pageBase}/${numPages}`}>»</Link>
             ) : (
               "»"
             )}

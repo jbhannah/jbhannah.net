@@ -39,7 +39,7 @@ const Header = ({ title }) => (
         },
       }}
     >
-      <Link to="/">{title}</Link>
+      <Link href="/">{title}</Link>
     </Heading>
     <ul
       css={{
@@ -86,22 +86,22 @@ const Header = ({ title }) => (
       }}
     >
       <li>
-        <Link href="https://github.com/jbhannah" target="_blank">
+        <Link href="https://github.com/jbhannah">
           <img alt="jbhannah on GitHub" src={github} />
         </Link>
       </li>
       <li>
-        <Link href="https://keybase.io/jbhannah" target="_blank">
+        <Link href="https://keybase.io/jbhannah">
           <img alt="jbhannah on Keybase" src={keybase} />
         </Link>
       </li>
       <li>
-        <Link href="https://www.linkedin.com/in/jbhannah" target="_blank">
+        <Link href="https://www.linkedin.com/in/jbhannah">
           <img alt="jbhannah on LinkedIn" src={linkedin} />
         </Link>
       </li>
       <li>
-        <Link href="https://twitter.com/jbhannah" target="_blank">
+        <Link href="https://twitter.com/jbhannah">
           <img alt="@jbhannah on Twitter" src={twitter} />
         </Link>
       </li>

@@ -7,7 +7,7 @@ const year = new Date().getFullYear()
 const Footer = ({ title, className }) => (
   <footer className={className}>
     <div>
-      Copyright © {year} <Link to="/">{title}</Link>.{" "}
+      Copyright © {year} <Link href="/">{title}</Link>.{" "}
       <Link
         href="https://creativecommons.org/licenses/by-sa/4.0/"
         target="_blank"
