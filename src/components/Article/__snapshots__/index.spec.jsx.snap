@@ -1,0 +1,902 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Article in a list renders correctly 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Article
+    article={
+      Object {
+        "fields": Object {
+          "slug": "test-slug",
+        },
+        "frontmatter": Object {
+          "date": "2019-02-05T01:17:07.551Z",
+          "title": "Test Article",
+        },
+        "htmlAst": Object {
+          "excerpted": false,
+        },
+        "timeToRead": 5,
+      }
+    }
+    list={true}
+    site={
+      Object {
+        "siteMetadata": Object {
+          "title": "Test Site",
+        },
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        true,
+        <header>
+          <Heading
+            level="h2"
+          >
+            <Link
+              href="/test-slug"
+            >
+              Test Article
+            </Link>
+          </Heading>
+          <p
+            css={
+              Object {
+                "fontSize": "0.75rem",
+                "marginBottom": "0.79rem",
+              }
+            }
+          >
+            <time
+              dateTime="2019-02-05T01:17:07.551Z"
+            >
+              Monday, February 4, 2019
+            </time>
+             — 
+            5
+             minute read
+          </p>
+          <MarginFix />
+        </header>,
+        <Markdown
+          htmlAst={
+            Object {
+              "excerpted": true,
+            }
+          }
+        />,
+        <footer
+          css={
+            Object {
+              "marginTop": "1.58rem",
+            }
+          }
+        >
+          <Link
+            href="/test-slug"
+          >
+            Read More…
+          </Link>
+        </footer>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      true,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <Heading
+              level="h2"
+            >
+              <Link
+                href="/test-slug"
+              >
+                Test Article
+              </Link>
+            </Heading>,
+            <p
+              css={
+                Object {
+                  "fontSize": "0.75rem",
+                  "marginBottom": "0.79rem",
+                }
+              }
+            >
+              <time
+                dateTime="2019-02-05T01:17:07.551Z"
+              >
+                Monday, February 4, 2019
+              </time>
+               — 
+              5
+               minute read
+            </p>,
+            <MarginFix />,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": <Link
+                href="/test-slug"
+              >
+                Test Article
+              </Link>,
+              "level": "h2",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "Test Article",
+                "href": "/test-slug",
+              },
+              "ref": null,
+              "rendered": "Test Article",
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <time
+                  dateTime="2019-02-05T01:17:07.551Z"
+                >
+                  Monday, February 4, 2019
+                </time>,
+                " — ",
+                5,
+                " minute read",
+              ],
+              "css": Object {
+                "fontSize": "0.75rem",
+                "marginBottom": "0.79rem",
+              },
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Monday, February 4, 2019",
+                  "dateTime": "2019-02-05T01:17:07.551Z",
+                },
+                "ref": null,
+                "rendered": "Monday, February 4, 2019",
+                "type": "time",
+              },
+              " — ",
+              5,
+              " minute read",
+            ],
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "header",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "htmlAst": Object {
+            "excerpted": true,
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <Link
+            href="/test-slug"
+          >
+            Read More…
+          </Link>,
+          "css": Object {
+            "marginTop": "1.58rem",
+          },
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": "Read More…",
+            "href": "/test-slug",
+          },
+          "ref": null,
+          "rendered": "Read More…",
+          "type": [Function],
+        },
+        "type": "footer",
+      },
+    ],
+    "type": "article",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          true,
+          <header>
+            <Heading
+              level="h2"
+            >
+              <Link
+                href="/test-slug"
+              >
+                Test Article
+              </Link>
+            </Heading>
+            <p
+              css={
+                Object {
+                  "fontSize": "0.75rem",
+                  "marginBottom": "0.79rem",
+                }
+              }
+            >
+              <time
+                dateTime="2019-02-05T01:17:07.551Z"
+              >
+                Monday, February 4, 2019
+              </time>
+               — 
+              5
+               minute read
+            </p>
+            <MarginFix />
+          </header>,
+          <Markdown
+            htmlAst={
+              Object {
+                "excerpted": true,
+              }
+            }
+          />,
+          <footer
+            css={
+              Object {
+                "marginTop": "1.58rem",
+              }
+            }
+          >
+            <Link
+              href="/test-slug"
+            >
+              Read More…
+            </Link>
+          </footer>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        true,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <Heading
+                level="h2"
+              >
+                <Link
+                  href="/test-slug"
+                >
+                  Test Article
+                </Link>
+              </Heading>,
+              <p
+                css={
+                  Object {
+                    "fontSize": "0.75rem",
+                    "marginBottom": "0.79rem",
+                  }
+                }
+              >
+                <time
+                  dateTime="2019-02-05T01:17:07.551Z"
+                >
+                  Monday, February 4, 2019
+                </time>
+                 — 
+                5
+                 minute read
+              </p>,
+              <MarginFix />,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": <Link
+                  href="/test-slug"
+                >
+                  Test Article
+                </Link>,
+                "level": "h2",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": "Test Article",
+                  "href": "/test-slug",
+                },
+                "ref": null,
+                "rendered": "Test Article",
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <time
+                    dateTime="2019-02-05T01:17:07.551Z"
+                  >
+                    Monday, February 4, 2019
+                  </time>,
+                  " — ",
+                  5,
+                  " minute read",
+                ],
+                "css": Object {
+                  "fontSize": "0.75rem",
+                  "marginBottom": "0.79rem",
+                },
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Monday, February 4, 2019",
+                    "dateTime": "2019-02-05T01:17:07.551Z",
+                  },
+                  "ref": null,
+                  "rendered": "Monday, February 4, 2019",
+                  "type": "time",
+                },
+                " — ",
+                5,
+                " minute read",
+              ],
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "header",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "htmlAst": Object {
+              "excerpted": true,
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <Link
+              href="/test-slug"
+            >
+              Read More…
+            </Link>,
+            "css": Object {
+              "marginTop": "1.58rem",
+            },
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": "Read More…",
+              "href": "/test-slug",
+            },
+            "ref": null,
+            "rendered": "Read More…",
+            "type": [Function],
+          },
+          "type": "footer",
+        },
+      ],
+      "type": "article",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`Article standalone renders correctly 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Article
+    article={
+      Object {
+        "fields": Object {
+          "slug": "test-slug",
+        },
+        "frontmatter": Object {
+          "date": "2019-02-05T01:17:07.551Z",
+          "title": "Test Article",
+        },
+        "htmlAst": Object {
+          "excerpted": false,
+        },
+        "timeToRead": 5,
+      }
+    }
+    site={
+      Object {
+        "siteMetadata": Object {
+          "title": "Test Site",
+        },
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <HelmetWrapper
+          defer={true}
+          encodeSpecialCharacters={true}
+          title="Test Article – Test Site"
+        />,
+        <header>
+          <Heading
+            level="h1"
+          >
+            Test Article
+          </Heading>
+          <p
+            css={
+              Object {
+                "fontSize": "0.75rem",
+                "marginBottom": "0.79rem",
+              }
+            }
+          >
+            <time
+              dateTime="2019-02-05T01:17:07.551Z"
+            >
+              Monday, February 4, 2019
+            </time>
+             — 
+            5
+             minute read
+          </p>
+        </header>,
+        <Markdown
+          htmlAst={
+            Object {
+              "excerpted": false,
+            }
+          }
+        />,
+        undefined,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "defer": true,
+          "encodeSpecialCharacters": true,
+          "title": "Test Article – Test Site",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <Heading
+              level="h1"
+            >
+              Test Article
+            </Heading>,
+            <p
+              css={
+                Object {
+                  "fontSize": "0.75rem",
+                  "marginBottom": "0.79rem",
+                }
+              }
+            >
+              <time
+                dateTime="2019-02-05T01:17:07.551Z"
+              >
+                Monday, February 4, 2019
+              </time>
+               — 
+              5
+               minute read
+            </p>,
+            undefined,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": "Test Article",
+              "level": "h1",
+            },
+            "ref": null,
+            "rendered": "Test Article",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <time
+                  dateTime="2019-02-05T01:17:07.551Z"
+                >
+                  Monday, February 4, 2019
+                </time>,
+                " — ",
+                5,
+                " minute read",
+              ],
+              "css": Object {
+                "fontSize": "0.75rem",
+                "marginBottom": "0.79rem",
+              },
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Monday, February 4, 2019",
+                  "dateTime": "2019-02-05T01:17:07.551Z",
+                },
+                "ref": null,
+                "rendered": "Monday, February 4, 2019",
+                "type": "time",
+              },
+              " — ",
+              5,
+              " minute read",
+            ],
+            "type": "p",
+          },
+          undefined,
+        ],
+        "type": "header",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "htmlAst": Object {
+            "excerpted": false,
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      undefined,
+    ],
+    "type": "article",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <HelmetWrapper
+            defer={true}
+            encodeSpecialCharacters={true}
+            title="Test Article – Test Site"
+          />,
+          <header>
+            <Heading
+              level="h1"
+            >
+              Test Article
+            </Heading>
+            <p
+              css={
+                Object {
+                  "fontSize": "0.75rem",
+                  "marginBottom": "0.79rem",
+                }
+              }
+            >
+              <time
+                dateTime="2019-02-05T01:17:07.551Z"
+              >
+                Monday, February 4, 2019
+              </time>
+               — 
+              5
+               minute read
+            </p>
+          </header>,
+          <Markdown
+            htmlAst={
+              Object {
+                "excerpted": false,
+              }
+            }
+          />,
+          undefined,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "defer": true,
+            "encodeSpecialCharacters": true,
+            "title": "Test Article – Test Site",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <Heading
+                level="h1"
+              >
+                Test Article
+              </Heading>,
+              <p
+                css={
+                  Object {
+                    "fontSize": "0.75rem",
+                    "marginBottom": "0.79rem",
+                  }
+                }
+              >
+                <time
+                  dateTime="2019-02-05T01:17:07.551Z"
+                >
+                  Monday, February 4, 2019
+                </time>
+                 — 
+                5
+                 minute read
+              </p>,
+              undefined,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "Test Article",
+                "level": "h1",
+              },
+              "ref": null,
+              "rendered": "Test Article",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <time
+                    dateTime="2019-02-05T01:17:07.551Z"
+                  >
+                    Monday, February 4, 2019
+                  </time>,
+                  " — ",
+                  5,
+                  " minute read",
+                ],
+                "css": Object {
+                  "fontSize": "0.75rem",
+                  "marginBottom": "0.79rem",
+                },
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Monday, February 4, 2019",
+                    "dateTime": "2019-02-05T01:17:07.551Z",
+                  },
+                  "ref": null,
+                  "rendered": "Monday, February 4, 2019",
+                  "type": "time",
+                },
+                " — ",
+                5,
+                " minute read",
+              ],
+              "type": "p",
+            },
+            undefined,
+          ],
+          "type": "header",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "htmlAst": Object {
+              "excerpted": false,
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        undefined,
+      ],
+      "type": "article",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
