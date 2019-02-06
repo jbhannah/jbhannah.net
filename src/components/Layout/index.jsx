@@ -13,7 +13,14 @@ import {
 import Footer from "../Footer"
 import Header from "../Header"
 
-const Layout = ({ children, data }) => (
+const Layout = ({
+  children,
+  data: {
+    site: {
+      siteMetadata: { title, socialLinks },
+    },
+  },
+}) => (
   <div
     css={{
       display: "flex",
@@ -57,12 +64,12 @@ const Layout = ({ children, data }) => (
         },
       }}
     />
-    <Helmet title={data.site.siteMetadata.title} />
-    <Header title={data.site.siteMetadata.title} />
+    <Helmet {...{ title }} />
+    <Header {...{ title, socialLinks }} />
     <main css={[contentWidthColumn, { flexGrow: 1, [mq.lg]: { margin: 0 } }]}>
       {children}
     </main>
-    <Footer title={data.site.siteMetadata.title} />
+    <Footer {...{ title }} />
   </div>
 )
 
@@ -71,6 +78,12 @@ const query = graphql`
     site {
       siteMetadata {
         title
+        socialLinks {
+          key: service
+          service
+          link
+          name
+        }
       }
     }
   }
