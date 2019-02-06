@@ -1,0 +1,276 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header renders correctly 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Header
+    socialLinks={
+      Array [
+        Object {
+          "key": "Test Service",
+          "link": "https://www.example.com",
+          "name": "Test Name",
+          "service": "Test Service",
+        },
+      ]
+    }
+    title="Test Site"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Heading
+          css={
+            Object {
+              "@media only screen and (min-width: 28rem)": Object {
+                "fontSize": "1.25rem",
+              },
+              "fontSize": "1.15rem",
+            }
+          }
+          level="h1"
+        >
+          <Link
+            href="/"
+          >
+            Test Site
+          </Link>
+        </Heading>,
+        <SocialNav
+          socialLinks={
+            Array [
+              Object {
+                "key": "Test Service",
+                "link": "https://www.example.com",
+                "name": "Test Name",
+                "service": "Test Service",
+              },
+            ]
+          }
+        />,
+      ],
+      "css": Object {
+        "@media only screen and (min-width: 59rem)": Object {
+          "flexDirection": "column",
+          "justifyContent": "flex-start",
+          "margin": 0,
+          "textAlign": "right",
+          "width": "12rem",
+        },
+        "@media only screen and (min-width: 70rem)": Object {
+          "marginLeft": "-12rem",
+        },
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "margin": "0 auto",
+        "maxWidth": "42rem",
+        "padding": "0 1rem",
+        "width": "100%",
+      },
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": <Link
+            href="/"
+          >
+            Test Site
+          </Link>,
+          "css": Object {
+            "@media only screen and (min-width: 28rem)": Object {
+              "fontSize": "1.25rem",
+            },
+            "fontSize": "1.15rem",
+          },
+          "level": "h1",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": "Test Site",
+            "href": "/",
+          },
+          "ref": null,
+          "rendered": "Test Site",
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "socialLinks": Array [
+            Object {
+              "key": "Test Service",
+              "link": "https://www.example.com",
+              "name": "Test Name",
+              "service": "Test Service",
+            },
+          ],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "header",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Heading
+            css={
+              Object {
+                "@media only screen and (min-width: 28rem)": Object {
+                  "fontSize": "1.25rem",
+                },
+                "fontSize": "1.15rem",
+              }
+            }
+            level="h1"
+          >
+            <Link
+              href="/"
+            >
+              Test Site
+            </Link>
+          </Heading>,
+          <SocialNav
+            socialLinks={
+              Array [
+                Object {
+                  "key": "Test Service",
+                  "link": "https://www.example.com",
+                  "name": "Test Name",
+                  "service": "Test Service",
+                },
+              ]
+            }
+          />,
+        ],
+        "css": Object {
+          "@media only screen and (min-width: 59rem)": Object {
+            "flexDirection": "column",
+            "justifyContent": "flex-start",
+            "margin": 0,
+            "textAlign": "right",
+            "width": "12rem",
+          },
+          "@media only screen and (min-width: 70rem)": Object {
+            "marginLeft": "-12rem",
+          },
+          "display": "flex",
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "margin": "0 auto",
+          "maxWidth": "42rem",
+          "padding": "0 1rem",
+          "width": "100%",
+        },
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": <Link
+              href="/"
+            >
+              Test Site
+            </Link>,
+            "css": Object {
+              "@media only screen and (min-width: 28rem)": Object {
+                "fontSize": "1.25rem",
+              },
+              "fontSize": "1.15rem",
+            },
+            "level": "h1",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": "Test Site",
+              "href": "/",
+            },
+            "ref": null,
+            "rendered": "Test Site",
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "socialLinks": Array [
+              Object {
+                "key": "Test Service",
+                "link": "https://www.example.com",
+                "name": "Test Name",
+                "service": "Test Service",
+              },
+            ],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "header",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
