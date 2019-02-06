@@ -1,9 +1,9 @@
-jest.mock("../../utils/excerpt")
-
 import { shallow } from "enzyme"
 import React from "react"
 import Article from "."
 import excerpt from "../../utils/excerpt"
+
+jest.mock("../../utils/excerpt")
 
 const article = {
   fields: {
