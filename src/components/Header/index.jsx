@@ -26,7 +26,7 @@ const Header = ({ title }) => (
         width: headerWidth,
       },
       [mq.xl]: {
-        marginLeft: `calc(-1 * ${headerWidth})`,
+        marginLeft: `-${headerWidth}`,
       },
     }}
   >
