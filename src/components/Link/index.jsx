@@ -16,13 +16,10 @@ const domainPattern = new RegExp(/^https?:\/\/(?!jbhannah\.net)/)
 
 const Link = ({ href, ...props }) => {
   if (domainPattern.test(href)) {
-    if (props.hasOwnProperty("rel")) {
-      props.rel += " noopener"
-    } else {
-      props.rel = "noopener"
-    }
-
+    const hasRel = props.hasOwnProperty("rel")
+    props.rel = `${hasRel ? `${props.rel} ` : ""}noopener`
     props.target = "_blank"
+
     return <a css={styles} {...{ href, ...props }} />
   } else {
     return <GatsbyLink css={styles} to={href} {...props} />
