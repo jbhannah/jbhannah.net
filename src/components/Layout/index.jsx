@@ -13,7 +13,7 @@ import {
 import Footer from "../Footer"
 import Header from "../Header"
 
-const Layout = ({
+export const PureLayout = ({
   children,
   data: {
     site: {
@@ -89,13 +89,15 @@ const query = graphql`
   }
 `
 
-export default props => (
+const Layout = props => (
   <StaticQuery
     query={query}
-    render={data => <Layout data={data} {...props} />}
+    render={data => <PureLayout {...{ data, ...props }} />}
   />
 )
 
-Layout.propTypes = {
+export default Layout
+
+PureLayout.propTypes = {
   children: PropTypes.node,
 }
