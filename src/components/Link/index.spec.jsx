@@ -26,6 +26,27 @@ describe("Link", () => {
     })
   })
 
+  describe("with an anchor link", () => {
+    const tree = TestLink({ href: "#fn-1" })
+    const link = t => t.find("a")
+
+    it("renders correctly", () => {
+      expect(tree).toMatchSnapshot()
+    })
+
+    it("renders an a", () => {
+      expect(link(tree).prop("href")).toBe("#fn-1")
+    })
+
+    it("does not add a target property", () => {
+      expect(link(tree).props()).not.toHaveProperty("target")
+    })
+
+    it("does not add a rel property", () => {
+      expect(link(tree).props()).not.toHaveProperty("rel")
+    })
+  })
+
   describe("with an external link", () => {
     const tree = TestLink({ href: "https://www.example.com" })
     const link = t => t.find("a")

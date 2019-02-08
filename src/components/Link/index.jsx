@@ -15,15 +15,17 @@ const styles = {
 const domainPattern = new RegExp(/^https?:\/\/(?!jbhannah\.net)/)
 
 const Link = ({ href, ...props }) => {
+  if (href.startsWith("/")) {
+    return <GatsbyLink css={styles} to={href} {...props} />
+  }
+
   if (domainPattern.test(href)) {
     const hasRel = props.hasOwnProperty("rel")
     props.rel = `${hasRel ? `${props.rel} ` : ""}noopener`
     props.target = "_blank"
-
-    return <a css={styles} {...{ href, ...props }} />
-  } else {
-    return <GatsbyLink css={styles} to={href} {...props} />
   }
+
+  return <a css={styles} {...{ href, ...props }} />
 }
 
 export default Link
