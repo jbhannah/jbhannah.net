@@ -10,7 +10,7 @@
   "dependencies": {
     "@emotion/core": "^10.0.7",
     "@emotion/styled": "^10.0.7",
-    "acorn": "^6.0.7",
+    "acorn": "^6.1.0",
     "ajv": "^6.8.1",
     "gatsby": "^2.0.116",
     "gatsby-plugin-emotion": "^4.0.3",
