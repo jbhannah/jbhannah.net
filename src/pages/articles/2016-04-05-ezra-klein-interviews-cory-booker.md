@@ -1,6 +1,6 @@
 ---
 title: Ezra Klein interviews Cory Booker on The Ezra Klein Show
-link: https://soundcloud.com/panoply/cory-booker-on-the-spiritual-dimension-of-politics
+link: https://overcast.fm/+QLhUZkpMQ
 date: 2016-04-05T22:51:30-07:00
 ---
 
