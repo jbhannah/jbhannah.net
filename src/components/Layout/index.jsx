@@ -4,24 +4,29 @@ import "prismjs/themes/prism-solarizedlight.css"
 import PropTypes from "prop-types"
 import React from "react"
 import Helmet from "react-helmet"
-import { contentWidth, headerWidth, mq } from "../../utils/styles"
+import {
+  contentWidth,
+  contentWidthColumn,
+  headerWidth,
+  mq,
+} from "../../utils/styles"
 import Footer from "../Footer"
 import Header from "../Header"
 
-const contentWidthColumn = {
-  margin: "0 auto",
-  maxWidth: contentWidth,
-  padding: "0 1rem",
-  width: "100%",
-}
-
-const Layout = ({ children, data }) => (
+export const PureLayout = ({
+  children,
+  data: {
+    site: {
+      siteMetadata: { title, socialLinks },
+    },
+  },
+}) => (
   <div
     css={{
       display: "flex",
       flexDirection: "column",
       margin: "0 auto",
-      maxWidth: `calc(${headerWidth} + ${contentWidth})`,
+      maxWidth: `${parseInt(headerWidth) + parseInt(contentWidth)}rem`,
       minHeight: "100vh",
       [mq.lg]: {
         flexFlow: "row wrap",
@@ -59,24 +64,12 @@ const Layout = ({ children, data }) => (
         },
       }}
     />
-    <Helmet title={data.site.siteMetadata.title} />
-    <Header title={data.site.siteMetadata.title} />
+    <Helmet {...{ title }} />
+    <Header {...{ title, socialLinks }} />
     <main css={[contentWidthColumn, { flexGrow: 1, [mq.lg]: { margin: 0 } }]}>
       {children}
     </main>
-    <Footer
-      css={[
-        contentWidthColumn,
-        {
-          alignSelf: "flex-end",
-          fontSize: "0.75rem",
-          margin: "1rem auto",
-          [mq.lg]: { marginLeft: headerWidth },
-          [mq.xl]: { marginLeft: 0 },
-        },
-      ]}
-      title={data.site.siteMetadata.title}
-    />
+    <Footer {...{ title }} />
   </div>
 )
 
@@ -85,18 +78,26 @@ const query = graphql`
     site {
       siteMetadata {
         title
+        socialLinks {
+          key: service
+          service
+          link
+          name
+        }
       }
     }
   }
 `
 
-export default props => (
+const Layout = props => (
   <StaticQuery
     query={query}
-    render={data => <Layout data={data} {...props} />}
+    render={data => <PureLayout {...{ data, ...props }} />}
   />
 )
 
-Layout.propTypes = {
+export default Layout
+
+PureLayout.propTypes = {
   children: PropTypes.node,
 }

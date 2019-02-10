@@ -6,27 +6,25 @@ import Blockquote from "../Blockquote"
 import { HeadingFactory } from "../Heading"
 import Link from "../Link"
 
+const headingPattern = /^h(\d)$/
+
+const isTag = (node, tagName) =>
+  node.hasOwnProperty("type") &&
+  node.type === "element" &&
+  node.hasOwnProperty("tagName") &&
+  node.tagName === tagName
+
+const newSection = children => {
+  const section = { type: "element", tagName: "section" }
+  section.children = children(section)
+  return section
+}
+
 const renderAst = htmlAst => {
-  const headingPattern = /^h(\d)$/
-
-  const isTag = (node, tagName) =>
-    node.hasOwnProperty("type") &&
-    node.type === "element" &&
-    node.hasOwnProperty("tagName") &&
-    node.tagName === tagName
-
-  const newSection = (children = () => []) => {
-    const section = { type: "element", tagName: "section" }
-    section.children = children(section)
-    return section
-  }
-
   let currentLevel, currentParent, currentSection
 
   visit(htmlAst, (node, index, parent) => {
     if (node.type === "root") return visit.CONTINUE
-
-    const prevSibling = parent.children[index - 1]
 
     if (node.type === "element" && headingPattern.test(node.tagName)) {
       const level = node.tagName.match(headingPattern)[1]
@@ -45,11 +43,15 @@ const renderAst = htmlAst => {
       return visit.SKIP
     }
 
+    const prevSibling = parent.children[index - 1]
+
     if (
-      !currentSection ||
-      !prevSibling ||
+      typeof currentSection === "undefined" ||
+      typeof prevSibling === "undefined" ||
       parent === currentParent ||
-      (isTag(node, "div") && node.properties.className.includes("footnotes"))
+      (isTag(node, "div") &&
+        node.properties.hasOwnProperty("class") &&
+        node.properties.class.includes("footnotes"))
     ) {
       return visit.SKIP
     }
@@ -81,13 +83,9 @@ const renderAst = htmlAst => {
 
 export const Markdown = ({ htmlAst, root = Fragment }) => {
   const html = renderAst(htmlAst)
+  const R = root
 
-  if (html.type !== root.type) {
-    const R = root
-    return <R {...html.props} />
-  }
-
-  return html
+  return <R {...html.props} />
 }
 
 export default Markdown

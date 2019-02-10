@@ -2,6 +2,28 @@ module.exports = {
   siteMetadata: {
     siteUrl: "https://jbhannah.net",
     title: "Jesse B. Hannah",
+    socialLinks: [
+      {
+        service: "GitHub",
+        link: "https://github.com/jbhannah",
+        name: "jbhannah",
+      },
+      {
+        service: "Keybase",
+        link: "https://keybase.io/jbhannah",
+        name: "jbhannah",
+      },
+      {
+        service: "LinkedIn",
+        link: "https://www.linkedin.com/in/jbhannah",
+        name: "jbhannah",
+      },
+      {
+        service: "Twitter",
+        link: "https://twitter.com/jbhannah",
+        name: "@jbhannah",
+      },
+    ],
   },
   plugins: [
     "gatsby-plugin-emotion",

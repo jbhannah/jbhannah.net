@@ -51,17 +51,25 @@
     "debug": "rm -rf .cache && node --inspect-brk=9229 --no-lazy node_modules/gatsby/dist/bin/gatsby develop --https --cert-file localhost.pem --key-file localhost-key.pem",
     "format": "prettier --write \"**/*.{js,jsx,md,yaml}\"",
     "start": "gatsby develop --https --cert-file localhost.pem --key-file localhost-key.pem",
-    "test": "gatsby build"
+    "test": "jest --coverage"
   },
   "devDependencies": {
+    "babel-jest": "^23.6.0",
+    "babel-preset-gatsby": "^0.1.6",
     "chalk": "^2.4.2",
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.9.0",
     "eslint": "^5.13.0",
     "eslint-loader": "^2.1.2",
+    "eslint-plugin-jest": "^22.2.2",
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-react": "^7.7.0",
     "glob": "^7.1.3",
     "gray-matter": "^4.0.2",
     "husky": "^1.3.1",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^23.6.0",
+    "mockdate": "^2.0.2",
     "prettier": "^1.16.4",
     "pretty-quick": "^1.10.0"
   }

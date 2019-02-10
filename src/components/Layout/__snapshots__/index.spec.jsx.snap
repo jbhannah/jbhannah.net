@@ -1,0 +1,4348 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout renders correctly 1`] = `
+initialize {
+  "0": Object {
+    "attribs": Object {
+      "css": "[object Object]",
+    },
+    "children": Array [
+      Object {
+        "attribs": Object {
+          "css": "[object Object]",
+        },
+        "children": Array [
+          Object {
+            "attribs": Object {
+              "css": "[object Object]",
+            },
+            "children": Array [
+              Object {
+                "attribs": Object {
+                  "aria-current": "page",
+                  "class": "",
+                  "css": "[object Object]",
+                  "href": "/",
+                },
+                "children": Array [
+                  Object {
+                    "data": "Test Site",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "text",
+                  },
+                ],
+                "name": "a",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": null,
+                "parent": [Circular],
+                "prev": null,
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "aria-current": undefined,
+                  "class": undefined,
+                  "css": undefined,
+                  "href": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "aria-current": undefined,
+                  "class": undefined,
+                  "css": undefined,
+                  "href": undefined,
+                },
+              },
+            ],
+            "name": "h1",
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "next": Object {
+              "attribs": Object {
+                "css": "[object Object]",
+              },
+              "children": Array [
+                Object {
+                  "attribs": Object {
+                    "css": "[object Object]",
+                  },
+                  "children": Array [
+                    Object {
+                      "attribs": Object {
+                        "css": "[object Object]",
+                      },
+                      "children": Array [
+                        Object {
+                          "attribs": Object {
+                            "css": "[object Object]",
+                            "href": "https://www.example.com",
+                            "rel": "noopener",
+                            "target": "_blank",
+                          },
+                          "children": Array [
+                            Object {
+                              "attribs": Object {
+                                "alt": "Test Name on Test Service",
+                                "css": "[object Object]",
+                                "src": "test-file-stub",
+                              },
+                              "children": Array [],
+                              "name": "img",
+                              "namespace": "http://www.w3.org/1999/xhtml",
+                              "next": null,
+                              "parent": [Circular],
+                              "prev": null,
+                              "type": "tag",
+                              "x-attribsNamespace": Object {
+                                "alt": undefined,
+                                "css": undefined,
+                                "src": undefined,
+                              },
+                              "x-attribsPrefix": Object {
+                                "alt": undefined,
+                                "css": undefined,
+                                "src": undefined,
+                              },
+                            },
+                          ],
+                          "name": "a",
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "tag",
+                          "x-attribsNamespace": Object {
+                            "css": undefined,
+                            "href": undefined,
+                            "rel": undefined,
+                            "target": undefined,
+                          },
+                          "x-attribsPrefix": Object {
+                            "css": undefined,
+                            "href": undefined,
+                            "rel": undefined,
+                            "target": undefined,
+                          },
+                        },
+                      ],
+                      "name": "li",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "tag",
+                      "x-attribsNamespace": Object {
+                        "css": undefined,
+                      },
+                      "x-attribsPrefix": Object {
+                        "css": undefined,
+                      },
+                    },
+                  ],
+                  "name": "ul",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "css": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "css": undefined,
+                  },
+                },
+              ],
+              "name": "nav",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": null,
+              "parent": [Circular],
+              "prev": [Circular],
+              "type": "tag",
+              "x-attribsNamespace": Object {
+                "css": undefined,
+              },
+              "x-attribsPrefix": Object {
+                "css": undefined,
+              },
+            },
+            "parent": [Circular],
+            "prev": null,
+            "type": "tag",
+            "x-attribsNamespace": Object {
+              "css": undefined,
+            },
+            "x-attribsPrefix": Object {
+              "css": undefined,
+            },
+          },
+          Object {
+            "attribs": Object {
+              "css": "[object Object]",
+            },
+            "children": Array [
+              Object {
+                "attribs": Object {
+                  "css": "[object Object]",
+                },
+                "children": Array [
+                  Object {
+                    "attribs": Object {
+                      "css": "[object Object]",
+                    },
+                    "children": Array [
+                      Object {
+                        "attribs": Object {
+                          "css": "[object Object]",
+                          "href": "https://www.example.com",
+                          "rel": "noopener",
+                          "target": "_blank",
+                        },
+                        "children": Array [
+                          Object {
+                            "attribs": Object {
+                              "alt": "Test Name on Test Service",
+                              "css": "[object Object]",
+                              "src": "test-file-stub",
+                            },
+                            "children": Array [],
+                            "name": "img",
+                            "namespace": "http://www.w3.org/1999/xhtml",
+                            "next": null,
+                            "parent": [Circular],
+                            "prev": null,
+                            "type": "tag",
+                            "x-attribsNamespace": Object {
+                              "alt": undefined,
+                              "css": undefined,
+                              "src": undefined,
+                            },
+                            "x-attribsPrefix": Object {
+                              "alt": undefined,
+                              "css": undefined,
+                              "src": undefined,
+                            },
+                          },
+                        ],
+                        "name": "a",
+                        "namespace": "http://www.w3.org/1999/xhtml",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "tag",
+                        "x-attribsNamespace": Object {
+                          "css": undefined,
+                          "href": undefined,
+                          "rel": undefined,
+                          "target": undefined,
+                        },
+                        "x-attribsPrefix": Object {
+                          "css": undefined,
+                          "href": undefined,
+                          "rel": undefined,
+                          "target": undefined,
+                        },
+                      },
+                    ],
+                    "name": "li",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "tag",
+                    "x-attribsNamespace": Object {
+                      "css": undefined,
+                    },
+                    "x-attribsPrefix": Object {
+                      "css": undefined,
+                    },
+                  },
+                ],
+                "name": "ul",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": null,
+                "parent": [Circular],
+                "prev": null,
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "css": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "css": undefined,
+                },
+              },
+            ],
+            "name": "nav",
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "next": null,
+            "parent": [Circular],
+            "prev": Object {
+              "attribs": Object {
+                "css": "[object Object]",
+              },
+              "children": Array [
+                Object {
+                  "attribs": Object {
+                    "aria-current": "page",
+                    "class": "",
+                    "css": "[object Object]",
+                    "href": "/",
+                  },
+                  "children": Array [
+                    Object {
+                      "data": "Test Site",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "text",
+                    },
+                  ],
+                  "name": "a",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "aria-current": undefined,
+                    "class": undefined,
+                    "css": undefined,
+                    "href": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "aria-current": undefined,
+                    "class": undefined,
+                    "css": undefined,
+                    "href": undefined,
+                  },
+                },
+              ],
+              "name": "h1",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": [Circular],
+              "parent": [Circular],
+              "prev": null,
+              "type": "tag",
+              "x-attribsNamespace": Object {
+                "css": undefined,
+              },
+              "x-attribsPrefix": Object {
+                "css": undefined,
+              },
+            },
+            "type": "tag",
+            "x-attribsNamespace": Object {
+              "css": undefined,
+            },
+            "x-attribsPrefix": Object {
+              "css": undefined,
+            },
+          },
+        ],
+        "name": "header",
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "next": Object {
+          "attribs": Object {
+            "css": "[object Object],[object Object]",
+          },
+          "children": Array [],
+          "name": "main",
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "next": Object {
+            "attribs": Object {
+              "css": "[object Object],[object Object]",
+            },
+            "children": Array [
+              Object {
+                "attribs": Object {},
+                "children": Array [
+                  Object {
+                    "data": "Copyright © 2019 ",
+                    "next": Object {
+                      "attribs": Object {
+                        "aria-current": "page",
+                        "class": "",
+                        "css": "[object Object]",
+                        "href": "/",
+                      },
+                      "children": Array [
+                        Object {
+                          "data": "Test Site",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "text",
+                        },
+                      ],
+                      "name": "a",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "next": Object {
+                        "data": ". ",
+                        "next": Object {
+                          "attribs": Object {
+                            "css": "[object Object]",
+                            "href": "https://creativecommons.org/licenses/by-sa/4.0/",
+                            "rel": "license noopener",
+                            "target": "_blank",
+                          },
+                          "children": Array [
+                            Object {
+                              "data": "Some Rights Reserved",
+                              "next": null,
+                              "parent": [Circular],
+                              "prev": null,
+                              "type": "text",
+                            },
+                          ],
+                          "name": "a",
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "next": Object {
+                            "data": ". ",
+                            "next": Object {
+                              "attribs": Object {
+                                "css": "[object Object]",
+                                "href": "https://github.com/jbhannah/jbhannah.net",
+                                "rel": "noopener",
+                                "target": "_blank",
+                              },
+                              "children": Array [
+                                Object {
+                                  "data": "Source on GitHub",
+                                  "next": null,
+                                  "parent": [Circular],
+                                  "prev": null,
+                                  "type": "text",
+                                },
+                              ],
+                              "name": "a",
+                              "namespace": "http://www.w3.org/1999/xhtml",
+                              "next": Object {
+                                "data": ".",
+                                "next": null,
+                                "parent": [Circular],
+                                "prev": [Circular],
+                                "type": "text",
+                              },
+                              "parent": [Circular],
+                              "prev": [Circular],
+                              "type": "tag",
+                              "x-attribsNamespace": Object {
+                                "css": undefined,
+                                "href": undefined,
+                                "rel": undefined,
+                                "target": undefined,
+                              },
+                              "x-attribsPrefix": Object {
+                                "css": undefined,
+                                "href": undefined,
+                                "rel": undefined,
+                                "target": undefined,
+                              },
+                            },
+                            "parent": [Circular],
+                            "prev": [Circular],
+                            "type": "text",
+                          },
+                          "parent": [Circular],
+                          "prev": [Circular],
+                          "type": "tag",
+                          "x-attribsNamespace": Object {
+                            "css": undefined,
+                            "href": undefined,
+                            "rel": undefined,
+                            "target": undefined,
+                          },
+                          "x-attribsPrefix": Object {
+                            "css": undefined,
+                            "href": undefined,
+                            "rel": undefined,
+                            "target": undefined,
+                          },
+                        },
+                        "parent": [Circular],
+                        "prev": [Circular],
+                        "type": "text",
+                      },
+                      "parent": [Circular],
+                      "prev": [Circular],
+                      "type": "tag",
+                      "x-attribsNamespace": Object {
+                        "aria-current": undefined,
+                        "class": undefined,
+                        "css": undefined,
+                        "href": undefined,
+                      },
+                      "x-attribsPrefix": Object {
+                        "aria-current": undefined,
+                        "class": undefined,
+                        "css": undefined,
+                        "href": undefined,
+                      },
+                    },
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "text",
+                  },
+                  Object {
+                    "attribs": Object {
+                      "aria-current": "page",
+                      "class": "",
+                      "css": "[object Object]",
+                      "href": "/",
+                    },
+                    "children": Array [
+                      Object {
+                        "data": "Test Site",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "text",
+                      },
+                    ],
+                    "name": "a",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": Object {
+                      "data": ". ",
+                      "next": Object {
+                        "attribs": Object {
+                          "css": "[object Object]",
+                          "href": "https://creativecommons.org/licenses/by-sa/4.0/",
+                          "rel": "license noopener",
+                          "target": "_blank",
+                        },
+                        "children": Array [
+                          Object {
+                            "data": "Some Rights Reserved",
+                            "next": null,
+                            "parent": [Circular],
+                            "prev": null,
+                            "type": "text",
+                          },
+                        ],
+                        "name": "a",
+                        "namespace": "http://www.w3.org/1999/xhtml",
+                        "next": Object {
+                          "data": ". ",
+                          "next": Object {
+                            "attribs": Object {
+                              "css": "[object Object]",
+                              "href": "https://github.com/jbhannah/jbhannah.net",
+                              "rel": "noopener",
+                              "target": "_blank",
+                            },
+                            "children": Array [
+                              Object {
+                                "data": "Source on GitHub",
+                                "next": null,
+                                "parent": [Circular],
+                                "prev": null,
+                                "type": "text",
+                              },
+                            ],
+                            "name": "a",
+                            "namespace": "http://www.w3.org/1999/xhtml",
+                            "next": Object {
+                              "data": ".",
+                              "next": null,
+                              "parent": [Circular],
+                              "prev": [Circular],
+                              "type": "text",
+                            },
+                            "parent": [Circular],
+                            "prev": [Circular],
+                            "type": "tag",
+                            "x-attribsNamespace": Object {
+                              "css": undefined,
+                              "href": undefined,
+                              "rel": undefined,
+                              "target": undefined,
+                            },
+                            "x-attribsPrefix": Object {
+                              "css": undefined,
+                              "href": undefined,
+                              "rel": undefined,
+                              "target": undefined,
+                            },
+                          },
+                          "parent": [Circular],
+                          "prev": [Circular],
+                          "type": "text",
+                        },
+                        "parent": [Circular],
+                        "prev": [Circular],
+                        "type": "tag",
+                        "x-attribsNamespace": Object {
+                          "css": undefined,
+                          "href": undefined,
+                          "rel": undefined,
+                          "target": undefined,
+                        },
+                        "x-attribsPrefix": Object {
+                          "css": undefined,
+                          "href": undefined,
+                          "rel": undefined,
+                          "target": undefined,
+                        },
+                      },
+                      "parent": [Circular],
+                      "prev": [Circular],
+                      "type": "text",
+                    },
+                    "parent": [Circular],
+                    "prev": Object {
+                      "data": "Copyright © 2019 ",
+                      "next": [Circular],
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "text",
+                    },
+                    "type": "tag",
+                    "x-attribsNamespace": Object {
+                      "aria-current": undefined,
+                      "class": undefined,
+                      "css": undefined,
+                      "href": undefined,
+                    },
+                    "x-attribsPrefix": Object {
+                      "aria-current": undefined,
+                      "class": undefined,
+                      "css": undefined,
+                      "href": undefined,
+                    },
+                  },
+                  Object {
+                    "data": ". ",
+                    "next": Object {
+                      "attribs": Object {
+                        "css": "[object Object]",
+                        "href": "https://creativecommons.org/licenses/by-sa/4.0/",
+                        "rel": "license noopener",
+                        "target": "_blank",
+                      },
+                      "children": Array [
+                        Object {
+                          "data": "Some Rights Reserved",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "text",
+                        },
+                      ],
+                      "name": "a",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "next": Object {
+                        "data": ". ",
+                        "next": Object {
+                          "attribs": Object {
+                            "css": "[object Object]",
+                            "href": "https://github.com/jbhannah/jbhannah.net",
+                            "rel": "noopener",
+                            "target": "_blank",
+                          },
+                          "children": Array [
+                            Object {
+                              "data": "Source on GitHub",
+                              "next": null,
+                              "parent": [Circular],
+                              "prev": null,
+                              "type": "text",
+                            },
+                          ],
+                          "name": "a",
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "next": Object {
+                            "data": ".",
+                            "next": null,
+                            "parent": [Circular],
+                            "prev": [Circular],
+                            "type": "text",
+                          },
+                          "parent": [Circular],
+                          "prev": [Circular],
+                          "type": "tag",
+                          "x-attribsNamespace": Object {
+                            "css": undefined,
+                            "href": undefined,
+                            "rel": undefined,
+                            "target": undefined,
+                          },
+                          "x-attribsPrefix": Object {
+                            "css": undefined,
+                            "href": undefined,
+                            "rel": undefined,
+                            "target": undefined,
+                          },
+                        },
+                        "parent": [Circular],
+                        "prev": [Circular],
+                        "type": "text",
+                      },
+                      "parent": [Circular],
+                      "prev": [Circular],
+                      "type": "tag",
+                      "x-attribsNamespace": Object {
+                        "css": undefined,
+                        "href": undefined,
+                        "rel": undefined,
+                        "target": undefined,
+                      },
+                      "x-attribsPrefix": Object {
+                        "css": undefined,
+                        "href": undefined,
+                        "rel": undefined,
+                        "target": undefined,
+                      },
+                    },
+                    "parent": [Circular],
+                    "prev": Object {
+                      "attribs": Object {
+                        "aria-current": "page",
+                        "class": "",
+                        "css": "[object Object]",
+                        "href": "/",
+                      },
+                      "children": Array [
+                        Object {
+                          "data": "Test Site",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "text",
+                        },
+                      ],
+                      "name": "a",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "next": [Circular],
+                      "parent": [Circular],
+                      "prev": Object {
+                        "data": "Copyright © 2019 ",
+                        "next": [Circular],
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "text",
+                      },
+                      "type": "tag",
+                      "x-attribsNamespace": Object {
+                        "aria-current": undefined,
+                        "class": undefined,
+                        "css": undefined,
+                        "href": undefined,
+                      },
+                      "x-attribsPrefix": Object {
+                        "aria-current": undefined,
+                        "class": undefined,
+                        "css": undefined,
+                        "href": undefined,
+                      },
+                    },
+                    "type": "text",
+                  },
+                  Object {
+                    "attribs": Object {
+                      "css": "[object Object]",
+                      "href": "https://creativecommons.org/licenses/by-sa/4.0/",
+                      "rel": "license noopener",
+                      "target": "_blank",
+                    },
+                    "children": Array [
+                      Object {
+                        "data": "Some Rights Reserved",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "text",
+                      },
+                    ],
+                    "name": "a",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": Object {
+                      "data": ". ",
+                      "next": Object {
+                        "attribs": Object {
+                          "css": "[object Object]",
+                          "href": "https://github.com/jbhannah/jbhannah.net",
+                          "rel": "noopener",
+                          "target": "_blank",
+                        },
+                        "children": Array [
+                          Object {
+                            "data": "Source on GitHub",
+                            "next": null,
+                            "parent": [Circular],
+                            "prev": null,
+                            "type": "text",
+                          },
+                        ],
+                        "name": "a",
+                        "namespace": "http://www.w3.org/1999/xhtml",
+                        "next": Object {
+                          "data": ".",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": [Circular],
+                          "type": "text",
+                        },
+                        "parent": [Circular],
+                        "prev": [Circular],
+                        "type": "tag",
+                        "x-attribsNamespace": Object {
+                          "css": undefined,
+                          "href": undefined,
+                          "rel": undefined,
+                          "target": undefined,
+                        },
+                        "x-attribsPrefix": Object {
+                          "css": undefined,
+                          "href": undefined,
+                          "rel": undefined,
+                          "target": undefined,
+                        },
+                      },
+                      "parent": [Circular],
+                      "prev": [Circular],
+                      "type": "text",
+                    },
+                    "parent": [Circular],
+                    "prev": Object {
+                      "data": ". ",
+                      "next": [Circular],
+                      "parent": [Circular],
+                      "prev": Object {
+                        "attribs": Object {
+                          "aria-current": "page",
+                          "class": "",
+                          "css": "[object Object]",
+                          "href": "/",
+                        },
+                        "children": Array [
+                          Object {
+                            "data": "Test Site",
+                            "next": null,
+                            "parent": [Circular],
+                            "prev": null,
+                            "type": "text",
+                          },
+                        ],
+                        "name": "a",
+                        "namespace": "http://www.w3.org/1999/xhtml",
+                        "next": [Circular],
+                        "parent": [Circular],
+                        "prev": Object {
+                          "data": "Copyright © 2019 ",
+                          "next": [Circular],
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "text",
+                        },
+                        "type": "tag",
+                        "x-attribsNamespace": Object {
+                          "aria-current": undefined,
+                          "class": undefined,
+                          "css": undefined,
+                          "href": undefined,
+                        },
+                        "x-attribsPrefix": Object {
+                          "aria-current": undefined,
+                          "class": undefined,
+                          "css": undefined,
+                          "href": undefined,
+                        },
+                      },
+                      "type": "text",
+                    },
+                    "type": "tag",
+                    "x-attribsNamespace": Object {
+                      "css": undefined,
+                      "href": undefined,
+                      "rel": undefined,
+                      "target": undefined,
+                    },
+                    "x-attribsPrefix": Object {
+                      "css": undefined,
+                      "href": undefined,
+                      "rel": undefined,
+                      "target": undefined,
+                    },
+                  },
+                  Object {
+                    "data": ". ",
+                    "next": Object {
+                      "attribs": Object {
+                        "css": "[object Object]",
+                        "href": "https://github.com/jbhannah/jbhannah.net",
+                        "rel": "noopener",
+                        "target": "_blank",
+                      },
+                      "children": Array [
+                        Object {
+                          "data": "Source on GitHub",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "text",
+                        },
+                      ],
+                      "name": "a",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "next": Object {
+                        "data": ".",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": [Circular],
+                        "type": "text",
+                      },
+                      "parent": [Circular],
+                      "prev": [Circular],
+                      "type": "tag",
+                      "x-attribsNamespace": Object {
+                        "css": undefined,
+                        "href": undefined,
+                        "rel": undefined,
+                        "target": undefined,
+                      },
+                      "x-attribsPrefix": Object {
+                        "css": undefined,
+                        "href": undefined,
+                        "rel": undefined,
+                        "target": undefined,
+                      },
+                    },
+                    "parent": [Circular],
+                    "prev": Object {
+                      "attribs": Object {
+                        "css": "[object Object]",
+                        "href": "https://creativecommons.org/licenses/by-sa/4.0/",
+                        "rel": "license noopener",
+                        "target": "_blank",
+                      },
+                      "children": Array [
+                        Object {
+                          "data": "Some Rights Reserved",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "text",
+                        },
+                      ],
+                      "name": "a",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "next": [Circular],
+                      "parent": [Circular],
+                      "prev": Object {
+                        "data": ". ",
+                        "next": [Circular],
+                        "parent": [Circular],
+                        "prev": Object {
+                          "attribs": Object {
+                            "aria-current": "page",
+                            "class": "",
+                            "css": "[object Object]",
+                            "href": "/",
+                          },
+                          "children": Array [
+                            Object {
+                              "data": "Test Site",
+                              "next": null,
+                              "parent": [Circular],
+                              "prev": null,
+                              "type": "text",
+                            },
+                          ],
+                          "name": "a",
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "next": [Circular],
+                          "parent": [Circular],
+                          "prev": Object {
+                            "data": "Copyright © 2019 ",
+                            "next": [Circular],
+                            "parent": [Circular],
+                            "prev": null,
+                            "type": "text",
+                          },
+                          "type": "tag",
+                          "x-attribsNamespace": Object {
+                            "aria-current": undefined,
+                            "class": undefined,
+                            "css": undefined,
+                            "href": undefined,
+                          },
+                          "x-attribsPrefix": Object {
+                            "aria-current": undefined,
+                            "class": undefined,
+                            "css": undefined,
+                            "href": undefined,
+                          },
+                        },
+                        "type": "text",
+                      },
+                      "type": "tag",
+                      "x-attribsNamespace": Object {
+                        "css": undefined,
+                        "href": undefined,
+                        "rel": undefined,
+                        "target": undefined,
+                      },
+                      "x-attribsPrefix": Object {
+                        "css": undefined,
+                        "href": undefined,
+                        "rel": undefined,
+                        "target": undefined,
+                      },
+                    },
+                    "type": "text",
+                  },
+                  Object {
+                    "attribs": Object {
+                      "css": "[object Object]",
+                      "href": "https://github.com/jbhannah/jbhannah.net",
+                      "rel": "noopener",
+                      "target": "_blank",
+                    },
+                    "children": Array [
+                      Object {
+                        "data": "Source on GitHub",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "text",
+                      },
+                    ],
+                    "name": "a",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": Object {
+                      "data": ".",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": [Circular],
+                      "type": "text",
+                    },
+                    "parent": [Circular],
+                    "prev": Object {
+                      "data": ". ",
+                      "next": [Circular],
+                      "parent": [Circular],
+                      "prev": Object {
+                        "attribs": Object {
+                          "css": "[object Object]",
+                          "href": "https://creativecommons.org/licenses/by-sa/4.0/",
+                          "rel": "license noopener",
+                          "target": "_blank",
+                        },
+                        "children": Array [
+                          Object {
+                            "data": "Some Rights Reserved",
+                            "next": null,
+                            "parent": [Circular],
+                            "prev": null,
+                            "type": "text",
+                          },
+                        ],
+                        "name": "a",
+                        "namespace": "http://www.w3.org/1999/xhtml",
+                        "next": [Circular],
+                        "parent": [Circular],
+                        "prev": Object {
+                          "data": ". ",
+                          "next": [Circular],
+                          "parent": [Circular],
+                          "prev": Object {
+                            "attribs": Object {
+                              "aria-current": "page",
+                              "class": "",
+                              "css": "[object Object]",
+                              "href": "/",
+                            },
+                            "children": Array [
+                              Object {
+                                "data": "Test Site",
+                                "next": null,
+                                "parent": [Circular],
+                                "prev": null,
+                                "type": "text",
+                              },
+                            ],
+                            "name": "a",
+                            "namespace": "http://www.w3.org/1999/xhtml",
+                            "next": [Circular],
+                            "parent": [Circular],
+                            "prev": Object {
+                              "data": "Copyright © 2019 ",
+                              "next": [Circular],
+                              "parent": [Circular],
+                              "prev": null,
+                              "type": "text",
+                            },
+                            "type": "tag",
+                            "x-attribsNamespace": Object {
+                              "aria-current": undefined,
+                              "class": undefined,
+                              "css": undefined,
+                              "href": undefined,
+                            },
+                            "x-attribsPrefix": Object {
+                              "aria-current": undefined,
+                              "class": undefined,
+                              "css": undefined,
+                              "href": undefined,
+                            },
+                          },
+                          "type": "text",
+                        },
+                        "type": "tag",
+                        "x-attribsNamespace": Object {
+                          "css": undefined,
+                          "href": undefined,
+                          "rel": undefined,
+                          "target": undefined,
+                        },
+                        "x-attribsPrefix": Object {
+                          "css": undefined,
+                          "href": undefined,
+                          "rel": undefined,
+                          "target": undefined,
+                        },
+                      },
+                      "type": "text",
+                    },
+                    "type": "tag",
+                    "x-attribsNamespace": Object {
+                      "css": undefined,
+                      "href": undefined,
+                      "rel": undefined,
+                      "target": undefined,
+                    },
+                    "x-attribsPrefix": Object {
+                      "css": undefined,
+                      "href": undefined,
+                      "rel": undefined,
+                      "target": undefined,
+                    },
+                  },
+                  Object {
+                    "data": ".",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": Object {
+                      "attribs": Object {
+                        "css": "[object Object]",
+                        "href": "https://github.com/jbhannah/jbhannah.net",
+                        "rel": "noopener",
+                        "target": "_blank",
+                      },
+                      "children": Array [
+                        Object {
+                          "data": "Source on GitHub",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "text",
+                        },
+                      ],
+                      "name": "a",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "next": [Circular],
+                      "parent": [Circular],
+                      "prev": Object {
+                        "data": ". ",
+                        "next": [Circular],
+                        "parent": [Circular],
+                        "prev": Object {
+                          "attribs": Object {
+                            "css": "[object Object]",
+                            "href": "https://creativecommons.org/licenses/by-sa/4.0/",
+                            "rel": "license noopener",
+                            "target": "_blank",
+                          },
+                          "children": Array [
+                            Object {
+                              "data": "Some Rights Reserved",
+                              "next": null,
+                              "parent": [Circular],
+                              "prev": null,
+                              "type": "text",
+                            },
+                          ],
+                          "name": "a",
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "next": [Circular],
+                          "parent": [Circular],
+                          "prev": Object {
+                            "data": ". ",
+                            "next": [Circular],
+                            "parent": [Circular],
+                            "prev": Object {
+                              "attribs": Object {
+                                "aria-current": "page",
+                                "class": "",
+                                "css": "[object Object]",
+                                "href": "/",
+                              },
+                              "children": Array [
+                                Object {
+                                  "data": "Test Site",
+                                  "next": null,
+                                  "parent": [Circular],
+                                  "prev": null,
+                                  "type": "text",
+                                },
+                              ],
+                              "name": "a",
+                              "namespace": "http://www.w3.org/1999/xhtml",
+                              "next": [Circular],
+                              "parent": [Circular],
+                              "prev": Object {
+                                "data": "Copyright © 2019 ",
+                                "next": [Circular],
+                                "parent": [Circular],
+                                "prev": null,
+                                "type": "text",
+                              },
+                              "type": "tag",
+                              "x-attribsNamespace": Object {
+                                "aria-current": undefined,
+                                "class": undefined,
+                                "css": undefined,
+                                "href": undefined,
+                              },
+                              "x-attribsPrefix": Object {
+                                "aria-current": undefined,
+                                "class": undefined,
+                                "css": undefined,
+                                "href": undefined,
+                              },
+                            },
+                            "type": "text",
+                          },
+                          "type": "tag",
+                          "x-attribsNamespace": Object {
+                            "css": undefined,
+                            "href": undefined,
+                            "rel": undefined,
+                            "target": undefined,
+                          },
+                          "x-attribsPrefix": Object {
+                            "css": undefined,
+                            "href": undefined,
+                            "rel": undefined,
+                            "target": undefined,
+                          },
+                        },
+                        "type": "text",
+                      },
+                      "type": "tag",
+                      "x-attribsNamespace": Object {
+                        "css": undefined,
+                        "href": undefined,
+                        "rel": undefined,
+                        "target": undefined,
+                      },
+                      "x-attribsPrefix": Object {
+                        "css": undefined,
+                        "href": undefined,
+                        "rel": undefined,
+                        "target": undefined,
+                      },
+                    },
+                    "type": "text",
+                  },
+                ],
+                "name": "div",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": null,
+                "parent": [Circular],
+                "prev": null,
+                "type": "tag",
+                "x-attribsNamespace": Object {},
+                "x-attribsPrefix": Object {},
+              },
+            ],
+            "name": "footer",
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "next": null,
+            "parent": [Circular],
+            "prev": [Circular],
+            "type": "tag",
+            "x-attribsNamespace": Object {
+              "css": undefined,
+            },
+            "x-attribsPrefix": Object {
+              "css": undefined,
+            },
+          },
+          "parent": [Circular],
+          "prev": [Circular],
+          "type": "tag",
+          "x-attribsNamespace": Object {
+            "css": undefined,
+          },
+          "x-attribsPrefix": Object {
+            "css": undefined,
+          },
+        },
+        "parent": [Circular],
+        "prev": null,
+        "type": "tag",
+        "x-attribsNamespace": Object {
+          "css": undefined,
+        },
+        "x-attribsPrefix": Object {
+          "css": undefined,
+        },
+      },
+      Object {
+        "attribs": Object {
+          "css": "[object Object],[object Object]",
+        },
+        "children": Array [],
+        "name": "main",
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "next": Object {
+          "attribs": Object {
+            "css": "[object Object],[object Object]",
+          },
+          "children": Array [
+            Object {
+              "attribs": Object {},
+              "children": Array [
+                Object {
+                  "data": "Copyright © 2019 ",
+                  "next": Object {
+                    "attribs": Object {
+                      "aria-current": "page",
+                      "class": "",
+                      "css": "[object Object]",
+                      "href": "/",
+                    },
+                    "children": Array [
+                      Object {
+                        "data": "Test Site",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "text",
+                      },
+                    ],
+                    "name": "a",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": Object {
+                      "data": ". ",
+                      "next": Object {
+                        "attribs": Object {
+                          "css": "[object Object]",
+                          "href": "https://creativecommons.org/licenses/by-sa/4.0/",
+                          "rel": "license noopener",
+                          "target": "_blank",
+                        },
+                        "children": Array [
+                          Object {
+                            "data": "Some Rights Reserved",
+                            "next": null,
+                            "parent": [Circular],
+                            "prev": null,
+                            "type": "text",
+                          },
+                        ],
+                        "name": "a",
+                        "namespace": "http://www.w3.org/1999/xhtml",
+                        "next": Object {
+                          "data": ". ",
+                          "next": Object {
+                            "attribs": Object {
+                              "css": "[object Object]",
+                              "href": "https://github.com/jbhannah/jbhannah.net",
+                              "rel": "noopener",
+                              "target": "_blank",
+                            },
+                            "children": Array [
+                              Object {
+                                "data": "Source on GitHub",
+                                "next": null,
+                                "parent": [Circular],
+                                "prev": null,
+                                "type": "text",
+                              },
+                            ],
+                            "name": "a",
+                            "namespace": "http://www.w3.org/1999/xhtml",
+                            "next": Object {
+                              "data": ".",
+                              "next": null,
+                              "parent": [Circular],
+                              "prev": [Circular],
+                              "type": "text",
+                            },
+                            "parent": [Circular],
+                            "prev": [Circular],
+                            "type": "tag",
+                            "x-attribsNamespace": Object {
+                              "css": undefined,
+                              "href": undefined,
+                              "rel": undefined,
+                              "target": undefined,
+                            },
+                            "x-attribsPrefix": Object {
+                              "css": undefined,
+                              "href": undefined,
+                              "rel": undefined,
+                              "target": undefined,
+                            },
+                          },
+                          "parent": [Circular],
+                          "prev": [Circular],
+                          "type": "text",
+                        },
+                        "parent": [Circular],
+                        "prev": [Circular],
+                        "type": "tag",
+                        "x-attribsNamespace": Object {
+                          "css": undefined,
+                          "href": undefined,
+                          "rel": undefined,
+                          "target": undefined,
+                        },
+                        "x-attribsPrefix": Object {
+                          "css": undefined,
+                          "href": undefined,
+                          "rel": undefined,
+                          "target": undefined,
+                        },
+                      },
+                      "parent": [Circular],
+                      "prev": [Circular],
+                      "type": "text",
+                    },
+                    "parent": [Circular],
+                    "prev": [Circular],
+                    "type": "tag",
+                    "x-attribsNamespace": Object {
+                      "aria-current": undefined,
+                      "class": undefined,
+                      "css": undefined,
+                      "href": undefined,
+                    },
+                    "x-attribsPrefix": Object {
+                      "aria-current": undefined,
+                      "class": undefined,
+                      "css": undefined,
+                      "href": undefined,
+                    },
+                  },
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "text",
+                },
+                Object {
+                  "attribs": Object {
+                    "aria-current": "page",
+                    "class": "",
+                    "css": "[object Object]",
+                    "href": "/",
+                  },
+                  "children": Array [
+                    Object {
+                      "data": "Test Site",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "text",
+                    },
+                  ],
+                  "name": "a",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": Object {
+                    "data": ". ",
+                    "next": Object {
+                      "attribs": Object {
+                        "css": "[object Object]",
+                        "href": "https://creativecommons.org/licenses/by-sa/4.0/",
+                        "rel": "license noopener",
+                        "target": "_blank",
+                      },
+                      "children": Array [
+                        Object {
+                          "data": "Some Rights Reserved",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "text",
+                        },
+                      ],
+                      "name": "a",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "next": Object {
+                        "data": ". ",
+                        "next": Object {
+                          "attribs": Object {
+                            "css": "[object Object]",
+                            "href": "https://github.com/jbhannah/jbhannah.net",
+                            "rel": "noopener",
+                            "target": "_blank",
+                          },
+                          "children": Array [
+                            Object {
+                              "data": "Source on GitHub",
+                              "next": null,
+                              "parent": [Circular],
+                              "prev": null,
+                              "type": "text",
+                            },
+                          ],
+                          "name": "a",
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "next": Object {
+                            "data": ".",
+                            "next": null,
+                            "parent": [Circular],
+                            "prev": [Circular],
+                            "type": "text",
+                          },
+                          "parent": [Circular],
+                          "prev": [Circular],
+                          "type": "tag",
+                          "x-attribsNamespace": Object {
+                            "css": undefined,
+                            "href": undefined,
+                            "rel": undefined,
+                            "target": undefined,
+                          },
+                          "x-attribsPrefix": Object {
+                            "css": undefined,
+                            "href": undefined,
+                            "rel": undefined,
+                            "target": undefined,
+                          },
+                        },
+                        "parent": [Circular],
+                        "prev": [Circular],
+                        "type": "text",
+                      },
+                      "parent": [Circular],
+                      "prev": [Circular],
+                      "type": "tag",
+                      "x-attribsNamespace": Object {
+                        "css": undefined,
+                        "href": undefined,
+                        "rel": undefined,
+                        "target": undefined,
+                      },
+                      "x-attribsPrefix": Object {
+                        "css": undefined,
+                        "href": undefined,
+                        "rel": undefined,
+                        "target": undefined,
+                      },
+                    },
+                    "parent": [Circular],
+                    "prev": [Circular],
+                    "type": "text",
+                  },
+                  "parent": [Circular],
+                  "prev": Object {
+                    "data": "Copyright © 2019 ",
+                    "next": [Circular],
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "text",
+                  },
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "aria-current": undefined,
+                    "class": undefined,
+                    "css": undefined,
+                    "href": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "aria-current": undefined,
+                    "class": undefined,
+                    "css": undefined,
+                    "href": undefined,
+                  },
+                },
+                Object {
+                  "data": ". ",
+                  "next": Object {
+                    "attribs": Object {
+                      "css": "[object Object]",
+                      "href": "https://creativecommons.org/licenses/by-sa/4.0/",
+                      "rel": "license noopener",
+                      "target": "_blank",
+                    },
+                    "children": Array [
+                      Object {
+                        "data": "Some Rights Reserved",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "text",
+                      },
+                    ],
+                    "name": "a",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": Object {
+                      "data": ". ",
+                      "next": Object {
+                        "attribs": Object {
+                          "css": "[object Object]",
+                          "href": "https://github.com/jbhannah/jbhannah.net",
+                          "rel": "noopener",
+                          "target": "_blank",
+                        },
+                        "children": Array [
+                          Object {
+                            "data": "Source on GitHub",
+                            "next": null,
+                            "parent": [Circular],
+                            "prev": null,
+                            "type": "text",
+                          },
+                        ],
+                        "name": "a",
+                        "namespace": "http://www.w3.org/1999/xhtml",
+                        "next": Object {
+                          "data": ".",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": [Circular],
+                          "type": "text",
+                        },
+                        "parent": [Circular],
+                        "prev": [Circular],
+                        "type": "tag",
+                        "x-attribsNamespace": Object {
+                          "css": undefined,
+                          "href": undefined,
+                          "rel": undefined,
+                          "target": undefined,
+                        },
+                        "x-attribsPrefix": Object {
+                          "css": undefined,
+                          "href": undefined,
+                          "rel": undefined,
+                          "target": undefined,
+                        },
+                      },
+                      "parent": [Circular],
+                      "prev": [Circular],
+                      "type": "text",
+                    },
+                    "parent": [Circular],
+                    "prev": [Circular],
+                    "type": "tag",
+                    "x-attribsNamespace": Object {
+                      "css": undefined,
+                      "href": undefined,
+                      "rel": undefined,
+                      "target": undefined,
+                    },
+                    "x-attribsPrefix": Object {
+                      "css": undefined,
+                      "href": undefined,
+                      "rel": undefined,
+                      "target": undefined,
+                    },
+                  },
+                  "parent": [Circular],
+                  "prev": Object {
+                    "attribs": Object {
+                      "aria-current": "page",
+                      "class": "",
+                      "css": "[object Object]",
+                      "href": "/",
+                    },
+                    "children": Array [
+                      Object {
+                        "data": "Test Site",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "text",
+                      },
+                    ],
+                    "name": "a",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": [Circular],
+                    "parent": [Circular],
+                    "prev": Object {
+                      "data": "Copyright © 2019 ",
+                      "next": [Circular],
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "text",
+                    },
+                    "type": "tag",
+                    "x-attribsNamespace": Object {
+                      "aria-current": undefined,
+                      "class": undefined,
+                      "css": undefined,
+                      "href": undefined,
+                    },
+                    "x-attribsPrefix": Object {
+                      "aria-current": undefined,
+                      "class": undefined,
+                      "css": undefined,
+                      "href": undefined,
+                    },
+                  },
+                  "type": "text",
+                },
+                Object {
+                  "attribs": Object {
+                    "css": "[object Object]",
+                    "href": "https://creativecommons.org/licenses/by-sa/4.0/",
+                    "rel": "license noopener",
+                    "target": "_blank",
+                  },
+                  "children": Array [
+                    Object {
+                      "data": "Some Rights Reserved",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "text",
+                    },
+                  ],
+                  "name": "a",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": Object {
+                    "data": ". ",
+                    "next": Object {
+                      "attribs": Object {
+                        "css": "[object Object]",
+                        "href": "https://github.com/jbhannah/jbhannah.net",
+                        "rel": "noopener",
+                        "target": "_blank",
+                      },
+                      "children": Array [
+                        Object {
+                          "data": "Source on GitHub",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "text",
+                        },
+                      ],
+                      "name": "a",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "next": Object {
+                        "data": ".",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": [Circular],
+                        "type": "text",
+                      },
+                      "parent": [Circular],
+                      "prev": [Circular],
+                      "type": "tag",
+                      "x-attribsNamespace": Object {
+                        "css": undefined,
+                        "href": undefined,
+                        "rel": undefined,
+                        "target": undefined,
+                      },
+                      "x-attribsPrefix": Object {
+                        "css": undefined,
+                        "href": undefined,
+                        "rel": undefined,
+                        "target": undefined,
+                      },
+                    },
+                    "parent": [Circular],
+                    "prev": [Circular],
+                    "type": "text",
+                  },
+                  "parent": [Circular],
+                  "prev": Object {
+                    "data": ". ",
+                    "next": [Circular],
+                    "parent": [Circular],
+                    "prev": Object {
+                      "attribs": Object {
+                        "aria-current": "page",
+                        "class": "",
+                        "css": "[object Object]",
+                        "href": "/",
+                      },
+                      "children": Array [
+                        Object {
+                          "data": "Test Site",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "text",
+                        },
+                      ],
+                      "name": "a",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "next": [Circular],
+                      "parent": [Circular],
+                      "prev": Object {
+                        "data": "Copyright © 2019 ",
+                        "next": [Circular],
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "text",
+                      },
+                      "type": "tag",
+                      "x-attribsNamespace": Object {
+                        "aria-current": undefined,
+                        "class": undefined,
+                        "css": undefined,
+                        "href": undefined,
+                      },
+                      "x-attribsPrefix": Object {
+                        "aria-current": undefined,
+                        "class": undefined,
+                        "css": undefined,
+                        "href": undefined,
+                      },
+                    },
+                    "type": "text",
+                  },
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "css": undefined,
+                    "href": undefined,
+                    "rel": undefined,
+                    "target": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "css": undefined,
+                    "href": undefined,
+                    "rel": undefined,
+                    "target": undefined,
+                  },
+                },
+                Object {
+                  "data": ". ",
+                  "next": Object {
+                    "attribs": Object {
+                      "css": "[object Object]",
+                      "href": "https://github.com/jbhannah/jbhannah.net",
+                      "rel": "noopener",
+                      "target": "_blank",
+                    },
+                    "children": Array [
+                      Object {
+                        "data": "Source on GitHub",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "text",
+                      },
+                    ],
+                    "name": "a",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": Object {
+                      "data": ".",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": [Circular],
+                      "type": "text",
+                    },
+                    "parent": [Circular],
+                    "prev": [Circular],
+                    "type": "tag",
+                    "x-attribsNamespace": Object {
+                      "css": undefined,
+                      "href": undefined,
+                      "rel": undefined,
+                      "target": undefined,
+                    },
+                    "x-attribsPrefix": Object {
+                      "css": undefined,
+                      "href": undefined,
+                      "rel": undefined,
+                      "target": undefined,
+                    },
+                  },
+                  "parent": [Circular],
+                  "prev": Object {
+                    "attribs": Object {
+                      "css": "[object Object]",
+                      "href": "https://creativecommons.org/licenses/by-sa/4.0/",
+                      "rel": "license noopener",
+                      "target": "_blank",
+                    },
+                    "children": Array [
+                      Object {
+                        "data": "Some Rights Reserved",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "text",
+                      },
+                    ],
+                    "name": "a",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": [Circular],
+                    "parent": [Circular],
+                    "prev": Object {
+                      "data": ". ",
+                      "next": [Circular],
+                      "parent": [Circular],
+                      "prev": Object {
+                        "attribs": Object {
+                          "aria-current": "page",
+                          "class": "",
+                          "css": "[object Object]",
+                          "href": "/",
+                        },
+                        "children": Array [
+                          Object {
+                            "data": "Test Site",
+                            "next": null,
+                            "parent": [Circular],
+                            "prev": null,
+                            "type": "text",
+                          },
+                        ],
+                        "name": "a",
+                        "namespace": "http://www.w3.org/1999/xhtml",
+                        "next": [Circular],
+                        "parent": [Circular],
+                        "prev": Object {
+                          "data": "Copyright © 2019 ",
+                          "next": [Circular],
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "text",
+                        },
+                        "type": "tag",
+                        "x-attribsNamespace": Object {
+                          "aria-current": undefined,
+                          "class": undefined,
+                          "css": undefined,
+                          "href": undefined,
+                        },
+                        "x-attribsPrefix": Object {
+                          "aria-current": undefined,
+                          "class": undefined,
+                          "css": undefined,
+                          "href": undefined,
+                        },
+                      },
+                      "type": "text",
+                    },
+                    "type": "tag",
+                    "x-attribsNamespace": Object {
+                      "css": undefined,
+                      "href": undefined,
+                      "rel": undefined,
+                      "target": undefined,
+                    },
+                    "x-attribsPrefix": Object {
+                      "css": undefined,
+                      "href": undefined,
+                      "rel": undefined,
+                      "target": undefined,
+                    },
+                  },
+                  "type": "text",
+                },
+                Object {
+                  "attribs": Object {
+                    "css": "[object Object]",
+                    "href": "https://github.com/jbhannah/jbhannah.net",
+                    "rel": "noopener",
+                    "target": "_blank",
+                  },
+                  "children": Array [
+                    Object {
+                      "data": "Source on GitHub",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "text",
+                    },
+                  ],
+                  "name": "a",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": Object {
+                    "data": ".",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": [Circular],
+                    "type": "text",
+                  },
+                  "parent": [Circular],
+                  "prev": Object {
+                    "data": ". ",
+                    "next": [Circular],
+                    "parent": [Circular],
+                    "prev": Object {
+                      "attribs": Object {
+                        "css": "[object Object]",
+                        "href": "https://creativecommons.org/licenses/by-sa/4.0/",
+                        "rel": "license noopener",
+                        "target": "_blank",
+                      },
+                      "children": Array [
+                        Object {
+                          "data": "Some Rights Reserved",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "text",
+                        },
+                      ],
+                      "name": "a",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "next": [Circular],
+                      "parent": [Circular],
+                      "prev": Object {
+                        "data": ". ",
+                        "next": [Circular],
+                        "parent": [Circular],
+                        "prev": Object {
+                          "attribs": Object {
+                            "aria-current": "page",
+                            "class": "",
+                            "css": "[object Object]",
+                            "href": "/",
+                          },
+                          "children": Array [
+                            Object {
+                              "data": "Test Site",
+                              "next": null,
+                              "parent": [Circular],
+                              "prev": null,
+                              "type": "text",
+                            },
+                          ],
+                          "name": "a",
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "next": [Circular],
+                          "parent": [Circular],
+                          "prev": Object {
+                            "data": "Copyright © 2019 ",
+                            "next": [Circular],
+                            "parent": [Circular],
+                            "prev": null,
+                            "type": "text",
+                          },
+                          "type": "tag",
+                          "x-attribsNamespace": Object {
+                            "aria-current": undefined,
+                            "class": undefined,
+                            "css": undefined,
+                            "href": undefined,
+                          },
+                          "x-attribsPrefix": Object {
+                            "aria-current": undefined,
+                            "class": undefined,
+                            "css": undefined,
+                            "href": undefined,
+                          },
+                        },
+                        "type": "text",
+                      },
+                      "type": "tag",
+                      "x-attribsNamespace": Object {
+                        "css": undefined,
+                        "href": undefined,
+                        "rel": undefined,
+                        "target": undefined,
+                      },
+                      "x-attribsPrefix": Object {
+                        "css": undefined,
+                        "href": undefined,
+                        "rel": undefined,
+                        "target": undefined,
+                      },
+                    },
+                    "type": "text",
+                  },
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "css": undefined,
+                    "href": undefined,
+                    "rel": undefined,
+                    "target": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "css": undefined,
+                    "href": undefined,
+                    "rel": undefined,
+                    "target": undefined,
+                  },
+                },
+                Object {
+                  "data": ".",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": Object {
+                    "attribs": Object {
+                      "css": "[object Object]",
+                      "href": "https://github.com/jbhannah/jbhannah.net",
+                      "rel": "noopener",
+                      "target": "_blank",
+                    },
+                    "children": Array [
+                      Object {
+                        "data": "Source on GitHub",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "text",
+                      },
+                    ],
+                    "name": "a",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": [Circular],
+                    "parent": [Circular],
+                    "prev": Object {
+                      "data": ". ",
+                      "next": [Circular],
+                      "parent": [Circular],
+                      "prev": Object {
+                        "attribs": Object {
+                          "css": "[object Object]",
+                          "href": "https://creativecommons.org/licenses/by-sa/4.0/",
+                          "rel": "license noopener",
+                          "target": "_blank",
+                        },
+                        "children": Array [
+                          Object {
+                            "data": "Some Rights Reserved",
+                            "next": null,
+                            "parent": [Circular],
+                            "prev": null,
+                            "type": "text",
+                          },
+                        ],
+                        "name": "a",
+                        "namespace": "http://www.w3.org/1999/xhtml",
+                        "next": [Circular],
+                        "parent": [Circular],
+                        "prev": Object {
+                          "data": ". ",
+                          "next": [Circular],
+                          "parent": [Circular],
+                          "prev": Object {
+                            "attribs": Object {
+                              "aria-current": "page",
+                              "class": "",
+                              "css": "[object Object]",
+                              "href": "/",
+                            },
+                            "children": Array [
+                              Object {
+                                "data": "Test Site",
+                                "next": null,
+                                "parent": [Circular],
+                                "prev": null,
+                                "type": "text",
+                              },
+                            ],
+                            "name": "a",
+                            "namespace": "http://www.w3.org/1999/xhtml",
+                            "next": [Circular],
+                            "parent": [Circular],
+                            "prev": Object {
+                              "data": "Copyright © 2019 ",
+                              "next": [Circular],
+                              "parent": [Circular],
+                              "prev": null,
+                              "type": "text",
+                            },
+                            "type": "tag",
+                            "x-attribsNamespace": Object {
+                              "aria-current": undefined,
+                              "class": undefined,
+                              "css": undefined,
+                              "href": undefined,
+                            },
+                            "x-attribsPrefix": Object {
+                              "aria-current": undefined,
+                              "class": undefined,
+                              "css": undefined,
+                              "href": undefined,
+                            },
+                          },
+                          "type": "text",
+                        },
+                        "type": "tag",
+                        "x-attribsNamespace": Object {
+                          "css": undefined,
+                          "href": undefined,
+                          "rel": undefined,
+                          "target": undefined,
+                        },
+                        "x-attribsPrefix": Object {
+                          "css": undefined,
+                          "href": undefined,
+                          "rel": undefined,
+                          "target": undefined,
+                        },
+                      },
+                      "type": "text",
+                    },
+                    "type": "tag",
+                    "x-attribsNamespace": Object {
+                      "css": undefined,
+                      "href": undefined,
+                      "rel": undefined,
+                      "target": undefined,
+                    },
+                    "x-attribsPrefix": Object {
+                      "css": undefined,
+                      "href": undefined,
+                      "rel": undefined,
+                      "target": undefined,
+                    },
+                  },
+                  "type": "text",
+                },
+              ],
+              "name": "div",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": null,
+              "parent": [Circular],
+              "prev": null,
+              "type": "tag",
+              "x-attribsNamespace": Object {},
+              "x-attribsPrefix": Object {},
+            },
+          ],
+          "name": "footer",
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "next": null,
+          "parent": [Circular],
+          "prev": [Circular],
+          "type": "tag",
+          "x-attribsNamespace": Object {
+            "css": undefined,
+          },
+          "x-attribsPrefix": Object {
+            "css": undefined,
+          },
+        },
+        "parent": [Circular],
+        "prev": Object {
+          "attribs": Object {
+            "css": "[object Object]",
+          },
+          "children": Array [
+            Object {
+              "attribs": Object {
+                "css": "[object Object]",
+              },
+              "children": Array [
+                Object {
+                  "attribs": Object {
+                    "aria-current": "page",
+                    "class": "",
+                    "css": "[object Object]",
+                    "href": "/",
+                  },
+                  "children": Array [
+                    Object {
+                      "data": "Test Site",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "text",
+                    },
+                  ],
+                  "name": "a",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "aria-current": undefined,
+                    "class": undefined,
+                    "css": undefined,
+                    "href": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "aria-current": undefined,
+                    "class": undefined,
+                    "css": undefined,
+                    "href": undefined,
+                  },
+                },
+              ],
+              "name": "h1",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": Object {
+                "attribs": Object {
+                  "css": "[object Object]",
+                },
+                "children": Array [
+                  Object {
+                    "attribs": Object {
+                      "css": "[object Object]",
+                    },
+                    "children": Array [
+                      Object {
+                        "attribs": Object {
+                          "css": "[object Object]",
+                        },
+                        "children": Array [
+                          Object {
+                            "attribs": Object {
+                              "css": "[object Object]",
+                              "href": "https://www.example.com",
+                              "rel": "noopener",
+                              "target": "_blank",
+                            },
+                            "children": Array [
+                              Object {
+                                "attribs": Object {
+                                  "alt": "Test Name on Test Service",
+                                  "css": "[object Object]",
+                                  "src": "test-file-stub",
+                                },
+                                "children": Array [],
+                                "name": "img",
+                                "namespace": "http://www.w3.org/1999/xhtml",
+                                "next": null,
+                                "parent": [Circular],
+                                "prev": null,
+                                "type": "tag",
+                                "x-attribsNamespace": Object {
+                                  "alt": undefined,
+                                  "css": undefined,
+                                  "src": undefined,
+                                },
+                                "x-attribsPrefix": Object {
+                                  "alt": undefined,
+                                  "css": undefined,
+                                  "src": undefined,
+                                },
+                              },
+                            ],
+                            "name": "a",
+                            "namespace": "http://www.w3.org/1999/xhtml",
+                            "next": null,
+                            "parent": [Circular],
+                            "prev": null,
+                            "type": "tag",
+                            "x-attribsNamespace": Object {
+                              "css": undefined,
+                              "href": undefined,
+                              "rel": undefined,
+                              "target": undefined,
+                            },
+                            "x-attribsPrefix": Object {
+                              "css": undefined,
+                              "href": undefined,
+                              "rel": undefined,
+                              "target": undefined,
+                            },
+                          },
+                        ],
+                        "name": "li",
+                        "namespace": "http://www.w3.org/1999/xhtml",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "tag",
+                        "x-attribsNamespace": Object {
+                          "css": undefined,
+                        },
+                        "x-attribsPrefix": Object {
+                          "css": undefined,
+                        },
+                      },
+                    ],
+                    "name": "ul",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "tag",
+                    "x-attribsNamespace": Object {
+                      "css": undefined,
+                    },
+                    "x-attribsPrefix": Object {
+                      "css": undefined,
+                    },
+                  },
+                ],
+                "name": "nav",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": null,
+                "parent": [Circular],
+                "prev": [Circular],
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "css": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "css": undefined,
+                },
+              },
+              "parent": [Circular],
+              "prev": null,
+              "type": "tag",
+              "x-attribsNamespace": Object {
+                "css": undefined,
+              },
+              "x-attribsPrefix": Object {
+                "css": undefined,
+              },
+            },
+            Object {
+              "attribs": Object {
+                "css": "[object Object]",
+              },
+              "children": Array [
+                Object {
+                  "attribs": Object {
+                    "css": "[object Object]",
+                  },
+                  "children": Array [
+                    Object {
+                      "attribs": Object {
+                        "css": "[object Object]",
+                      },
+                      "children": Array [
+                        Object {
+                          "attribs": Object {
+                            "css": "[object Object]",
+                            "href": "https://www.example.com",
+                            "rel": "noopener",
+                            "target": "_blank",
+                          },
+                          "children": Array [
+                            Object {
+                              "attribs": Object {
+                                "alt": "Test Name on Test Service",
+                                "css": "[object Object]",
+                                "src": "test-file-stub",
+                              },
+                              "children": Array [],
+                              "name": "img",
+                              "namespace": "http://www.w3.org/1999/xhtml",
+                              "next": null,
+                              "parent": [Circular],
+                              "prev": null,
+                              "type": "tag",
+                              "x-attribsNamespace": Object {
+                                "alt": undefined,
+                                "css": undefined,
+                                "src": undefined,
+                              },
+                              "x-attribsPrefix": Object {
+                                "alt": undefined,
+                                "css": undefined,
+                                "src": undefined,
+                              },
+                            },
+                          ],
+                          "name": "a",
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "tag",
+                          "x-attribsNamespace": Object {
+                            "css": undefined,
+                            "href": undefined,
+                            "rel": undefined,
+                            "target": undefined,
+                          },
+                          "x-attribsPrefix": Object {
+                            "css": undefined,
+                            "href": undefined,
+                            "rel": undefined,
+                            "target": undefined,
+                          },
+                        },
+                      ],
+                      "name": "li",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "tag",
+                      "x-attribsNamespace": Object {
+                        "css": undefined,
+                      },
+                      "x-attribsPrefix": Object {
+                        "css": undefined,
+                      },
+                    },
+                  ],
+                  "name": "ul",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "css": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "css": undefined,
+                  },
+                },
+              ],
+              "name": "nav",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": null,
+              "parent": [Circular],
+              "prev": Object {
+                "attribs": Object {
+                  "css": "[object Object]",
+                },
+                "children": Array [
+                  Object {
+                    "attribs": Object {
+                      "aria-current": "page",
+                      "class": "",
+                      "css": "[object Object]",
+                      "href": "/",
+                    },
+                    "children": Array [
+                      Object {
+                        "data": "Test Site",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "text",
+                      },
+                    ],
+                    "name": "a",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "tag",
+                    "x-attribsNamespace": Object {
+                      "aria-current": undefined,
+                      "class": undefined,
+                      "css": undefined,
+                      "href": undefined,
+                    },
+                    "x-attribsPrefix": Object {
+                      "aria-current": undefined,
+                      "class": undefined,
+                      "css": undefined,
+                      "href": undefined,
+                    },
+                  },
+                ],
+                "name": "h1",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": [Circular],
+                "parent": [Circular],
+                "prev": null,
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "css": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "css": undefined,
+                },
+              },
+              "type": "tag",
+              "x-attribsNamespace": Object {
+                "css": undefined,
+              },
+              "x-attribsPrefix": Object {
+                "css": undefined,
+              },
+            },
+          ],
+          "name": "header",
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "next": [Circular],
+          "parent": [Circular],
+          "prev": null,
+          "type": "tag",
+          "x-attribsNamespace": Object {
+            "css": undefined,
+          },
+          "x-attribsPrefix": Object {
+            "css": undefined,
+          },
+        },
+        "type": "tag",
+        "x-attribsNamespace": Object {
+          "css": undefined,
+        },
+        "x-attribsPrefix": Object {
+          "css": undefined,
+        },
+      },
+      Object {
+        "attribs": Object {
+          "css": "[object Object],[object Object]",
+        },
+        "children": Array [
+          Object {
+            "attribs": Object {},
+            "children": Array [
+              Object {
+                "data": "Copyright © 2019 ",
+                "next": Object {
+                  "attribs": Object {
+                    "aria-current": "page",
+                    "class": "",
+                    "css": "[object Object]",
+                    "href": "/",
+                  },
+                  "children": Array [
+                    Object {
+                      "data": "Test Site",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "text",
+                    },
+                  ],
+                  "name": "a",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": Object {
+                    "data": ". ",
+                    "next": Object {
+                      "attribs": Object {
+                        "css": "[object Object]",
+                        "href": "https://creativecommons.org/licenses/by-sa/4.0/",
+                        "rel": "license noopener",
+                        "target": "_blank",
+                      },
+                      "children": Array [
+                        Object {
+                          "data": "Some Rights Reserved",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "text",
+                        },
+                      ],
+                      "name": "a",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "next": Object {
+                        "data": ". ",
+                        "next": Object {
+                          "attribs": Object {
+                            "css": "[object Object]",
+                            "href": "https://github.com/jbhannah/jbhannah.net",
+                            "rel": "noopener",
+                            "target": "_blank",
+                          },
+                          "children": Array [
+                            Object {
+                              "data": "Source on GitHub",
+                              "next": null,
+                              "parent": [Circular],
+                              "prev": null,
+                              "type": "text",
+                            },
+                          ],
+                          "name": "a",
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "next": Object {
+                            "data": ".",
+                            "next": null,
+                            "parent": [Circular],
+                            "prev": [Circular],
+                            "type": "text",
+                          },
+                          "parent": [Circular],
+                          "prev": [Circular],
+                          "type": "tag",
+                          "x-attribsNamespace": Object {
+                            "css": undefined,
+                            "href": undefined,
+                            "rel": undefined,
+                            "target": undefined,
+                          },
+                          "x-attribsPrefix": Object {
+                            "css": undefined,
+                            "href": undefined,
+                            "rel": undefined,
+                            "target": undefined,
+                          },
+                        },
+                        "parent": [Circular],
+                        "prev": [Circular],
+                        "type": "text",
+                      },
+                      "parent": [Circular],
+                      "prev": [Circular],
+                      "type": "tag",
+                      "x-attribsNamespace": Object {
+                        "css": undefined,
+                        "href": undefined,
+                        "rel": undefined,
+                        "target": undefined,
+                      },
+                      "x-attribsPrefix": Object {
+                        "css": undefined,
+                        "href": undefined,
+                        "rel": undefined,
+                        "target": undefined,
+                      },
+                    },
+                    "parent": [Circular],
+                    "prev": [Circular],
+                    "type": "text",
+                  },
+                  "parent": [Circular],
+                  "prev": [Circular],
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "aria-current": undefined,
+                    "class": undefined,
+                    "css": undefined,
+                    "href": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "aria-current": undefined,
+                    "class": undefined,
+                    "css": undefined,
+                    "href": undefined,
+                  },
+                },
+                "parent": [Circular],
+                "prev": null,
+                "type": "text",
+              },
+              Object {
+                "attribs": Object {
+                  "aria-current": "page",
+                  "class": "",
+                  "css": "[object Object]",
+                  "href": "/",
+                },
+                "children": Array [
+                  Object {
+                    "data": "Test Site",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "text",
+                  },
+                ],
+                "name": "a",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": Object {
+                  "data": ". ",
+                  "next": Object {
+                    "attribs": Object {
+                      "css": "[object Object]",
+                      "href": "https://creativecommons.org/licenses/by-sa/4.0/",
+                      "rel": "license noopener",
+                      "target": "_blank",
+                    },
+                    "children": Array [
+                      Object {
+                        "data": "Some Rights Reserved",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "text",
+                      },
+                    ],
+                    "name": "a",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": Object {
+                      "data": ". ",
+                      "next": Object {
+                        "attribs": Object {
+                          "css": "[object Object]",
+                          "href": "https://github.com/jbhannah/jbhannah.net",
+                          "rel": "noopener",
+                          "target": "_blank",
+                        },
+                        "children": Array [
+                          Object {
+                            "data": "Source on GitHub",
+                            "next": null,
+                            "parent": [Circular],
+                            "prev": null,
+                            "type": "text",
+                          },
+                        ],
+                        "name": "a",
+                        "namespace": "http://www.w3.org/1999/xhtml",
+                        "next": Object {
+                          "data": ".",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": [Circular],
+                          "type": "text",
+                        },
+                        "parent": [Circular],
+                        "prev": [Circular],
+                        "type": "tag",
+                        "x-attribsNamespace": Object {
+                          "css": undefined,
+                          "href": undefined,
+                          "rel": undefined,
+                          "target": undefined,
+                        },
+                        "x-attribsPrefix": Object {
+                          "css": undefined,
+                          "href": undefined,
+                          "rel": undefined,
+                          "target": undefined,
+                        },
+                      },
+                      "parent": [Circular],
+                      "prev": [Circular],
+                      "type": "text",
+                    },
+                    "parent": [Circular],
+                    "prev": [Circular],
+                    "type": "tag",
+                    "x-attribsNamespace": Object {
+                      "css": undefined,
+                      "href": undefined,
+                      "rel": undefined,
+                      "target": undefined,
+                    },
+                    "x-attribsPrefix": Object {
+                      "css": undefined,
+                      "href": undefined,
+                      "rel": undefined,
+                      "target": undefined,
+                    },
+                  },
+                  "parent": [Circular],
+                  "prev": [Circular],
+                  "type": "text",
+                },
+                "parent": [Circular],
+                "prev": Object {
+                  "data": "Copyright © 2019 ",
+                  "next": [Circular],
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "text",
+                },
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "aria-current": undefined,
+                  "class": undefined,
+                  "css": undefined,
+                  "href": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "aria-current": undefined,
+                  "class": undefined,
+                  "css": undefined,
+                  "href": undefined,
+                },
+              },
+              Object {
+                "data": ". ",
+                "next": Object {
+                  "attribs": Object {
+                    "css": "[object Object]",
+                    "href": "https://creativecommons.org/licenses/by-sa/4.0/",
+                    "rel": "license noopener",
+                    "target": "_blank",
+                  },
+                  "children": Array [
+                    Object {
+                      "data": "Some Rights Reserved",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "text",
+                    },
+                  ],
+                  "name": "a",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": Object {
+                    "data": ". ",
+                    "next": Object {
+                      "attribs": Object {
+                        "css": "[object Object]",
+                        "href": "https://github.com/jbhannah/jbhannah.net",
+                        "rel": "noopener",
+                        "target": "_blank",
+                      },
+                      "children": Array [
+                        Object {
+                          "data": "Source on GitHub",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "text",
+                        },
+                      ],
+                      "name": "a",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "next": Object {
+                        "data": ".",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": [Circular],
+                        "type": "text",
+                      },
+                      "parent": [Circular],
+                      "prev": [Circular],
+                      "type": "tag",
+                      "x-attribsNamespace": Object {
+                        "css": undefined,
+                        "href": undefined,
+                        "rel": undefined,
+                        "target": undefined,
+                      },
+                      "x-attribsPrefix": Object {
+                        "css": undefined,
+                        "href": undefined,
+                        "rel": undefined,
+                        "target": undefined,
+                      },
+                    },
+                    "parent": [Circular],
+                    "prev": [Circular],
+                    "type": "text",
+                  },
+                  "parent": [Circular],
+                  "prev": [Circular],
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "css": undefined,
+                    "href": undefined,
+                    "rel": undefined,
+                    "target": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "css": undefined,
+                    "href": undefined,
+                    "rel": undefined,
+                    "target": undefined,
+                  },
+                },
+                "parent": [Circular],
+                "prev": Object {
+                  "attribs": Object {
+                    "aria-current": "page",
+                    "class": "",
+                    "css": "[object Object]",
+                    "href": "/",
+                  },
+                  "children": Array [
+                    Object {
+                      "data": "Test Site",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "text",
+                    },
+                  ],
+                  "name": "a",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": [Circular],
+                  "parent": [Circular],
+                  "prev": Object {
+                    "data": "Copyright © 2019 ",
+                    "next": [Circular],
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "text",
+                  },
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "aria-current": undefined,
+                    "class": undefined,
+                    "css": undefined,
+                    "href": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "aria-current": undefined,
+                    "class": undefined,
+                    "css": undefined,
+                    "href": undefined,
+                  },
+                },
+                "type": "text",
+              },
+              Object {
+                "attribs": Object {
+                  "css": "[object Object]",
+                  "href": "https://creativecommons.org/licenses/by-sa/4.0/",
+                  "rel": "license noopener",
+                  "target": "_blank",
+                },
+                "children": Array [
+                  Object {
+                    "data": "Some Rights Reserved",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "text",
+                  },
+                ],
+                "name": "a",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": Object {
+                  "data": ". ",
+                  "next": Object {
+                    "attribs": Object {
+                      "css": "[object Object]",
+                      "href": "https://github.com/jbhannah/jbhannah.net",
+                      "rel": "noopener",
+                      "target": "_blank",
+                    },
+                    "children": Array [
+                      Object {
+                        "data": "Source on GitHub",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "text",
+                      },
+                    ],
+                    "name": "a",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": Object {
+                      "data": ".",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": [Circular],
+                      "type": "text",
+                    },
+                    "parent": [Circular],
+                    "prev": [Circular],
+                    "type": "tag",
+                    "x-attribsNamespace": Object {
+                      "css": undefined,
+                      "href": undefined,
+                      "rel": undefined,
+                      "target": undefined,
+                    },
+                    "x-attribsPrefix": Object {
+                      "css": undefined,
+                      "href": undefined,
+                      "rel": undefined,
+                      "target": undefined,
+                    },
+                  },
+                  "parent": [Circular],
+                  "prev": [Circular],
+                  "type": "text",
+                },
+                "parent": [Circular],
+                "prev": Object {
+                  "data": ". ",
+                  "next": [Circular],
+                  "parent": [Circular],
+                  "prev": Object {
+                    "attribs": Object {
+                      "aria-current": "page",
+                      "class": "",
+                      "css": "[object Object]",
+                      "href": "/",
+                    },
+                    "children": Array [
+                      Object {
+                        "data": "Test Site",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "text",
+                      },
+                    ],
+                    "name": "a",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": [Circular],
+                    "parent": [Circular],
+                    "prev": Object {
+                      "data": "Copyright © 2019 ",
+                      "next": [Circular],
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "text",
+                    },
+                    "type": "tag",
+                    "x-attribsNamespace": Object {
+                      "aria-current": undefined,
+                      "class": undefined,
+                      "css": undefined,
+                      "href": undefined,
+                    },
+                    "x-attribsPrefix": Object {
+                      "aria-current": undefined,
+                      "class": undefined,
+                      "css": undefined,
+                      "href": undefined,
+                    },
+                  },
+                  "type": "text",
+                },
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "css": undefined,
+                  "href": undefined,
+                  "rel": undefined,
+                  "target": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "css": undefined,
+                  "href": undefined,
+                  "rel": undefined,
+                  "target": undefined,
+                },
+              },
+              Object {
+                "data": ". ",
+                "next": Object {
+                  "attribs": Object {
+                    "css": "[object Object]",
+                    "href": "https://github.com/jbhannah/jbhannah.net",
+                    "rel": "noopener",
+                    "target": "_blank",
+                  },
+                  "children": Array [
+                    Object {
+                      "data": "Source on GitHub",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "text",
+                    },
+                  ],
+                  "name": "a",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": Object {
+                    "data": ".",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": [Circular],
+                    "type": "text",
+                  },
+                  "parent": [Circular],
+                  "prev": [Circular],
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "css": undefined,
+                    "href": undefined,
+                    "rel": undefined,
+                    "target": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "css": undefined,
+                    "href": undefined,
+                    "rel": undefined,
+                    "target": undefined,
+                  },
+                },
+                "parent": [Circular],
+                "prev": Object {
+                  "attribs": Object {
+                    "css": "[object Object]",
+                    "href": "https://creativecommons.org/licenses/by-sa/4.0/",
+                    "rel": "license noopener",
+                    "target": "_blank",
+                  },
+                  "children": Array [
+                    Object {
+                      "data": "Some Rights Reserved",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "text",
+                    },
+                  ],
+                  "name": "a",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": [Circular],
+                  "parent": [Circular],
+                  "prev": Object {
+                    "data": ". ",
+                    "next": [Circular],
+                    "parent": [Circular],
+                    "prev": Object {
+                      "attribs": Object {
+                        "aria-current": "page",
+                        "class": "",
+                        "css": "[object Object]",
+                        "href": "/",
+                      },
+                      "children": Array [
+                        Object {
+                          "data": "Test Site",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "text",
+                        },
+                      ],
+                      "name": "a",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "next": [Circular],
+                      "parent": [Circular],
+                      "prev": Object {
+                        "data": "Copyright © 2019 ",
+                        "next": [Circular],
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "text",
+                      },
+                      "type": "tag",
+                      "x-attribsNamespace": Object {
+                        "aria-current": undefined,
+                        "class": undefined,
+                        "css": undefined,
+                        "href": undefined,
+                      },
+                      "x-attribsPrefix": Object {
+                        "aria-current": undefined,
+                        "class": undefined,
+                        "css": undefined,
+                        "href": undefined,
+                      },
+                    },
+                    "type": "text",
+                  },
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "css": undefined,
+                    "href": undefined,
+                    "rel": undefined,
+                    "target": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "css": undefined,
+                    "href": undefined,
+                    "rel": undefined,
+                    "target": undefined,
+                  },
+                },
+                "type": "text",
+              },
+              Object {
+                "attribs": Object {
+                  "css": "[object Object]",
+                  "href": "https://github.com/jbhannah/jbhannah.net",
+                  "rel": "noopener",
+                  "target": "_blank",
+                },
+                "children": Array [
+                  Object {
+                    "data": "Source on GitHub",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "text",
+                  },
+                ],
+                "name": "a",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": Object {
+                  "data": ".",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": [Circular],
+                  "type": "text",
+                },
+                "parent": [Circular],
+                "prev": Object {
+                  "data": ". ",
+                  "next": [Circular],
+                  "parent": [Circular],
+                  "prev": Object {
+                    "attribs": Object {
+                      "css": "[object Object]",
+                      "href": "https://creativecommons.org/licenses/by-sa/4.0/",
+                      "rel": "license noopener",
+                      "target": "_blank",
+                    },
+                    "children": Array [
+                      Object {
+                        "data": "Some Rights Reserved",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "text",
+                      },
+                    ],
+                    "name": "a",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": [Circular],
+                    "parent": [Circular],
+                    "prev": Object {
+                      "data": ". ",
+                      "next": [Circular],
+                      "parent": [Circular],
+                      "prev": Object {
+                        "attribs": Object {
+                          "aria-current": "page",
+                          "class": "",
+                          "css": "[object Object]",
+                          "href": "/",
+                        },
+                        "children": Array [
+                          Object {
+                            "data": "Test Site",
+                            "next": null,
+                            "parent": [Circular],
+                            "prev": null,
+                            "type": "text",
+                          },
+                        ],
+                        "name": "a",
+                        "namespace": "http://www.w3.org/1999/xhtml",
+                        "next": [Circular],
+                        "parent": [Circular],
+                        "prev": Object {
+                          "data": "Copyright © 2019 ",
+                          "next": [Circular],
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "text",
+                        },
+                        "type": "tag",
+                        "x-attribsNamespace": Object {
+                          "aria-current": undefined,
+                          "class": undefined,
+                          "css": undefined,
+                          "href": undefined,
+                        },
+                        "x-attribsPrefix": Object {
+                          "aria-current": undefined,
+                          "class": undefined,
+                          "css": undefined,
+                          "href": undefined,
+                        },
+                      },
+                      "type": "text",
+                    },
+                    "type": "tag",
+                    "x-attribsNamespace": Object {
+                      "css": undefined,
+                      "href": undefined,
+                      "rel": undefined,
+                      "target": undefined,
+                    },
+                    "x-attribsPrefix": Object {
+                      "css": undefined,
+                      "href": undefined,
+                      "rel": undefined,
+                      "target": undefined,
+                    },
+                  },
+                  "type": "text",
+                },
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "css": undefined,
+                  "href": undefined,
+                  "rel": undefined,
+                  "target": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "css": undefined,
+                  "href": undefined,
+                  "rel": undefined,
+                  "target": undefined,
+                },
+              },
+              Object {
+                "data": ".",
+                "next": null,
+                "parent": [Circular],
+                "prev": Object {
+                  "attribs": Object {
+                    "css": "[object Object]",
+                    "href": "https://github.com/jbhannah/jbhannah.net",
+                    "rel": "noopener",
+                    "target": "_blank",
+                  },
+                  "children": Array [
+                    Object {
+                      "data": "Source on GitHub",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "text",
+                    },
+                  ],
+                  "name": "a",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": [Circular],
+                  "parent": [Circular],
+                  "prev": Object {
+                    "data": ". ",
+                    "next": [Circular],
+                    "parent": [Circular],
+                    "prev": Object {
+                      "attribs": Object {
+                        "css": "[object Object]",
+                        "href": "https://creativecommons.org/licenses/by-sa/4.0/",
+                        "rel": "license noopener",
+                        "target": "_blank",
+                      },
+                      "children": Array [
+                        Object {
+                          "data": "Some Rights Reserved",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "text",
+                        },
+                      ],
+                      "name": "a",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "next": [Circular],
+                      "parent": [Circular],
+                      "prev": Object {
+                        "data": ". ",
+                        "next": [Circular],
+                        "parent": [Circular],
+                        "prev": Object {
+                          "attribs": Object {
+                            "aria-current": "page",
+                            "class": "",
+                            "css": "[object Object]",
+                            "href": "/",
+                          },
+                          "children": Array [
+                            Object {
+                              "data": "Test Site",
+                              "next": null,
+                              "parent": [Circular],
+                              "prev": null,
+                              "type": "text",
+                            },
+                          ],
+                          "name": "a",
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "next": [Circular],
+                          "parent": [Circular],
+                          "prev": Object {
+                            "data": "Copyright © 2019 ",
+                            "next": [Circular],
+                            "parent": [Circular],
+                            "prev": null,
+                            "type": "text",
+                          },
+                          "type": "tag",
+                          "x-attribsNamespace": Object {
+                            "aria-current": undefined,
+                            "class": undefined,
+                            "css": undefined,
+                            "href": undefined,
+                          },
+                          "x-attribsPrefix": Object {
+                            "aria-current": undefined,
+                            "class": undefined,
+                            "css": undefined,
+                            "href": undefined,
+                          },
+                        },
+                        "type": "text",
+                      },
+                      "type": "tag",
+                      "x-attribsNamespace": Object {
+                        "css": undefined,
+                        "href": undefined,
+                        "rel": undefined,
+                        "target": undefined,
+                      },
+                      "x-attribsPrefix": Object {
+                        "css": undefined,
+                        "href": undefined,
+                        "rel": undefined,
+                        "target": undefined,
+                      },
+                    },
+                    "type": "text",
+                  },
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "css": undefined,
+                    "href": undefined,
+                    "rel": undefined,
+                    "target": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "css": undefined,
+                    "href": undefined,
+                    "rel": undefined,
+                    "target": undefined,
+                  },
+                },
+                "type": "text",
+              },
+            ],
+            "name": "div",
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "next": null,
+            "parent": [Circular],
+            "prev": null,
+            "type": "tag",
+            "x-attribsNamespace": Object {},
+            "x-attribsPrefix": Object {},
+          },
+        ],
+        "name": "footer",
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "next": null,
+        "parent": [Circular],
+        "prev": Object {
+          "attribs": Object {
+            "css": "[object Object],[object Object]",
+          },
+          "children": Array [],
+          "name": "main",
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "next": [Circular],
+          "parent": [Circular],
+          "prev": Object {
+            "attribs": Object {
+              "css": "[object Object]",
+            },
+            "children": Array [
+              Object {
+                "attribs": Object {
+                  "css": "[object Object]",
+                },
+                "children": Array [
+                  Object {
+                    "attribs": Object {
+                      "aria-current": "page",
+                      "class": "",
+                      "css": "[object Object]",
+                      "href": "/",
+                    },
+                    "children": Array [
+                      Object {
+                        "data": "Test Site",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "text",
+                      },
+                    ],
+                    "name": "a",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "tag",
+                    "x-attribsNamespace": Object {
+                      "aria-current": undefined,
+                      "class": undefined,
+                      "css": undefined,
+                      "href": undefined,
+                    },
+                    "x-attribsPrefix": Object {
+                      "aria-current": undefined,
+                      "class": undefined,
+                      "css": undefined,
+                      "href": undefined,
+                    },
+                  },
+                ],
+                "name": "h1",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": Object {
+                  "attribs": Object {
+                    "css": "[object Object]",
+                  },
+                  "children": Array [
+                    Object {
+                      "attribs": Object {
+                        "css": "[object Object]",
+                      },
+                      "children": Array [
+                        Object {
+                          "attribs": Object {
+                            "css": "[object Object]",
+                          },
+                          "children": Array [
+                            Object {
+                              "attribs": Object {
+                                "css": "[object Object]",
+                                "href": "https://www.example.com",
+                                "rel": "noopener",
+                                "target": "_blank",
+                              },
+                              "children": Array [
+                                Object {
+                                  "attribs": Object {
+                                    "alt": "Test Name on Test Service",
+                                    "css": "[object Object]",
+                                    "src": "test-file-stub",
+                                  },
+                                  "children": Array [],
+                                  "name": "img",
+                                  "namespace": "http://www.w3.org/1999/xhtml",
+                                  "next": null,
+                                  "parent": [Circular],
+                                  "prev": null,
+                                  "type": "tag",
+                                  "x-attribsNamespace": Object {
+                                    "alt": undefined,
+                                    "css": undefined,
+                                    "src": undefined,
+                                  },
+                                  "x-attribsPrefix": Object {
+                                    "alt": undefined,
+                                    "css": undefined,
+                                    "src": undefined,
+                                  },
+                                },
+                              ],
+                              "name": "a",
+                              "namespace": "http://www.w3.org/1999/xhtml",
+                              "next": null,
+                              "parent": [Circular],
+                              "prev": null,
+                              "type": "tag",
+                              "x-attribsNamespace": Object {
+                                "css": undefined,
+                                "href": undefined,
+                                "rel": undefined,
+                                "target": undefined,
+                              },
+                              "x-attribsPrefix": Object {
+                                "css": undefined,
+                                "href": undefined,
+                                "rel": undefined,
+                                "target": undefined,
+                              },
+                            },
+                          ],
+                          "name": "li",
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "tag",
+                          "x-attribsNamespace": Object {
+                            "css": undefined,
+                          },
+                          "x-attribsPrefix": Object {
+                            "css": undefined,
+                          },
+                        },
+                      ],
+                      "name": "ul",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "tag",
+                      "x-attribsNamespace": Object {
+                        "css": undefined,
+                      },
+                      "x-attribsPrefix": Object {
+                        "css": undefined,
+                      },
+                    },
+                  ],
+                  "name": "nav",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": [Circular],
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "css": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "css": undefined,
+                  },
+                },
+                "parent": [Circular],
+                "prev": null,
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "css": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "css": undefined,
+                },
+              },
+              Object {
+                "attribs": Object {
+                  "css": "[object Object]",
+                },
+                "children": Array [
+                  Object {
+                    "attribs": Object {
+                      "css": "[object Object]",
+                    },
+                    "children": Array [
+                      Object {
+                        "attribs": Object {
+                          "css": "[object Object]",
+                        },
+                        "children": Array [
+                          Object {
+                            "attribs": Object {
+                              "css": "[object Object]",
+                              "href": "https://www.example.com",
+                              "rel": "noopener",
+                              "target": "_blank",
+                            },
+                            "children": Array [
+                              Object {
+                                "attribs": Object {
+                                  "alt": "Test Name on Test Service",
+                                  "css": "[object Object]",
+                                  "src": "test-file-stub",
+                                },
+                                "children": Array [],
+                                "name": "img",
+                                "namespace": "http://www.w3.org/1999/xhtml",
+                                "next": null,
+                                "parent": [Circular],
+                                "prev": null,
+                                "type": "tag",
+                                "x-attribsNamespace": Object {
+                                  "alt": undefined,
+                                  "css": undefined,
+                                  "src": undefined,
+                                },
+                                "x-attribsPrefix": Object {
+                                  "alt": undefined,
+                                  "css": undefined,
+                                  "src": undefined,
+                                },
+                              },
+                            ],
+                            "name": "a",
+                            "namespace": "http://www.w3.org/1999/xhtml",
+                            "next": null,
+                            "parent": [Circular],
+                            "prev": null,
+                            "type": "tag",
+                            "x-attribsNamespace": Object {
+                              "css": undefined,
+                              "href": undefined,
+                              "rel": undefined,
+                              "target": undefined,
+                            },
+                            "x-attribsPrefix": Object {
+                              "css": undefined,
+                              "href": undefined,
+                              "rel": undefined,
+                              "target": undefined,
+                            },
+                          },
+                        ],
+                        "name": "li",
+                        "namespace": "http://www.w3.org/1999/xhtml",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "tag",
+                        "x-attribsNamespace": Object {
+                          "css": undefined,
+                        },
+                        "x-attribsPrefix": Object {
+                          "css": undefined,
+                        },
+                      },
+                    ],
+                    "name": "ul",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "tag",
+                    "x-attribsNamespace": Object {
+                      "css": undefined,
+                    },
+                    "x-attribsPrefix": Object {
+                      "css": undefined,
+                    },
+                  },
+                ],
+                "name": "nav",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": null,
+                "parent": [Circular],
+                "prev": Object {
+                  "attribs": Object {
+                    "css": "[object Object]",
+                  },
+                  "children": Array [
+                    Object {
+                      "attribs": Object {
+                        "aria-current": "page",
+                        "class": "",
+                        "css": "[object Object]",
+                        "href": "/",
+                      },
+                      "children": Array [
+                        Object {
+                          "data": "Test Site",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "text",
+                        },
+                      ],
+                      "name": "a",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "tag",
+                      "x-attribsNamespace": Object {
+                        "aria-current": undefined,
+                        "class": undefined,
+                        "css": undefined,
+                        "href": undefined,
+                      },
+                      "x-attribsPrefix": Object {
+                        "aria-current": undefined,
+                        "class": undefined,
+                        "css": undefined,
+                        "href": undefined,
+                      },
+                    },
+                  ],
+                  "name": "h1",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": [Circular],
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "css": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "css": undefined,
+                  },
+                },
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "css": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "css": undefined,
+                },
+              },
+            ],
+            "name": "header",
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "next": [Circular],
+            "parent": [Circular],
+            "prev": null,
+            "type": "tag",
+            "x-attribsNamespace": Object {
+              "css": undefined,
+            },
+            "x-attribsPrefix": Object {
+              "css": undefined,
+            },
+          },
+          "type": "tag",
+          "x-attribsNamespace": Object {
+            "css": undefined,
+          },
+          "x-attribsPrefix": Object {
+            "css": undefined,
+          },
+        },
+        "type": "tag",
+        "x-attribsNamespace": Object {
+          "css": undefined,
+        },
+        "x-attribsPrefix": Object {
+          "css": undefined,
+        },
+      },
+    ],
+    "name": "div",
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "next": null,
+    "parent": null,
+    "prev": null,
+    "root": Object {
+      "attribs": Object {},
+      "children": Array [
+        [Circular],
+      ],
+      "name": "root",
+      "namespace": "http://www.w3.org/1999/xhtml",
+      "next": null,
+      "parent": null,
+      "prev": null,
+      "type": "root",
+      "x-attribsNamespace": Object {},
+      "x-attribsPrefix": Object {},
+    },
+    "type": "tag",
+    "x-attribsNamespace": Object {
+      "css": undefined,
+    },
+    "x-attribsPrefix": Object {
+      "css": undefined,
+    },
+  },
+  "_root": [Circular],
+  "length": 1,
+  "options": Object {
+    "decodeEntities": true,
+    "normalizeWhitespace": false,
+    "withDomLvl1": true,
+    "xml": false,
+  },
+}
+`;
+
+exports[`PureLayout renders correctly 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <PureLayout
+    data={
+      Object {
+        "site": Object {
+          "siteMetadata": Object {
+            "socialLinks": Array [
+              Object {
+                "key": "Test Service",
+                "link": "https://www.example.com",
+                "name": "Test Name",
+                "service": "Test Service",
+              },
+            ],
+            "title": "Test Site",
+          },
+        },
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <ForwardRef(render)
+          styles={
+            Object {
+              ".gatsby-highlight": Object {
+                "& pre[class*=language-]": Object {
+                  "backgroundColor": "transparent",
+                  "float": "left",
+                  "margin": 0,
+                  "minWidth": "100%",
+                  "overflow": "initial",
+                  "padding": "0 1em 0 0",
+                },
+                "backgroundColor": "#fdf6e3",
+                "borderRadius": "0.3em",
+                "marginBottom": "1.58em",
+                "overflow": "auto",
+                "padding": "1em",
+              },
+              ".gatsby-highlight-code-line": Object {
+                "backgroundColor": "#feb",
+                "borderLeft": "0.3em solid #f99",
+                "display": "block",
+                "marginLeft": "-1.2em",
+                "marginRight": "-2.2em",
+                "paddingLeft": "0.9em",
+                "paddingRight": "1em",
+              },
+            }
+          }
+        />,
+        <HelmetWrapper
+          defer={true}
+          encodeSpecialCharacters={true}
+          title="Test Site"
+        />,
+        <Header
+          socialLinks={
+            Array [
+              Object {
+                "key": "Test Service",
+                "link": "https://www.example.com",
+                "name": "Test Name",
+                "service": "Test Service",
+              },
+            ]
+          }
+          title="Test Site"
+        />,
+        <main
+          css={
+            Array [
+              Object {
+                "margin": "0 auto",
+                "maxWidth": "42rem",
+                "padding": "0 1rem",
+                "width": "100%",
+              },
+              Object {
+                "@media only screen and (min-width: 59rem)": Object {
+                  "margin": 0,
+                },
+                "flexGrow": 1,
+              },
+            ]
+          }
+        />,
+        <Footer
+          title="Test Site"
+        />,
+      ],
+      "css": Object {
+        "@media only screen and (min-width: 59rem)": Object {
+          "flexFlow": "row wrap",
+        },
+        "@media only screen and (min-width: 70rem)": Object {
+          "maxWidth": "42rem",
+        },
+        "display": "flex",
+        "flexDirection": "column",
+        "margin": "0 auto",
+        "maxWidth": "54rem",
+        "minHeight": "100vh",
+      },
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "styles": Object {
+            ".gatsby-highlight": Object {
+              "& pre[class*=language-]": Object {
+                "backgroundColor": "transparent",
+                "float": "left",
+                "margin": 0,
+                "minWidth": "100%",
+                "overflow": "initial",
+                "padding": "0 1em 0 0",
+              },
+              "backgroundColor": "#fdf6e3",
+              "borderRadius": "0.3em",
+              "marginBottom": "1.58em",
+              "overflow": "auto",
+              "padding": "1em",
+            },
+            ".gatsby-highlight-code-line": Object {
+              "backgroundColor": "#feb",
+              "borderLeft": "0.3em solid #f99",
+              "display": "block",
+              "marginLeft": "-1.2em",
+              "marginRight": "-2.2em",
+              "paddingLeft": "0.9em",
+              "paddingRight": "1em",
+            },
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "render": [Function],
+        },
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "defer": true,
+          "encodeSpecialCharacters": true,
+          "title": "Test Site",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "socialLinks": Array [
+            Object {
+              "key": "Test Service",
+              "link": "https://www.example.com",
+              "name": "Test Name",
+              "service": "Test Service",
+            },
+          ],
+          "title": "Test Site",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": undefined,
+          "css": Array [
+            Object {
+              "margin": "0 auto",
+              "maxWidth": "42rem",
+              "padding": "0 1rem",
+              "width": "100%",
+            },
+            Object {
+              "@media only screen and (min-width: 59rem)": Object {
+                "margin": 0,
+              },
+              "flexGrow": 1,
+            },
+          ],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "main",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "title": "Test Site",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <ForwardRef(render)
+            styles={
+              Object {
+                ".gatsby-highlight": Object {
+                  "& pre[class*=language-]": Object {
+                    "backgroundColor": "transparent",
+                    "float": "left",
+                    "margin": 0,
+                    "minWidth": "100%",
+                    "overflow": "initial",
+                    "padding": "0 1em 0 0",
+                  },
+                  "backgroundColor": "#fdf6e3",
+                  "borderRadius": "0.3em",
+                  "marginBottom": "1.58em",
+                  "overflow": "auto",
+                  "padding": "1em",
+                },
+                ".gatsby-highlight-code-line": Object {
+                  "backgroundColor": "#feb",
+                  "borderLeft": "0.3em solid #f99",
+                  "display": "block",
+                  "marginLeft": "-1.2em",
+                  "marginRight": "-2.2em",
+                  "paddingLeft": "0.9em",
+                  "paddingRight": "1em",
+                },
+              }
+            }
+          />,
+          <HelmetWrapper
+            defer={true}
+            encodeSpecialCharacters={true}
+            title="Test Site"
+          />,
+          <Header
+            socialLinks={
+              Array [
+                Object {
+                  "key": "Test Service",
+                  "link": "https://www.example.com",
+                  "name": "Test Name",
+                  "service": "Test Service",
+                },
+              ]
+            }
+            title="Test Site"
+          />,
+          <main
+            css={
+              Array [
+                Object {
+                  "margin": "0 auto",
+                  "maxWidth": "42rem",
+                  "padding": "0 1rem",
+                  "width": "100%",
+                },
+                Object {
+                  "@media only screen and (min-width: 59rem)": Object {
+                    "margin": 0,
+                  },
+                  "flexGrow": 1,
+                },
+              ]
+            }
+          />,
+          <Footer
+            title="Test Site"
+          />,
+        ],
+        "css": Object {
+          "@media only screen and (min-width: 59rem)": Object {
+            "flexFlow": "row wrap",
+          },
+          "@media only screen and (min-width: 70rem)": Object {
+            "maxWidth": "42rem",
+          },
+          "display": "flex",
+          "flexDirection": "column",
+          "margin": "0 auto",
+          "maxWidth": "54rem",
+          "minHeight": "100vh",
+        },
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "styles": Object {
+              ".gatsby-highlight": Object {
+                "& pre[class*=language-]": Object {
+                  "backgroundColor": "transparent",
+                  "float": "left",
+                  "margin": 0,
+                  "minWidth": "100%",
+                  "overflow": "initial",
+                  "padding": "0 1em 0 0",
+                },
+                "backgroundColor": "#fdf6e3",
+                "borderRadius": "0.3em",
+                "marginBottom": "1.58em",
+                "overflow": "auto",
+                "padding": "1em",
+              },
+              ".gatsby-highlight-code-line": Object {
+                "backgroundColor": "#feb",
+                "borderLeft": "0.3em solid #f99",
+                "display": "block",
+                "marginLeft": "-1.2em",
+                "marginRight": "-2.2em",
+                "paddingLeft": "0.9em",
+                "paddingRight": "1em",
+              },
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "render": [Function],
+          },
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "defer": true,
+            "encodeSpecialCharacters": true,
+            "title": "Test Site",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "socialLinks": Array [
+              Object {
+                "key": "Test Service",
+                "link": "https://www.example.com",
+                "name": "Test Name",
+                "service": "Test Service",
+              },
+            ],
+            "title": "Test Site",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": undefined,
+            "css": Array [
+              Object {
+                "margin": "0 auto",
+                "maxWidth": "42rem",
+                "padding": "0 1rem",
+                "width": "100%",
+              },
+              Object {
+                "@media only screen and (min-width: 59rem)": Object {
+                  "margin": 0,
+                },
+                "flexGrow": 1,
+              },
+            ],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "main",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "title": "Test Site",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

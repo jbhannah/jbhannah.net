@@ -1,3 +1,4 @@
+import React from "react"
 import { MOBILE_MEDIA_QUERY } from "typography-breakpoint-constants"
 import { linkColor, mq } from "../../utils/styles"
 import { rhythm } from "../../utils/typography"
