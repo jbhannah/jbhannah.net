@@ -32,4 +32,4 @@ operations of the modern-day conservative political machine and the worldview
 that drives it.
 
 [the ezra klein show]: https://itunes.apple.com/us/podcast/the-ezra-klein-show/id1081584611
-[interview with heritage action for america ceo michael needham]: https://soundcloud.com/panoply/michael-needham-on-the-republican-partys-crack-up
+[interview with heritage action for america ceo michael needham]: https://overcast.fm/+QLhWta8KE
