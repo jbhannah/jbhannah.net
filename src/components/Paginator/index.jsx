@@ -1,7 +1,7 @@
-import React from "react"
+import React, { Fragment } from "react"
 import Link from "../Link"
 
-const Paginator = ({ base, page, numPages }) => {
+const Paginator = ({ base, page: currentPage, numPages }) => {
   const pageBase = base === "/" ? "/page" : `${base}/page`
 
   return (
@@ -22,26 +22,50 @@ const Paginator = ({ base, page, numPages }) => {
             },
           }}
         >
-          <li>{page > 1 ? <Link href={`${base}`}>«</Link> : "«"}</li>
+          {currentPage > 1 ? (
+            <Fragment>
+              <li>
+                <Link href={base}>«</Link>
+              </li>
+              <li>
+                <Link href={`${pageBase}/${currentPage - 1}`}>‹</Link>
+              </li>
+            </Fragment>
+          ) : (
+            <Fragment>
+              <li>«</li>
+              <li>‹</li>
+            </Fragment>
+          )}
           {Array.from({ length: numPages }).map((_, i) => {
-            const pg = i + 1
+            const page = i + 1
             return (
               <li key={`paginate-${i}`}>
-                {page === pg ? (
-                  pg
+                {currentPage === page ? (
+                  page
                 ) : (
-                  <Link href={i === 0 ? base : `${pageBase}/${pg}`}>{pg}</Link>
+                  <Link href={i === 0 ? base : `${pageBase}/${page}`}>
+                    {page}
+                  </Link>
                 )}
               </li>
             )
           })}
-          <li>
-            {page < numPages ? (
-              <Link href={`${pageBase}/${numPages}`}>»</Link>
-            ) : (
-              "»"
-            )}
-          </li>
+          {currentPage < numPages ? (
+            <Fragment>
+              <li>
+                <Link href={`${pageBase}/${currentPage + 1}`}>›</Link>
+              </li>
+              <li>
+                <Link href={`${pageBase}/${numPages}`}>»</Link>
+              </li>
+            </Fragment>
+          ) : (
+            <Fragment>
+              <li>›</li>
+              <li>»</li>
+            </Fragment>
+          )}
         </ul>
       </footer>
     )
