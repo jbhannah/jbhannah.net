@@ -19,6 +19,7 @@ module.exports = {
   },
   testPathIgnorePatterns: ["node_modules", ".cache"],
   transformIgnorePatterns: ["node_modules/(?!(gatsby)/)"],
+  snapshotSerializers: ["enzyme-to-json/serializer"],
   globals: {
     __PATH_PREFIX__: "",
   },

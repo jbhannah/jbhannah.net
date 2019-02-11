@@ -1,899 +1,32 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Markdown with a root element renders correctly 1`] = `
-ReactWrapper {
-  Symbol(enzyme.__unrendered__): <Markdown
-    htmlAst={
-      Object {
-        "children": Array [
-          Object {
-            "children": Array [
-              Object {
-                "type": "text",
-                "value": "Test paragraph.",
-              },
-            ],
-            "properties": Object {},
-            "tagName": "p",
-            "type": "element",
-          },
-          Object {
-            "children": Array [
-              Object {
-                "children": Array [
-                  Object {
-                    "type": "text",
-                    "value": "Test heading",
-                  },
-                ],
-                "properties": Object {},
-                "tagName": "h2",
-                "type": "element",
-              },
-              Object {
-                "children": Array [
-                  Object {
-                    "children": Array [
-                      Object {
-                        "type": "text",
-                        "value": "Test blockquote",
-                      },
-                    ],
-                    "tagName": "p",
-                    "type": "element",
-                  },
-                ],
-                "properties": Object {},
-                "tagName": "blockquote",
-                "type": "element",
-              },
-              Object {
-                "children": Array [
-                  Object {
-                    "children": Array [
-                      Object {
-                        "type": "text",
-                        "value": "Test subheading",
-                      },
-                    ],
-                    "properties": Object {},
-                    "tagName": "h3",
-                    "type": "element",
-                  },
-                  Object {
-                    "children": Array [
-                      Object {
-                        "type": "text",
-                        "value": "Test link",
-                      },
-                    ],
-                    "properties": Object {
-                      "href": "https://www.example.com",
-                    },
-                    "tagName": "a",
-                    "type": "element",
-                  },
-                  Object {
-                    "children": Array [
-                      Object {
-                        "type": "text",
-                        "value": "Test paragraph 2.",
-                      },
-                    ],
-                    "properties": Object {},
-                    "tagName": "p",
-                    "type": "element",
-                  },
-                ],
-                "tagName": "section",
-                "type": "element",
-              },
-            ],
-            "tagName": "section",
-            "type": "element",
-          },
-          Object {
-            "children": Array [
-              Object {
-                "children": Array [
-                  Object {
-                    "type": "text",
-                    "value": "Test heading 2",
-                  },
-                ],
-                "properties": Object {},
-                "tagName": "h2",
-                "type": "element",
-              },
-              Object {
-                "children": Array [
-                  Object {
-                    "type": "text",
-                    "value": "Test paragraph 3.",
-                  },
-                ],
-                "properties": Object {},
-                "tagName": "p",
-                "type": "element",
-              },
-            ],
-            "tagName": "section",
-            "type": "element",
-          },
-          Object {
-            "children": Array [
-              Object {
-                "type": "text",
-                "value": "Test footnotes.",
-              },
-            ],
-            "properties": Object {
-              "class": "footnotes",
-            },
-            "tagName": "div",
-            "type": "element",
-          },
-        ],
-        "data": Object {
-          "quirksMode": false,
-        },
-        "type": "root",
-      }
-    }
-    root="article"
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateError": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "function",
-    "props": Object {
-      "htmlAst": Object {
-        "children": Array [
-          Object {
-            "children": Array [
-              Object {
-                "type": "text",
-                "value": "Test paragraph.",
-              },
-            ],
-            "properties": Object {},
-            "tagName": "p",
-            "type": "element",
-          },
-          Object {
-            "children": Array [
-              Object {
-                "children": Array [
-                  Object {
-                    "type": "text",
-                    "value": "Test heading",
-                  },
-                ],
-                "properties": Object {},
-                "tagName": "h2",
-                "type": "element",
-              },
-              Object {
-                "children": Array [
-                  Object {
-                    "children": Array [
-                      Object {
-                        "type": "text",
-                        "value": "Test blockquote",
-                      },
-                    ],
-                    "tagName": "p",
-                    "type": "element",
-                  },
-                ],
-                "properties": Object {},
-                "tagName": "blockquote",
-                "type": "element",
-              },
-              Object {
-                "children": Array [
-                  Object {
-                    "children": Array [
-                      Object {
-                        "type": "text",
-                        "value": "Test subheading",
-                      },
-                    ],
-                    "properties": Object {},
-                    "tagName": "h3",
-                    "type": "element",
-                  },
-                  Object {
-                    "children": Array [
-                      Object {
-                        "type": "text",
-                        "value": "Test link",
-                      },
-                    ],
-                    "properties": Object {
-                      "href": "https://www.example.com",
-                    },
-                    "tagName": "a",
-                    "type": "element",
-                  },
-                  Object {
-                    "children": Array [
-                      Object {
-                        "type": "text",
-                        "value": "Test paragraph 2.",
-                      },
-                    ],
-                    "properties": Object {},
-                    "tagName": "p",
-                    "type": "element",
-                  },
-                ],
-                "tagName": "section",
-                "type": "element",
-              },
-            ],
-            "tagName": "section",
-            "type": "element",
-          },
-          Object {
-            "children": Array [
-              Object {
-                "children": Array [
-                  Object {
-                    "type": "text",
-                    "value": "Test heading 2",
-                  },
-                ],
-                "properties": Object {},
-                "tagName": "h2",
-                "type": "element",
-              },
-              Object {
-                "children": Array [
-                  Object {
-                    "type": "text",
-                    "value": "Test paragraph 3.",
-                  },
-                ],
-                "properties": Object {},
-                "tagName": "p",
-                "type": "element",
-              },
-            ],
-            "tagName": "section",
-            "type": "element",
-          },
-          Object {
-            "children": Array [
-              Object {
-                "type": "text",
-                "value": "Test footnotes.",
-              },
-            ],
-            "properties": Object {
-              "class": "footnotes",
-            },
-            "tagName": "div",
-            "type": "element",
-          },
-        ],
-        "data": Object {
-          "quirksMode": false,
-        },
-        "type": "root",
-      },
-      "root": "article",
-    },
-    "ref": null,
-    "rendered": Object {
-      "instance": <article>
-        <p>
-          Test paragraph.
-        </p>
-        <section>
-          <h2
-            css="[object Object]"
-          >
-            Test heading
-          </h2>
-          <blockquote
-            css="[object Object]"
-          >
-            <p>
-              Test blockquote
-            </p>
-          </blockquote>
-          <section>
-            <h3
-              css="[object Object]"
-            >
-              Test subheading
-            </h3>
-            <a
-              css="[object Object]"
-              href="https://www.example.com"
-              rel="noopener"
-              target="_blank"
-            >
-              Test link
-            </a>
-            <p>
-              Test paragraph 2.
-            </p>
-          </section>
-        </section>
-        <section>
-          <h2
-            css="[object Object]"
-          >
-            Test heading 2
-          </h2>
-          <p>
-            Test paragraph 3.
-          </p>
-        </section>
-        <div
-          class="footnotes"
-        >
-          Test footnotes.
-        </div>
-      </article>,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": Array [
-          <p>
-            Test paragraph.
-          </p>,
-          <section>
-            <Unknown>
-              Test heading
-            </Unknown>
-            <Blockquote>
-              <p>
-                Test blockquote
-              </p>
-            </Blockquote>
-            <section>
-              <Unknown>
-                Test subheading
-              </Unknown>
-              <Link
-                href="https://www.example.com"
-              >
-                Test link
-              </Link>
-              <p>
-                Test paragraph 2.
-              </p>
-            </section>
-          </section>,
-          <section>
-            <Unknown>
-              Test heading 2
-            </Unknown>
-            <p>
-              Test paragraph 3.
-            </p>
-          </section>,
-          <div
-            className="footnotes"
-          >
-            Test footnotes.
-          </div>,
-        ],
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": <p>
-            Test paragraph.
-          </p>,
-          "key": "h-2",
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              "Test paragraph.",
-            ],
-          },
-          "ref": null,
-          "rendered": Array [
-            "Test paragraph.",
-          ],
-          "type": "p",
-        },
-        Object {
-          "instance": <section>
-            <h2
-              css="[object Object]"
-            >
-              Test heading
-            </h2>
-            <blockquote
-              css="[object Object]"
-            >
-              <p>
-                Test blockquote
-              </p>
-            </blockquote>
-            <section>
-              <h3
-                css="[object Object]"
-              >
-                Test subheading
-              </h3>
-              <a
-                css="[object Object]"
-                href="https://www.example.com"
-                rel="noopener"
-                target="_blank"
-              >
-                Test link
-              </a>
-              <p>
-                Test paragraph 2.
-              </p>
-            </section>
-          </section>,
-          "key": "h-3",
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              <Unknown>
-                Test heading
-              </Unknown>,
-              <Blockquote>
-                <p>
-                  Test blockquote
-                </p>
-              </Blockquote>,
-              <section>
-                <Unknown>
-                  Test subheading
-                </Unknown>
-                <Link
-                  href="https://www.example.com"
-                >
-                  Test link
-                </Link>
-                <p>
-                  Test paragraph 2.
-                </p>
-              </section>,
-            ],
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": "h-4",
-              "nodeType": "function",
-              "props": Object {
-                "children": Array [
-                  "Test heading",
-                ],
-              },
-              "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "function",
-                "props": Object {
-                  "children": Array [
-                    "Test heading",
-                  ],
-                  "level": "h2",
-                },
-                "ref": null,
-                "rendered": Object {
-                  "instance": <h2
-                    css="[object Object]"
-                  >
-                    Test heading
-                  </h2>,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": Array [
-                      "Test heading",
-                    ],
-                    "css": Object {
-                      "a": Object {
-                        "background": "none",
-                        "textShadow": "none",
-                      },
-                      "code": Object {
-                        "fontSize": "inherit",
-                      },
-                    },
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    "Test heading",
-                  ],
-                  "type": "h2",
-                },
-                "type": [Function],
-              },
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": "h-5",
-              "nodeType": "function",
-              "props": Object {
-                "children": Array [
-                  <p>
-                    Test blockquote
-                  </p>,
-                ],
-              },
-              "ref": null,
-              "rendered": Object {
-                "instance": <blockquote
-                  css="[object Object]"
-                >
-                  <p>
-                    Test blockquote
-                  </p>
-                </blockquote>,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": Array [
-                    <p>
-                      Test blockquote
-                    </p>,
-                  ],
-                  "css": Object {
-                    "@media only screen and (max-width:480px)": Object {
-                      "borderLeft": "0.29625rem solid #0f7b3b",
-                      "marginLeft": "-1.185rem",
-                      "paddingLeft": "0.88875rem",
-                    },
-                    "@media only screen and (min-width: 28rem)": Object {
-                      "borderLeft": "0.5925rem solid #0f7b3b",
-                      "marginLeft": 0,
-                      "paddingLeft": "0.9875rem",
-                    },
-                    "borderLeft": "0.29625rem solid #0f7b3b",
-                    "marginLeft": "-1.185rem",
-                    "paddingLeft": "0.88875rem",
-                  },
-                },
-                "ref": null,
-                "rendered": Array [
-                  Object {
-                    "instance": <p>
-                      Test blockquote
-                    </p>,
-                    "key": "h-6",
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": Array [
-                        "Test blockquote",
-                      ],
-                    },
-                    "ref": null,
-                    "rendered": Array [
-                      "Test blockquote",
-                    ],
-                    "type": "p",
-                  },
-                ],
-                "type": "blockquote",
-              },
-              "type": [Function],
-            },
-            Object {
-              "instance": <section>
-                <h3
-                  css="[object Object]"
-                >
-                  Test subheading
-                </h3>
-                <a
-                  css="[object Object]"
-                  href="https://www.example.com"
-                  rel="noopener"
-                  target="_blank"
-                >
-                  Test link
-                </a>
-                <p>
-                  Test paragraph 2.
-                </p>
-              </section>,
-              "key": "h-7",
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
-                  <Unknown>
-                    Test subheading
-                  </Unknown>,
-                  <Link
-                    href="https://www.example.com"
-                  >
-                    Test link
-                  </Link>,
-                  <p>
-                    Test paragraph 2.
-                  </p>,
-                ],
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": "h-8",
-                  "nodeType": "function",
-                  "props": Object {
-                    "children": Array [
-                      "Test subheading",
-                    ],
-                  },
-                  "ref": null,
-                  "rendered": Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "function",
-                    "props": Object {
-                      "children": Array [
-                        "Test subheading",
-                      ],
-                      "level": "h3",
-                    },
-                    "ref": null,
-                    "rendered": Object {
-                      "instance": <h3
-                        css="[object Object]"
-                      >
-                        Test subheading
-                      </h3>,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": Array [
-                          "Test subheading",
-                        ],
-                        "css": Object {
-                          "a": Object {
-                            "background": "none",
-                            "textShadow": "none",
-                          },
-                          "code": Object {
-                            "fontSize": "inherit",
-                          },
-                        },
-                      },
-                      "ref": null,
-                      "rendered": Array [
-                        "Test subheading",
-                      ],
-                      "type": "h3",
-                    },
-                    "type": [Function],
-                  },
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": "h-9",
-                  "nodeType": "function",
-                  "props": Object {
-                    "children": Array [
-                      "Test link",
-                    ],
-                    "href": "https://www.example.com",
-                  },
-                  "ref": null,
-                  "rendered": Object {
-                    "instance": <a
-                      css="[object Object]"
-                      href="https://www.example.com"
-                      rel="noopener"
-                      target="_blank"
-                    >
-                      Test link
-                    </a>,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": Array [
-                        "Test link",
-                      ],
-                      "css": Object {
-                        "backgroundImage": "linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, #0f7b3b 1px, #0f7b3b 2px, rgba(0, 0, 0, 0) 2px)",
-                        "borderRadius": "0.3em",
-                        "code": Object {
-                          "textShadow": "none",
-                        },
-                        "color": "#0f7b3b",
-                      },
-                      "href": "https://www.example.com",
-                      "rel": "noopener",
-                      "target": "_blank",
-                    },
-                    "ref": null,
-                    "rendered": Array [
-                      "Test link",
-                    ],
-                    "type": "a",
-                  },
-                  "type": [Function],
-                },
-                Object {
-                  "instance": <p>
-                    Test paragraph 2.
-                  </p>,
-                  "key": "h-10",
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": Array [
-                      "Test paragraph 2.",
-                    ],
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    "Test paragraph 2.",
-                  ],
-                  "type": "p",
-                },
-              ],
-              "type": "section",
-            },
-          ],
-          "type": "section",
-        },
-        Object {
-          "instance": <section>
-            <h2
-              css="[object Object]"
-            >
-              Test heading 2
-            </h2>
-            <p>
-              Test paragraph 3.
-            </p>
-          </section>,
-          "key": "h-11",
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              <Unknown>
-                Test heading 2
-              </Unknown>,
-              <p>
-                Test paragraph 3.
-              </p>,
-            ],
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": "h-12",
-              "nodeType": "function",
-              "props": Object {
-                "children": Array [
-                  "Test heading 2",
-                ],
-              },
-              "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "function",
-                "props": Object {
-                  "children": Array [
-                    "Test heading 2",
-                  ],
-                  "level": "h2",
-                },
-                "ref": null,
-                "rendered": Object {
-                  "instance": <h2
-                    css="[object Object]"
-                  >
-                    Test heading 2
-                  </h2>,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": Array [
-                      "Test heading 2",
-                    ],
-                    "css": Object {
-                      "a": Object {
-                        "background": "none",
-                        "textShadow": "none",
-                      },
-                      "code": Object {
-                        "fontSize": "inherit",
-                      },
-                    },
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    "Test heading 2",
-                  ],
-                  "type": "h2",
-                },
-                "type": [Function],
-              },
-              "type": [Function],
-            },
-            Object {
-              "instance": <p>
-                Test paragraph 3.
-              </p>,
-              "key": "h-13",
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
-                  "Test paragraph 3.",
-                ],
-              },
-              "ref": null,
-              "rendered": Array [
-                "Test paragraph 3.",
-              ],
-              "type": "p",
-            },
-          ],
-          "type": "section",
-        },
-        Object {
-          "instance": <div
-            class="footnotes"
-          >
-            Test footnotes.
-          </div>,
-          "key": "h-14",
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              "Test footnotes.",
-            ],
-            "className": "footnotes",
-          },
-          "ref": null,
-          "rendered": Array [
-            "Test footnotes.",
-          ],
-          "type": "div",
-        },
-      ],
-      "type": "article",
-    },
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
+<Markdown
+  htmlAst={
     Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "function",
-      "props": Object {
-        "htmlAst": Object {
+      "children": Array [
+        Object {
+          "children": Array [
+            Object {
+              "type": "text",
+              "value": "Test paragraph.",
+            },
+          ],
+          "properties": Object {},
+          "tagName": "p",
+          "type": "element",
+        },
+        Object {
           "children": Array [
             Object {
               "children": Array [
                 Object {
                   "type": "text",
-                  "value": "Test paragraph.",
+                  "value": "Test heading",
                 },
               ],
               "properties": Object {},
-              "tagName": "p",
+              "tagName": "h2",
               "type": "element",
             },
             Object {
@@ -902,73 +35,15 @@ ReactWrapper {
                   "children": Array [
                     Object {
                       "type": "text",
-                      "value": "Test heading",
+                      "value": "Test blockquote",
                     },
                   ],
-                  "properties": Object {},
-                  "tagName": "h2",
-                  "type": "element",
-                },
-                Object {
-                  "children": Array [
-                    Object {
-                      "children": Array [
-                        Object {
-                          "type": "text",
-                          "value": "Test blockquote",
-                        },
-                      ],
-                      "tagName": "p",
-                      "type": "element",
-                    },
-                  ],
-                  "properties": Object {},
-                  "tagName": "blockquote",
-                  "type": "element",
-                },
-                Object {
-                  "children": Array [
-                    Object {
-                      "children": Array [
-                        Object {
-                          "type": "text",
-                          "value": "Test subheading",
-                        },
-                      ],
-                      "properties": Object {},
-                      "tagName": "h3",
-                      "type": "element",
-                    },
-                    Object {
-                      "children": Array [
-                        Object {
-                          "type": "text",
-                          "value": "Test link",
-                        },
-                      ],
-                      "properties": Object {
-                        "href": "https://www.example.com",
-                      },
-                      "tagName": "a",
-                      "type": "element",
-                    },
-                    Object {
-                      "children": Array [
-                        Object {
-                          "type": "text",
-                          "value": "Test paragraph 2.",
-                        },
-                      ],
-                      "properties": Object {},
-                      "tagName": "p",
-                      "type": "element",
-                    },
-                  ],
-                  "tagName": "section",
+                  "tagName": "p",
                   "type": "element",
                 },
               ],
-              "tagName": "section",
+              "properties": Object {},
+              "tagName": "blockquote",
               "type": "element",
             },
             Object {
@@ -977,18 +52,31 @@ ReactWrapper {
                   "children": Array [
                     Object {
                       "type": "text",
-                      "value": "Test heading 2",
+                      "value": "Test subheading",
                     },
                   ],
                   "properties": Object {},
-                  "tagName": "h2",
+                  "tagName": "h3",
                   "type": "element",
                 },
                 Object {
                   "children": Array [
                     Object {
                       "type": "text",
-                      "value": "Test paragraph 3.",
+                      "value": "Test link",
+                    },
+                  ],
+                  "properties": Object {
+                    "href": "https://www.example.com",
+                  },
+                  "tagName": "a",
+                  "type": "element",
+                },
+                Object {
+                  "children": Array [
+                    Object {
+                      "type": "text",
+                      "value": "Test paragraph 2.",
                     },
                   ],
                   "properties": Object {},
@@ -999,1427 +87,245 @@ ReactWrapper {
               "tagName": "section",
               "type": "element",
             },
+          ],
+          "tagName": "section",
+          "type": "element",
+        },
+        Object {
+          "children": Array [
             Object {
               "children": Array [
                 Object {
                   "type": "text",
-                  "value": "Test footnotes.",
+                  "value": "Test heading 2",
                 },
               ],
-              "properties": Object {
-                "class": "footnotes",
-              },
-              "tagName": "div",
+              "properties": Object {},
+              "tagName": "h2",
+              "type": "element",
+            },
+            Object {
+              "children": Array [
+                Object {
+                  "type": "text",
+                  "value": "Test paragraph 3.",
+                },
+              ],
+              "properties": Object {},
+              "tagName": "p",
               "type": "element",
             },
           ],
-          "data": Object {
-            "quirksMode": false,
-          },
-          "type": "root",
+          "tagName": "section",
+          "type": "element",
         },
-        "root": "article",
-      },
-      "ref": null,
-      "rendered": Object {
-        "instance": <article>
-          <p>
-            Test paragraph.
-          </p>
-          <section>
-            <h2
-              css="[object Object]"
-            >
-              Test heading
-            </h2>
-            <blockquote
-              css="[object Object]"
-            >
-              <p>
-                Test blockquote
-              </p>
-            </blockquote>
-            <section>
-              <h3
-                css="[object Object]"
-              >
-                Test subheading
-              </h3>
-              <a
-                css="[object Object]"
-                href="https://www.example.com"
-                rel="noopener"
-                target="_blank"
-              >
-                Test link
-              </a>
-              <p>
-                Test paragraph 2.
-              </p>
-            </section>
-          </section>
-          <section>
-            <h2
-              css="[object Object]"
-            >
-              Test heading 2
-            </h2>
-            <p>
-              Test paragraph 3.
-            </p>
-          </section>
-          <div
-            class="footnotes"
-          >
-            Test footnotes.
-          </div>
-        </article>,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
+        Object {
           "children": Array [
-            <p>
-              Test paragraph.
-            </p>,
-            <section>
-              <Unknown>
-                Test heading
-              </Unknown>
-              <Blockquote>
-                <p>
-                  Test blockquote
-                </p>
-              </Blockquote>
-              <section>
-                <Unknown>
-                  Test subheading
-                </Unknown>
-                <Link
-                  href="https://www.example.com"
-                >
-                  Test link
-                </Link>
-                <p>
-                  Test paragraph 2.
-                </p>
-              </section>
-            </section>,
-            <section>
-              <Unknown>
-                Test heading 2
-              </Unknown>
-              <p>
-                Test paragraph 3.
-              </p>
-            </section>,
-            <div
-              className="footnotes"
-            >
-              Test footnotes.
-            </div>,
+            Object {
+              "type": "text",
+              "value": "Test footnotes.",
+            },
           ],
+          "properties": Object {
+            "class": "footnotes",
+          },
+          "tagName": "div",
+          "type": "element",
         },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": <p>
-              Test paragraph.
-            </p>,
-            "key": "h-2",
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
-                "Test paragraph.",
-              ],
-            },
-            "ref": null,
-            "rendered": Array [
-              "Test paragraph.",
-            ],
-            "type": "p",
-          },
-          Object {
-            "instance": <section>
-              <h2
-                css="[object Object]"
-              >
-                Test heading
-              </h2>
-              <blockquote
-                css="[object Object]"
-              >
-                <p>
-                  Test blockquote
-                </p>
-              </blockquote>
-              <section>
-                <h3
-                  css="[object Object]"
-                >
-                  Test subheading
-                </h3>
-                <a
-                  css="[object Object]"
-                  href="https://www.example.com"
-                  rel="noopener"
-                  target="_blank"
-                >
-                  Test link
-                </a>
-                <p>
-                  Test paragraph 2.
-                </p>
-              </section>
-            </section>,
-            "key": "h-3",
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
-                <Unknown>
-                  Test heading
-                </Unknown>,
-                <Blockquote>
-                  <p>
-                    Test blockquote
-                  </p>
-                </Blockquote>,
-                <section>
-                  <Unknown>
-                    Test subheading
-                  </Unknown>
-                  <Link
-                    href="https://www.example.com"
-                  >
-                    Test link
-                  </Link>
-                  <p>
-                    Test paragraph 2.
-                  </p>
-                </section>,
-              ],
-            },
-            "ref": null,
-            "rendered": Array [
+      ],
+      "data": Object {
+        "quirksMode": false,
+      },
+      "type": "root",
+    }
+  }
+  root="article"
+>
+  <article>
+    <p
+      key="h-2"
+    >
+      Test paragraph.
+    </p>
+    <section
+      key="h-3"
+    >
+      <Component
+        key="h-4"
+      >
+        <Heading
+          level="h2"
+        >
+          <h2
+            css={
               Object {
-                "instance": null,
-                "key": "h-4",
-                "nodeType": "function",
-                "props": Object {
-                  "children": Array [
-                    "Test heading",
-                  ],
+                "a": Object {
+                  "background": "none",
+                  "textShadow": "none",
                 },
-                "ref": null,
-                "rendered": Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "function",
-                  "props": Object {
-                    "children": Array [
-                      "Test heading",
-                    ],
-                    "level": "h2",
-                  },
-                  "ref": null,
-                  "rendered": Object {
-                    "instance": <h2
-                      css="[object Object]"
-                    >
-                      Test heading
-                    </h2>,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": Array [
-                        "Test heading",
-                      ],
-                      "css": Object {
-                        "a": Object {
-                          "background": "none",
-                          "textShadow": "none",
-                        },
-                        "code": Object {
-                          "fontSize": "inherit",
-                        },
-                      },
-                    },
-                    "ref": null,
-                    "rendered": Array [
-                      "Test heading",
-                    ],
-                    "type": "h2",
-                  },
-                  "type": [Function],
+                "code": Object {
+                  "fontSize": "inherit",
                 },
-                "type": [Function],
+              }
+            }
+          >
+            Test heading
+          </h2>
+        </Heading>
+      </Component>
+      <Blockquote
+        key="h-5"
+      >
+        <blockquote
+          css={
+            Object {
+              "@media only screen and (max-width:480px)": Object {
+                "borderLeft": "0.29625rem solid #0f7b3b",
+                "marginLeft": "-1.185rem",
+                "paddingLeft": "0.88875rem",
               },
-              Object {
-                "instance": null,
-                "key": "h-5",
-                "nodeType": "function",
-                "props": Object {
-                  "children": Array [
-                    <p>
-                      Test blockquote
-                    </p>,
-                  ],
-                },
-                "ref": null,
-                "rendered": Object {
-                  "instance": <blockquote
-                    css="[object Object]"
-                  >
-                    <p>
-                      Test blockquote
-                    </p>
-                  </blockquote>,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": Array [
-                      <p>
-                        Test blockquote
-                      </p>,
-                    ],
-                    "css": Object {
-                      "@media only screen and (max-width:480px)": Object {
-                        "borderLeft": "0.29625rem solid #0f7b3b",
-                        "marginLeft": "-1.185rem",
-                        "paddingLeft": "0.88875rem",
-                      },
-                      "@media only screen and (min-width: 28rem)": Object {
-                        "borderLeft": "0.5925rem solid #0f7b3b",
-                        "marginLeft": 0,
-                        "paddingLeft": "0.9875rem",
-                      },
-                      "borderLeft": "0.29625rem solid #0f7b3b",
-                      "marginLeft": "-1.185rem",
-                      "paddingLeft": "0.88875rem",
-                    },
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    Object {
-                      "instance": <p>
-                        Test blockquote
-                      </p>,
-                      "key": "h-6",
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": Array [
-                          "Test blockquote",
-                        ],
-                      },
-                      "ref": null,
-                      "rendered": Array [
-                        "Test blockquote",
-                      ],
-                      "type": "p",
-                    },
-                  ],
-                  "type": "blockquote",
-                },
-                "type": [Function],
+              "@media only screen and (min-width: 28rem)": Object {
+                "borderLeft": "0.5925rem solid #0f7b3b",
+                "marginLeft": 0,
+                "paddingLeft": "0.9875rem",
               },
-              Object {
-                "instance": <section>
-                  <h3
-                    css="[object Object]"
-                  >
-                    Test subheading
-                  </h3>
-                  <a
-                    css="[object Object]"
-                    href="https://www.example.com"
-                    rel="noopener"
-                    target="_blank"
-                  >
-                    Test link
-                  </a>
-                  <p>
-                    Test paragraph 2.
-                  </p>
-                </section>,
-                "key": "h-7",
-                "nodeType": "host",
-                "props": Object {
-                  "children": Array [
-                    <Unknown>
-                      Test subheading
-                    </Unknown>,
-                    <Link
-                      href="https://www.example.com"
-                    >
-                      Test link
-                    </Link>,
-                    <p>
-                      Test paragraph 2.
-                    </p>,
-                  ],
-                },
-                "ref": null,
-                "rendered": Array [
-                  Object {
-                    "instance": null,
-                    "key": "h-8",
-                    "nodeType": "function",
-                    "props": Object {
-                      "children": Array [
-                        "Test subheading",
-                      ],
-                    },
-                    "ref": null,
-                    "rendered": Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "function",
-                      "props": Object {
-                        "children": Array [
-                          "Test subheading",
-                        ],
-                        "level": "h3",
-                      },
-                      "ref": null,
-                      "rendered": Object {
-                        "instance": <h3
-                          css="[object Object]"
-                        >
-                          Test subheading
-                        </h3>,
-                        "key": undefined,
-                        "nodeType": "host",
-                        "props": Object {
-                          "children": Array [
-                            "Test subheading",
-                          ],
-                          "css": Object {
-                            "a": Object {
-                              "background": "none",
-                              "textShadow": "none",
-                            },
-                            "code": Object {
-                              "fontSize": "inherit",
-                            },
-                          },
-                        },
-                        "ref": null,
-                        "rendered": Array [
-                          "Test subheading",
-                        ],
-                        "type": "h3",
-                      },
-                      "type": [Function],
-                    },
-                    "type": [Function],
+              "borderLeft": "0.29625rem solid #0f7b3b",
+              "marginLeft": "-1.185rem",
+              "paddingLeft": "0.88875rem",
+            }
+          }
+        >
+          <p
+            key="h-6"
+          >
+            Test blockquote
+          </p>
+        </blockquote>
+      </Blockquote>
+      <section
+        key="h-7"
+      >
+        <Component
+          key="h-8"
+        >
+          <Heading
+            level="h3"
+          >
+            <h3
+              css={
+                Object {
+                  "a": Object {
+                    "background": "none",
+                    "textShadow": "none",
                   },
-                  Object {
-                    "instance": null,
-                    "key": "h-9",
-                    "nodeType": "function",
-                    "props": Object {
-                      "children": Array [
-                        "Test link",
-                      ],
-                      "href": "https://www.example.com",
-                    },
-                    "ref": null,
-                    "rendered": Object {
-                      "instance": <a
-                        css="[object Object]"
-                        href="https://www.example.com"
-                        rel="noopener"
-                        target="_blank"
-                      >
-                        Test link
-                      </a>,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": Array [
-                          "Test link",
-                        ],
-                        "css": Object {
-                          "backgroundImage": "linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, #0f7b3b 1px, #0f7b3b 2px, rgba(0, 0, 0, 0) 2px)",
-                          "borderRadius": "0.3em",
-                          "code": Object {
-                            "textShadow": "none",
-                          },
-                          "color": "#0f7b3b",
-                        },
-                        "href": "https://www.example.com",
-                        "rel": "noopener",
-                        "target": "_blank",
-                      },
-                      "ref": null,
-                      "rendered": Array [
-                        "Test link",
-                      ],
-                      "type": "a",
-                    },
-                    "type": [Function],
+                  "code": Object {
+                    "fontSize": "inherit",
                   },
-                  Object {
-                    "instance": <p>
-                      Test paragraph 2.
-                    </p>,
-                    "key": "h-10",
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": Array [
-                        "Test paragraph 2.",
-                      ],
-                    },
-                    "ref": null,
-                    "rendered": Array [
-                      "Test paragraph 2.",
-                    ],
-                    "type": "p",
-                  },
-                ],
-                "type": "section",
-              },
-            ],
-            "type": "section",
-          },
-          Object {
-            "instance": <section>
-              <h2
-                css="[object Object]"
-              >
-                Test heading 2
-              </h2>
-              <p>
-                Test paragraph 3.
-              </p>
-            </section>,
-            "key": "h-11",
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
-                <Unknown>
-                  Test heading 2
-                </Unknown>,
-                <p>
-                  Test paragraph 3.
-                </p>,
-              ],
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": "h-12",
-                "nodeType": "function",
-                "props": Object {
-                  "children": Array [
-                    "Test heading 2",
-                  ],
-                },
-                "ref": null,
-                "rendered": Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "function",
-                  "props": Object {
-                    "children": Array [
-                      "Test heading 2",
-                    ],
-                    "level": "h2",
-                  },
-                  "ref": null,
-                  "rendered": Object {
-                    "instance": <h2
-                      css="[object Object]"
-                    >
-                      Test heading 2
-                    </h2>,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": Array [
-                        "Test heading 2",
-                      ],
-                      "css": Object {
-                        "a": Object {
-                          "background": "none",
-                          "textShadow": "none",
-                        },
-                        "code": Object {
-                          "fontSize": "inherit",
-                        },
-                      },
-                    },
-                    "ref": null,
-                    "rendered": Array [
-                      "Test heading 2",
-                    ],
-                    "type": "h2",
-                  },
-                  "type": [Function],
-                },
-                "type": [Function],
-              },
-              Object {
-                "instance": <p>
-                  Test paragraph 3.
-                </p>,
-                "key": "h-13",
-                "nodeType": "host",
-                "props": Object {
-                  "children": Array [
-                    "Test paragraph 3.",
-                  ],
-                },
-                "ref": null,
-                "rendered": Array [
-                  "Test paragraph 3.",
-                ],
-                "type": "p",
-              },
-            ],
-            "type": "section",
-          },
-          Object {
-            "instance": <div
-              class="footnotes"
+                }
+              }
             >
-              Test footnotes.
-            </div>,
-            "key": "h-14",
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
-                "Test footnotes.",
-              ],
-              "className": "footnotes",
-            },
-            "ref": null,
-            "rendered": Array [
-              "Test footnotes.",
-            ],
-            "type": "div",
-          },
-        ],
-        "type": "article",
-      },
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "legacyContextMode": "parent",
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getChildContext": Object {
-            "calledByRenderer": false,
-          },
-          "getDerivedStateFromProps": true,
-          "getSnapshotBeforeUpdate": true,
-          "setState": Object {
-            "skipsComponentDidUpdateOnNullish": true,
-          },
-        },
-      },
-    },
-  },
-}
+              Test subheading
+            </h3>
+          </Heading>
+        </Component>
+        <Link
+          href="https://www.example.com"
+          key="h-9"
+        >
+          <a
+            css={
+              Object {
+                "backgroundImage": "linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, #0f7b3b 1px, #0f7b3b 2px, rgba(0, 0, 0, 0) 2px)",
+                "borderRadius": "0.3em",
+                "code": Object {
+                  "textShadow": "none",
+                },
+                "color": "#0f7b3b",
+              }
+            }
+            href="https://www.example.com"
+            rel="noopener"
+            target="_blank"
+          >
+            Test link
+          </a>
+        </Link>
+        <p
+          key="h-10"
+        >
+          Test paragraph 2.
+        </p>
+      </section>
+    </section>
+    <section
+      key="h-11"
+    >
+      <Component
+        key="h-12"
+      >
+        <Heading
+          level="h2"
+        >
+          <h2
+            css={
+              Object {
+                "a": Object {
+                  "background": "none",
+                  "textShadow": "none",
+                },
+                "code": Object {
+                  "fontSize": "inherit",
+                },
+              }
+            }
+          >
+            Test heading 2
+          </h2>
+        </Heading>
+      </Component>
+      <p
+        key="h-13"
+      >
+        Test paragraph 3.
+      </p>
+    </section>
+    <div
+      className="footnotes"
+      key="h-14"
+    >
+      Test footnotes.
+    </div>
+  </article>
+</Markdown>
 `;
 
 exports[`Markdown without a root element renders correctly 1`] = `
-ReactWrapper {
-  Symbol(enzyme.__unrendered__): <Markdown
-    htmlAst={
-      Object {
-        "children": Array [
-          Object {
-            "children": Array [
-              Object {
-                "type": "text",
-                "value": "Test paragraph.",
-              },
-            ],
-            "properties": Object {},
-            "tagName": "p",
-            "type": "element",
-          },
-          Object {
-            "children": Array [
-              Object {
-                "children": Array [
-                  Object {
-                    "type": "text",
-                    "value": "Test heading",
-                  },
-                ],
-                "properties": Object {},
-                "tagName": "h2",
-                "type": "element",
-              },
-              Object {
-                "children": Array [
-                  Object {
-                    "children": Array [
-                      Object {
-                        "type": "text",
-                        "value": "Test blockquote",
-                      },
-                    ],
-                    "tagName": "p",
-                    "type": "element",
-                  },
-                ],
-                "properties": Object {},
-                "tagName": "blockquote",
-                "type": "element",
-              },
-              Object {
-                "children": Array [
-                  Object {
-                    "children": Array [
-                      Object {
-                        "type": "text",
-                        "value": "Test subheading",
-                      },
-                    ],
-                    "properties": Object {},
-                    "tagName": "h3",
-                    "type": "element",
-                  },
-                  Object {
-                    "children": Array [
-                      Object {
-                        "type": "text",
-                        "value": "Test link",
-                      },
-                    ],
-                    "properties": Object {
-                      "href": "https://www.example.com",
-                    },
-                    "tagName": "a",
-                    "type": "element",
-                  },
-                  Object {
-                    "children": Array [
-                      Object {
-                        "type": "text",
-                        "value": "Test paragraph 2.",
-                      },
-                    ],
-                    "properties": Object {},
-                    "tagName": "p",
-                    "type": "element",
-                  },
-                ],
-                "tagName": "section",
-                "type": "element",
-              },
-            ],
-            "tagName": "section",
-            "type": "element",
-          },
-          Object {
-            "children": Array [
-              Object {
-                "children": Array [
-                  Object {
-                    "type": "text",
-                    "value": "Test heading 2",
-                  },
-                ],
-                "properties": Object {},
-                "tagName": "h2",
-                "type": "element",
-              },
-              Object {
-                "children": Array [
-                  Object {
-                    "type": "text",
-                    "value": "Test paragraph 3.",
-                  },
-                ],
-                "properties": Object {},
-                "tagName": "p",
-                "type": "element",
-              },
-            ],
-            "tagName": "section",
-            "type": "element",
-          },
-          Object {
-            "children": Array [
-              Object {
-                "type": "text",
-                "value": "Test footnotes.",
-              },
-            ],
-            "properties": Object {
-              "class": "footnotes",
-            },
-            "tagName": "div",
-            "type": "element",
-          },
-        ],
-        "data": Object {
-          "quirksMode": false,
-        },
-        "type": "root",
-      }
-    }
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateError": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "function",
-    "props": Object {
-      "htmlAst": Object {
-        "children": Array [
-          Object {
-            "children": Array [
-              Object {
-                "type": "text",
-                "value": "Test paragraph.",
-              },
-            ],
-            "properties": Object {},
-            "tagName": "p",
-            "type": "element",
-          },
-          Object {
-            "children": Array [
-              Object {
-                "children": Array [
-                  Object {
-                    "type": "text",
-                    "value": "Test heading",
-                  },
-                ],
-                "properties": Object {},
-                "tagName": "h2",
-                "type": "element",
-              },
-              Object {
-                "children": Array [
-                  Object {
-                    "children": Array [
-                      Object {
-                        "type": "text",
-                        "value": "Test blockquote",
-                      },
-                    ],
-                    "tagName": "p",
-                    "type": "element",
-                  },
-                ],
-                "properties": Object {},
-                "tagName": "blockquote",
-                "type": "element",
-              },
-              Object {
-                "children": Array [
-                  Object {
-                    "children": Array [
-                      Object {
-                        "type": "text",
-                        "value": "Test subheading",
-                      },
-                    ],
-                    "properties": Object {},
-                    "tagName": "h3",
-                    "type": "element",
-                  },
-                  Object {
-                    "children": Array [
-                      Object {
-                        "type": "text",
-                        "value": "Test link",
-                      },
-                    ],
-                    "properties": Object {
-                      "href": "https://www.example.com",
-                    },
-                    "tagName": "a",
-                    "type": "element",
-                  },
-                  Object {
-                    "children": Array [
-                      Object {
-                        "type": "text",
-                        "value": "Test paragraph 2.",
-                      },
-                    ],
-                    "properties": Object {},
-                    "tagName": "p",
-                    "type": "element",
-                  },
-                ],
-                "tagName": "section",
-                "type": "element",
-              },
-            ],
-            "tagName": "section",
-            "type": "element",
-          },
-          Object {
-            "children": Array [
-              Object {
-                "children": Array [
-                  Object {
-                    "type": "text",
-                    "value": "Test heading 2",
-                  },
-                ],
-                "properties": Object {},
-                "tagName": "h2",
-                "type": "element",
-              },
-              Object {
-                "children": Array [
-                  Object {
-                    "type": "text",
-                    "value": "Test paragraph 3.",
-                  },
-                ],
-                "properties": Object {},
-                "tagName": "p",
-                "type": "element",
-              },
-            ],
-            "tagName": "section",
-            "type": "element",
-          },
-          Object {
-            "children": Array [
-              Object {
-                "type": "text",
-                "value": "Test footnotes.",
-              },
-            ],
-            "properties": Object {
-              "class": "footnotes",
-            },
-            "tagName": "div",
-            "type": "element",
-          },
-        ],
-        "data": Object {
-          "quirksMode": false,
-        },
-        "type": "root",
-      },
-    },
-    "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": <p>
-          Test paragraph.
-        </p>,
-        "key": "h-2",
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            "Test paragraph.",
-          ],
-        },
-        "ref": null,
-        "rendered": Array [
-          "Test paragraph.",
-        ],
-        "type": "p",
-      },
-      Object {
-        "instance": <section>
-          <h2
-            css="[object Object]"
-          >
-            Test heading
-          </h2>
-          <blockquote
-            css="[object Object]"
-          >
-            <p>
-              Test blockquote
-            </p>
-          </blockquote>
-          <section>
-            <h3
-              css="[object Object]"
-            >
-              Test subheading
-            </h3>
-            <a
-              css="[object Object]"
-              href="https://www.example.com"
-              rel="noopener"
-              target="_blank"
-            >
-              Test link
-            </a>
-            <p>
-              Test paragraph 2.
-            </p>
-          </section>
-        </section>,
-        "key": "h-3",
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            <Unknown>
-              Test heading
-            </Unknown>,
-            <Blockquote>
-              <p>
-                Test blockquote
-              </p>
-            </Blockquote>,
-            <section>
-              <Unknown>
-                Test subheading
-              </Unknown>
-              <Link
-                href="https://www.example.com"
-              >
-                Test link
-              </Link>
-              <p>
-                Test paragraph 2.
-              </p>
-            </section>,
-          ],
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": "h-4",
-            "nodeType": "function",
-            "props": Object {
-              "children": Array [
-                "Test heading",
-              ],
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "function",
-              "props": Object {
-                "children": Array [
-                  "Test heading",
-                ],
-                "level": "h2",
-              },
-              "ref": null,
-              "rendered": Object {
-                "instance": <h2
-                  css="[object Object]"
-                >
-                  Test heading
-                </h2>,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": Array [
-                    "Test heading",
-                  ],
-                  "css": Object {
-                    "a": Object {
-                      "background": "none",
-                      "textShadow": "none",
-                    },
-                    "code": Object {
-                      "fontSize": "inherit",
-                    },
-                  },
-                },
-                "ref": null,
-                "rendered": Array [
-                  "Test heading",
-                ],
-                "type": "h2",
-              },
-              "type": [Function],
-            },
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": "h-5",
-            "nodeType": "function",
-            "props": Object {
-              "children": Array [
-                <p>
-                  Test blockquote
-                </p>,
-              ],
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": <blockquote
-                css="[object Object]"
-              >
-                <p>
-                  Test blockquote
-                </p>
-              </blockquote>,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
-                  <p>
-                    Test blockquote
-                  </p>,
-                ],
-                "css": Object {
-                  "@media only screen and (max-width:480px)": Object {
-                    "borderLeft": "0.29625rem solid #0f7b3b",
-                    "marginLeft": "-1.185rem",
-                    "paddingLeft": "0.88875rem",
-                  },
-                  "@media only screen and (min-width: 28rem)": Object {
-                    "borderLeft": "0.5925rem solid #0f7b3b",
-                    "marginLeft": 0,
-                    "paddingLeft": "0.9875rem",
-                  },
-                  "borderLeft": "0.29625rem solid #0f7b3b",
-                  "marginLeft": "-1.185rem",
-                  "paddingLeft": "0.88875rem",
-                },
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": <p>
-                    Test blockquote
-                  </p>,
-                  "key": "h-6",
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": Array [
-                      "Test blockquote",
-                    ],
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    "Test blockquote",
-                  ],
-                  "type": "p",
-                },
-              ],
-              "type": "blockquote",
-            },
-            "type": [Function],
-          },
-          Object {
-            "instance": <section>
-              <h3
-                css="[object Object]"
-              >
-                Test subheading
-              </h3>
-              <a
-                css="[object Object]"
-                href="https://www.example.com"
-                rel="noopener"
-                target="_blank"
-              >
-                Test link
-              </a>
-              <p>
-                Test paragraph 2.
-              </p>
-            </section>,
-            "key": "h-7",
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
-                <Unknown>
-                  Test subheading
-                </Unknown>,
-                <Link
-                  href="https://www.example.com"
-                >
-                  Test link
-                </Link>,
-                <p>
-                  Test paragraph 2.
-                </p>,
-              ],
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": "h-8",
-                "nodeType": "function",
-                "props": Object {
-                  "children": Array [
-                    "Test subheading",
-                  ],
-                },
-                "ref": null,
-                "rendered": Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "function",
-                  "props": Object {
-                    "children": Array [
-                      "Test subheading",
-                    ],
-                    "level": "h3",
-                  },
-                  "ref": null,
-                  "rendered": Object {
-                    "instance": <h3
-                      css="[object Object]"
-                    >
-                      Test subheading
-                    </h3>,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": Array [
-                        "Test subheading",
-                      ],
-                      "css": Object {
-                        "a": Object {
-                          "background": "none",
-                          "textShadow": "none",
-                        },
-                        "code": Object {
-                          "fontSize": "inherit",
-                        },
-                      },
-                    },
-                    "ref": null,
-                    "rendered": Array [
-                      "Test subheading",
-                    ],
-                    "type": "h3",
-                  },
-                  "type": [Function],
-                },
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": "h-9",
-                "nodeType": "function",
-                "props": Object {
-                  "children": Array [
-                    "Test link",
-                  ],
-                  "href": "https://www.example.com",
-                },
-                "ref": null,
-                "rendered": Object {
-                  "instance": <a
-                    css="[object Object]"
-                    href="https://www.example.com"
-                    rel="noopener"
-                    target="_blank"
-                  >
-                    Test link
-                  </a>,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": Array [
-                      "Test link",
-                    ],
-                    "css": Object {
-                      "backgroundImage": "linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, #0f7b3b 1px, #0f7b3b 2px, rgba(0, 0, 0, 0) 2px)",
-                      "borderRadius": "0.3em",
-                      "code": Object {
-                        "textShadow": "none",
-                      },
-                      "color": "#0f7b3b",
-                    },
-                    "href": "https://www.example.com",
-                    "rel": "noopener",
-                    "target": "_blank",
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    "Test link",
-                  ],
-                  "type": "a",
-                },
-                "type": [Function],
-              },
-              Object {
-                "instance": <p>
-                  Test paragraph 2.
-                </p>,
-                "key": "h-10",
-                "nodeType": "host",
-                "props": Object {
-                  "children": Array [
-                    "Test paragraph 2.",
-                  ],
-                },
-                "ref": null,
-                "rendered": Array [
-                  "Test paragraph 2.",
-                ],
-                "type": "p",
-              },
-            ],
-            "type": "section",
-          },
-        ],
-        "type": "section",
-      },
-      Object {
-        "instance": <section>
-          <h2
-            css="[object Object]"
-          >
-            Test heading 2
-          </h2>
-          <p>
-            Test paragraph 3.
-          </p>
-        </section>,
-        "key": "h-11",
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            <Unknown>
-              Test heading 2
-            </Unknown>,
-            <p>
-              Test paragraph 3.
-            </p>,
-          ],
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": "h-12",
-            "nodeType": "function",
-            "props": Object {
-              "children": Array [
-                "Test heading 2",
-              ],
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "function",
-              "props": Object {
-                "children": Array [
-                  "Test heading 2",
-                ],
-                "level": "h2",
-              },
-              "ref": null,
-              "rendered": Object {
-                "instance": <h2
-                  css="[object Object]"
-                >
-                  Test heading 2
-                </h2>,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": Array [
-                    "Test heading 2",
-                  ],
-                  "css": Object {
-                    "a": Object {
-                      "background": "none",
-                      "textShadow": "none",
-                    },
-                    "code": Object {
-                      "fontSize": "inherit",
-                    },
-                  },
-                },
-                "ref": null,
-                "rendered": Array [
-                  "Test heading 2",
-                ],
-                "type": "h2",
-              },
-              "type": [Function],
-            },
-            "type": [Function],
-          },
-          Object {
-            "instance": <p>
-              Test paragraph 3.
-            </p>,
-            "key": "h-13",
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
-                "Test paragraph 3.",
-              ],
-            },
-            "ref": null,
-            "rendered": Array [
-              "Test paragraph 3.",
-            ],
-            "type": "p",
-          },
-        ],
-        "type": "section",
-      },
-      Object {
-        "instance": <div
-          class="footnotes"
-        >
-          Test footnotes.
-        </div>,
-        "key": "h-14",
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            "Test footnotes.",
-          ],
-          "className": "footnotes",
-        },
-        "ref": null,
-        "rendered": Array [
-          "Test footnotes.",
-        ],
-        "type": "div",
-      },
-    ],
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
+<Markdown
+  htmlAst={
     Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "function",
-      "props": Object {
-        "htmlAst": Object {
+      "children": Array [
+        Object {
+          "children": Array [
+            Object {
+              "type": "text",
+              "value": "Test paragraph.",
+            },
+          ],
+          "properties": Object {},
+          "tagName": "p",
+          "type": "element",
+        },
+        Object {
           "children": Array [
             Object {
               "children": Array [
                 Object {
                   "type": "text",
-                  "value": "Test paragraph.",
+                  "value": "Test heading",
                 },
               ],
               "properties": Object {},
-              "tagName": "p",
+              "tagName": "h2",
               "type": "element",
             },
             Object {
@@ -2428,73 +334,15 @@ ReactWrapper {
                   "children": Array [
                     Object {
                       "type": "text",
-                      "value": "Test heading",
+                      "value": "Test blockquote",
                     },
                   ],
-                  "properties": Object {},
-                  "tagName": "h2",
-                  "type": "element",
-                },
-                Object {
-                  "children": Array [
-                    Object {
-                      "children": Array [
-                        Object {
-                          "type": "text",
-                          "value": "Test blockquote",
-                        },
-                      ],
-                      "tagName": "p",
-                      "type": "element",
-                    },
-                  ],
-                  "properties": Object {},
-                  "tagName": "blockquote",
-                  "type": "element",
-                },
-                Object {
-                  "children": Array [
-                    Object {
-                      "children": Array [
-                        Object {
-                          "type": "text",
-                          "value": "Test subheading",
-                        },
-                      ],
-                      "properties": Object {},
-                      "tagName": "h3",
-                      "type": "element",
-                    },
-                    Object {
-                      "children": Array [
-                        Object {
-                          "type": "text",
-                          "value": "Test link",
-                        },
-                      ],
-                      "properties": Object {
-                        "href": "https://www.example.com",
-                      },
-                      "tagName": "a",
-                      "type": "element",
-                    },
-                    Object {
-                      "children": Array [
-                        Object {
-                          "type": "text",
-                          "value": "Test paragraph 2.",
-                        },
-                      ],
-                      "properties": Object {},
-                      "tagName": "p",
-                      "type": "element",
-                    },
-                  ],
-                  "tagName": "section",
+                  "tagName": "p",
                   "type": "element",
                 },
               ],
-              "tagName": "section",
+              "properties": Object {},
+              "tagName": "blockquote",
               "type": "element",
             },
             Object {
@@ -2503,18 +351,31 @@ ReactWrapper {
                   "children": Array [
                     Object {
                       "type": "text",
-                      "value": "Test heading 2",
+                      "value": "Test subheading",
                     },
                   ],
                   "properties": Object {},
-                  "tagName": "h2",
+                  "tagName": "h3",
                   "type": "element",
                 },
                 Object {
                   "children": Array [
                     Object {
                       "type": "text",
-                      "value": "Test paragraph 3.",
+                      "value": "Test link",
+                    },
+                  ],
+                  "properties": Object {
+                    "href": "https://www.example.com",
+                  },
+                  "tagName": "a",
+                  "type": "element",
+                },
+                Object {
+                  "children": Array [
+                    Object {
+                      "type": "text",
+                      "value": "Test paragraph 2.",
                     },
                   ],
                   "properties": Object {},
@@ -2525,530 +386,211 @@ ReactWrapper {
               "tagName": "section",
               "type": "element",
             },
+          ],
+          "tagName": "section",
+          "type": "element",
+        },
+        Object {
+          "children": Array [
             Object {
               "children": Array [
                 Object {
                   "type": "text",
-                  "value": "Test footnotes.",
+                  "value": "Test heading 2",
                 },
               ],
-              "properties": Object {
-                "class": "footnotes",
-              },
-              "tagName": "div",
+              "properties": Object {},
+              "tagName": "h2",
+              "type": "element",
+            },
+            Object {
+              "children": Array [
+                Object {
+                  "type": "text",
+                  "value": "Test paragraph 3.",
+                },
+              ],
+              "properties": Object {},
+              "tagName": "p",
               "type": "element",
             },
           ],
-          "data": Object {
-            "quirksMode": false,
-          },
-          "type": "root",
-        },
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": <p>
-            Test paragraph.
-          </p>,
-          "key": "h-2",
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              "Test paragraph.",
-            ],
-          },
-          "ref": null,
-          "rendered": Array [
-            "Test paragraph.",
-          ],
-          "type": "p",
+          "tagName": "section",
+          "type": "element",
         },
         Object {
-          "instance": <section>
-            <h2
-              css="[object Object]"
-            >
-              Test heading
-            </h2>
-            <blockquote
-              css="[object Object]"
-            >
-              <p>
-                Test blockquote
-              </p>
-            </blockquote>
-            <section>
-              <h3
-                css="[object Object]"
-              >
-                Test subheading
-              </h3>
-              <a
-                css="[object Object]"
-                href="https://www.example.com"
-                rel="noopener"
-                target="_blank"
-              >
-                Test link
-              </a>
-              <p>
-                Test paragraph 2.
-              </p>
-            </section>
-          </section>,
-          "key": "h-3",
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              <Unknown>
-                Test heading
-              </Unknown>,
-              <Blockquote>
-                <p>
-                  Test blockquote
-                </p>
-              </Blockquote>,
-              <section>
-                <Unknown>
-                  Test subheading
-                </Unknown>
-                <Link
-                  href="https://www.example.com"
-                >
-                  Test link
-                </Link>
-                <p>
-                  Test paragraph 2.
-                </p>
-              </section>,
-            ],
-          },
-          "ref": null,
-          "rendered": Array [
+          "children": Array [
             Object {
-              "instance": null,
-              "key": "h-4",
-              "nodeType": "function",
-              "props": Object {
-                "children": Array [
-                  "Test heading",
-                ],
-              },
-              "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "function",
-                "props": Object {
-                  "children": Array [
-                    "Test heading",
-                  ],
-                  "level": "h2",
-                },
-                "ref": null,
-                "rendered": Object {
-                  "instance": <h2
-                    css="[object Object]"
-                  >
-                    Test heading
-                  </h2>,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": Array [
-                      "Test heading",
-                    ],
-                    "css": Object {
-                      "a": Object {
-                        "background": "none",
-                        "textShadow": "none",
-                      },
-                      "code": Object {
-                        "fontSize": "inherit",
-                      },
-                    },
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    "Test heading",
-                  ],
-                  "type": "h2",
-                },
-                "type": [Function],
-              },
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": "h-5",
-              "nodeType": "function",
-              "props": Object {
-                "children": Array [
-                  <p>
-                    Test blockquote
-                  </p>,
-                ],
-              },
-              "ref": null,
-              "rendered": Object {
-                "instance": <blockquote
-                  css="[object Object]"
-                >
-                  <p>
-                    Test blockquote
-                  </p>
-                </blockquote>,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": Array [
-                    <p>
-                      Test blockquote
-                    </p>,
-                  ],
-                  "css": Object {
-                    "@media only screen and (max-width:480px)": Object {
-                      "borderLeft": "0.29625rem solid #0f7b3b",
-                      "marginLeft": "-1.185rem",
-                      "paddingLeft": "0.88875rem",
-                    },
-                    "@media only screen and (min-width: 28rem)": Object {
-                      "borderLeft": "0.5925rem solid #0f7b3b",
-                      "marginLeft": 0,
-                      "paddingLeft": "0.9875rem",
-                    },
-                    "borderLeft": "0.29625rem solid #0f7b3b",
-                    "marginLeft": "-1.185rem",
-                    "paddingLeft": "0.88875rem",
-                  },
-                },
-                "ref": null,
-                "rendered": Array [
-                  Object {
-                    "instance": <p>
-                      Test blockquote
-                    </p>,
-                    "key": "h-6",
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": Array [
-                        "Test blockquote",
-                      ],
-                    },
-                    "ref": null,
-                    "rendered": Array [
-                      "Test blockquote",
-                    ],
-                    "type": "p",
-                  },
-                ],
-                "type": "blockquote",
-              },
-              "type": [Function],
-            },
-            Object {
-              "instance": <section>
-                <h3
-                  css="[object Object]"
-                >
-                  Test subheading
-                </h3>
-                <a
-                  css="[object Object]"
-                  href="https://www.example.com"
-                  rel="noopener"
-                  target="_blank"
-                >
-                  Test link
-                </a>
-                <p>
-                  Test paragraph 2.
-                </p>
-              </section>,
-              "key": "h-7",
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
-                  <Unknown>
-                    Test subheading
-                  </Unknown>,
-                  <Link
-                    href="https://www.example.com"
-                  >
-                    Test link
-                  </Link>,
-                  <p>
-                    Test paragraph 2.
-                  </p>,
-                ],
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": "h-8",
-                  "nodeType": "function",
-                  "props": Object {
-                    "children": Array [
-                      "Test subheading",
-                    ],
-                  },
-                  "ref": null,
-                  "rendered": Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "function",
-                    "props": Object {
-                      "children": Array [
-                        "Test subheading",
-                      ],
-                      "level": "h3",
-                    },
-                    "ref": null,
-                    "rendered": Object {
-                      "instance": <h3
-                        css="[object Object]"
-                      >
-                        Test subheading
-                      </h3>,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": Array [
-                          "Test subheading",
-                        ],
-                        "css": Object {
-                          "a": Object {
-                            "background": "none",
-                            "textShadow": "none",
-                          },
-                          "code": Object {
-                            "fontSize": "inherit",
-                          },
-                        },
-                      },
-                      "ref": null,
-                      "rendered": Array [
-                        "Test subheading",
-                      ],
-                      "type": "h3",
-                    },
-                    "type": [Function],
-                  },
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": "h-9",
-                  "nodeType": "function",
-                  "props": Object {
-                    "children": Array [
-                      "Test link",
-                    ],
-                    "href": "https://www.example.com",
-                  },
-                  "ref": null,
-                  "rendered": Object {
-                    "instance": <a
-                      css="[object Object]"
-                      href="https://www.example.com"
-                      rel="noopener"
-                      target="_blank"
-                    >
-                      Test link
-                    </a>,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": Array [
-                        "Test link",
-                      ],
-                      "css": Object {
-                        "backgroundImage": "linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, #0f7b3b 1px, #0f7b3b 2px, rgba(0, 0, 0, 0) 2px)",
-                        "borderRadius": "0.3em",
-                        "code": Object {
-                          "textShadow": "none",
-                        },
-                        "color": "#0f7b3b",
-                      },
-                      "href": "https://www.example.com",
-                      "rel": "noopener",
-                      "target": "_blank",
-                    },
-                    "ref": null,
-                    "rendered": Array [
-                      "Test link",
-                    ],
-                    "type": "a",
-                  },
-                  "type": [Function],
-                },
-                Object {
-                  "instance": <p>
-                    Test paragraph 2.
-                  </p>,
-                  "key": "h-10",
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": Array [
-                      "Test paragraph 2.",
-                    ],
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    "Test paragraph 2.",
-                  ],
-                  "type": "p",
-                },
-              ],
-              "type": "section",
+              "type": "text",
+              "value": "Test footnotes.",
             },
           ],
-          "type": "section",
-        },
-        Object {
-          "instance": <section>
-            <h2
-              css="[object Object]"
-            >
-              Test heading 2
-            </h2>
-            <p>
-              Test paragraph 3.
-            </p>
-          </section>,
-          "key": "h-11",
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              <Unknown>
-                Test heading 2
-              </Unknown>,
-              <p>
-                Test paragraph 3.
-              </p>,
-            ],
+          "properties": Object {
+            "class": "footnotes",
           },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": "h-12",
-              "nodeType": "function",
-              "props": Object {
-                "children": Array [
-                  "Test heading 2",
-                ],
-              },
-              "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "function",
-                "props": Object {
-                  "children": Array [
-                    "Test heading 2",
-                  ],
-                  "level": "h2",
-                },
-                "ref": null,
-                "rendered": Object {
-                  "instance": <h2
-                    css="[object Object]"
-                  >
-                    Test heading 2
-                  </h2>,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": Array [
-                      "Test heading 2",
-                    ],
-                    "css": Object {
-                      "a": Object {
-                        "background": "none",
-                        "textShadow": "none",
-                      },
-                      "code": Object {
-                        "fontSize": "inherit",
-                      },
-                    },
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    "Test heading 2",
-                  ],
-                  "type": "h2",
-                },
-                "type": [Function],
-              },
-              "type": [Function],
-            },
-            Object {
-              "instance": <p>
-                Test paragraph 3.
-              </p>,
-              "key": "h-13",
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
-                  "Test paragraph 3.",
-                ],
-              },
-              "ref": null,
-              "rendered": Array [
-                "Test paragraph 3.",
-              ],
-              "type": "p",
-            },
-          ],
-          "type": "section",
-        },
-        Object {
-          "instance": <div
-            class="footnotes"
-          >
-            Test footnotes.
-          </div>,
-          "key": "h-14",
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              "Test footnotes.",
-            ],
-            "className": "footnotes",
-          },
-          "ref": null,
-          "rendered": Array [
-            "Test footnotes.",
-          ],
-          "type": "div",
+          "tagName": "div",
+          "type": "element",
         },
       ],
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "legacyContextMode": "parent",
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getChildContext": Object {
-            "calledByRenderer": false,
-          },
-          "getDerivedStateFromProps": true,
-          "getSnapshotBeforeUpdate": true,
-          "setState": Object {
-            "skipsComponentDidUpdateOnNullish": true,
-          },
-        },
+      "data": Object {
+        "quirksMode": false,
       },
-    },
-  },
-}
+      "type": "root",
+    }
+  }
+>
+  <p
+    key="h-2"
+  >
+    Test paragraph.
+  </p>
+  <section
+    key="h-3"
+  >
+    <Component
+      key="h-4"
+    >
+      <Heading
+        level="h2"
+      >
+        <h2
+          css={
+            Object {
+              "a": Object {
+                "background": "none",
+                "textShadow": "none",
+              },
+              "code": Object {
+                "fontSize": "inherit",
+              },
+            }
+          }
+        >
+          Test heading
+        </h2>
+      </Heading>
+    </Component>
+    <Blockquote
+      key="h-5"
+    >
+      <blockquote
+        css={
+          Object {
+            "@media only screen and (max-width:480px)": Object {
+              "borderLeft": "0.29625rem solid #0f7b3b",
+              "marginLeft": "-1.185rem",
+              "paddingLeft": "0.88875rem",
+            },
+            "@media only screen and (min-width: 28rem)": Object {
+              "borderLeft": "0.5925rem solid #0f7b3b",
+              "marginLeft": 0,
+              "paddingLeft": "0.9875rem",
+            },
+            "borderLeft": "0.29625rem solid #0f7b3b",
+            "marginLeft": "-1.185rem",
+            "paddingLeft": "0.88875rem",
+          }
+        }
+      >
+        <p
+          key="h-6"
+        >
+          Test blockquote
+        </p>
+      </blockquote>
+    </Blockquote>
+    <section
+      key="h-7"
+    >
+      <Component
+        key="h-8"
+      >
+        <Heading
+          level="h3"
+        >
+          <h3
+            css={
+              Object {
+                "a": Object {
+                  "background": "none",
+                  "textShadow": "none",
+                },
+                "code": Object {
+                  "fontSize": "inherit",
+                },
+              }
+            }
+          >
+            Test subheading
+          </h3>
+        </Heading>
+      </Component>
+      <Link
+        href="https://www.example.com"
+        key="h-9"
+      >
+        <a
+          css={
+            Object {
+              "backgroundImage": "linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, #0f7b3b 1px, #0f7b3b 2px, rgba(0, 0, 0, 0) 2px)",
+              "borderRadius": "0.3em",
+              "code": Object {
+                "textShadow": "none",
+              },
+              "color": "#0f7b3b",
+            }
+          }
+          href="https://www.example.com"
+          rel="noopener"
+          target="_blank"
+        >
+          Test link
+        </a>
+      </Link>
+      <p
+        key="h-10"
+      >
+        Test paragraph 2.
+      </p>
+    </section>
+  </section>
+  <section
+    key="h-11"
+  >
+    <Component
+      key="h-12"
+    >
+      <Heading
+        level="h2"
+      >
+        <h2
+          css={
+            Object {
+              "a": Object {
+                "background": "none",
+                "textShadow": "none",
+              },
+              "code": Object {
+                "fontSize": "inherit",
+              },
+            }
+          }
+        >
+          Test heading 2
+        </h2>
+      </Heading>
+    </Component>
+    <p
+      key="h-13"
+    >
+      Test paragraph 3.
+    </p>
+  </section>
+  <div
+    className="footnotes"
+    key="h-14"
+  >
+    Test footnotes.
+  </div>
+</Markdown>
 `;
