@@ -40,12 +40,6 @@ describe("Article", () => {
       expect(tree).toMatchSnapshot()
     })
 
-    it("sets the page title", () => {
-      expect(tree.find("HelmetWrapper").prop("title")).toEqual(
-        "Test Article – Test Site"
-      )
-    })
-
     it("displays the article title in an h1", () => {
       const heading = tree.find("header > Heading")
       expect(heading.prop("level")).toBe("h1")
@@ -90,10 +84,6 @@ describe("Article", () => {
 
     it("renders correctly", () => {
       expect(tree).toMatchSnapshot()
-    })
-
-    it("does not set the page title", () => {
-      expect(tree.find("HelmetWrapper")).toHaveLength(0)
     })
 
     it("displays the article title in an h2", () => {

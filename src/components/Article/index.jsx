@@ -1,7 +1,6 @@
 import { graphql } from "gatsby"
 import { DateTime } from "luxon"
 import React from "react"
-import Helmet from "react-helmet"
 import excerpt from "../../utils/excerpt"
 import Heading from "../Heading"
 import Link from "../Link"
@@ -13,7 +12,7 @@ const localDateFromDateTime = date =>
     .setZone("America/Phoenix")
     .toLocaleString(DateTime.DATE_HUGE)
 
-const Article = ({ list, article, site }) => {
+const Article = ({ list, article }) => {
   const { fields, frontmatter, timeToRead } = article
   const content = list ? excerpt(article) : article.htmlAst
   let title
@@ -21,16 +20,13 @@ const Article = ({ list, article, site }) => {
   if (frontmatter.link) {
     title = <Link href={frontmatter.link}>{frontmatter.title}</Link>
   } else if (list) {
-    title = <Link href={"/" + fields.slug}>{frontmatter.title}</Link>
+    title = <Link href={`/${fields.slug}`}>{frontmatter.title}</Link>
   } else {
     title = frontmatter.title
   }
 
   return (
     <article>
-      {list || (
-        <Helmet title={frontmatter.title + " – " + site.siteMetadata.title} />
-      )}
       <header>
         <Heading level={list ? "h2" : "h1"}>{title}</Heading>
         <p css={{ fontSize: "0.75rem", marginBottom: "0.79rem" }}>
@@ -45,7 +41,7 @@ const Article = ({ list, article, site }) => {
       <Markdown htmlAst={content} />
       {list && (
         <footer css={{ marginTop: "1.58rem" }}>
-          <Link href={"/" + fields.slug}>
+          <Link href={`/${fields.slug}`}>
             {frontmatter.link ? "Permalink" : "Read More…"}
           </Link>
         </footer>

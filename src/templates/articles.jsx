@@ -3,11 +3,19 @@ import React from "react"
 import Article from "../components/Article"
 import Layout from "../components/Layout"
 
-const Template = ({ data }) => (
-  <Layout>
-    <Article {...data} />
-  </Layout>
-)
+const Template = ({ data }) => {
+  const {
+    article: { frontmatter },
+    site: { siteMetadata },
+  } = data
+
+  return (
+    <Layout>
+      <Helmet title={`${frontmatter.title} – ${siteMetadata.title}`} />
+      <Article {...data} />
+    </Layout>
+  )
+}
 
 export default Template
 
