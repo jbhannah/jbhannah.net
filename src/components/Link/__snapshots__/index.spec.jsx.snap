@@ -1,332 +1,69 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Link with an anchor link renders correctly 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Link
-    href="#fn-1"
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "checkPropTypes": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateError": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "host",
-    "props": Object {
-      "css": Object {
-        "backgroundImage": "linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, #0f7b3b 1px, #0f7b3b 2px, rgba(0, 0, 0, 0) 2px)",
-        "borderRadius": "0.3em",
-        "code": Object {
-          "textShadow": "none",
-        },
-        "color": "#0f7b3b",
-      },
-      "href": "#fn-1",
-    },
-    "ref": null,
-    "rendered": null,
-    "type": "a",
-  },
-  Symbol(enzyme.__nodes__): Array [
+<a
+  css={
     Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "css": Object {
-          "backgroundImage": "linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, #0f7b3b 1px, #0f7b3b 2px, rgba(0, 0, 0, 0) 2px)",
-          "borderRadius": "0.3em",
-          "code": Object {
-            "textShadow": "none",
-          },
-          "color": "#0f7b3b",
-        },
-        "href": "#fn-1",
+      "backgroundImage": "linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, #0f7b3b 1px, #0f7b3b 2px, rgba(0, 0, 0, 0) 2px)",
+      "borderRadius": "0.3em",
+      "code": Object {
+        "textShadow": "none",
       },
-      "ref": null,
-      "rendered": null,
-      "type": "a",
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "legacyContextMode": "parent",
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getChildContext": Object {
-            "calledByRenderer": false,
-          },
-          "getDerivedStateFromProps": true,
-          "getSnapshotBeforeUpdate": true,
-          "setState": Object {
-            "skipsComponentDidUpdateOnNullish": true,
-          },
-        },
-      },
-    },
-  },
-}
+      "color": "#0f7b3b",
+    }
+  }
+  href="#fn-1"
+/>
 `;
 
 exports[`Link with an external link renders correctly 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Link
-    href="https://www.example.com"
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "checkPropTypes": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateError": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "host",
-    "props": Object {
-      "css": Object {
-        "backgroundImage": "linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, #0f7b3b 1px, #0f7b3b 2px, rgba(0, 0, 0, 0) 2px)",
-        "borderRadius": "0.3em",
-        "code": Object {
-          "textShadow": "none",
-        },
-        "color": "#0f7b3b",
-      },
-      "href": "https://www.example.com",
-      "rel": "noopener",
-      "target": "_blank",
-    },
-    "ref": null,
-    "rendered": null,
-    "type": "a",
-  },
-  Symbol(enzyme.__nodes__): Array [
+<a
+  css={
     Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "css": Object {
-          "backgroundImage": "linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, #0f7b3b 1px, #0f7b3b 2px, rgba(0, 0, 0, 0) 2px)",
-          "borderRadius": "0.3em",
-          "code": Object {
-            "textShadow": "none",
-          },
-          "color": "#0f7b3b",
-        },
-        "href": "https://www.example.com",
-        "rel": "noopener",
-        "target": "_blank",
+      "backgroundImage": "linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, #0f7b3b 1px, #0f7b3b 2px, rgba(0, 0, 0, 0) 2px)",
+      "borderRadius": "0.3em",
+      "code": Object {
+        "textShadow": "none",
       },
-      "ref": null,
-      "rendered": null,
-      "type": "a",
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "legacyContextMode": "parent",
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getChildContext": Object {
-            "calledByRenderer": false,
-          },
-          "getDerivedStateFromProps": true,
-          "getSnapshotBeforeUpdate": true,
-          "setState": Object {
-            "skipsComponentDidUpdateOnNullish": true,
-          },
-        },
-      },
-    },
-  },
-}
+      "color": "#0f7b3b",
+    }
+  }
+  href="https://www.example.com"
+  rel="noopener"
+  target="_blank"
+/>
 `;
 
 exports[`Link with an external link with a rel property renders correctly 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Link
-    href="https://www.example.com"
-    rel="license"
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "checkPropTypes": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateError": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "host",
-    "props": Object {
-      "css": Object {
-        "backgroundImage": "linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, #0f7b3b 1px, #0f7b3b 2px, rgba(0, 0, 0, 0) 2px)",
-        "borderRadius": "0.3em",
-        "code": Object {
-          "textShadow": "none",
-        },
-        "color": "#0f7b3b",
-      },
-      "href": "https://www.example.com",
-      "rel": "license noopener",
-      "target": "_blank",
-    },
-    "ref": null,
-    "rendered": null,
-    "type": "a",
-  },
-  Symbol(enzyme.__nodes__): Array [
+<a
+  css={
     Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "css": Object {
-          "backgroundImage": "linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, #0f7b3b 1px, #0f7b3b 2px, rgba(0, 0, 0, 0) 2px)",
-          "borderRadius": "0.3em",
-          "code": Object {
-            "textShadow": "none",
-          },
-          "color": "#0f7b3b",
-        },
-        "href": "https://www.example.com",
-        "rel": "license noopener",
-        "target": "_blank",
+      "backgroundImage": "linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, #0f7b3b 1px, #0f7b3b 2px, rgba(0, 0, 0, 0) 2px)",
+      "borderRadius": "0.3em",
+      "code": Object {
+        "textShadow": "none",
       },
-      "ref": null,
-      "rendered": null,
-      "type": "a",
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "legacyContextMode": "parent",
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getChildContext": Object {
-            "calledByRenderer": false,
-          },
-          "getDerivedStateFromProps": true,
-          "getSnapshotBeforeUpdate": true,
-          "setState": Object {
-            "skipsComponentDidUpdateOnNullish": true,
-          },
-        },
-      },
-    },
-  },
-}
+      "color": "#0f7b3b",
+    }
+  }
+  href="https://www.example.com"
+  rel="license noopener"
+  target="_blank"
+/>
 `;
 
 exports[`Link with an internal link renders correctly 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Link
-    href="/"
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "checkPropTypes": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateError": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "function",
-    "props": Object {
-      "css": Object {
-        "backgroundImage": "linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, #0f7b3b 1px, #0f7b3b 2px, rgba(0, 0, 0, 0) 2px)",
-        "borderRadius": "0.3em",
-        "code": Object {
-          "textShadow": "none",
-        },
-        "color": "#0f7b3b",
-      },
-      "to": "/",
-    },
-    "ref": null,
-    "rendered": null,
-    "type": Object {
-      "$$typeof": Symbol(react.forward_ref),
-      "render": [Function],
-    },
-  },
-  Symbol(enzyme.__nodes__): Array [
+<ForwardRef
+  css={
     Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "function",
-      "props": Object {
-        "css": Object {
-          "backgroundImage": "linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, #0f7b3b 1px, #0f7b3b 2px, rgba(0, 0, 0, 0) 2px)",
-          "borderRadius": "0.3em",
-          "code": Object {
-            "textShadow": "none",
-          },
-          "color": "#0f7b3b",
-        },
-        "to": "/",
+      "backgroundImage": "linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, #0f7b3b 1px, #0f7b3b 2px, rgba(0, 0, 0, 0) 2px)",
+      "borderRadius": "0.3em",
+      "code": Object {
+        "textShadow": "none",
       },
-      "ref": null,
-      "rendered": null,
-      "type": Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "render": [Function],
-      },
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "legacyContextMode": "parent",
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getChildContext": Object {
-            "calledByRenderer": false,
-          },
-          "getDerivedStateFromProps": true,
-          "getSnapshotBeforeUpdate": true,
-          "setState": Object {
-            "skipsComponentDidUpdateOnNullish": true,
-          },
-        },
-      },
-    },
-  },
-}
+      "color": "#0f7b3b",
+    }
+  }
+  to="/"
+/>
 `;
