@@ -62,7 +62,21 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        exclude: ["/page/*", "/*/page/*"],
+        serialize: ({
+          site: {
+            siteMetadata: { siteUrl },
+          },
+          allSitePage: { edges },
+        }) =>
+          edges.map(({ node: { path } }) => {
+            const root = path === "/"
+
+            return {
+              url: siteUrl + path,
+              changefreq: root ? "weekly" : "never",
+              priority: root ? 1.0 : 0.7,
+            }
+          }),
       },
     },
     {
