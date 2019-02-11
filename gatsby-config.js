@@ -51,6 +51,7 @@ module.exports = {
       options: {
         plugins: [
           "gatsby-remark-numbered-footnotes",
+          "gatsby-remark-smartypants",
           {
             resolve: "gatsby-remark-prismjs",
             options: { inlineCodeMarker: "›" },
