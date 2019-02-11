@@ -135,8 +135,39 @@ exports[`PureLayout renders correctly 1`] = `
   <HelmetWrapper
     defer={true}
     encodeSpecialCharacters={true}
-    title="Test Site"
-  />
+  >
+    <title>
+      Test Site
+    </title>
+    <meta
+      name="description"
+    />
+    <meta
+      content="Test Site"
+      property="og:title"
+    />
+    <meta
+      property="og:description"
+    />
+    <meta
+      content="website"
+      property="og:type"
+    />
+    <meta
+      content="test-file-stub"
+      property="og:image"
+    />
+    <meta
+      content="Test Site"
+      property="og:image:alt"
+    />
+    <meta
+      property="og:url"
+    />
+    <meta
+      property="twitter:creator"
+    />
+  </HelmetWrapper>
   <Header
     socialLinks={
       Array [

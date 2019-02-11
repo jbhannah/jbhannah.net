@@ -2,6 +2,13 @@ module.exports = {
   siteMetadata: {
     siteUrl: "https://jbhannah.net",
     title: "Jesse B. Hannah",
+    description: "jbhannah's personal website and blog",
+    twitterCreator: "@jbhannah",
+    name: {
+      first: "Jesse",
+      last: "Hannah",
+    },
+    username: "jbhannah",
     socialLinks: [
       {
         service: "GitHub",

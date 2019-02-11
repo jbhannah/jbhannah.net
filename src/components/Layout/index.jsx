@@ -4,6 +4,7 @@ import "prismjs/themes/prism-solarizedlight.css"
 import PropTypes from "prop-types"
 import React from "react"
 import Helmet from "react-helmet"
+import avatar from "../../images/avatar.png"
 import {
   contentWidth,
   contentWidthColumn,
@@ -17,7 +18,13 @@ export const PureLayout = ({
   children,
   data: {
     site: {
-      siteMetadata: { title, socialLinks },
+      siteMetadata: {
+        siteUrl,
+        title,
+        description,
+        twitterCreator,
+        socialLinks,
+      },
     },
   },
 }) => (
@@ -64,7 +71,17 @@ export const PureLayout = ({
         },
       }}
     />
-    <Helmet {...{ title }} />
+    <Helmet>
+      <title>{title}</title>
+      <meta name="description" content={description} />
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={description} />
+      <meta property="og:type" content="website" />
+      <meta property="og:image" content={avatar} />
+      <meta property="og:image:alt" content={title} />
+      <meta property="og:url" content={siteUrl} />
+      <meta property="twitter:creator" content={twitterCreator} />
+    </Helmet>
     <Header {...{ title, socialLinks }} />
     <main css={[contentWidthColumn, { flexGrow: 1, [mq.lg]: { margin: 0 } }]}>
       {children}
@@ -77,7 +94,10 @@ const query = graphql`
   query LayoutQuery {
     site {
       siteMetadata {
+        siteUrl
         title
+        description
+        twitterCreator
         socialLinks {
           key: service
           service

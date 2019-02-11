@@ -6,13 +6,32 @@ import Layout from "../components/Layout"
 
 const Template = ({ data }) => {
   const {
-    article: { frontmatter },
-    site: { siteMetadata },
+    article: {
+      fields: { slug },
+      frontmatter: { title },
+      excerpt,
+    },
+    site: {
+      siteMetadata: { siteUrl, title: siteTitle, username, name },
+    },
   } = data
 
   return (
     <Layout>
-      <Helmet title={`${frontmatter.title} – ${siteMetadata.title}`} />
+      <Helmet>
+        <title>
+          {title} - {siteTitle}
+        </title>
+        <meta name="description" content={excerpt} />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={excerpt} />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content={`${siteUrl}/${slug}`} />
+        <meta property="og:article:author:first_name" content={name.first} />
+        <meta property="og:article:author:last_name" content={name.last} />
+        <meta property="og:article:author:username" content={username} />
+        <meta property="twitter:card" content="summary" />
+      </Helmet>
       <Article {...data} />
     </Layout>
   )
@@ -27,7 +46,13 @@ export const query = graphql`
     }
     site {
       siteMetadata {
+        siteUrl
         title
+        username
+        name {
+          first
+          last
+        }
       }
     }
   }
