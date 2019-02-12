@@ -49,13 +49,13 @@ describe("Link", () => {
 
   describe("with an external link", () => {
     const tree = TestLink({ href: "https://www.example.com" })
-    const link = t => t.find("a")
+    const link = t => t.find("OutboundLink")
 
     it("renders correctly", () => {
       expect(tree).toMatchSnapshot()
     })
 
-    it("renders an a", () => {
+    it("renders an OutboundLink", () => {
       expect(link(tree).prop("href")).toBe("https://www.example.com")
     })
 

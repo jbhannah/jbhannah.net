@@ -17,7 +17,7 @@ exports[`Link with an anchor link renders correctly 1`] = `
 `;
 
 exports[`Link with an external link renders correctly 1`] = `
-<a
+<OutboundLink
   css={
     Object {
       "backgroundImage": "linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, #0f7b3b 1px, #0f7b3b 2px, rgba(0, 0, 0, 0) 2px)",
@@ -35,7 +35,7 @@ exports[`Link with an external link renders correctly 1`] = `
 `;
 
 exports[`Link with an external link with a rel property renders correctly 1`] = `
-<a
+<OutboundLink
   css={
     Object {
       "backgroundImage": "linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, #0f7b3b 1px, #0f7b3b 2px, rgba(0, 0, 0, 0) 2px)",
