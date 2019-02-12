@@ -1,6 +1,6 @@
 import PropTypes from "prop-types"
 import React from "react"
-import avatar from "../../images/avatar.png"
+import avatar from "../../images/avatar-sm.png"
 import { contentWidth, headerWidth, mq } from "../../utils/styles"
 import Heading from "../Heading"
 import Link from "../Link"
