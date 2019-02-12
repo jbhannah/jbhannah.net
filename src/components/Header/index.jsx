@@ -1,5 +1,6 @@
 import PropTypes from "prop-types"
 import React from "react"
+import avatar from "../../images/avatar.png"
 import { contentWidth, headerWidth, mq } from "../../utils/styles"
 import Heading from "../Heading"
 import Link from "../Link"
@@ -19,7 +20,7 @@ const Header = ({ title, socialLinks }) => (
         flexDirection: "column",
         justifyContent: "flex-start",
         margin: 0,
-        textAlign: "right",
+        textAlign: "center",
         width: headerWidth,
       },
       [mq.xl]: {
@@ -36,7 +37,21 @@ const Header = ({ title, socialLinks }) => (
         },
       }}
     >
-      <Link href="/">{title}</Link>
+      <Link href="/" css={{ display: "block" }}>
+        <img
+          src={avatar}
+          css={{
+            display: "none",
+            [mq.lg]: {
+              display: "block",
+              borderRadius: "50%",
+              width: "100%",
+              marginBottom: "0.79rem",
+            },
+          }}
+        />
+        {title}
+      </Link>
     </Heading>
     <SocialNav {...{ socialLinks }} />
   </header>

@@ -8,7 +8,7 @@ exports[`Header renders correctly 1`] = `
         "flexDirection": "column",
         "justifyContent": "flex-start",
         "margin": 0,
-        "textAlign": "right",
+        "textAlign": "center",
         "width": "12rem",
       },
       "@media only screen and (min-width: 70rem)": Object {
@@ -36,8 +36,27 @@ exports[`Header renders correctly 1`] = `
     level="h1"
   >
     <Link
+      css={
+        Object {
+          "display": "block",
+        }
+      }
       href="/"
     >
+      <img
+        css={
+          Object {
+            "@media only screen and (min-width: 59rem)": Object {
+              "borderRadius": "50%",
+              "display": "block",
+              "marginBottom": "0.79rem",
+              "width": "100%",
+            },
+            "display": "none",
+          }
+        }
+        src="test-file-stub"
+      />
       Test Site
     </Link>
   </Heading>

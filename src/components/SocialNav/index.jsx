@@ -19,6 +19,9 @@ const SocialNav = ({ socialLinks }) => (
         justifyContent: "flex-end",
         listStyleType: "none",
         margin: 0,
+        [mq.lg]: {
+          justifyContent: "center",
+        },
       }}
     >
       {socialLinks.map(l => (

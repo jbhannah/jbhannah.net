@@ -16,6 +16,10 @@ exports[`Layout renders correctly 1`] = `
         css="[object Object]"
         href="/"
       >
+        <img
+          css="[object Object]"
+          src="test-file-stub"
+        />
         Test Site
       </a>
     </h1>
