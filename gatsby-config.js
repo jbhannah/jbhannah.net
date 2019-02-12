@@ -71,7 +71,7 @@ module.exports = {
           "gatsby-remark-numbered-footnotes",
           "gatsby-remark-smartypants",
           {
-            resovle: "@raae/gatsby-remark-oembed",
+            resolve: "@raae/gatsby-remark-oembed",
             options: {
               providers: { exclude: ["Flickr", "Instagram", "Reddit"] },
             },
