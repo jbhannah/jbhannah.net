@@ -42,6 +42,12 @@ module.exports = {
     },
     "gatsby-plugin-react-helmet",
     {
+      resolve: "gatsby-plugin-gtag",
+      options: {
+        trackingId: "UA-75018467-1",
+      },
+    },
+    {
       resolve: "gatsby-plugin-typography",
       options: {
         pathToConfigModule: "src/utils/typography.js",
