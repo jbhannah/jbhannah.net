@@ -1,7 +1,7 @@
 import PropTypes from "prop-types"
 import React from "react"
 import avatar from "../../images/avatar-sm.png"
-import { contentWidth, headerWidth, mq } from "../../utils/styles"
+import { contentWidth, headerWidth, hoverRadius, mq } from "../../utils/styles"
 import Heading from "../Heading"
 import Link from "../Link"
 import SocialNav from "../SocialNav"
@@ -44,9 +44,9 @@ const Header = ({ title, socialLinks }) => (
             display: "none",
             [mq.lg]: {
               display: "block",
-              borderRadius: "50%",
               width: "100%",
               marginBottom: "0.79rem",
+              ...hoverRadius,
             },
           }}
         />

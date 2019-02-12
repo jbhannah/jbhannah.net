@@ -1,6 +1,6 @@
 import PropTypes from "prop-types"
 import React from "react"
-import { mq } from "../../utils/styles"
+import { hoverRadius, mq } from "../../utils/styles"
 import Link from "../Link"
 
 const SocialNav = ({ socialLinks }) => (
@@ -59,15 +59,11 @@ const SocialLink = ({ service, link, name }) => (
     >
       <img
         css={{
-          transition: "border-radius 0.5s",
-          borderRadius: "50%",
           display: "block",
           height: "100%",
           margin: 0,
           width: "100%",
-          "a:hover > &": {
-            borderRadius: "15%",
-          },
+          ...hoverRadius,
         }}
         alt={`${name} on ${service}`}
         src={require(`../../images/${service.toLowerCase()}.svg`)}

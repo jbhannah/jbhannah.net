@@ -15,3 +15,11 @@ export const contentWidthColumn = {
   padding: "0 1rem",
   width: "100%",
 }
+
+export const hoverRadius = {
+  transition: "border-radius 0.5s",
+  borderRadius: "50%",
+  "a:hover > &": {
+    borderRadius: "15%",
+  },
+}
