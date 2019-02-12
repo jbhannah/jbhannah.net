@@ -63,13 +63,14 @@ module.exports = {
       resolve: "gatsby-transformer-remark",
       options: {
         plugins: [
-          "gatsby-remark-autolink-headers",
-          "gatsby-remark-numbered-footnotes",
-          "gatsby-remark-smartypants",
           {
             resolve: "gatsby-remark-prismjs",
             options: { inlineCodeMarker: "›" },
           },
+          "gatsby-remark-autolink-headers",
+          "gatsby-remark-numbered-footnotes",
+          "gatsby-remark-smartypants",
+          "@raae/gatsby-remark-oembed",
         ],
       },
     },
