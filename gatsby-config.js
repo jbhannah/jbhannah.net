@@ -70,7 +70,12 @@ module.exports = {
           "gatsby-remark-autolink-headers",
           "gatsby-remark-numbered-footnotes",
           "gatsby-remark-smartypants",
-          "@raae/gatsby-remark-oembed",
+          {
+            resovle: "@raae/gatsby-remark-oembed",
+            options: {
+              providers: { exclude: ["Flickr", "Instagram", "Reddit"] },
+            },
+          },
         ],
       },
     },
