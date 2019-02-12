@@ -232,7 +232,7 @@ exports[`Markdown with a root element renders correctly 1`] = `
           href="https://www.example.com"
           key="h-9"
         >
-          <OutboundLink
+          <a
             css={
               Object {
                 "backgroundImage": "linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, #0f7b3b 1px, #0f7b3b 2px, rgba(0, 0, 0, 0) 2px)",
@@ -244,28 +244,12 @@ exports[`Markdown with a root element renders correctly 1`] = `
               }
             }
             href="https://www.example.com"
+            onClick={[Function]}
             rel="noopener"
             target="_blank"
           >
-            <a
-              css={
-                Object {
-                  "backgroundImage": "linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, #0f7b3b 1px, #0f7b3b 2px, rgba(0, 0, 0, 0) 2px)",
-                  "borderRadius": "0.3em",
-                  "code": Object {
-                    "textShadow": "none",
-                  },
-                  "color": "#0f7b3b",
-                }
-              }
-              href="https://www.example.com"
-              onClick={[Function]}
-              rel="noopener"
-              target="_blank"
-            >
-              Test link
-            </a>
-          </OutboundLink>
+            Test link
+          </a>
         </Link>
         <p
           key="h-10"
@@ -546,7 +530,7 @@ exports[`Markdown without a root element renders correctly 1`] = `
         href="https://www.example.com"
         key="h-9"
       >
-        <OutboundLink
+        <a
           css={
             Object {
               "backgroundImage": "linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, #0f7b3b 1px, #0f7b3b 2px, rgba(0, 0, 0, 0) 2px)",
@@ -558,28 +542,12 @@ exports[`Markdown without a root element renders correctly 1`] = `
             }
           }
           href="https://www.example.com"
+          onClick={[Function]}
           rel="noopener"
           target="_blank"
         >
-          <a
-            css={
-              Object {
-                "backgroundImage": "linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, #0f7b3b 1px, #0f7b3b 2px, rgba(0, 0, 0, 0) 2px)",
-                "borderRadius": "0.3em",
-                "code": Object {
-                  "textShadow": "none",
-                },
-                "color": "#0f7b3b",
-              }
-            }
-            href="https://www.example.com"
-            onClick={[Function]}
-            rel="noopener"
-            target="_blank"
-          >
-            Test link
-          </a>
-        </OutboundLink>
+          Test link
+        </a>
       </Link>
       <p
         key="h-10"

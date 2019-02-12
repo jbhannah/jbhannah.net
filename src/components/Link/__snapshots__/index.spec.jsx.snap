@@ -17,7 +17,7 @@ exports[`Link with an anchor link renders correctly 1`] = `
 `;
 
 exports[`Link with an external link renders correctly 1`] = `
-<OutboundLink
+<a
   css={
     Object {
       "backgroundImage": "linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, #0f7b3b 1px, #0f7b3b 2px, rgba(0, 0, 0, 0) 2px)",
@@ -29,13 +29,14 @@ exports[`Link with an external link renders correctly 1`] = `
     }
   }
   href="https://www.example.com"
+  onClick={[Function]}
   rel="noopener"
   target="_blank"
 />
 `;
 
 exports[`Link with an external link with a rel property renders correctly 1`] = `
-<OutboundLink
+<a
   css={
     Object {
       "backgroundImage": "linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, #0f7b3b 1px, #0f7b3b 2px, rgba(0, 0, 0, 0) 2px)",
@@ -47,6 +48,7 @@ exports[`Link with an external link with a rel property renders correctly 1`] = 
     }
   }
   href="https://www.example.com"
+  onClick={[Function]}
   rel="license noopener"
   target="_blank"
 />

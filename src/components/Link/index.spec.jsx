@@ -49,13 +49,13 @@ describe("Link", () => {
 
   describe("with an external link", () => {
     const tree = TestLink({ href: "https://www.example.com" })
-    const link = t => t.find("OutboundLink")
+    const link = t => t.find("a")
 
     it("renders correctly", () => {
       expect(tree).toMatchSnapshot()
     })
 
-    it("renders an OutboundLink", () => {
+    it("renders an a", () => {
       expect(link(tree).prop("href")).toBe("https://www.example.com")
     })
 
@@ -65,6 +65,20 @@ describe("Link", () => {
 
     it("adds a rel property", () => {
       expect(link(tree).prop("rel")).toBe("noopener")
+    })
+
+    it("adds an onClick handler for Google Analytics", () => {
+      const onClick = link(tree).prop("onClick")
+      window.gtag = jest.fn()
+
+      expect(typeof onClick).toBe("function")
+
+      link(tree).simulate("click")
+      expect(window.gtag).toBeCalledWith("event", "click", {
+        event_category: "outbound",
+        event_label: "https://www.example.com",
+        transport_type: "beacon",
+      })
     })
 
     describe("with a rel property", () => {
