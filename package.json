@@ -10,7 +10,7 @@
   "dependencies": {
     "@emotion/core": "^10.0.7",
     "@emotion/styled": "^10.0.7",
-    "@raae/gatsby-remark-oembed": "github:jbhannah/gatsby-remark-oembed#onInitialClientRender",
+    "@raae/gatsby-remark-oembed": "0.0.4",
     "acorn": "^6.1.0",
     "ajv": "^6.9.1",
     "gatsby": "^2.1.2",
