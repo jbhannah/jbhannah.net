@@ -43,24 +43,40 @@ exports[`Header renders correctly 1`] = `
       }
       href="/"
     >
-      <img
+      <picture
         css={
           Object {
             "@media only screen and (min-width: 59rem)": Object {
-              "a:hover > &": Object {
-                "borderRadius": "15%",
-              },
-              "borderRadius": "50%",
               "display": "block",
               "marginBottom": "0.79rem",
-              "transition": "border-radius 0.5s",
+              "source, img": Object {
+                "a:hover > &": Object {
+                  "borderRadius": "15%",
+                },
+                "borderRadius": "50%",
+                "display": "block",
+                "margin": 0,
+                "transition": "border-radius 0.5s",
+              },
               "width": "100%",
             },
             "display": "none",
           }
         }
-        src="test-file-stub"
-      />
+      >
+        <source
+          srcSet="test-file-stub"
+          type="image/webp"
+        />
+        <source
+          srcSet="test-file-stub"
+          type="image/png"
+        />
+        <img
+          alt="Test Site"
+          src="test-file-stub"
+        />
+      </picture>
       Test Site
     </Link>
   </Heading>

@@ -1,6 +1,7 @@
 import PropTypes from "prop-types"
 import React from "react"
-import avatar from "../../images/avatar-sm.png"
+import avatar from "../../images/avatar.png"
+import avatarWebp from "../../images/avatar.webp"
 import { contentWidth, headerWidth, hoverRadius, mq } from "../../utils/styles"
 import Heading from "../Heading"
 import Link from "../Link"
@@ -38,18 +39,25 @@ const Header = ({ title, socialLinks }) => (
       }}
     >
       <Link href="/" css={{ display: "block" }}>
-        <img
-          src={avatar}
+        <picture
           css={{
             display: "none",
             [mq.lg]: {
               display: "block",
               width: "100%",
               marginBottom: "0.79rem",
-              ...hoverRadius,
+              "source, img": {
+                ...hoverRadius,
+                display: "block",
+                margin: 0,
+              },
             },
           }}
-        />
+        >
+          <source type="image/webp" srcSet={avatarWebp} />
+          <source type="image/png" srcSet={avatar} />
+          <img src={avatar} alt={title} />
+        </picture>
         {title}
       </Link>
     </Heading>

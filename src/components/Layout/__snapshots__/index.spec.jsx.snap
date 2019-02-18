@@ -16,10 +16,22 @@ exports[`Layout renders correctly 1`] = `
         css="[object Object]"
         href="/"
       >
-        <img
+        <picture
           css="[object Object]"
-          src="test-file-stub"
-        />
+        >
+          <source
+            srcset="test-file-stub"
+            type="image/webp"
+          />
+          <source
+            srcset="test-file-stub"
+            type="image/png"
+          />
+          <img
+            alt="Test Site"
+            src="test-file-stub"
+          />
+        </picture>
         Test Site
       </a>
     </h1>
