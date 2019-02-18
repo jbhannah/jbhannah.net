@@ -27,7 +27,7 @@ npm run build
 ## Copyright
 
 Copyright © 2019 [Jesse B. Hannah][jbhannah.net]. Code licensed under the
-[MIT License][]). Text licensed under [CC BY-SA 4.0][].
+[MIT License][]. Text licensed under [CC BY-SA 4.0][].
 
 [jbhannah.net]: https://jbhannah.net
 [gatsby]: https://www.gatsbyjs.org
