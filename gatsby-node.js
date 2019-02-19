@@ -25,9 +25,11 @@ const pageQuery = `
   }
 `
 
-exports.onCreateNode = ({ node, getNode, actions: { createNodeField } }) => {
-  if (node.internal.type !== "MarkdownRemark") return
-
+const onCreateMarkdownNode = ({
+  node,
+  getNode,
+  actions: { createNodeField },
+}) => {
   if (node.hasOwnProperty("frontmatter")) {
     for (const property in defaultFrontmatter) {
       if (!node.frontmatter.hasOwnProperty(property)) {
@@ -45,6 +47,26 @@ exports.onCreateNode = ({ node, getNode, actions: { createNodeField } }) => {
     name: "source",
     value: relativeDirectory === "" ? "pages" : relativeDirectory,
   })
+}
+
+const onCreateImageSharpNode = ({
+  node,
+  getNode,
+  actions: { createNodeField },
+}) => {
+  const { name } = getNode(node.parent)
+  createNodeField({ node, name: "name", value: name })
+}
+
+exports.onCreateNode = ({ node, ...rest }) => {
+  switch (node.internal.type) {
+    case "MarkdownRemark":
+      onCreateMarkdownNode({ node, ...rest })
+      break
+    case "ImageSharp":
+      onCreateImageSharpNode({ node, ...rest })
+      break
+  }
 }
 
 exports.createPages = async ({ graphql, actions: { createPage } }) => {

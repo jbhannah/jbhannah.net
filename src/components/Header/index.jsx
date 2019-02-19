@@ -1,13 +1,11 @@
 import PropTypes from "prop-types"
 import React from "react"
-import avatar from "../../images/avatar.png"
-import avatarWebp from "../../images/avatar.webp"
 import { contentWidth, headerWidth, hoverRadius, mq } from "../../utils/styles"
 import Heading from "../Heading"
 import Link from "../Link"
 import SocialNav from "../SocialNav"
 
-const Header = ({ title, socialLinks }) => (
+const Header = ({ title, avatar, socialLinks }) => (
   <header
     css={{
       display: "flex",
@@ -54,9 +52,9 @@ const Header = ({ title, socialLinks }) => (
             },
           }}
         >
-          <source type="image/webp" srcSet={avatarWebp} />
-          <source type="image/png" srcSet={avatar} />
-          <img src={avatar} alt={title} />
+          <source type="image/webp" srcSet={avatar.srcSetWebp} />
+          <source type="image/png" srcSet={avatar.srcSet} />
+          <img src={avatar.src} alt={title} />
         </picture>
         {title}
       </Link>
@@ -65,9 +63,14 @@ const Header = ({ title, socialLinks }) => (
   </header>
 )
 
+export default Header
+
 Header.propTypes = {
   title: PropTypes.string,
+  avatar: PropTypes.shape({
+    src: PropTypes.string,
+    srcSet: PropTypes.string,
+    srcSetWebp: PropTypes.string,
+  }),
   socialLinks: SocialNav.propTypes.socialLinks,
 }
-
-export default Header

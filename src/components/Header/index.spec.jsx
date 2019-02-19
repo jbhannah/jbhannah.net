@@ -6,6 +6,11 @@ const TestHeader = props =>
   shallow(
     <Header
       title="Test Site"
+      avatar={{
+        src: "avatar-src.png",
+        srcSet: "avatar-srcSet.png",
+        srcSetWebp: "avatar-srcSet.webp",
+      }}
       socialLinks={[
         {
           key: "Test Service",

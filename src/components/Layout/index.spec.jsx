@@ -17,6 +17,13 @@ const data = {
       ],
     },
   },
+  imageSharp: {
+    fixed: {
+      src: "avatar-src.png",
+      srcSet: "avatar-srcSet.png",
+      srcSetWebp: "avatar-srcSet.webp",
+    },
+  },
 }
 
 StaticQuery.mockImplementationOnce(({ render: r }) => r(data))

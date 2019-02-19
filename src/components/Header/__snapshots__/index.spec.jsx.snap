@@ -65,16 +65,16 @@ exports[`Header renders correctly 1`] = `
         }
       >
         <source
-          srcSet="test-file-stub"
+          srcSet="avatar-srcSet.webp"
           type="image/webp"
         />
         <source
-          srcSet="test-file-stub"
+          srcSet="avatar-srcSet.png"
           type="image/png"
         />
         <img
           alt="Test Site"
-          src="test-file-stub"
+          src="avatar-src.png"
         />
       </picture>
       Test Site

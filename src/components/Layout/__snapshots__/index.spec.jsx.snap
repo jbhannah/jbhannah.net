@@ -20,16 +20,16 @@ exports[`Layout renders correctly 1`] = `
           css="[object Object]"
         >
           <source
-            srcset="test-file-stub"
+            srcset="avatar-srcSet.webp"
             type="image/webp"
           />
           <source
-            srcset="test-file-stub"
+            srcset="avatar-srcSet.png"
             type="image/png"
           />
           <img
             alt="Test Site"
-            src="test-file-stub"
+            src="avatar-src.png"
           />
         </picture>
         Test Site
@@ -170,7 +170,13 @@ exports[`PureLayout renders correctly 1`] = `
       property="og:type"
     />
     <meta
-      content="test-file-stub"
+      content={
+        Object {
+          "src": "avatar-src.png",
+          "srcSet": "avatar-srcSet.png",
+          "srcSetWebp": "avatar-srcSet.webp",
+        }
+      }
       property="og:image"
     />
     <meta
@@ -185,6 +191,13 @@ exports[`PureLayout renders correctly 1`] = `
     />
   </HelmetWrapper>
   <Header
+    avatar={
+      Object {
+        "src": "avatar-src.png",
+        "srcSet": "avatar-srcSet.png",
+        "srcSetWebp": "avatar-srcSet.webp",
+      }
+    }
     socialLinks={
       Array [
         Object {

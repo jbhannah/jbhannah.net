@@ -4,7 +4,6 @@ import "prismjs/themes/prism-solarizedlight.css"
 import PropTypes from "prop-types"
 import React from "react"
 import Helmet from "react-helmet"
-import avatar from "../../images/avatar.png"
 import {
   contentWidth,
   contentWidthColumn,
@@ -26,6 +25,7 @@ export const PureLayout = ({
         socialLinks,
       },
     },
+    imageSharp: { fixed: avatar },
   },
 }) => (
   <div
@@ -82,7 +82,7 @@ export const PureLayout = ({
       <meta property="og:url" content={siteUrl} />
       <meta property="twitter:creator" content={twitterCreator} />
     </Helmet>
-    <Header {...{ title, socialLinks }} />
+    <Header {...{ title, avatar, socialLinks }} />
     <main css={[contentWidthColumn, { flexGrow: 1, [mq.lg]: { margin: 0 } }]}>
       {children}
     </main>
@@ -104,6 +104,13 @@ const query = graphql`
           link
           name
         }
+      }
+    }
+    imageSharp(fields: { name: { eq: "avatar" } }) {
+      fixed(width: 160) {
+        src
+        srcSet
+        srcSetWebp
       }
     }
   }
