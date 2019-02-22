@@ -67,11 +67,21 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    "gatsby-transformer-sharp",
+    {
+      resolve: "gatsby-transformer-sharp",
+      options: {
+        plugins: ["gatsby-jbh-sharp-name"],
+      },
+    },
     {
       resolve: "gatsby-transformer-remark",
       options: {
         plugins: [
+          "gatsby-jbh-remark-first-header-title",
+          "gatsby-jbh-remark-frontmatter",
+          "gatsby-jbh-remark-paginator",
+          "gatsby-jbh-remark-slug",
+          "gatsby-jbh-remark-source",
           "gatsby-remark-autolink-headers",
           "gatsby-remark-numbered-footnotes",
           "gatsby-remark-smartypants",
@@ -88,7 +98,6 @@ module.exports = {
         ],
       },
     },
-    "gatsby-remark-first-header-title",
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
