@@ -12,8 +12,8 @@ date: 2019-02-22T19:22:55.890Z
 > discovered by his own Justice Department…
 >
 > Who then tries to hold onto power…by obstructing the investigation into his
-> crimes, by smearing and threatening the prosecutors who are investigating him…
-> and by trying to convince his legion of supporters across the country…that
+> crimes, by smearing and threatening the prosecutors who are investigating
+> him…and by trying to convince his legion of supporters across the country…that
 > none of the allegations are true. That it’s all just a big witch-hunt.
 >
 > And if that sounds familiar…it’s because history…is here to help! I firmly
