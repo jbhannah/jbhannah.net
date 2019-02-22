@@ -1,7 +1,8 @@
 ---
-title: Handling Disappearing .egg-info Directories with Docker Compose and Python
 date: 2019-02-11T17:52:25.604Z
 ---
+
+# Handling Disappearing .egg-info Directories with Docker Compose and Python
 
 So it's been a while, but lately I've been writing Python (and [Erlang][]!) for
 my full-time job at [Nextiva][], where we have a microservice architecture

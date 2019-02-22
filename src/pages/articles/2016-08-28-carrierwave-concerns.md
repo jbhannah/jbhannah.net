@@ -1,7 +1,8 @@
 ---
-title: Using ActiveSupport Concerns for CarrierWave Base Uploaders
 date: 2016-08-28T11:25:00-07:00
 ---
+
+# Using ActiveSupport Concerns for CarrierWave Base Uploaders
 
 [CarrierWave][] is my favorite library as of late for file uploading in Rails,
 because its mountable uploader classes go nicely with my preference of keeping

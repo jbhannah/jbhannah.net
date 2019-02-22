@@ -5,7 +5,7 @@ import Heading from "../components/Heading"
 import Layout from "../components/Layout"
 import Paginator from "../components/Paginator"
 
-const ArticlesList = ({ data, pageContext: { page, numPages } }) => (
+const ArticleList = ({ data, pageContext: { page, numPages } }) => (
   <Layout>
     <Heading level="h1">Recent Articles</Heading>
     <ul css={{ listStyleType: "none", margin: 0 }}>
@@ -19,7 +19,7 @@ const ArticlesList = ({ data, pageContext: { page, numPages } }) => (
   </Layout>
 )
 
-export default ArticlesList
+export default ArticleList
 
 export const query = graphql`
   query ArticlesQuery($skip: Int!, $limit: Int!) {

@@ -72,13 +72,13 @@ module.exports = {
       resolve: "gatsby-transformer-remark",
       options: {
         plugins: [
+          "gatsby-remark-autolink-headers",
+          "gatsby-remark-numbered-footnotes",
+          "gatsby-remark-smartypants",
           {
             resolve: "gatsby-remark-prismjs",
             options: { inlineCodeMarker: "›" },
           },
-          "gatsby-remark-autolink-headers",
-          "gatsby-remark-numbered-footnotes",
-          "gatsby-remark-smartypants",
           {
             resolve: "@raae/gatsby-remark-oembed",
             options: {
@@ -88,6 +88,7 @@ module.exports = {
         ],
       },
     },
+    "gatsby-remark-first-header-title",
     {
       resolve: "gatsby-plugin-sitemap",
       options: {

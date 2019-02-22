@@ -7,8 +7,7 @@ import Layout from "../components/Layout"
 const Template = ({ data }) => {
   const {
     article: {
-      fields: { slug },
-      frontmatter: { title },
+      fields: { slug, title },
       excerpt,
     },
     site: {

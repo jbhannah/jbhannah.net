@@ -1,7 +1,8 @@
 ---
-title: Rails Development with Docker
 date: 2016-03-23T11:33:00-07:00
 ---
+
+# Rails Development with Docker
 
 Lately I’ve found myself working on multiple personal Rails projects (namely,
 [`pokesite`][] and [`lifeisleet`][]), sometimes at the same time. As a result,

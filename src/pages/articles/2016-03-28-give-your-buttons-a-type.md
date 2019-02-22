@@ -1,7 +1,8 @@
 ---
-title: Give Your Buttons a Type
 date: 2016-03-28T17:06:00-07:00
 ---
+
+# Give Your Buttons a Type
 
 I fixed a bug at work today where hitting the “Enter” key from a text input in
 an [accordion][] form, in addition to submitting the form via a `keydown`

@@ -18,11 +18,11 @@ const Article = ({ list, article }) => {
   let title
 
   if (frontmatter.link) {
-    title = <Link href={frontmatter.link}>{frontmatter.title}</Link>
+    title = <Link href={frontmatter.link}>{fields.title}</Link>
   } else if (list) {
-    title = <Link href={`/${fields.slug}`}>{frontmatter.title}</Link>
+    title = <Link href={`/${fields.slug}`}>{fields.title}</Link>
   } else {
-    title = frontmatter.title
+    title = fields.title
   }
 
   return (
@@ -56,9 +56,9 @@ export const query = graphql`
   fragment ArticleInformation on MarkdownRemark {
     fields {
       slug
+      title
     }
     frontmatter {
-      title
       date
       link
     }

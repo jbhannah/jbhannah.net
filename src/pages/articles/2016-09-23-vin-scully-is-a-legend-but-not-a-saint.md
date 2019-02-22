@@ -1,8 +1,9 @@
 ---
-title: Vin Scully Is a Legend, But He’s Not a Saint
-link: https://web.archive.org/web/20190210055306/https://www.gq.com/story/vin-scully-is-a-legend-but-not-a-saint
 date: 2016-09-23T07:08:00-07:00
+link: https://web.archive.org/web/20190210055306/https://www.gq.com/story/vin-scully-is-a-legend-but-not-a-saint
 ---
+
+# Vin Scully Is a Legend, But He’s Not a Saint
 
 Keith Olbermann writing for GQ:
 

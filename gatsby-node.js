@@ -25,6 +25,15 @@ const pageQuery = `
   }
 `
 
+const onCreateImageSharpNode = ({
+  node,
+  getNode,
+  actions: { createNodeField },
+}) => {
+  const { name } = getNode(node.parent)
+  createNodeField({ node, name: "name", value: name })
+}
+
 const onCreateMarkdownNode = ({
   node,
   getNode,
@@ -49,22 +58,13 @@ const onCreateMarkdownNode = ({
   })
 }
 
-const onCreateImageSharpNode = ({
-  node,
-  getNode,
-  actions: { createNodeField },
-}) => {
-  const { name } = getNode(node.parent)
-  createNodeField({ node, name: "name", value: name })
-}
-
 exports.onCreateNode = ({ node, ...rest }) => {
   switch (node.internal.type) {
-    case "MarkdownRemark":
-      onCreateMarkdownNode({ node, ...rest })
-      break
     case "ImageSharp":
       onCreateImageSharpNode({ node, ...rest })
+      break
+    case "MarkdownRemark":
+      onCreateMarkdownNode({ node, ...rest })
       break
   }
 }
@@ -94,7 +94,7 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
 
       createPage({
         path: slug,
-        component: path.resolve(`./src/templates/${source}.jsx`),
+        component: path.resolve("./src/templates/article.jsx"),
         context: { slug },
       })
     }
@@ -107,7 +107,7 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
       const page = i + 1
       createPage({
         path: i === 0 ? root : `${root}page/${page}`,
-        component: path.resolve(`./src/templates/${source}-list.jsx`),
+        component: path.resolve("./src/templates/article-list.jsx"),
         context: {
           page,
           numPages,

@@ -1,8 +1,9 @@
 ---
-title: Ezra Klein interviews Cory Booker on The Ezra Klein Show
-link: https://overcast.fm/+QLhUZkpMQ
 date: 2016-04-05T22:51:30-07:00
+link: https://overcast.fm/+QLhUZkpMQ
 ---
+
+# Ezra Klein interviews Cory Booker on The Ezra Klein Show
 
 An interview with a fascinating man who is definitely not your run-of-the-mill
 politician.

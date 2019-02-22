@@ -1,8 +1,9 @@
 ---
-title: Mark Kelly for Senate
-link: "https://markkelly.com/"
 date: 2019-02-12T19:16:39.100Z
+link: https://markkelly.com
 ---
+
+# Mark Kelly for Senate
 
 I'm not crying, you're crying:
 
@@ -20,4 +21,4 @@ for sensible gun safety reforms. Captain Kelly has my unreserved and
 enthusiastic endorsement for U.S. Senator from Arizona.
 
 [university high school]: http://www.tusd1.org/uhs
-[campaign]: https://giffords.org/
+[campaign]: https://giffords.org
