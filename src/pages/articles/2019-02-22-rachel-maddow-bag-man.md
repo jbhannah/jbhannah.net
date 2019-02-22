@@ -1,5 +1,6 @@
 ---
-link: https://www.msnbc.com/bagman
+link: "https://www.msnbc.com/bagman"
+date: 2019-02-22T19:22:55.890Z
 ---
 
 # “Bag Man,” a Rachel Maddow Podcast
