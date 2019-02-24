@@ -1,6 +1,5 @@
-dist: trusty
-sudo: false
 language: node_js
+dist: xenial
 cache: npm
 before_script:
   - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
