@@ -40,7 +40,7 @@
     "rehype-react": "^3.1.0",
     "remark-html": "^9.0.0",
     "remark-parse": "^6.0.3",
-    "typeface-lora": "0.0.54",
+    "typeface-lora": "0.0.72",
     "typeface-varela-round": "0.0.71",
     "typography": "^0.16.18",
     "typography-theme-lincoln": "^0.16.18",
