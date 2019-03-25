@@ -32,7 +32,7 @@
     "gatsby-transformer-sharp": "^2.1.17",
     "hack-font": "github:jbhannah/Hack#font-display",
     "luxon": "^1.12.0",
-    "prismjs": "^1.15.0",
+    "prismjs": "^1.16.0",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-helmet": "^5.2.0",
