@@ -8,7 +8,7 @@
     "url": "https://github.com/jbhannah/jbhannah.net"
   },
   "dependencies": {
-    "@emotion/core": "^10.0.9",
+    "@emotion/core": "^10.0.10",
     "@emotion/styled": "^10.0.10",
     "@raae/gatsby-remark-oembed": "0.0.5",
     "acorn": "^6.1.1",
