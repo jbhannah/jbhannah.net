@@ -3,6 +3,7 @@ import React, { Fragment } from "react"
 import rehypeReact from "rehype-react"
 import visit from "unist-util-visit"
 import Blockquote from "../Blockquote"
+import Code from "../Code"
 import { HeadingFactory } from "../Heading"
 import Link from "../Link"
 
@@ -72,6 +73,7 @@ const renderAst = htmlAst => {
     components: {
       a: Link,
       blockquote: Blockquote,
+      code: Code,
       h2: HeadingFactory("h2"),
       h3: HeadingFactory("h3"),
       h4: HeadingFactory("h4"),
