@@ -98,7 +98,7 @@ Linux][]-based Ruby image.
 You need a `Dockerfile` to create an image, so let’s go through this one step at
 a time. Every `Dockerfile` begins with a `FROM` statement:
 
-```docker
+```dockerfile
 FROM ruby:2-alpine
 ```
 
@@ -106,7 +106,7 @@ This image uses the latest Alpine-based Ruby 2.x image as its base. Simple
 enough. But to install all of your gems and get Rails up and running, it needs
 a few dependencies:
 
-```docker
+```dockerfile
 RUN apk add --update --no-cache \
       build-base \
       nodejs \
@@ -133,7 +133,7 @@ help you figure out what you need to install.
 
 Moving on:
 
-```docker
+```dockerfile
 ENV APP_HOME /usr/src/app
 RUN mkdir -p $APP_HOME
 WORKDIR $APP_HOME
@@ -142,20 +142,20 @@ WORKDIR $APP_HOME
 The application will live, and all commands you run through Docker will run, in
 `/usr/src/app`.
 
-```docker
+```dockerfile
 EXPOSE 3000
 ```
 
 Allow incoming connections on port 3000 to containers created from this image.
 
-```docker
+```dockerfile
 ENV BUNDLE_PATH /ruby_gems
 ```
 
 Tell Bundler to install all your gems to `/ruby_gems`; you’ll come back to this
 when you create `docker-compose.yml`.
 
-```docker
+```dockerfile
 CMD ["bin/rails", "s", "-b", "0.0.0.0"]
 ```
 
