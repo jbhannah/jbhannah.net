@@ -46,7 +46,7 @@
     "typography-theme-lincoln": "^0.16.19",
     "unist-util-remove": "^1.0.2",
     "unist-util-remove-position": "^1.1.2",
-    "unist-util-visit": "^1.4.0"
+    "unist-util-visit": "^1.4.1"
   },
   "keywords": [
     "gatsby"
