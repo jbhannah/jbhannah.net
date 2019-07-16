@@ -62,7 +62,7 @@
   },
   "devDependencies": {
     "babel-jest": "^24.8.0",
-    "babel-preset-gatsby": "^0.2.2",
+    "babel-preset-gatsby": "^0.2.6",
     "chalk": "^2.4.2",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
