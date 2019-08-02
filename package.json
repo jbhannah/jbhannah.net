@@ -39,7 +39,7 @@
     "react-typography": "^0.16.19",
     "rehype-react": "^4.0.1",
     "remark-html": "^9.0.1",
-    "remark-parse": "^6.0.3",
+    "remark-parse": "^7.0.0",
     "typeface-lora": "0.0.72",
     "typeface-varela-round": "0.0.71",
     "typography": "^0.16.19",
