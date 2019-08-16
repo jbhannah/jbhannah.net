@@ -61,7 +61,7 @@
     "test": "jest --coverage"
   },
   "devDependencies": {
-    "babel-jest": "^24.8.0",
+    "babel-jest": "^24.9.0",
     "babel-preset-gatsby": "^0.2.8",
     "chalk": "^2.4.2",
     "enzyme": "^3.10.0",
