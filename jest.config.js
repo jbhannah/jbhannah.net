@@ -8,6 +8,7 @@ module.exports = {
     "!**/node_modules/**",
     "!**/public/**",
   ],
+  coverageReporters: ["text", "lcov", "cobertura"],
   reporters: ["default", "jest-junit"],
   transform: {
     "^.+\\.jsx?$": "<rootDir>/jest.preprocess.js",
