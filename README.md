@@ -1,6 +1,6 @@
 # [jbhannah.net][]
 
-[![Build Status](https://travis-ci.org/jbhannah/jbhannah.net.svg?branch=master)](https://travis-ci.org/jbhannah/jbhannah.net)
+[![Build Status](https://dev.azure.com/jbhannah/jbhannah.net/_apis/build/status/jbhannah.net?branchName=master)](https://dev.azure.com/jbhannah/jbhannah.net/_build/latest?definitionId=1&branchName=master)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/c25c1c82-e91f-4536-bf7f-f7ef52c1e6b2/deploy-status)](https://app.netlify.com/sites/jbhannah-net/deploys)
 
 Built with [Gatsby][]. Hosted on [Netlify][].
