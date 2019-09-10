@@ -1,6 +1,12 @@
 pool:
   vmImage: "ubuntu-latest"
 
+trigger:
+  - master
+
+pr:
+  - master
+
 steps:
   - task: NodeTool@0
     inputs:
