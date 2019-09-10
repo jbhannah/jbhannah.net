@@ -191,7 +191,9 @@ peer: (worker 3 public key)
     If you're planning on running `metrics-server`, you'll also need to allow
     that for each node:
 
-        ufw allow from ${node_ip} to any port 10250 proto tcp
+    ```bash
+    ufw allow from ${node_ip} to any port 10250 proto tcp
+    ```
 
 [^fd]: Adding this label is optional but recommended for this setup.
 
