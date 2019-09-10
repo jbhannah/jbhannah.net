@@ -123,6 +123,12 @@ exports[`PureLayout renders correctly 1`] = `
       Object {
         ".gatsby-highlight": Object {
           "& pre[class*=language-]": Object {
+            "&.line-numbers": Object {
+              "& .line-numbers-rows span": Object {
+                "lineHeight": 1.5,
+              },
+              "paddingLeft": "2.8em",
+            },
             "backgroundColor": "transparent",
             "float": "left",
             "margin": 0,

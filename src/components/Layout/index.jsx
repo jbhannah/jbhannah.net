@@ -57,6 +57,12 @@ export const PureLayout = ({
             overflow: "initial",
             float: "left",
             minWidth: "100%",
+            "&.line-numbers": {
+              paddingLeft: "2.8em",
+              "& .line-numbers-rows span": {
+                lineHeight: 1.5,
+              },
+            },
           },
         },
         ".gatsby-highlight-code-line": {

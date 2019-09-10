@@ -1,5 +1,6 @@
 import "hack-font/build/web/fonts/hack-regular-subset.woff2"
 import "hack-font/build/web/hack-subset.css"
+import "prismjs/plugins/line-numbers/prism-line-numbers.css"
 import "prismjs/themes/prism-solarizedlight.css"
 import "typeface-lora"
 import "typeface-lora/files/lora-latin-400.woff2"
