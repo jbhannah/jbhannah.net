@@ -31,7 +31,7 @@
     "gatsby-transformer-remark": "^2.6.24",
     "gatsby-transformer-sharp": "^2.2.16",
     "hack-font": "github:jbhannah/Hack#font-display",
-    "luxon": "^1.18.0",
+    "luxon": "^1.18.1",
     "prismjs": "^1.17.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
