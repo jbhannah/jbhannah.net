@@ -34,7 +34,7 @@
     "luxon": "^1.19.3",
     "prismjs": "^1.17.1",
     "react": "^16.10.1",
-    "react-dom": "^16.10.0",
+    "react-dom": "^16.10.1",
     "react-helmet": "^5.2.1",
     "react-typography": "^0.16.19",
     "rehype-react": "^4.0.1",
