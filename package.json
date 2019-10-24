@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@emotion/core": "^10.0.22",
-    "@emotion/styled": "^10.0.17",
+    "@emotion/styled": "^10.0.22",
     "@raae/gatsby-remark-oembed": "0.1.1",
     "acorn": "^7.1.0",
     "ajv": "^6.10.2",
