@@ -33,7 +33,7 @@
     "hack-font": "github:jbhannah/Hack#font-display",
     "luxon": "^1.21.1",
     "prismjs": "^1.17.1",
-    "react": "^16.11.0",
+    "react": "^16.12.0",
     "react-dom": "^16.11.0",
     "react-helmet": "^5.2.1",
     "react-typography": "^0.16.19",
