@@ -14,7 +14,7 @@
     "acorn": "^7.1.0",
     "ajv": "^6.10.2",
     "gatsby": "^2.17.17",
-    "gatsby-plugin-emotion": "^4.1.15",
+    "gatsby-plugin-emotion": "^4.1.16",
     "gatsby-plugin-gtag": "^1.0.11",
     "gatsby-plugin-html-attributes": "^1.0.5",
     "gatsby-plugin-netlify": "^2.1.26",
