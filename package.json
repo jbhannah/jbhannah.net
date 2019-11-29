@@ -57,6 +57,7 @@
     "build": "gatsby build",
     "debug": "rm -rf .cache && NODE_TLS_REJECT_UNAUTHORIZED=0 node --inspect-brk=9229 --no-lazy node_modules/gatsby/dist/bin/gatsby develop --https",
     "format": "prettier --write \"**/*.{js,jsx,md,yaml}\"",
+    "lint": "eslint .",
     "start": "NODE_TLS_REJECT_UNAUTHORIZED=0 gatsby develop --https",
     "test": "jest"
   },
@@ -68,6 +69,7 @@
     "enzyme-adapter-react-16": "^1.15.1",
     "enzyme-to-json": "^3.4.3",
     "eslint": "^6.7.2",
+    "eslint-config-prettier": "^6.7.0",
     "eslint-loader": "^3.0.2",
     "eslint-plugin-jest": "^23.1.1",
     "eslint-plugin-prettier": "^3.1.1",
