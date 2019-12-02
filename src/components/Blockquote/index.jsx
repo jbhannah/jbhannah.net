@@ -11,7 +11,7 @@ const baseBlockquote = {
   paddingLeft: rhythm(9 / 16),
 }
 
-const styles = {
+const blockquoteCSS = {
   ...baseBlockquote,
   [MOBILE_MEDIA_QUERY]: { ...baseBlockquote },
   [mq.sm]: {
@@ -21,6 +21,6 @@ const styles = {
   },
 }
 
-const Blockquote = props => <blockquote css={styles} {...props} />
+const Blockquote = props => <blockquote css={blockquoteCSS} {...props} />
 
 export default Blockquote

@@ -1,27 +1,27 @@
 import React, { Fragment } from "react"
 import Link from "../Link"
 
+const paginatorCSS = {
+  display: "block",
+  listStyleType: "none",
+  margin: 0,
+  li: {
+    display: "inline-block",
+    marginBottom: 0,
+    marginRight: "1rem",
+    a: {
+      backgroundImage: "none",
+    },
+  },
+}
+
 const Paginator = ({ base, page: currentPage, numPages }) => {
   const pageBase = base === "/" ? "/page" : `${base}/page`
 
   return (
     numPages > 1 && (
       <footer>
-        <ul
-          css={{
-            display: "block",
-            listStyleType: "none",
-            margin: 0,
-            li: {
-              display: "inline-block",
-              marginBottom: 0,
-              marginRight: "1rem",
-              a: {
-                backgroundImage: "none",
-              },
-            },
-          }}
-        >
+        <ul css={paginatorCSS}>
           {currentPage > 1 ? (
             <Fragment>
               <li>

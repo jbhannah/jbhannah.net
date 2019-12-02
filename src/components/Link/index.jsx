@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import { linkColor } from "../../utils/styles"
 
-const styles = {
+const linkCSS = {
   backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, ${linkColor} 1px, ${linkColor} 2px, rgba(0, 0, 0, 0) 2px)`,
   borderRadius: "0.3em",
   color: linkColor,
@@ -15,7 +15,7 @@ const styles = {
 const domainPattern = new RegExp(/^https?:\/\/(?!jbhannah\.net)/)
 
 const Link = ({ href, ...props }) => {
-  props.css = Object.assign({}, props.css, styles)
+  props.css = Object.assign({}, props.css, linkCSS)
 
   if (href.startsWith("/")) {
     return <GatsbyLink to={href} {...props} />

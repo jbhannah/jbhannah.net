@@ -3,25 +3,20 @@
 exports[`Footer renderes correctly 1`] = `
 <footer
   css={
-    Array [
-      Object {
-        "margin": "0 auto",
-        "maxWidth": "42rem",
-        "padding": "0 1rem",
-        "width": "100%",
+    Object {
+      "@media only screen and (min-width: 59rem)": Object {
+        "marginLeft": "12rem",
       },
-      Object {
-        "@media only screen and (min-width: 59rem)": Object {
-          "marginLeft": "12rem",
-        },
-        "@media only screen and (min-width: 70rem)": Object {
-          "marginLeft": 0,
-        },
-        "alignSelf": "flex-end",
-        "fontSize": "0.75rem",
-        "margin": "1rem auto",
+      "@media only screen and (min-width: 70rem)": Object {
+        "marginLeft": 0,
       },
-    ]
+      "alignSelf": "flex-end",
+      "fontSize": "0.75rem",
+      "margin": "1rem auto",
+      "maxWidth": "42rem",
+      "padding": "0 1rem",
+      "width": "100%",
+    }
   }
 >
   <div>

@@ -61,10 +61,10 @@ exports[`Layout renders correctly 1`] = `
     </nav>
   </header>
   <main
-    css="[object Object],[object Object]"
+    css="[object Object]"
   />
   <footer
-    css="[object Object],[object Object]"
+    css="[object Object]"
   >
     <div>
       Copyright © 2019 
@@ -118,42 +118,7 @@ exports[`PureLayout renders correctly 1`] = `
     }
   }
 >
-  <ForwardRef(render)
-    styles={
-      Object {
-        ".gatsby-highlight": Object {
-          "& pre[class*=language-]": Object {
-            "&.line-numbers": Object {
-              "& .line-numbers-rows span": Object {
-                "lineHeight": 1.5,
-              },
-              "paddingLeft": "2.8em",
-            },
-            "backgroundColor": "transparent",
-            "float": "left",
-            "margin": 0,
-            "minWidth": "100%",
-            "overflow": "initial",
-            "padding": "0 1em 0 0",
-          },
-          "backgroundColor": "#fdf6e3",
-          "borderRadius": "0.3em",
-          "marginBottom": "1.58em",
-          "overflow": "auto",
-          "padding": "1em",
-        },
-        ".gatsby-highlight-code-line": Object {
-          "backgroundColor": "#feb",
-          "borderLeft": "0.3em solid #f99",
-          "display": "block",
-          "marginLeft": "-1.2em",
-          "marginRight": "-2.2em",
-          "paddingLeft": "0.9em",
-          "paddingRight": "1em",
-        },
-      }
-    }
-  />
+  <Global />
   <HelmetWrapper
     defer={true}
     encodeSpecialCharacters={true}
@@ -218,20 +183,16 @@ exports[`PureLayout renders correctly 1`] = `
   />
   <main
     css={
-      Array [
-        Object {
-          "margin": "0 auto",
-          "maxWidth": "42rem",
-          "padding": "0 1rem",
-          "width": "100%",
+      Object {
+        "@media only screen and (min-width: 59rem)": Object {
+          "margin": 0,
         },
-        Object {
-          "@media only screen and (min-width: 59rem)": Object {
-            "margin": 0,
-          },
-          "flexGrow": 1,
-        },
-      ]
+        "flexGrow": 1,
+        "margin": "0 auto",
+        "maxWidth": "42rem",
+        "padding": "0 1rem",
+        "width": "100%",
+      }
     }
   />
   <Footer

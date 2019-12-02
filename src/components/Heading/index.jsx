@@ -1,7 +1,7 @@
 import PropTypes from "prop-types"
 import React from "react"
 
-const styles = {
+const headingCSS = {
   a: {
     background: "none",
     textShadow: "none",
@@ -13,7 +13,7 @@ const styles = {
 
 export const Heading = ({ level, ...props }) => {
   const H = level
-  return <H css={styles} {...props} />
+  return <H css={headingCSS} {...props} />
 }
 
 export const HeadingFactory = level => props => (

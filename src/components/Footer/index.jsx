@@ -5,19 +5,17 @@ import Link from "../Link"
 
 const year = new Date().getFullYear()
 
+const footerCSS = {
+  ...contentWidthColumn,
+  alignSelf: "flex-end",
+  fontSize: "0.75rem",
+  margin: "1rem auto",
+  [mq.lg]: { marginLeft: headerWidth },
+  [mq.xl]: { marginLeft: 0 },
+}
+
 const Footer = ({ title }) => (
-  <footer
-    css={[
-      contentWidthColumn,
-      {
-        alignSelf: "flex-end",
-        fontSize: "0.75rem",
-        margin: "1rem auto",
-        [mq.lg]: { marginLeft: headerWidth },
-        [mq.xl]: { marginLeft: 0 },
-      },
-    ]}
-  >
+  <footer css={footerCSS}>
     <div>
       Copyright © {year} <Link href="/">{title}</Link>.{" "}
       <Link

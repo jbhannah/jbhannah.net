@@ -12,6 +12,10 @@ const localDateFromDateTime = date =>
     .setZone("America/Phoenix")
     .toLocaleString(DateTime.DATE_HUGE)
 
+const metadataCSS = { fontSize: "0.75rem", marginBottom: "0.79rem" }
+
+const footerCSS = { marginTop: "1.58rem" }
+
 const Article = ({ list, article }) => {
   const { fields, frontmatter, timeToRead } = article
   const content = list ? excerpt(article) : article.htmlAst
@@ -29,7 +33,7 @@ const Article = ({ list, article }) => {
     <article>
       <header>
         <Heading level={list ? "h2" : "h1"}>{title}</Heading>
-        <p css={{ fontSize: "0.75rem", marginBottom: "0.79rem" }}>
+        <p css={metadataCSS}>
           <time dateTime={frontmatter.date}>
             {localDateFromDateTime(frontmatter.date)}
           </time>
@@ -40,7 +44,7 @@ const Article = ({ list, article }) => {
       </header>
       <Markdown htmlAst={content} />
       {list && (
-        <footer css={{ marginTop: "1.58rem" }}>
+        <footer css={footerCSS}>
           <Link href={`/${fields.slug}`}>
             {frontmatter.link ? "Permalink" : "Read More…"}
           </Link>
