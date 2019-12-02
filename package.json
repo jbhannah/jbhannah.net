@@ -7,6 +7,19 @@
     "type": "git",
     "url": "https://github.com/jbhannah/jbhannah.net"
   },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "gatsby build",
+    "debug": "rm -rf .cache && NODE_TLS_REJECT_UNAUTHORIZED=0 node --inspect-brk=9229 --no-lazy node_modules/gatsby/dist/bin/gatsby develop --https",
+    "format": "prettier --write \"**/*.{js,jsx,md,yaml}\"",
+    "lint": "eslint .",
+    "start": "NODE_TLS_REJECT_UNAUTHORIZED=0 gatsby develop --https",
+    "test": "jest"
+  },
   "dependencies": {
     "@emotion/core": "^10.0.22",
     "@emotion/styled": "^10.0.23",
@@ -47,19 +60,6 @@
     "unist-util-remove": "^1.0.3",
     "unist-util-remove-position": "^2.0.0",
     "unist-util-visit": "^2.0.1"
-  },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
-  "private": true,
-  "scripts": {
-    "build": "gatsby build",
-    "debug": "rm -rf .cache && NODE_TLS_REJECT_UNAUTHORIZED=0 node --inspect-brk=9229 --no-lazy node_modules/gatsby/dist/bin/gatsby develop --https",
-    "format": "prettier --write \"**/*.{js,jsx,md,yaml}\"",
-    "lint": "eslint .",
-    "start": "NODE_TLS_REJECT_UNAUTHORIZED=0 gatsby develop --https",
-    "test": "jest"
   },
   "devDependencies": {
     "babel-jest": "^24.9.0",
