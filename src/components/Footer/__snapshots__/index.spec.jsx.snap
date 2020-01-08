@@ -21,7 +21,7 @@ exports[`Footer renderes correctly 1`] = `
 >
   <div>
     Copyright © 
-    2019
+    2020
      
     <Link
       href="/"
