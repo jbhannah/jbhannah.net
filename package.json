@@ -76,7 +76,7 @@
     "eslint-plugin-react": "^7.17.0",
     "glob": "^7.1.6",
     "gray-matter": "^4.0.2",
-    "husky": "^4.0.1",
+    "husky": "^4.0.7",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^24.9.0",
     "jest-junit": "^10.0.0",
