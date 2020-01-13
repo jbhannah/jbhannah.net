@@ -30,7 +30,7 @@ spec:
           - -c
         args:
           - |
-            cd /workdir
+            cd /workdir/src
             npm install
         volumeMounts:
           - name: workdir
@@ -43,7 +43,7 @@ spec:
           - -c
         args:
           - |
-            cd /workdir
+            cd /workdir/src
             npm test
         volumeMounts:
           - name: workdir
