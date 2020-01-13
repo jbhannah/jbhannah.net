@@ -1,0 +1,48 @@
+---
+resources:
+  - name: jbhannah.net
+    type: git
+    source:
+      uri: https://github.com/jbhannah/jbhannah.net
+      branch: master
+
+jobs:
+  - name: test
+    plan:
+      - get: jbhannah.net
+        trigger: true
+      - task: install
+        config:
+          platform: linux
+          image_resource:
+            type: docker-image
+            source:
+              repository: node
+              tag: erbium-alpine
+          inputs:
+            - name: jbhannah.net
+          outputs:
+            - name: jbhannah.net
+          run:
+            dir: jbhannah.net
+            path: sh
+            args:
+              - -c
+              - |
+                apk add --no-cache build-base git
+                npm ci
+      - task: test
+        config:
+          platform: linux
+          image_resource:
+            type: docker-image
+            source:
+              repository: node
+              tag: erbium-alpine
+          inputs:
+            - name: jbhannah.net
+          run:
+            dir: jbhannah.net
+            path: npm
+            args:
+              - test
