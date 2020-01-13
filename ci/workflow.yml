@@ -2,7 +2,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Workflow
 metadata:
-  generateName: jbhannah.net-
+  name: jbhannah.net
   namespace: argo
 spec:
   entrypoint: dag
