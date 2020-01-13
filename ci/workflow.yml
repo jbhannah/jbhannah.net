@@ -28,9 +28,10 @@ spec:
         command:
           - sh
           - -c
-        args: |
-          cd /workdir
-          npm install
+        args:
+          - |
+            cd /workdir
+            npm install
         volumeMounts:
           - name: workdir
             mountPath: /workdir
@@ -40,9 +41,10 @@ spec:
         command:
           - sh
           - -c
-        args: |
-          cd /workdir
-          npm test
+        args:
+          - |
+            cd /workdir
+            npm test
         volumeMounts:
           - name: workdir
             mountPath: /workdir
