@@ -1,0 +1,53 @@
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Workflow
+metadata:
+  generateName: jbhannah.net-
+spec:
+  entrypoint: dag
+  volumeClaimTemplates:
+    - metadata:
+        name: workdir
+      spec:
+        accessModes:
+          - ReadWriteOnce
+        resources:
+          requests:
+            storage: 1Gi
+  templates:
+    - name: install
+      inputs:
+        artifacts:
+          - name: source
+            path: /workdir/src
+            git:
+              repo: https://github.com/jbhannah/jbhannah.net.git
+              revision: master
+      container:
+        image: node:erbium-alpine
+        command:
+          - npm
+        args:
+          - ci
+        volumeMounts:
+          - name: workdir
+            mountPath: /workdir
+    - name: test
+      container:
+        image: node:erbium-alpine
+        command:
+          - npm
+        args:
+          - test
+        volumeMounts:
+          - name: workdir
+            mountPath: /workdir
+    - name: dag
+      dag:
+        tasks:
+          - name: install
+            template: install
+          - name: test
+            dependencies:
+              - install
+            template: test
