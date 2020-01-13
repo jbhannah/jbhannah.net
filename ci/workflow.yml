@@ -26,9 +26,11 @@ spec:
       container:
         image: node:erbium-alpine
         command:
-          - npm
-        args:
-          - ci
+          - sh
+          - -c
+        args: |
+          cd /workdir
+          npm install
         volumeMounts:
           - name: workdir
             mountPath: /workdir
@@ -36,9 +38,11 @@ spec:
       container:
         image: node:erbium-alpine
         command:
-          - npm
-        args:
-          - test
+          - sh
+          - -c
+        args: |
+          cd /workdir
+          npm test
         volumeMounts:
           - name: workdir
             mountPath: /workdir
