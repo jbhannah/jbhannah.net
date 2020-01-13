@@ -3,10 +3,8 @@ apiVersion: argoproj.io/v1alpha1
 kind: Workflow
 metadata:
   name: jbhannah.net
-  namespace: argo
 spec:
   entrypoint: dag
-  serviceAccountName: argo
   volumeClaimTemplates:
     - metadata:
         name: workdir
