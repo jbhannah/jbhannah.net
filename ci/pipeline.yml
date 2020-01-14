@@ -2,8 +2,9 @@
 resources:
   - name: jbhannah.net
     type: git
+    icon: github-circle
     source:
-      uri: https://github.com/jbhannah/jbhannah.net
+      uri: https://github.com/jbhannah/jbhannah.net.git
       branch: master
 
 jobs:
@@ -29,7 +30,7 @@ jobs:
             args:
               - -c
               - |
-                apk add --no-cache build-base git
+                apk add --no-cache --no-progress --quiet build-base git
                 npm ci
       - task: test
         config:
