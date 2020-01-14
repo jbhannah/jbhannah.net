@@ -1,49 +1,127 @@
 ---
 resources:
-  - name: jbhannah.net
+  - name: git
     type: git
     icon: github-circle
     source:
       uri: https://github.com/jbhannah/jbhannah.net.git
       branch: master
+  - name: base
+    type: registry-image
+    source:
+      repository: jbhannah/jbhannah.net
+      tag: base
+      username: ((docker.username))
+      password: ((docker.password))
+  - name: builder
+    type: registry-image
+    source:
+      repository: jbhannah/jbhannah.net
+      tag: builder
+      username: ((docker.username))
+      password: ((docker.password))
+  - name: dist
+    type: registry-image
+    source:
+      repository: jbhannah/jbhannah.net
+      username: ((docker.username))
+      password: ((docker.password))
 
 jobs:
+  - name: base
+    plan:
+      - get: git
+      - task: build
+        config:
+          platform: linux
+          image_resource:
+            type: registry-image
+            source:
+              repository: jbhannah/buildkit-ubuntu
+          inputs:
+            - name: git
+          caches:
+            - name: cache
+          outputs:
+            - name: image
+          run:
+            path: buildctl
+            args:
+              - build
+              - --frontend
+              - dockerfile.v0
+              - --local
+              - context=./git
+              - --local
+              - dockerfile=./git/Dockerfile.base
+              - --export-cache
+              - type=local,dest=./cache
+              - --output
+              - type=docker,name=jbhannah/jbhannah.net:base,dest=./image/image.tar
+      - put: base
+        params:
+          image: image/image.tar
+  - name: build
+    plan:
+      - in_parallel:
+          - get: git
+            trigger: true
+      - task: build
+        config:
+          platform: linux
+          image_resource:
+            type: registry-image
+            source:
+              repository: jbhannah/buildkit-ubuntu
+          inputs:
+            - name: git
+          caches:
+            - name: cache
+          outputs:
+            - name: image
+          run:
+            path: buildctl
+            args:
+              - build
+              - --frontend
+              - dockerfile.v0
+              - --local
+              - context=./git
+              - --local
+              - dockerfile=./git/Dockerfile.builder
+              - --export-cache
+              - type=local,dest=./cache
+              - --output
+              - type=docker,name=jbhannah/jbhannah.net:builder,dest=./image/image.tar
+      - put: builder
+        params:
+          image: image/image.tar
   - name: test
     plan:
-      - get: jbhannah.net
+      - get: builder
         trigger: true
-      - task: install
-        config:
-          platform: linux
-          image_resource:
-            type: docker-image
-            source:
-              repository: node
-              tag: erbium-alpine
-          inputs:
-            - name: jbhannah.net
-          outputs:
-            - name: jbhannah.net
-          run:
-            dir: jbhannah.net
-            path: sh
-            args:
-              - -c
-              - |
-                apk add --no-cache --no-progress --quiet build-base git
-                npm ci
+        passed:
+          - build
       - task: test
+        image: builder
         config:
-          platform: linux
-          image_resource:
-            type: docker-image
-            source:
-              repository: node
-              tag: erbium-alpine
-          inputs:
-            - name: jbhannah.net
           run:
-            dir: jbhannah.net
+            dir: /app
             path: npm
             args:
               - test
+  - name: lint
+    plan:
+      - get: builder
+        trigger: true
+        passed:
+          - build
+      - task: test
+        image: builder
+        config:
+          run:
+            dir: /app
+            path: npm
+            args:
+              - run
+              - lint

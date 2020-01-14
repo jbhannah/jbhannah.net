@@ -1,0 +1,12 @@
+.cache/
+.dependabot/
+.dockerignore
+.github/
+.gitignore
+.vscode/
+*.pem
+ci/
+coverage/
+node_modules/
+Dockerfile*
+junit.xml
