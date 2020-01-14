@@ -6,6 +6,12 @@ resources:
     source:
       uri: https://github.com/jbhannah/jbhannah.net.git
       branch: master
+  - name: base-spec
+    type: git
+    source:
+      uri: https://github.com/jbhannah/jbhannah.net.git
+      paths:
+        - Dockerfile.base
   - name: base
     type: registry-image
     source:
@@ -13,6 +19,14 @@ resources:
       tag: base
       username: ((docker.username))
       password: ((docker.password))
+  - name: deps
+    type: git
+    source:
+      uri: https://github.com/jbhannah/jbhannah.net.git
+      paths:
+        - Dockerfile.builder
+        - package.json
+        - package-lock.json
   - name: builder
     type: registry-image
     source:
@@ -20,18 +34,14 @@ resources:
       tag: builder
       username: ((docker.username))
       password: ((docker.password))
-  - name: dist
-    type: registry-image
-    source:
-      repository: jbhannah/jbhannah.net
-      username: ((docker.username))
-      password: ((docker.password))
 
 jobs:
   - name: base
     plan:
-      - get: git
+      - get: base-spec
+        trigger: true
       - task: build
+        privileged: true
         config:
           platform: linux
           image_resource:
@@ -41,7 +51,7 @@ jobs:
           inputs:
             - name: git
           caches:
-            - name: cache
+            - path: cache
           outputs:
             - name: image
           run:
@@ -53,7 +63,9 @@ jobs:
               - --local
               - context=./git
               - --local
-              - dockerfile=./git/Dockerfile.base
+              - dockerfile=./git
+              - --opt
+              - filename=Dockerfile.base
               - --export-cache
               - type=local,dest=./cache
               - --output
@@ -63,10 +75,10 @@ jobs:
           image: image/image.tar
   - name: build
     plan:
-      - in_parallel:
-          - get: git
-            trigger: true
+      - get: deps
+        trigger: true
       - task: build
+        privileged: true
         config:
           platform: linux
           image_resource:
@@ -76,7 +88,7 @@ jobs:
           inputs:
             - name: git
           caches:
-            - name: cache
+            - path: cache
           outputs:
             - name: image
           run:
@@ -88,7 +100,9 @@ jobs:
               - --local
               - context=./git
               - --local
-              - dockerfile=./git/Dockerfile.builder
+              - dockerfile=./git
+              - --opt
+              - filename=Dockerfile.builder
               - --export-cache
               - type=local,dest=./cache
               - --output
@@ -98,13 +112,17 @@ jobs:
           image: image/image.tar
   - name: test
     plan:
-      - get: builder
-        trigger: true
-        passed:
-          - build
+      - in_parallel:
+          - get: git
+            trigger: true
+          - get: builder
+            trigger: true
+            passed:
+              - build
       - task: test
         image: builder
         config:
+          platform: linux
           run:
             dir: /app
             path: npm
@@ -112,13 +130,17 @@ jobs:
               - test
   - name: lint
     plan:
-      - get: builder
-        trigger: true
-        passed:
-          - build
+      - in_parallel:
+          - get: git
+            trigger: true
+          - get: builder
+            trigger: true
+            passed:
+              - build
       - task: test
         image: builder
         config:
+          platform: linux
           run:
             dir: /app
             path: npm
