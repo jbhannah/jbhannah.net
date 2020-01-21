@@ -1,17 +1,26 @@
 ---
 resources:
-  - name: git
+  - name: src
     type: git
     icon: github-circle
     source:
       uri: https://github.com/jbhannah/jbhannah.net.git
       branch: master
-  - name: base-spec
+  - name: deps
     type: git
+    icon: github-circle
     source:
       uri: https://github.com/jbhannah/jbhannah.net.git
+      branch: master
       paths:
-        - Dockerfile.base
+        - Dockerfile
+        - package.json
+        - package-lock.json
+  - name: buildkit
+    type: registry-image
+    source:
+      repository: moby/buildkit
+      tag: master
   - name: base
     type: registry-image
     source:
@@ -19,61 +28,15 @@ resources:
       tag: base
       username: ((docker.username))
       password: ((docker.password))
-  - name: deps
-    type: git
-    source:
-      uri: https://github.com/jbhannah/jbhannah.net.git
-      paths:
-        - Dockerfile.builder
-        - package.json
-        - package-lock.json
-  - name: builder
+  - name: dist
     type: registry-image
     source:
       repository: jbhannah/jbhannah.net
-      tag: builder
       username: ((docker.username))
       password: ((docker.password))
 
 jobs:
   - name: base
-    plan:
-      - get: base-spec
-        trigger: true
-      - task: build
-        privileged: true
-        config:
-          platform: linux
-          image_resource:
-            type: registry-image
-            source:
-              repository: jbhannah/buildkit-ubuntu
-          inputs:
-            - name: git
-          caches:
-            - path: cache
-          outputs:
-            - name: image
-          run:
-            path: buildctl
-            args:
-              - build
-              - --frontend
-              - dockerfile.v0
-              - --local
-              - context=./git
-              - --local
-              - dockerfile=./git
-              - --opt
-              - filename=Dockerfile.base
-              - --export-cache
-              - type=local,dest=./cache
-              - --output
-              - type=docker,name=jbhannah/jbhannah.net:base,dest=./image/image.tar
-      - put: base
-        params:
-          image: image/image.tar
-  - name: build
     plan:
       - get: deps
         trigger: true
@@ -81,69 +44,89 @@ jobs:
         privileged: true
         config:
           platform: linux
-          image_resource:
-            type: registry-image
-            source:
-              repository: jbhannah/buildkit-ubuntu
+          image: buildkit
           inputs:
-            - name: git
-          caches:
-            - path: cache
+            - name: deps
           outputs:
             - name: image
           run:
-            path: buildctl
+            path: buildctl-daemonless.sh
             args:
               - build
-              - --frontend
-              - dockerfile.v0
-              - --local
-              - context=./git
-              - --local
-              - dockerfile=./git
-              - --opt
-              - filename=Dockerfile.builder
-              - --export-cache
-              - type=local,dest=./cache
-              - --output
-              - type=docker,name=jbhannah/jbhannah.net:builder,dest=./image/image.tar
-      - put: builder
+              - --frontend=dockerfile.v0
+              - --local=context=./deps
+              - --local=dockerfile=./deps
+              - --opt=target=base
+              - --import-cache=type=registry,ref=docker.io/jbhannah/jbhannah.net:base
+              - --export-cache=type=inline
+              - --output=type=docker,name=jbhannah/jbhannah.net:base,dest=./image/image.tar
+      - put: base
         params:
           image: image/image.tar
-  - name: test
-    plan:
-      - in_parallel:
-          - get: git
-            trigger: true
-          - get: builder
-            trigger: true
-            passed:
-              - build
-      - task: test
-        image: builder
-        config:
-          platform: linux
-          run:
-            dir: /app
-            path: npm
-            args:
-              - test
   - name: lint
     plan:
       - in_parallel:
-          - get: git
+          - get: src
             trigger: true
-          - get: builder
+          - get: base
             trigger: true
             passed:
-              - build
-      - task: test
-        image: builder
+              - base
+      - task: lint
+        image: base
         config:
           platform: linux
+          inputs:
+            - name: src
           run:
-            dir: /app
+            dir: src
             path: npm
             args:
               - run
               - lint
+  - name: test
+    plan:
+      - in_parallel:
+          - get: src
+            trigger: true
+          - get: base
+            trigger: true
+            passed:
+              - base
+      - task: test
+        image: base
+        config:
+          platform: linux
+          inputs:
+            - name: src
+          run:
+            dir: src
+            path: npm
+            args:
+              - test
+  - name: build
+    plan:
+      - get: src
+        trigger: true
+        passed:
+          - lint
+          - test
+      - task: build
+        image: buildkit
+        inputs:
+          - name: base
+          - name: src
+        outputs:
+          - name: image
+        run:
+          path: buildctl-daemonless.sh
+          args:
+            - build
+            - --frontend=dockerfile.v0
+            - --local=context=./src
+            - --local=dockerfile=./src
+            - --import-cache=type=registry,ref=docker.io/jbhannah/jbhannah.net:base
+            - --output=type=docker,name=jbhannah/jbhannah.net,dest=./image/image.tar
+      - put: dist
+        params:
+          image: image/image.tar

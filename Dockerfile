@@ -1,3 +1,14 @@
-FROM jbhannah/jbhannah.net:builder
+FROM node:erbium-alpine AS base
+
+RUN apk add --no-cache build-base git
+
+WORKDIR /app
+COPY package.json package-lock.json ./
+RUN npm install -g
+
+FROM base AS build
 COPY . ./
-RUN npm run build
+RUN npm build
+
+FROM nginx:alpine
+COPY --from=build /app/public /usr/share/nginx/html/

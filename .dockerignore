@@ -5,6 +5,7 @@
 .gitignore
 .vscode/
 *.pem
+*.tar
 ci/
 coverage/
 node_modules/

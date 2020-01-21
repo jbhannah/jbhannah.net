@@ -1,6 +1,7 @@
 .cache/
 .DS_Store
 *.pem
+*.tar
 coverage/
 junit.xml
 node_modules
