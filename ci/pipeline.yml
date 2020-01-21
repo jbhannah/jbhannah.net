@@ -7,6 +7,7 @@ resources:
       uri: https://github.com/jbhannah/jbhannah.net.git
       branch: master
       ignore_paths: &paths
+        - ci/pipeline.yml
         - Dockerfile
         - package.json
         - package-lock.json
@@ -85,7 +86,9 @@ jobs:
             path: sh
             args:
               - -c
-              - npm run lint
+              - |
+                cd /app
+                npm run lint
   - name: test
     plan:
       - in_parallel:
@@ -105,16 +108,18 @@ jobs:
             path: sh
             args:
               - -c
-              - npm test
+              - |
+                cd /app
+                npm test
   - name: build
     plan:
       - in_parallel:
+          - get: buildkit
           - get: src
             trigger: true
             passed:
               - lint
               - test
-          - get: buildkit
       - task: build
         image: buildkit
         config:
