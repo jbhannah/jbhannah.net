@@ -109,15 +109,10 @@ jobs:
           image: image/image.tar
   - name: lint
     plan:
-      - in_parallel:
-          - get: src
-            trigger: true
-            passed:
-              - build
-          - get: build
-            trigger: true
-            passed:
-              - build
+      - get: build
+        trigger: true
+        passed:
+          - build
       - task: lint
         image: build
         config:
@@ -133,15 +128,10 @@ jobs:
                 npm run lint
   - name: test
     plan:
-      - in_parallel:
-          - get: src
-            trigger: true
-            passed:
-              - build
-          - get: build
-            trigger: true
-            passed:
-              - build
+      - get: build
+        trigger: true
+        passed:
+          - build
       - task: test
         image: build
         config:
