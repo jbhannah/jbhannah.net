@@ -6,45 +6,48 @@ resources:
     source:
       uri: https://github.com/jbhannah/jbhannah.net.git
       branch: master
+      ignore_paths: &paths
+        - Dockerfile
+        - package.json
+        - package-lock.json
   - name: deps
     type: git
     icon: github-circle
     source:
       uri: https://github.com/jbhannah/jbhannah.net.git
       branch: master
-      paths:
-        - Dockerfile
-        - package.json
-        - package-lock.json
+      paths: *paths
   - name: buildkit
     type: registry-image
     source:
-      repository: moby/buildkit
+      repository: jbhannah/buildkit
       tag: master
   - name: base
     type: registry-image
     source:
       repository: jbhannah/jbhannah.net
       tag: base
-      username: ((docker.username))
+      username: jbhannah
       password: ((docker.password))
   - name: dist
     type: registry-image
     source:
       repository: jbhannah/jbhannah.net
-      username: ((docker.username))
+      username: jbhannah
       password: ((docker.password))
 
 jobs:
   - name: base
     plan:
-      - get: deps
-        trigger: true
+      - in_parallel:
+          - get: deps
+            trigger: true
+          - get: buildkit
       - task: build
+        image: buildkit
         privileged: true
         config:
           platform: linux
-          image: buildkit
           inputs:
             - name: deps
           outputs:
@@ -79,11 +82,10 @@ jobs:
           inputs:
             - name: src
           run:
-            dir: src
-            path: npm
+            path: sh
             args:
-              - run
-              - lint
+              - -c
+              - npm run lint
   - name: test
     plan:
       - in_parallel:
@@ -100,33 +102,36 @@ jobs:
           inputs:
             - name: src
           run:
-            dir: src
-            path: npm
+            path: sh
             args:
-              - test
+              - -c
+              - npm test
   - name: build
     plan:
-      - get: src
-        trigger: true
-        passed:
-          - lint
-          - test
+      - in_parallel:
+          - get: src
+            trigger: true
+            passed:
+              - lint
+              - test
+          - get: buildkit
       - task: build
         image: buildkit
-        inputs:
-          - name: base
-          - name: src
-        outputs:
-          - name: image
-        run:
-          path: buildctl-daemonless.sh
-          args:
-            - build
-            - --frontend=dockerfile.v0
-            - --local=context=./src
-            - --local=dockerfile=./src
-            - --import-cache=type=registry,ref=docker.io/jbhannah/jbhannah.net:base
-            - --output=type=docker,name=jbhannah/jbhannah.net,dest=./image/image.tar
+        config:
+          platform: linux
+          inputs:
+            - name: src
+          outputs:
+            - name: image
+          run:
+            path: buildctl-daemonless.sh
+            args:
+              - build
+              - --frontend=dockerfile.v0
+              - --local=context=./src
+              - --local=dockerfile=./src
+              - --import-cache=type=registry,ref=docker.io/jbhannah/jbhannah.net:base
+              - --output=type=docker,name=jbhannah/jbhannah.net,dest=./image/image.tar
       - put: dist
         params:
           image: image/image.tar

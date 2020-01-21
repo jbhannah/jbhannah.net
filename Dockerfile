@@ -4,7 +4,7 @@ RUN apk add --no-cache build-base git
 
 WORKDIR /app
 COPY package.json package-lock.json ./
-RUN npm install -g
+RUN npm install
 
 FROM base AS build
 COPY . ./
