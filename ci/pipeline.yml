@@ -30,6 +30,13 @@ resources:
       tag: base
       username: jbhannah
       password: ((docker.password))
+  - name: build
+    type: registry-image
+    source:
+      repository: jbhannah/jbhannah.net
+      tag: build
+      username: jbhannah
+      password: ((docker.password))
   - name: dist
     type: registry-image
     source:
@@ -67,7 +74,7 @@ jobs:
       - put: base
         params:
           image: image/image.tar
-  - name: lint
+  - name: build
     plan:
       - in_parallel:
           - get: src
@@ -76,8 +83,43 @@ jobs:
             trigger: true
             passed:
               - base
+      - task: build
+        image: buildkit
+        privileged: true
+        config:
+          platform: linux
+          inputs:
+            - name: src
+          outputs:
+            - name: image
+          run:
+            path: buildctl-daemonless.sh
+            args:
+              - build
+              - --frontend=dockerfile.v0
+              - --local=context=./src
+              - --local=dockerfile=./src
+              - --opt=target=build
+              - --import-cache=type=registry,ref=docker.io/jbhannah/jbhannah.net:base
+              - --import-cache=type=registry,ref=docker.io/jbhannah/jbhannah.net:build
+              - --export-cache=type=inline
+              - --output=type=docker,name=jbhannah/jbhannah.net:build,dest=./image/image.tar
+      - put: build
+        params:
+          image: image/image.tar
+  - name: lint
+    plan:
+      - in_parallel:
+          - get: src
+            trigger: true
+            passed:
+              - build
+          - get: build
+            trigger: true
+            passed:
+              - build
       - task: lint
-        image: base
+        image: build
         config:
           platform: linux
           inputs:
@@ -94,12 +136,14 @@ jobs:
       - in_parallel:
           - get: src
             trigger: true
-          - get: base
+            passed:
+              - build
+          - get: build
             trigger: true
             passed:
-              - base
+              - build
       - task: test
-        image: base
+        image: build
         config:
           platform: linux
           inputs:
@@ -111,7 +155,7 @@ jobs:
               - |
                 cd /app
                 npm test
-  - name: build
+  - name: dist
     plan:
       - in_parallel:
           - get: buildkit
@@ -135,7 +179,7 @@ jobs:
               - --frontend=dockerfile.v0
               - --local=context=./src
               - --local=dockerfile=./src
-              - --import-cache=type=registry,ref=docker.io/jbhannah/jbhannah.net:base
+              - --import-cache=type=registry,ref=docker.io/jbhannah/jbhannah.net:build
               - --output=type=docker,name=jbhannah/jbhannah.net,dest=./image/image.tar
       - put: dist
         params:
