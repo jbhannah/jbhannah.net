@@ -6,17 +6,20 @@ resources:
     source:
       uri: https://github.com/jbhannah/jbhannah.net.git
       branch: master
-      ignore_paths: &paths
+      ignore_paths:
         - ci/pipeline.yml
-        - package.json
-        - package-lock.json
   - name: deps
     type: git
     icon: github-circle
     source:
       uri: https://github.com/jbhannah/jbhannah.net.git
       branch: master
-      paths: *paths
+      paths:
+        - ci/pipeline.yml
+        - Dockerfile
+        - Dockerfile.base
+        - package.json
+        - package-lock.json
   - name: buildkit
     type: registry-image
     source:

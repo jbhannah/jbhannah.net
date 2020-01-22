@@ -1,4 +1,5 @@
 FROM jbhannah/jbhannah.net:base AS build
+WORKDIR /app
 COPY . ./
 RUN npm build
 
