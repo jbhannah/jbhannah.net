@@ -8,7 +8,6 @@ resources:
       branch: master
       ignore_paths: &paths
         - ci/pipeline.yml
-        - Dockerfile
         - package.json
         - package-lock.json
   - name: deps
@@ -28,13 +27,6 @@ resources:
     source:
       repository: jbhannah/jbhannah.net
       tag: base
-      username: jbhannah
-      password: ((docker.password))
-  - name: build
-    type: registry-image
-    source:
-      repository: jbhannah/jbhannah.net
-      tag: build
       username: jbhannah
       password: ((docker.password))
   - name: dist
@@ -67,6 +59,7 @@ jobs:
               - --frontend=dockerfile.v0
               - --local=context=./deps
               - --local=dockerfile=./deps
+              - --opt=filename=Dockerfile.base
               - --opt=target=base
               - --import-cache=type=registry,ref=docker.io/jbhannah/jbhannah.net:base
               - --export-cache=type=inline
@@ -74,7 +67,7 @@ jobs:
       - put: base
         params:
           image: image/image.tar
-  - name: build
+  - name: lint
     plan:
       - in_parallel:
           - get: src
@@ -83,6 +76,52 @@ jobs:
             trigger: true
             passed:
               - base
+      - task: lint
+        image: base
+        config:
+          platform: linux
+          inputs:
+            - name: src
+          run:
+            dir: src
+            path: sh
+            args:
+              - -c
+              - |
+                ln -s /app/node_modules .
+                npm run lint
+  - name: test
+    plan:
+      - in_parallel:
+          - get: src
+            trigger: true
+          - get: base
+            trigger: true
+            passed:
+              - base
+      - task: test
+        image: base
+        config:
+          platform: linux
+          inputs:
+            - name: src
+          run:
+            dir: src
+            path: sh
+            args:
+              - -c
+              - |
+                ln -s /app/node_modules .
+                npm test
+  - name: build
+    plan:
+      - in_parallel:
+          - get: src
+            trigger: true
+            passed:
+              - lint
+              - test
+          - get: buildkit
       - task: build
         image: buildkit
         privileged: true
@@ -99,77 +138,6 @@ jobs:
               - --frontend=dockerfile.v0
               - --local=context=./src
               - --local=dockerfile=./src
-              - --opt=target=build
-              - --import-cache=type=registry,ref=docker.io/jbhannah/jbhannah.net:base
-              - --import-cache=type=registry,ref=docker.io/jbhannah/jbhannah.net:build
-              - --export-cache=type=inline
-              - --output=type=docker,name=jbhannah/jbhannah.net:build,dest=./image/image.tar
-      - put: build
-        params:
-          image: image/image.tar
-  - name: lint
-    plan:
-      - get: build
-        trigger: true
-        passed:
-          - build
-      - task: lint
-        image: build
-        config:
-          platform: linux
-          inputs:
-            - name: src
-          run:
-            path: sh
-            args:
-              - -c
-              - |
-                cd /app
-                npm run lint
-  - name: test
-    plan:
-      - get: build
-        trigger: true
-        passed:
-          - build
-      - task: test
-        image: build
-        config:
-          platform: linux
-          inputs:
-            - name: src
-          run:
-            path: sh
-            args:
-              - -c
-              - |
-                cd /app
-                npm test
-  - name: dist
-    plan:
-      - in_parallel:
-          - get: buildkit
-          - get: src
-            trigger: true
-            passed:
-              - lint
-              - test
-      - task: build
-        image: buildkit
-        config:
-          platform: linux
-          inputs:
-            - name: src
-          outputs:
-            - name: image
-          run:
-            path: buildctl-daemonless.sh
-            args:
-              - build
-              - --frontend=dockerfile.v0
-              - --local=context=./src
-              - --local=dockerfile=./src
-              - --import-cache=type=registry,ref=docker.io/jbhannah/jbhannah.net:build
               - --output=type=docker,name=jbhannah/jbhannah.net,dest=./image/image.tar
       - put: dist
         params:
