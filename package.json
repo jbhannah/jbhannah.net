@@ -62,7 +62,7 @@
     "unist-util-visit": "^2.0.1"
   },
   "devDependencies": {
-    "babel-jest": "^24.9.0",
+    "babel-jest": "^25.1.0",
     "babel-preset-gatsby": "^0.2.27",
     "chalk": "^3.0.0",
     "enzyme": "^3.11.0",
