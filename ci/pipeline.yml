@@ -16,7 +16,6 @@ resources:
       branch: master
       paths:
         - ci/pipeline.yml
-        - Dockerfile
         - Dockerfile.base
         - package.json
         - package-lock.json
