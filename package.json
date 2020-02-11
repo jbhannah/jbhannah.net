@@ -57,7 +57,7 @@
     "typeface-varela-round": "0.0.71",
     "typography": "^0.16.19",
     "typography-theme-lincoln": "^0.16.19",
-    "unist-util-remove": "^1.0.3",
+    "unist-util-remove": "^2.0.0",
     "unist-util-remove-position": "^2.0.0",
     "unist-util-visit": "^2.0.1"
   },
