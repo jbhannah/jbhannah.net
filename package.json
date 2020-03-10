@@ -42,7 +42,7 @@
     "gatsby-remark-smartypants": "^2.1.22",
     "gatsby-source-filesystem": "^2.1.51",
     "gatsby-transformer-remark": "^2.6.56",
-    "gatsby-transformer-sharp": "^2.3.17",
+    "gatsby-transformer-sharp": "^2.3.18",
     "hack-font": "github:jbhannah/Hack#font-display",
     "luxon": "^1.22.0",
     "prismjs": "^1.19.0",
