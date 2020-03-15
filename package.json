@@ -50,7 +50,7 @@
     "react-dom": "^16.13.0",
     "react-helmet": "^5.2.1",
     "react-typography": "^0.16.19",
-    "rehype-react": "^4.0.1",
+    "rehype-react": "^5.0.0",
     "remark-html": "^10.0.0",
     "remark-parse": "^7.0.2",
     "typeface-lora": "0.0.72",
