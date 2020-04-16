@@ -40,7 +40,7 @@
     "gatsby-remark-numbered-footnotes": "^1.0.1",
     "gatsby-remark-prismjs": "^3.4.1",
     "gatsby-remark-smartypants": "^2.2.1",
-    "gatsby-source-filesystem": "^2.2.2",
+    "gatsby-source-filesystem": "^2.2.3",
     "gatsby-transformer-remark": "^2.7.1",
     "gatsby-transformer-sharp": "^2.4.4",
     "hack-font": "github:jbhannah/Hack#font-display",
