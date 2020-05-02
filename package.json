@@ -78,7 +78,7 @@
     "gray-matter": "^4.0.2",
     "husky": "^4.2.5",
     "identity-obj-proxy": "^3.0.0",
-    "jest": "^25.5.3",
+    "jest": "^25.5.4",
     "jest-junit": "^10.0.0",
     "mockdate": "^2.0.5",
     "prettier": "^2.0.5",
