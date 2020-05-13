@@ -51,7 +51,7 @@
     "react-helmet": "^5.2.1",
     "react-typography": "^0.16.19",
     "rehype-react": "^5.0.1",
-    "remark-html": "^11.0.1",
+    "remark-html": "^11.0.2",
     "remark-parse": "^8.0.2",
     "typeface-lora": "0.0.72",
     "typeface-varela-round": "0.0.71",
