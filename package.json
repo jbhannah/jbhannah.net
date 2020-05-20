@@ -80,7 +80,7 @@
     "identity-obj-proxy": "^3.0.0",
     "jest": "^26.0.1",
     "jest-junit": "^10.0.0",
-    "mockdate": "^2.0.5",
+    "mockdate": "^3.0.0",
     "prettier": "^2.0.5",
     "pretty-quick": "^2.0.1"
   }
