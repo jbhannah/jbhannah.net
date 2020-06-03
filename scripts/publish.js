@@ -10,7 +10,7 @@ glob.promise = promisify(glob)
 const readFile = promisify(fs.readFile)
 const writeFile = promisify(fs.writeFile)
 
-const processPage = async path => {
+const processPage = async (path) => {
   const input = await readFile(path, "utf-8")
   const file = matter(input)
   const frontmatter = Object.assign({}, defaultFrontmatter, file.data)
@@ -27,11 +27,11 @@ const publishPages = async () => {
   try {
     const files = await glob.promise(`${__dirname}/../src/pages/**/*.md`)
     const results = await Promise.all(
-      files.map(async path => await processPage(path))
+      files.map(async (path) => await processPage(path))
     )
 
-    const published = results.filter(f => typeof f === "string").length
-    const drafts = results.filter(f => f === 1).length
+    const published = results.filter((f) => typeof f === "string").length
+    const drafts = results.filter((f) => f === 1).length
 
     if (published) {
       console.warn(

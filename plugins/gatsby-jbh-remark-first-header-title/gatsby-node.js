@@ -4,7 +4,7 @@ exports.onCreateNode = ({ node, actions: { createNodeField } }) => {
   if (node.internal.type !== "MarkdownRemark") return
 
   const lines = node.rawMarkdownBody.split("\n")
-  const index = lines.findIndex(line => titleRegexp.test(line))
+  const index = lines.findIndex((line) => titleRegexp.test(line))
 
   if (index < 0) return
 

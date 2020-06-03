@@ -134,9 +134,9 @@ const htmlAst = {
   },
 }
 
-const itStripsFootnotes = ex => {
+const itStripsFootnotes = (ex) => {
   return () => {
-    visit(ex, node => {
+    visit(ex, (node) => {
       if (node.hasOwnProperty("tagName")) {
         expect(node.tagName).not.toBe("sup")
       }

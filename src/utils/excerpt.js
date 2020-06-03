@@ -3,7 +3,7 @@ import stripPosition from "unist-util-remove-position"
 
 const excerpt = ({ htmlAst, frontmatter }) => {
   if (frontmatter.link === null) {
-    htmlAst.children = [htmlAst.children.filter(n => n.tagName === "p")[0]]
+    htmlAst.children = [htmlAst.children.filter((n) => n.tagName === "p")[0]]
   }
 
   stripPosition(htmlAst, true)
