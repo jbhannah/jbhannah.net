@@ -6,3 +6,5 @@ configure({ adapter: new Adapter() })
 global.___loader = {
   enqueue: jest.fn(),
 }
+
+global.__BASE_PATH__ = ``
