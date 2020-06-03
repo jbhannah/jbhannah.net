@@ -7,7 +7,7 @@ import Link from "../Link"
 import MarginFix from "../MarginFix"
 import Markdown from "../Markdown"
 
-const localDateFromDateTime = date =>
+const localDateFromDateTime = (date) =>
   DateTime.fromISO(date)
     .setZone("America/Phoenix")
     .toLocaleString(DateTime.DATE_HUGE)

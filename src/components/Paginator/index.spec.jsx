@@ -2,14 +2,11 @@ import { shallow } from "enzyme"
 import React from "react"
 import Paginator from "."
 
-const lis = tree => tree.find("li")
-const linkAt = (tree, i) =>
-  lis(tree)
-    .at(i)
-    .find("Link")
+const lis = (tree) => tree.find("li")
+const linkAt = (tree, i) => lis(tree).at(i).find("Link")
 const hrefAt = (tree, i) => linkAt(tree, i).prop("href")
 
-const TestPaginator = props => shallow(<Paginator {...props} />)
+const TestPaginator = (props) => shallow(<Paginator {...props} />)
 
 describe("Paginator", () => {
   describe("with one page", () => {

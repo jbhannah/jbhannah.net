@@ -2,12 +2,12 @@ import { shallow } from "enzyme"
 import React from "react"
 import Link from "."
 
-const TestLink = props => shallow(<Link {...props} />)
+const TestLink = (props) => shallow(<Link {...props} />)
 
 describe("Link", () => {
   describe("with an internal link", () => {
     const tree = TestLink({ href: "/" })
-    const link = t => t.find("ForwardRef")
+    const link = (t) => t.find("ForwardRef")
 
     it("renders correctly", () => {
       expect(tree).toMatchSnapshot()
@@ -28,7 +28,7 @@ describe("Link", () => {
 
   describe("with an anchor link", () => {
     const tree = TestLink({ href: "#fn-1" })
-    const link = t => t.find("a")
+    const link = (t) => t.find("a")
 
     it("renders correctly", () => {
       expect(tree).toMatchSnapshot()
@@ -49,7 +49,7 @@ describe("Link", () => {
 
   describe("with an external link", () => {
     const tree = TestLink({ href: "https://www.example.com" })
-    const link = t => t.find("a")
+    const link = (t) => t.find("a")
 
     it("renders correctly", () => {
       expect(tree).toMatchSnapshot()

@@ -94,10 +94,10 @@ const query = graphql`
   }
 `
 
-const Layout = props => (
+const Layout = (props) => (
   <StaticQuery
     query={query}
-    render={data => <PureLayout {...{ data, ...props }} />}
+    render={(data) => <PureLayout {...{ data, ...props }} />}
   />
 )
 

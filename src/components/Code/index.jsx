@@ -7,6 +7,6 @@ const codeCSS = {
   WebkitFontFeatureSettings: '"liga" 0 !important',
 }
 
-const Code = props => <code css={codeCSS} {...props} />
+const Code = (props) => <code css={codeCSS} {...props} />
 
 export default Code

@@ -2,7 +2,7 @@ import { shallow } from "enzyme"
 import React from "react"
 import Heading, { HeadingFactory } from "."
 
-const TestHeading = props => shallow(<Heading {...props} />)
+const TestHeading = (props) => shallow(<Heading {...props} />)
 
 describe("Heading", () => {
   describe("with a valid heading level", () => {

@@ -2,7 +2,7 @@ import { shallow } from "enzyme"
 import React from "react"
 import Blockquote from "."
 
-const TestBlockquote = props => shallow(<Blockquote {...props} />)
+const TestBlockquote = (props) => shallow(<Blockquote {...props} />)
 
 describe("Blockquote", () => {
   const tree = TestBlockquote()

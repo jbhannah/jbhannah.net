@@ -120,7 +120,7 @@ const htmlAst = {
   },
 }
 
-const TestMarkdown = props => mount(<Markdown {...props} />)
+const TestMarkdown = (props) => mount(<Markdown {...props} />)
 
 describe("Markdown", () => {
   describe("without a root element", () => {

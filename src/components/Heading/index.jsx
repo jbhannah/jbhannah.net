@@ -16,7 +16,7 @@ export const Heading = ({ level, ...props }) => {
   return <H css={headingCSS} {...props} />
 }
 
-export const HeadingFactory = level => props => (
+export const HeadingFactory = (level) => (props) => (
   <Heading level={level} {...props} />
 )
 

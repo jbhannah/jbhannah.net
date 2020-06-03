@@ -24,7 +24,7 @@ const socialNavUlCSS = {
 const SocialNav = ({ socialLinks }) => (
   <nav css={socialNavCSS}>
     <ul css={socialNavUlCSS}>
-      {socialLinks.map(l => (
+      {socialLinks.map((l) => (
         <SocialLink {...l} />
       ))}
     </ul>

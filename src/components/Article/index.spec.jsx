@@ -29,7 +29,7 @@ const linkArticle = Object.assign({}, article, {
   frontmatter: { link: "https://example.com/test-link" },
 })
 
-const TestArticle = props => shallow(<Article {...props} />)
+const TestArticle = (props) => shallow(<Article {...props} />)
 
 describe("Article", () => {
   describe("standalone", () => {

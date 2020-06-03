@@ -15,13 +15,13 @@ const isTag = (node, tagName) =>
   node.hasOwnProperty("tagName") &&
   node.tagName === tagName
 
-const newSection = children => {
+const newSection = (children) => {
   const section = { type: "element", tagName: "section" }
   section.children = children(section)
   return section
 }
 
-const renderAst = htmlAst => {
+const renderAst = (htmlAst) => {
   let currentLevel, currentParent, currentSection
 
   visit(htmlAst, (node, index, parent) => {
@@ -35,7 +35,7 @@ const renderAst = htmlAst => {
         currentSection.children.push(section)
         currentSection = section
       } else {
-        currentSection = newSection(section =>
+        currentSection = newSection((section) =>
           parent.children.splice(index, 1, section)
         )
       }

@@ -2,7 +2,7 @@ import { shallow } from "enzyme"
 import React from "react"
 import Header from "."
 
-const TestHeader = props =>
+const TestHeader = (props) =>
   shallow(
     <Header
       title="Test Site"

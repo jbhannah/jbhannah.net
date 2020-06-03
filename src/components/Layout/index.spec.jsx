@@ -28,8 +28,9 @@ const data = {
 
 StaticQuery.mockImplementationOnce(({ render: r }) => r(data))
 
-const TestLayout = props => render(<Layout {...props} />)
-const TestPureLayout = props => shallow(<PureLayout {...{ data, ...props }} />)
+const TestLayout = (props) => render(<Layout {...props} />)
+const TestPureLayout = (props) =>
+  shallow(<PureLayout {...{ data, ...props }} />)
 
 describe("Layout", () => {
   it("renders correctly", () => {
