@@ -22,7 +22,9 @@ const backLinks = (base, pageBase, currentPage) =>
         <Link href={base}>«</Link>
       </li>
       <li>
-        <Link href={`${pageBase}/${currentPage - 1}`}>‹</Link>
+        <Link href={currentPage == 2 ? base : `${pageBase}/${currentPage - 1}`}>
+          ‹
+        </Link>
       </li>
     </Fragment>
   ) : (
