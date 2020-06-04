@@ -5,8 +5,8 @@ date: 2020-06-03T05:57:54.556Z
 # Negating ActiveRecord Scopes
 
 Here's a neat trick in Rails to use the plumbing of ActiveRecord to keep your
-code DRY and maintainable.[^1] Say you have a scope in an ActiveRecord model
-with an `expires_at` column, to find records that are still active:
+code DRY and maintainable. Say you have a scope in an ActiveRecord model with
+an `expires_at` column, to find records that are still active:
 
 ```ruby
 class Foobar < ApplicationRecord
@@ -24,15 +24,15 @@ class Foobar < ApplicationRecord
 end
 ```
 
-But[^2] what if you want "expired" records to still be usable for a brief
+But[^1] what if you want "expired" records to still be usable for a brief
 period to allow them to be refreshed and extended? Both scopes will need to
 be changed to reflect the new ranges, or you could use a class-level utility
-method that just returns `30.minutes.ago` or whatever buffer you want to use,
-and call it from both scopes. Even then, if you later have need for another
-opposing pair of scopes, you'll still have to keep both of those scopes
-mirrored manually as well.
+method that just returns `ruby›30.minutes.ago` or whatever buffer you want to
+use, and call it from both scopes. Even then, if you later have need for
+another opposing pair of scopes, you'll still have to keep both of those
+scopes mirrored manually as well.
 
-Or you can leverage Arel, the magic that underlies ActiveRecord itself:
+Or you can leverage Arel, the magic that underlies ActiveRecord itself[^2]:
 
 ```ruby
 class ApplicationRecord < ActiveRecord::Base
@@ -55,12 +55,13 @@ and any other opposing pairs of scopes in your application can use the same
 
 ## What's happening under the hood
 
-`scope.arel.constraints` gets the Arel representation of the scope and
+`ruby›scope.arel.constraints` gets the Arel representation of the scope and
 extracts the constraints (i.e. the `where` clause). This gives an array of
-`Arel::Nodes`, one for each `where` statement the generated query;
-`.reduce(:and)` combines them all into a single Arel statement that can be
-negated with `.not`. This Arel statement can be passed back to ActiveRecord's
-`where` method, which turns the SQL for the original `active` scope:
+`ruby›Arel::Nodes`, one for each `where` statement the generated query;
+`ruby›.reduce(:and)` combines them all into a single Arel statement that can
+be negated with `ruby›.not`. This Arel statement can be passed back to
+ActiveRecord's `where` method, which turns the SQL for the original `active`
+scope:
 
 ```sql
 SELECT "foobars".*
@@ -81,8 +82,8 @@ LIMIT 11
 and any changes made to the original `active` scope will be used in the inverse
 scope.
 
-[^1]: Credit to Matthew Parker for the [2013 version][vmw] of this snippet.
-[^2]: This is an entirely contrived example. Don't take it too seriously.
-[^3]: `self.not` is required to distinguish the method from the Ruby keyword.
+[^1]: This is an entirely contrived example. Don't take it too seriously.
+[^2]: Credit to Matthew Parker for the [2013 version][vmw] of this snippet.
+[^3]: `ruby›self.not` is required to distinguish the method from the Ruby keyword.
 
 [vmw]: https://tanzu.vmware.com/content/blog/logically-negating-an-activerecord-scope
