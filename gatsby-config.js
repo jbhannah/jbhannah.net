@@ -95,7 +95,17 @@ module.exports = {
           "gatsby-remark-smartypants",
           {
             resolve: "gatsby-remark-prismjs",
-            options: { inlineCodeMarker: "›" },
+            options: {
+              inlineCodeMarker: "›",
+              languageExtensions: [
+                {
+                  extend: "ruby",
+                  definition: {
+                    operator: /->|[<>]=?|[!=]=?=?|--?|\+\+?|&&?|\|\|?|[?*/~^%]/,
+                  },
+                },
+              ],
+            },
           },
           {
             resolve: "@raae/gatsby-remark-oembed",
