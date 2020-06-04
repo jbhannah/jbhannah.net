@@ -107,20 +107,21 @@ On the k3s cluster server, download the manifest:
 curl -LO https://raw.githubusercontent.com/squat/kilo/master/manifests/kilo-k3s.yaml
 ```
 
-then make the following change to the `DaemonSet` pod template in the manifest:
+then add the following line to the `DaemonSet` pod template in the manifest:
 
-```diff{numberLines: 99}
-       - name: kilo
-         image: squat/kilo
-         args:
-         - --kubeconfig=/etc/kubernetes/kubeconfig
-         - --hostname=$(NODE_NAME)
-+        - --mesh-granularity=full
-         env:
-         - name: NODE_NAME
-           valueFrom:
-             fieldRef:
-               fieldPath: spec.nodeName
+```yaml{numberLines: 99}
+- name: kilo
+  image: squat/kilo
+  args:
+      - --kubeconfig=/etc/kubernetes/kubeconfig
+      - --hostname=$(NODE_NAME)
+      # highlight-next-line
+      - --mesh-granularity=full
+  env:
+      - name: NODE_NAME
+        valueFrom:
+            fieldRef:
+                fieldPath: spec.nodeName
 ```
 
 and finally, apply it to the cluster:
@@ -159,7 +160,6 @@ peer: (worker 3 public key)
 ```
 
 [^ssdn]:
-
     This is an affiliate referral link, but if you don't mind a more DIY host
     with fewer features and a less polished dashboard than [DigitalOcean][] or
     [Linode][] (both also affiliate referral links), then SSDNodes definitely
@@ -168,26 +168,22 @@ peer: (worker 3 public key)
     datacenter, at \$79/year for 3 years for 4 vCPUs, 16 GB RAM, and 160 GB SSD.
 
 [^ips]:
-
     Private IPs are available on request if you submit a support ticket, but
     when I discovered this I had already done all of the legwork on setting up
     Kilo and WireGuard and started writing this post, so ¯\\\_(ツ)\_/¯
 
 [^rpi]: That's a blog post for another time.
 [^src]:
-
     The entire set of Ansible playbooks and Kubernetes manifests for the cluster
     is [on GitHub][hfi], if you want a fuller context or automated way to deploy
     this setup.
 
 [^sudo]:
-
     Your systems all have appropriately-set `sudoers` rules and passwordless and
     `root` SSH logins disabled, right?
 
 [^server]: `<server address>` can be an IP address or resolvable domain name.
 [^metrics]:
-
     If you're planning on running `metrics-server`, you'll also need to allow
     that for each node:
 

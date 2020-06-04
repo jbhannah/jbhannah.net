@@ -1,5 +1,5 @@
-import React from "react"
 import { Global as EmotionGlobal } from "@emotion/core"
+import React from "react"
 
 const Global = () => (
   <EmotionGlobal
@@ -21,6 +21,11 @@ const Global = () => (
             paddingLeft: "2.8em",
             "& .line-numbers-rows span": {
               lineHeight: 1.5,
+            },
+            ".gatsby-highlight-code-line": {
+              marginLeft: "-3.8em",
+              marginRight: "-2em",
+              paddingLeft: "3.7em",
             },
           },
         },
