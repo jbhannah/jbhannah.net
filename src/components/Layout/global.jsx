@@ -1,5 +1,6 @@
 import { Global as EmotionGlobal } from "@emotion/core"
 import React from "react"
+import { mq } from "../../utils/styles"
 
 const Global = () => (
   <EmotionGlobal
@@ -25,6 +26,24 @@ const Global = () => (
             ".gatsby-highlight-code-line": {
               marginLeft: "-3.8em",
               paddingLeft: "3.7em",
+            },
+          },
+        },
+        ".command-line-prompt": {
+          borderRight: "none",
+          marginRight: 0,
+          ">": {
+            "span[data-user]:before": {
+              content: "'$'",
+              [mq.lg]: {
+                content: "'[' attr(data-user) '@' attr(data-host) '] $'",
+              },
+            },
+            "span[data-user='root']:before": {
+              content: "'#'",
+              [mq.lg]: {
+                content: "'[' attr(data-user) '@' attr(data-host) '] #'",
+              },
             },
           },
         },

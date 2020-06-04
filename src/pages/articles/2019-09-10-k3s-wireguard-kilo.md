@@ -25,16 +25,10 @@ it should be easy enough to apply to other varieties of each.
 
 ## Starting Up
 
-You'll be running most of these commands as `root`, so start with[^sudo]:
-
-```bash
-sudo -i
-```
-
 From a freshly-installed and -updated system, the first step is to install
 WireGuard:
 
-```bash
+```bash{promptUser: root}{promptHost: server}
 add-apt-repository ppa:wireguard/wireguard
 apt-get update
 apt-get install wireguard
@@ -43,7 +37,7 @@ apt-get install wireguard
 and allow communication between each node over the default port of `51820` (or
 your port of choice), as well as incoming SSH connections:
 
-```bash
+```bash{promptUser: root}{promptHost: server}
 ufw allow from ${node_ip} to any port 51820 proto udp
 ufw limit ssh
 ufw enable
@@ -70,23 +64,26 @@ other options, so `--no-flannel` is the only added option that we'll pass.
 
 Choose a node to be the server, and run:
 
-```bash
+```bash{promptUser: root}{promptHost: server}{outputLines: 3-4}
 ufw allow 6443/tcp
-curl -sfL https://get.k3s.io | K3S_CLUSTER_SECRET="<paste secret here>" \
-    sh -s - server --no-flannel
+curl -sfL https://get.k3s.io | \
+K3S_CLUSTER_SECRET="<paste secret here>" \
+sh -s - server --no-flannel
 ```
 
 Then on each worker node[^server]:
 
-```bash
-curl -sfL https://get.k3s.io | K3S_URL=https://<server address>:6443 \
-    K3S_CLUSTER_SECRET="<paste secret here>" sh -s - agent --no-flannel
+```bash{promptUser: root}{promptHost: node}{outputLines: 2-4}
+curl -sfL https://get.k3s.io | \
+K3S_URL=https://<server address>:6443 \
+K3S_CLUSTER_SECRET="<paste secret here>" \
+sh -s - agent --no-flannel
 ```
 
 and a few more firewall rules across all nodes to allow intra-cluster
 traffic[^metrics]:
 
-```bash
+```bash{promptUser: root}{promptHost: server}
 ufw default allow routed
 ufw allow in on cni0 from 10.42.0.0/16
 ufw allow in on kube-bridge from 10.42.0.0/16
@@ -105,7 +102,7 @@ command-line flag for this, and only one line needs to be added to the manifest.
 
 On the k3s cluster server, download the manifest:
 
-```bash
+```bash{promptUser: root}{promptHost: server}
 curl -LO https://raw.githubusercontent.com/squat/kilo/master/manifests/kilo-k3s.yaml
 ```
 
@@ -128,15 +125,15 @@ then add the following line to the `DaemonSet` pod template in the manifest:
 
 and finally, apply it to the cluster:
 
-```bash
+```bash{promptUser: root}{promptHost: server}
 kubectl apply -f kilo-k3s.yaml
 ```
 
 If all went as expected, you can now see the connections between each server
 with the `wg` command:
 
-```bash
-~# wg
+```bash{promptUser: root}{promptHost: server}{outputLines: 2-23}
+wg
 interface: kilo0
   public key: (server public key)
   private key: (hidden)
@@ -180,16 +177,12 @@ peer: (worker 3 public key)
     is [on GitHub][hfi], if you want a fuller context or automated way to deploy
     this setup.
 
-[^sudo]:
-    Your systems all have appropriately-set `sudoers` rules and passwordless and
-    `root` SSH logins disabled, right?
-
 [^server]: `<server address>` can be an IP address or resolvable domain name.
 [^metrics]:
     If you're planning on running `metrics-server`, you'll also need to allow
     that for each node:
 
-    ```bash
+    ```bash{promptUser: root}{promptHost: node}
     ufw allow from ${node_ip} to any port 10250 proto tcp
     ```
 

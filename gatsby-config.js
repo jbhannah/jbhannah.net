@@ -105,6 +105,10 @@ module.exports = {
                   },
                 },
               ],
+              prompt: {
+                user: "jbhannah",
+                global: true,
+              },
             },
           },
           {

@@ -43,9 +43,8 @@ services:
 
 Try to start it, and:
 
-<!-- prettier-ignore -->
-```bash
-$ docker-compose up
+```bash{outputLines: 2-17}
+docker-compose up
 Traceback (most recent call last):
   File "/usr/local/bin/my-app", line 5, in <module>
     from pkg_resources import load_entry_point
@@ -96,7 +95,6 @@ Docker image in production, and in local development with a Docker Compose
 volume mount.
 
 [^pipenv]:
-
     I personally use [Pipenv][] for local virtual environment and support
     package management, which streamlines my day-to-day code-writing
     substantially combined with VS Code's Python extension.

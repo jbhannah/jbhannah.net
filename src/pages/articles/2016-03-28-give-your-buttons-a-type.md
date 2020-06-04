@@ -62,7 +62,6 @@ form should be given `type="button"`. Remember to do that upfront, and it will
 save you from a lot of weird and tricky-to-spot bugs later.
 
 [^kd]:
-
     I know, but it’s a weird form where “Enter” is supposed to do different
     things in different inputs. Namely, in some inputs it fills in the current
     autocomplete value, where in others it submits the form immediately even if

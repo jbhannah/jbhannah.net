@@ -106,7 +106,6 @@ end
 ```
 
 [^raise]:
-
     You can even add a check to make sure this doesn’t get included anywhere
     unexpected, but it’s entirely a matter of taste:
 
@@ -121,7 +120,6 @@ end
     processing and gets included in a model on accident.
 
 [^inc]:
-
     Remember that Ruby includes are evaluated top-to-bottom, meaning that
     `ruby›included` blocks are run starting from the first `ruby›include`, and
     method definitions are found starting from the last `ruby›include`. In this
