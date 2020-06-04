@@ -7,7 +7,7 @@ jest.mock("../../utils/excerpt")
 
 const article = {
   fields: {
-    slug: "test-slug",
+    slug: "/test-slug",
     title: "Test Article",
   },
   frontmatter: {

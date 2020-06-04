@@ -6,5 +6,5 @@ exports.onCreateNode = ({ node, getNode, actions: { createNodeField } }) => {
   const { ext, relativePath } = getNode(node.parent)
   const slug = relativePath.replace(dateRegex, "").replace(ext, "")
 
-  createNodeField({ node, name: "slug", value: slug })
+  createNodeField({ node, name: "slug", value: `/${slug}` })
 }

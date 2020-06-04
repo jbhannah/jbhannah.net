@@ -24,7 +24,7 @@ const Article = ({ list, article }) => {
   if (frontmatter.link) {
     title = <Link href={frontmatter.link}>{fields.title}</Link>
   } else if (list) {
-    title = <Link href={`/${fields.slug}`}>{fields.title}</Link>
+    title = <Link href={`${fields.slug}`}>{fields.title}</Link>
   } else {
     title = fields.title
   }
@@ -45,7 +45,7 @@ const Article = ({ list, article }) => {
       <Markdown htmlAst={content} />
       {list && (
         <footer css={footerCSS}>
-          <Link href={`/${fields.slug}`}>
+          <Link href={`${fields.slug}`}>
             {frontmatter.link ? "Permalink" : "Read More…"}
           </Link>
         </footer>

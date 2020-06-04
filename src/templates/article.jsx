@@ -25,7 +25,7 @@ const Template = ({ data }) => {
         <meta property="og:title" content={title} />
         <meta property="og:description" content={excerpt} />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content={`${siteUrl}/${slug}`} />
+        <meta property="og:url" content={`${siteUrl}${slug}`} />
         <meta property="og:article:author:first_name" content={name.first} />
         <meta property="og:article:author:last_name" content={name.last} />
         <meta property="og:article:author:username" content={username} />
