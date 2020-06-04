@@ -58,10 +58,9 @@ and any other opposing pairs of scopes in your application can use the same
 `ruby›scope.arel.constraints` gets the Arel representation of the scope and
 extracts the constraints (i.e. the `where` clause). This gives an array of
 `ruby›Arel::Nodes`, one for each `where` statement the generated query;
-`ruby›.reduce(:and)` combines them all into a single Arel statement that can
-be negated with `ruby›.not`. This Arel statement can be passed back to
-ActiveRecord's `where` method, which turns the SQL for the original `active`
-scope:
+`ruby›.reduce(:and)` combines them all into a single `ruby›Arel::Nodes::And`
+node that can be negated with `ruby›.not`, then passed back to ActiveRecord's
+`where` method, which turns the SQL for the original `active` scope:
 
 ```sql
 SELECT "foobars".*
