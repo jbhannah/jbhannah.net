@@ -1,8 +1,11 @@
 {
   "name": "jbhannah.net",
-  "description": "Jesse B. Hannah",
-  "version": "1.0.0",
-  "author": "Jesse B. Hannah <jesse@jbhannah.net>",
+  "description": "Jesse B. Hannah's personal website and blog",
+  "author": {
+    "name": "Jesse B. Hannah",
+    "email": "jesse@jbhannah.net",
+    "url": "https://jbhannah.net"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/jbhannah/jbhannah.net"
