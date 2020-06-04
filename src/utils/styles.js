@@ -20,7 +20,7 @@ export const mq = Object.assign(
 
 export const contentWidth = "42rem"
 export const headerWidth = "12rem"
-export const linkColor = "#0f7b3b"
+export const linkColor = "#247829"
 
 export const contentWidthColumn = {
   margin: "0 auto",
