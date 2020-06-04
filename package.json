@@ -20,7 +20,7 @@
     "debug": "rm -rf .cache && NODE_TLS_REJECT_UNAUTHORIZED=0 node --inspect-brk=9229 --no-lazy node_modules/gatsby/dist/bin/gatsby develop --https",
     "format": "prettier --write \"**/*.{js,jsx,md,yaml}\"",
     "lint": "eslint .",
-    "start": "NODE_TLS_REJECT_UNAUTHORIZED=0 gatsby develop --https",
+    "start": "gatsby develop",
     "test": "jest"
   },
   "dependencies": {
