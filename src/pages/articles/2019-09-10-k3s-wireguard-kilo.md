@@ -1,5 +1,7 @@
 ---
 date: 2019-09-10T19:28:47.131Z
+redirect_from:
+    - /articles/k3s-over-watchguard-with-kilo/
 ---
 
 # Secure k3s over WireGuard with Kilo
