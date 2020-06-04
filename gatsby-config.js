@@ -67,6 +67,13 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "fonts",
+        path: `${__dirname}/src/fonts`,
+      },
+    },
     "gatsby-plugin-sharp",
     {
       resolve: "gatsby-transformer-sharp",
@@ -124,7 +131,7 @@ module.exports = {
       resolve: "gatsby-plugin-netlify",
       options: {
         allPageHeaders: [
-          "Link: </static/hack-regular-subset.woff2>; rel=preload; as=font; type=font/woff2; crossorigin",
+          "Link: </static/jetbrainsmono-regular.woff2>; rel=preload; as=font; type=font/woff2; crossorigin",
           "Link: </static/lora-latin-400.woff2>; rel=preload; as=font; type=font/woff2; crossorigin",
           "Link: </static/lora-latin-400italic.woff2>; rel=preload; as=font; type=font/woff2; crossorigin",
           "Link: </static/lora-latin-700.woff2>; rel=preload; as=font; type=font/woff2; crossorigin",

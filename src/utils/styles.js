@@ -1,5 +1,3 @@
-import "hack-font/build/web/fonts/hack-regular-subset.woff2"
-import "hack-font/build/web/hack-subset.css"
 import "prismjs/plugins/line-numbers/prism-line-numbers.css"
 import "prismjs/themes/prism-solarizedlight.css"
 import "typeface-lora"
@@ -9,6 +7,8 @@ import "typeface-lora/files/lora-latin-700.woff2"
 import "typeface-lora/files/lora-latin-700italic.woff2"
 import "typeface-varela-round"
 import "typeface-varela-round/files/varela-round-latin-400.woff2"
+import "../fonts/jetbrains-mono.css"
+import "../fonts/jetbrainsmono-regular.woff2"
 
 export const breakpoints = { sm: 28, md: 38, lg: 59, xl: 70 }
 export const mq = Object.assign(
