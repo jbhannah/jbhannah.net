@@ -15,16 +15,16 @@ end
 ```
 
 You also want to be able to find expired records to be able to clean them out of
-the database. So you may write an inverse scope:
+the database. So you may write an inverse scope[^1]:
 
 ```ruby
 class Foobar < ApplicationRecord
-  …
+  scope :active,  -> { where(expires_at: Time.zone.now..) }
   scope :expired, -> { where(expires_at: ...Time.zone.now) }
 end
 ```
 
-But[^1] what if you want "expired" records to still be usable for a brief
+But[^2] what if you want "expired" records to still be usable for a brief
 period to allow them to be refreshed and extended? Both scopes will need to
 be changed to reflect the new ranges, or you could use a class-level utility
 method that just returns `ruby›30.minutes.ago` or whatever buffer you want to
@@ -32,7 +32,7 @@ use, and call it from both scopes. Even then, if you later have need for
 another opposing pair of scopes, you'll still have to keep both of those
 scopes mirrored manually as well.
 
-Or you can leverage Arel, the magic that underlies ActiveRecord itself[^2]:
+Or you can leverage Arel, the magic that underlies ActiveRecord itself[^3]:
 
 ```ruby
 class ApplicationRecord < ActiveRecord::Base
@@ -41,7 +41,7 @@ end
 ```
 
 Your `expired` scope is now much simpler and more clearly logically coupled to
-the `active` scope[^3]:
+the `active` scope[^4]:
 
 ```ruby
 class Foobar < ApplicationRecord
@@ -82,8 +82,12 @@ LIMIT 11
 and any changes made to the original `active` scope will be used in the inverse
 scope.
 
-[^1]: This is an entirely contrived example. Don't take it too seriously.
-[^2]: Credit to Matthew Parker for the [2013 version][vmw] of this snippet.
-[^3]: `ruby›self.not` is required to distinguish the method from the Ruby keyword.
+[^1]:
+    Yes, ActiveRecord understands the `ruby›..` (inclusive range) and `ruby›...`
+    (range exclusive of the end value) operators for comparison queries.
+
+[^2]: This is an entirely contrived example. Don't take it too seriously.
+[^3]: Credit to Matthew Parker for the [2013 version][vmw] of this snippet.
+[^4]: `ruby›self.not` is required to distinguish the method from the Ruby keyword.
 
 [vmw]: https://tanzu.vmware.com/content/blog/logically-negating-an-activerecord-scope
