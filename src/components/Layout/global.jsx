@@ -24,7 +24,6 @@ const Global = () => (
             },
             ".gatsby-highlight-code-line": {
               marginLeft: "-3.8em",
-              marginRight: "-2em",
               paddingLeft: "3.7em",
             },
           },
@@ -33,11 +32,11 @@ const Global = () => (
       ".gatsby-highlight-code-line": {
         backgroundColor: "#feb",
         display: "block",
-        marginRight: "-2.2em",
-        marginLeft: "-1.2em",
+        marginRight: "-2em",
+        marginLeft: "-1em",
         paddingRight: "1em",
-        paddingLeft: "0.9em",
-        borderLeft: "0.3em solid #f99",
+        paddingLeft: "0.75em",
+        borderLeft: "0.25em solid #f99",
       },
     }}
   />
