@@ -6,7 +6,10 @@ import Layout, { PureLayout } from "."
 const data = {
   site: {
     siteMetadata: {
+      siteUrl: "https://www.example.com",
       title: "Test Site",
+      description: "Test site",
+      twitterCreator: "@jbhannah",
       socialLinks: [
         {
           key: "Test Service",
@@ -28,8 +31,8 @@ const data = {
 
 StaticQuery.mockImplementationOnce(({ render: r }) => r(data))
 
-const TestLayout = (props) => render(<Layout {...props} />)
-const TestPureLayout = (props) =>
+const TestLayout = (props = {}) => render(<Layout {...props} />)
+const TestPureLayout = (props = {}) =>
   shallow(<PureLayout {...{ data, ...props }} />)
 
 describe("Layout", () => {

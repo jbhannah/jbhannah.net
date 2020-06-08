@@ -127,6 +127,7 @@ exports[`PureLayout renders correctly 1`] = `
       Test Site
     </title>
     <meta
+      content="Test site"
       name="description"
     />
     <meta
@@ -134,6 +135,7 @@ exports[`PureLayout renders correctly 1`] = `
       property="og:title"
     />
     <meta
+      content="Test site"
       property="og:description"
     />
     <meta
@@ -155,9 +157,11 @@ exports[`PureLayout renders correctly 1`] = `
       property="og:image:alt"
     />
     <meta
+      content="https://www.example.com"
       property="og:url"
     />
     <meta
+      content="@jbhannah"
       property="twitter:creator"
     />
   </HelmetWrapper>
