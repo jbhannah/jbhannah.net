@@ -27,5 +27,4 @@ module.exports = {
     __PATH_PREFIX__: "",
   },
   setupFiles: ["<rootDir>/jest.setup.js"],
-  preset: "ts-jest",
 }
