@@ -1,3 +1,4 @@
+import { InterpolationWithTheme } from "@emotion/core"
 import { graphql, StaticQuery } from "gatsby"
 import PropTypes from "prop-types"
 import * as React from "react"
@@ -12,7 +13,7 @@ import Footer from "../Footer"
 import Header from "../Header"
 import Global from "./global"
 
-const layoutCSS = {
+const layoutCSS: InterpolationWithTheme<any> = {
   display: "flex",
   flexDirection: "column",
   margin: "0 auto",
@@ -26,7 +27,7 @@ const layoutCSS = {
   },
 }
 
-const mainCSS = {
+const mainCSS: InterpolationWithTheme<any> = {
   ...contentWidthColumn,
   flexGrow: 1,
   [mq.lg]: {

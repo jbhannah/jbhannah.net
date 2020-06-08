@@ -1,3 +1,4 @@
+import { InterpolationWithTheme } from "@emotion/core"
 import PropTypes from "prop-types"
 import * as React from "react"
 import { contentWidth, headerWidth, hoverRadius, mq } from "../../utils/styles"
@@ -5,7 +6,7 @@ import Heading from "../Heading"
 import Link from "../Link"
 import SocialNav from "../SocialNav"
 
-const headerCSS = {
+const headerCSS: InterpolationWithTheme<any> = {
   display: "flex",
   flexDirection: "row",
   justifyContent: "space-between",
@@ -25,14 +26,14 @@ const headerCSS = {
   },
 }
 
-const titleCSS = {
+const titleCSS: InterpolationWithTheme<any> = {
   fontSize: "1.15rem",
   [mq.sm]: {
     fontSize: "1.25rem",
   },
 }
 
-const avatarCSS = {
+const avatarCSS: InterpolationWithTheme<any> = {
   display: "none",
   [mq.lg]: {
     display: "block",
