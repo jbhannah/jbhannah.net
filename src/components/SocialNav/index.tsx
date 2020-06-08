@@ -1,16 +1,17 @@
+import { InterpolationWithTheme } from "@emotion/core"
 import PropTypes from "prop-types"
 import * as React from "react"
 import { hoverRadius, mq } from "../../utils/styles"
 import Link from "../Link"
 
-const socialNavCSS = {
+const socialNavCSS: InterpolationWithTheme<any> = {
   marginTop: "2.37rem",
   [mq.lg]: {
     marginTop: 0,
   },
 }
 
-const socialNavUlCSS = {
+const socialNavUlCSS: InterpolationWithTheme<any> = {
   display: "flex",
   flexDirection: "row",
   justifyContent: "flex-end",
@@ -31,7 +32,7 @@ const SocialNav = ({ socialLinks }) => (
   </nav>
 )
 
-const socialLinkCSS = {
+const socialLinkCSS: InterpolationWithTheme<any> = {
   float: "right",
   marginBottom: 0,
   marginRight: "0.5rem",
@@ -46,14 +47,14 @@ const socialLinkCSS = {
   },
 }
 
-const socialLinkLinkCSS = {
+const socialLinkLinkCSS: InterpolationWithTheme<any> = {
   background: "none",
   display: "block",
   height: "100%",
   width: "100%",
 }
 
-const socialLinkImgCSS = {
+const socialLinkImgCSS: InterpolationWithTheme<any> = {
   display: "block",
   height: "100%",
   margin: 0,
