@@ -2,6 +2,7 @@ module.exports = {
   collectCoverage: true,
   collectCoverageFrom: [
     "**/*.{js,jsx}",
+    "**/*.{ts,tsx}",
     "!*.js",
     "!.*.js",
     "!**/coverage/**",
@@ -11,7 +12,7 @@ module.exports = {
   coverageReporters: ["text", "lcov", "cobertura"],
   reporters: ["default", "jest-junit"],
   transform: {
-    "^.+\\.jsx?$": "<rootDir>/jest.preprocess.js",
+    "^.+\\.[jt]sx?$": "<rootDir>/jest.preprocess.js",
   },
   moduleNameMapper: {
     "^.+\\.(css|styl|less|sass|scss)$": "identity-obj-proxy",
@@ -26,4 +27,5 @@ module.exports = {
     __PATH_PREFIX__: "",
   },
   setupFiles: ["<rootDir>/jest.setup.js"],
+  preset: "ts-jest",
 }

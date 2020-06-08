@@ -1,6 +1,6 @@
 import { render, shallow } from "enzyme"
 import { StaticQuery } from "gatsby"
-import React from "react"
+import * as React from "react"
 import Layout, { PureLayout } from "."
 
 const data = {

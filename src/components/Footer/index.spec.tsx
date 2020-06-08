@@ -1,6 +1,6 @@
 import { shallow } from "enzyme"
 import MockDate from "mockdate"
-import React from "react"
+import * as React from "react"
 import Footer from "."
 
 MockDate.set("2019-02-05T01:17:07.551Z")
