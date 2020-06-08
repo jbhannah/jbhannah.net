@@ -1,6 +1,6 @@
 import { graphql } from "gatsby"
 import { DateTime } from "luxon"
-import React from "react"
+import * as React from "react"
 import excerpt from "../../utils/excerpt"
 import Heading from "../Heading"
 import Link from "../Link"

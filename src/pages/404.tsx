@@ -1,4 +1,4 @@
-import React from "react"
+import * as React from "react"
 import Heading from "../components/Heading"
 import Layout from "../components/Layout"
 

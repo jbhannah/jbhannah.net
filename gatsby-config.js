@@ -33,6 +33,13 @@ module.exports = {
     ],
   },
   plugins: [
+    {
+      resolve: "gatsby-plugin-typescript",
+      options: {
+        isTSX: true,
+        allExtensions: true,
+      },
+    },
     "gatsby-plugin-emotion",
     {
       resolve: "gatsby-plugin-html-attributes",
@@ -50,7 +57,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-typography",
       options: {
-        pathToConfigModule: "src/utils/typography.js",
+        pathToConfigModule: "src/utils/typography.ts",
       },
     },
     {

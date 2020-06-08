@@ -42,7 +42,7 @@ class PageGenerator {
       this.createPage({
         path: i === 0 ? this.root : `${this.root}page/${page}`,
         component: path.resolve(
-          `${__dirname}/../../src/templates/${this.template}-list.jsx`
+          `${__dirname}/../../src/templates/${this.template}-list.tsx`
         ),
         context: {
           page,
@@ -56,7 +56,7 @@ class PageGenerator {
 
   generatePage(slug, draft) {
     const component = path.resolve(
-      `${__dirname}/../../src/templates/${this.template}.jsx`
+      `${__dirname}/../../src/templates/${this.template}.tsx`
     )
 
     this.createPage({

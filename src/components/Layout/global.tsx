@@ -1,5 +1,5 @@
 import { Global as EmotionGlobal } from "@emotion/core"
-import React from "react"
+import * as React from "react"
 import { mq } from "../../utils/styles"
 
 const Global = () => (
