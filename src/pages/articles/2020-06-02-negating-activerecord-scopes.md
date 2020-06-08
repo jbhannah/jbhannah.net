@@ -5,8 +5,8 @@ date: 2020-06-03T05:57:54.556Z
 # Negating ActiveRecord Scopes
 
 Here's a neat trick in Rails to use the plumbing of ActiveRecord to keep your
-code DRY and maintainable. Say you have a scope in an ActiveRecord model with
-an `expires_at` column, to find records that are still active:
+models DRY and maintainable. Say you have a scope in an ActiveRecord model with
+an `expires_at` column, to find records that are still active[^1]:
 
 ```ruby
 class Foobar < ApplicationRecord
@@ -15,7 +15,7 @@ end
 ```
 
 You also want to be able to find expired records to be able to clean them out of
-the database. So you may write an inverse scope[^1]:
+the database. So you may write an inverse scope:
 
 ```ruby
 class Foobar < ApplicationRecord
@@ -45,7 +45,7 @@ the `active` scope[^4]:
 
 ```ruby
 class Foobar < ApplicationRecord
-  scope :active, -> { where(expires_at: 30.minutes.ago..) }
+  scope :active,  -> { where(expires_at: Time.zone.now..) }
   scope :expired, -> { self.not(active) }
 end
 ```
@@ -57,7 +57,7 @@ and any other opposing pairs of scopes in your application can use the same
 
 `ruby›scope.arel.constraints` gets the Arel representation of the scope and
 extracts the constraints (i.e. the `where` clause). This gives an array of
-`ruby›Arel::Nodes`, one for each `where` statement the generated query;
+`ruby›Arel::Nodes`, one for each `where` condition in the query;
 `ruby›.reduce(:and)` combines them all into a single `ruby›Arel::Nodes::And`
 node that can be negated with `ruby›.not`, then passed back to ActiveRecord's
 `where` method, which turns the SQL for the original `active` scope:
