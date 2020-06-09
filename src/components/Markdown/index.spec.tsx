@@ -1,6 +1,6 @@
 import { mount } from "enzyme"
 import * as React from "react"
-import Markdown from "."
+import { Markdown } from "."
 
 const htmlAst = {
   type: "root",

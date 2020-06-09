@@ -1,5 +1,5 @@
-import PropTypes from "prop-types"
-import React, { Fragment } from "react"
+import { Comment, Element, Node, Root, Text } from "hast"
+import * as React from "react"
 import rehypeReact from "rehype-react"
 import visit from "unist-util-visit"
 import { Blockquote } from "../Blockquote"
@@ -9,26 +9,30 @@ import { Link } from "../Link"
 
 const headingPattern = /^h(\d)$/
 
-const isTag = (node, tagName) =>
-  node.hasOwnProperty("type") &&
-  node.type === "element" &&
-  node.hasOwnProperty("tagName") &&
-  node.tagName === tagName
+const isTag = (node: Node, tagName: string) =>
+  node.type === "element" && (node as Element).tagName === tagName
 
-const newSection = (children) => {
-  const section = { type: "element", tagName: "section" }
+const newSection = (
+  children: (section: Element) => (Element | Comment | Text)[]
+) => {
+  const section: Element = { type: "element", tagName: "section", children: [] }
   section.children = children(section)
   return section
 }
 
-const renderAst = (htmlAst) => {
-  let currentLevel, currentParent, currentSection
+const renderAst = (htmlAst: Node) => {
+  let currentLevel: number, currentParent: Element, currentSection: Element
 
-  visit(htmlAst, (node, index, parent) => {
+  visit(htmlAst, (node: Element | Root, index, parent: Element) => {
     if (node.type === "root") return visit.CONTINUE
 
-    if (node.type === "element" && headingPattern.test(node.tagName)) {
-      const level = node.tagName.match(headingPattern)[1]
+    if (
+      node.type === "element" &&
+      headingPattern.test((node as Element).tagName)
+    ) {
+      const level: number = parseInt(
+        (node as Element).tagName.match(headingPattern)[1]
+      )
 
       if (level > currentLevel) {
         const section = newSection(() => parent.children.splice(index, 1))
@@ -52,7 +56,7 @@ const renderAst = (htmlAst) => {
       parent === currentParent ||
       (isTag(node, "div") &&
         node.properties.hasOwnProperty("class") &&
-        node.properties.class.includes("footnotes"))
+        (node.properties.class as string).includes("footnotes"))
     ) {
       return visit.SKIP
     }
@@ -83,16 +87,16 @@ const renderAst = (htmlAst) => {
   }).Compiler(htmlAst)
 }
 
-export const Markdown = ({ htmlAst, root = Fragment }) => {
-  const html = renderAst(htmlAst)
-  const R = root
-
-  return <R {...html.props} />
+interface MarkdownProps {
+  htmlAst: Node
+  root?: React.ReactType
 }
 
-export default Markdown
+export const Markdown: React.FunctionComponent<MarkdownProps> = ({
+  htmlAst,
+  root: R = React.Fragment,
+}) => {
+  const html = renderAst(htmlAst)
 
-Markdown.propTypes = {
-  htmlAst: PropTypes.object,
-  root: PropTypes.node,
+  return <R {...html.props} />
 }
