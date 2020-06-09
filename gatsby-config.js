@@ -160,6 +160,13 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: "gatsby-plugin-codegen",
+      options: {
+        includes: ["./src/**/*.tsx", "./src/**/*.ts", "./plugins/**/*.js"],
+        excludes: ["./node_modules/gatsby-transformer-sharp/src/*.js"],
+      },
+    },
     "gatsby-redirect-from",
     "gatsby-plugin-meta-redirect",
   ],
