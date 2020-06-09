@@ -1,11 +1,23 @@
 import { graphql } from "gatsby"
 import * as React from "react"
-import Article from "../components/Article"
+import { Article } from "../components/Article"
 import Heading from "../components/Heading"
 import { Layout } from "../components/Layout"
 import Paginator from "../components/Paginator"
+import { ArticlesQuery } from "./__generated__/ArticlesQuery"
 
-const ArticleList = ({ data, pageContext: { page, numPages } }) => (
+interface ArticleListProps {
+  data: ArticlesQuery
+  pageContext: {
+    page: number
+    numPages: number
+  }
+}
+
+export const ArticleList: React.FunctionComponent<ArticleListProps> = ({
+  data,
+  pageContext: { page, numPages },
+}) => (
   <Layout>
     <Heading level="h1">Recent Articles</Heading>
     <ul css={{ listStyleType: "none", margin: 0 }}>

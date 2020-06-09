@@ -1,6 +1,6 @@
 import { shallow } from "enzyme"
 import * as React from "react"
-import Article from "."
+import { Article } from "."
 import excerpt from "../../utils/excerpt"
 
 jest.mock("../../utils/excerpt")
