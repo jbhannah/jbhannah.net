@@ -8,20 +8,20 @@
 // ====================================================
 
 export interface SocialNavQuery_site_siteMetadata_socialLinks {
-  key: string | null
-  service: string | null
-  link: string | null
-  name: string | null
+  key: string | null;
+  service: string | null;
+  link: string | null;
+  name: string | null;
 }
 
 export interface SocialNavQuery_site_siteMetadata {
-  socialLinks: (SocialNavQuery_site_siteMetadata_socialLinks | null)[] | null
+  socialLinks: (SocialNavQuery_site_siteMetadata_socialLinks | null)[] | null;
 }
 
 export interface SocialNavQuery_site {
-  siteMetadata: SocialNavQuery_site_siteMetadata | null
+  siteMetadata: SocialNavQuery_site_siteMetadata | null;
 }
 
 export interface SocialNavQuery {
-  site: SocialNavQuery_site | null
+  site: SocialNavQuery_site | null;
 }

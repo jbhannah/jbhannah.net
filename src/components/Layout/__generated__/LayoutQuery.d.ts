@@ -8,29 +8,29 @@
 // ====================================================
 
 export interface LayoutQuery_site_siteMetadata {
-  siteUrl: string | null
-  title: string | null
-  description: string | null
-  twitterCreator: string | null
+  siteUrl: string | null;
+  title: string | null;
+  description: string | null;
+  twitterCreator: string | null;
 }
 
 export interface LayoutQuery_site {
-  siteMetadata: LayoutQuery_site_siteMetadata | null
+  siteMetadata: LayoutQuery_site_siteMetadata | null;
 }
 
 export interface LayoutQuery_file_childImageSharp_fixed {
-  src: string
+  src: string;
 }
 
 export interface LayoutQuery_file_childImageSharp {
-  fixed: LayoutQuery_file_childImageSharp_fixed | null
+  fixed: LayoutQuery_file_childImageSharp_fixed | null;
 }
 
 export interface LayoutQuery_file {
-  childImageSharp: LayoutQuery_file_childImageSharp | null
+  childImageSharp: LayoutQuery_file_childImageSharp | null;
 }
 
 export interface LayoutQuery {
-  site: LayoutQuery_site | null
-  file: LayoutQuery_file | null
+  site: LayoutQuery_site | null;
+  file: LayoutQuery_file | null;
 }
