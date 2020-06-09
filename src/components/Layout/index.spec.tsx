@@ -1,7 +1,7 @@
-import { render, shallow } from "enzyme"
-import { StaticQuery } from "gatsby"
+import { render } from "enzyme"
+import * as Gatsby from "gatsby"
 import * as React from "react"
-import Layout, { PureLayout } from "."
+import { Layout } from "."
 
 const data = {
   site: {
@@ -31,22 +31,13 @@ const data = {
   },
 }
 
-StaticQuery.mockImplementationOnce(({ render: r }) => r(data))
+jest.spyOn(Gatsby, "useStaticQuery").mockImplementation(() => data)
 
 const TestLayout = (props = {}) => render(<Layout {...props} />)
-const TestPureLayout = (props = {}) =>
-  shallow(<PureLayout {...{ data, ...props }} />)
 
 describe("Layout", () => {
   it("renders correctly", () => {
     const tree = TestLayout()
-    expect(tree).toMatchSnapshot()
-  })
-})
-
-describe("PureLayout", () => {
-  it("renders correctly", () => {
-    const tree = TestPureLayout()
     expect(tree).toMatchSnapshot()
   })
 })
