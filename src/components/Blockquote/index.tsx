@@ -3,7 +3,7 @@ import { MOBILE_MEDIA_QUERY } from "typography-breakpoint-constants"
 import { linkColor, mq } from "../../utils/styles"
 import { rhythm } from "../../utils/typography"
 
-const borderLeft = (i) => `${rhythm(i / 16)} solid ${linkColor}`
+const borderLeft = (i: number) => `${rhythm(i / 16)} solid ${linkColor}`
 
 const baseBlockquote = {
   borderLeft: borderLeft(3),
@@ -21,6 +21,10 @@ const blockquoteCSS = {
   },
 }
 
-const Blockquote = (props) => <blockquote css={blockquoteCSS} {...props} />
+type BlockquoteProps = JSX.IntrinsicAttributes &
+  React.ClassAttributes<HTMLElement> &
+  React.BlockquoteHTMLAttributes<HTMLElement>
 
-export default Blockquote
+export const Blockquote: React.FunctionComponent<BlockquoteProps> = (props) => (
+  <blockquote css={blockquoteCSS} {...props} />
+)
