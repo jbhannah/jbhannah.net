@@ -2,7 +2,7 @@ import { graphql } from "gatsby"
 import * as React from "react"
 import Article from "../components/Article"
 import Heading from "../components/Heading"
-import Layout from "../components/Layout"
+import { Layout } from "../components/Layout"
 import Paginator from "../components/Paginator"
 
 const ArticleList = ({ data, pageContext: { page, numPages } }) => (

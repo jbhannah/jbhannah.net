@@ -2,7 +2,7 @@ import { graphql } from "gatsby"
 import * as React from "react"
 import { Helmet } from "react-helmet"
 import Article from "../components/Article"
-import Layout from "../components/Layout"
+import { Layout } from "../components/Layout"
 
 const Template = ({ data }) => {
   const {

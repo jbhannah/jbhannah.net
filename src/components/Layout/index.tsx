@@ -1,6 +1,5 @@
 import { InterpolationWithTheme } from "@emotion/core"
-import { graphql, StaticQuery } from "gatsby"
-import PropTypes from "prop-types"
+import { graphql, useStaticQuery } from "gatsby"
 import * as React from "react"
 import { Helmet } from "react-helmet"
 import {
@@ -12,6 +11,7 @@ import {
 import Footer from "../Footer"
 import Header from "../Header"
 import Global from "./global"
+import { LayoutQuery } from "./__generated__/LayoutQuery"
 
 const layoutCSS: InterpolationWithTheme<any> = {
   display: "flex",
@@ -35,9 +35,8 @@ const mainCSS: InterpolationWithTheme<any> = {
   },
 }
 
-export const PureLayout = ({
-  children,
-  data: {
+export const Layout: React.FunctionComponent = ({ children }) => {
+  const {
     site: {
       siteMetadata: {
         siteUrl,
@@ -50,26 +49,28 @@ export const PureLayout = ({
     file: {
       childImageSharp: { fixed: avatar },
     },
-  },
-}) => (
-  <div css={layoutCSS}>
-    <Global />
-    <Helmet>
-      <title>{title}</title>
-      <meta name="description" content={description} />
-      <meta property="og:title" content={title} />
-      <meta property="og:description" content={description} />
-      <meta property="og:type" content="website" />
-      <meta property="og:image" content={avatar} />
-      <meta property="og:image:alt" content={title} />
-      <meta property="og:url" content={siteUrl} />
-      <meta property="twitter:creator" content={twitterCreator} />
-    </Helmet>
-    <Header {...{ title, avatar, socialLinks }} />
-    <main css={mainCSS}>{children}</main>
-    <Footer {...{ title }} />
-  </div>
-)
+  } = useStaticQuery<LayoutQuery>(query)
+
+  return (
+    <div css={layoutCSS}>
+      <Global />
+      <Helmet>
+        <title>{title}</title>
+        <meta name="description" content={description} />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content={avatar.src} />
+        <meta property="og:image:alt" content={title} />
+        <meta property="og:url" content={siteUrl} />
+        <meta property="twitter:creator" content={twitterCreator} />
+      </Helmet>
+      <Header {...{ title, avatar, socialLinks }} />
+      <main css={mainCSS}>{children}</main>
+      <Footer {...{ title }} />
+    </div>
+  )
+}
 
 const query = graphql`
   query LayoutQuery {
@@ -98,16 +99,3 @@ const query = graphql`
     }
   }
 `
-
-const Layout = (props) => (
-  <StaticQuery
-    query={query}
-    render={(data) => <PureLayout {...{ data, ...props }} />}
-  />
-)
-
-export default Layout
-
-PureLayout.propTypes = {
-  children: PropTypes.node,
-}
