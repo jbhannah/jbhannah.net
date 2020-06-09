@@ -20,11 +20,13 @@ const data = {
       ],
     },
   },
-  imageSharp: {
-    fixed: {
-      src: "avatar-src.png",
-      srcSet: "avatar-srcSet.png",
-      srcSetWebp: "avatar-srcSet.webp",
+  file: {
+    childImageSharp: {
+      fixed: {
+        src: "avatar-src.png",
+        srcSet: "avatar-srcSet.png",
+        srcSetWebp: "avatar-srcSet.webp",
+      },
     },
   },
 }

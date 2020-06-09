@@ -47,7 +47,9 @@ export const PureLayout = ({
         socialLinks,
       },
     },
-    imageSharp: { fixed: avatar },
+    file: {
+      childImageSharp: { fixed: avatar },
+    },
   },
 }) => (
   <div css={layoutCSS}>
@@ -85,11 +87,13 @@ const query = graphql`
         }
       }
     }
-    imageSharp(fields: { name: { eq: "avatar" } }) {
-      fixed(width: 160) {
-        src
-        srcSet
-        srcSetWebp
+    file(sourceInstanceName: { eq: "images" }, name: { eq: "avatar" }) {
+      childImageSharp {
+        fixed(width: 160) {
+          src
+          srcSet
+          srcSetWebp
+        }
       }
     }
   }
