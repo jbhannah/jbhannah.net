@@ -5,7 +5,7 @@ import excerpt from "../../utils/excerpt"
 import { Heading } from "../Heading"
 import { Link } from "../Link"
 import { MarginFix } from "../MarginFix"
-import Markdown from "../Markdown"
+import { Markdown } from "../Markdown"
 import { ArticleInformation } from "./__generated__/ArticleInformation"
 
 const localDateFromDateTime = (date: string) =>
