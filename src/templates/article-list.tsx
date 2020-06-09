@@ -1,7 +1,7 @@
 import { graphql } from "gatsby"
 import * as React from "react"
 import { Article } from "../components/Article"
-import Heading from "../components/Heading"
+import { H1 } from "../components/Heading"
 import { Layout } from "../components/Layout"
 import Paginator from "../components/Paginator"
 import { ArticlesQuery } from "./__generated__/ArticlesQuery"
@@ -19,7 +19,7 @@ export const ArticleList: React.FunctionComponent<ArticleListProps> = ({
   pageContext: { page, numPages },
 }) => (
   <Layout>
-    <Heading level="h1">Recent Articles</Heading>
+    <H1>Recent Articles</H1>
     <ul css={{ listStyleType: "none", margin: 0 }}>
       {data.articles.edges.map(({ node: { id, ...article } }) => (
         <li key={id}>

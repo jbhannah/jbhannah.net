@@ -1,7 +1,7 @@
 import { InterpolationWithTheme } from "@emotion/core"
 import * as React from "react"
 import { hoverRadius, mq } from "../../utils/styles"
-import Link from "../Link"
+import { Link } from "../Link"
 
 const socialLinkCSS: InterpolationWithTheme<any> = {
   float: "right",

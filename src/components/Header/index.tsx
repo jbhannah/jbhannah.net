@@ -2,8 +2,8 @@ import { InterpolationWithTheme } from "@emotion/core"
 import { graphql, useStaticQuery } from "gatsby"
 import * as React from "react"
 import { contentWidth, headerWidth, hoverRadius, mq } from "../../utils/styles"
-import Heading from "../Heading"
-import Link from "../Link"
+import { H1 } from "../Heading"
+import { Link } from "../Link"
 import { SocialNav } from "../SocialNav"
 import { HeaderQuery } from "./__generated__/HeaderQuery"
 
@@ -60,7 +60,7 @@ export const Header = () => {
 
   return (
     <header css={headerCSS}>
-      <Heading level="h1" css={titleCSS}>
+      <H1 css={titleCSS}>
         <Link href="/" css={{ display: "block" }}>
           <picture css={avatarCSS}>
             <source type="image/webp" srcSet={avatar.srcSetWebp} />
@@ -69,7 +69,7 @@ export const Header = () => {
           </picture>
           {title}
         </Link>
-      </Heading>
+      </H1>
       <SocialNav />
     </header>
   )

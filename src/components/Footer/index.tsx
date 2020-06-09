@@ -1,7 +1,7 @@
 import PropTypes from "prop-types"
 import * as React from "react"
 import { contentWidthColumn, headerWidth, mq } from "../../utils/styles"
-import Link from "../Link"
+import { Link } from "../Link"
 
 const year = new Date().getFullYear()
 

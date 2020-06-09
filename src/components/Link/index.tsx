@@ -1,5 +1,4 @@
 import { Link as GatsbyLink } from "gatsby"
-import PropTypes from "prop-types"
 import * as React from "react"
 import { linkColor } from "../../utils/styles"
 
@@ -14,7 +13,12 @@ const linkCSS = {
 
 const domainPattern = new RegExp(/^https?:\/\/(?!jbhannah\.net)/)
 
-const Link = ({ href, ...props }) => {
+type LinkProps = React.AnchorHTMLAttributes<HTMLAnchorElement>
+
+export const Link: React.FunctionComponent<LinkProps> = ({
+  href,
+  ...props
+}) => {
   props.css = Object.assign({}, props.css, linkCSS)
 
   if (href.startsWith("/")) {
@@ -36,10 +40,4 @@ const Link = ({ href, ...props }) => {
   }
 
   return <a {...{ href, ...props }} />
-}
-
-export default Link
-
-Link.propTypes = {
-  href: PropTypes.string.isRequired,
 }

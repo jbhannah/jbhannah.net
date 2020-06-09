@@ -1,6 +1,6 @@
 import { shallow } from "enzyme"
 import * as React from "react"
-import Link from "."
+import { Link } from "."
 
 const TestLink = (props) => shallow(<Link {...props} />)
 

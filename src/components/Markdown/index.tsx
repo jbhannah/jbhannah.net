@@ -2,10 +2,10 @@ import PropTypes from "prop-types"
 import React, { Fragment } from "react"
 import rehypeReact from "rehype-react"
 import visit from "unist-util-visit"
-import Blockquote from "../Blockquote"
-import Code from "../Code"
-import { HeadingFactory } from "../Heading"
-import Link from "../Link"
+import { Blockquote } from "../Blockquote"
+import { Code } from "../Code"
+import { H2, H3, H4, H5, H6 } from "../Heading"
+import { Link } from "../Link"
 
 const headingPattern = /^h(\d)$/
 
@@ -74,11 +74,11 @@ const renderAst = (htmlAst) => {
       a: Link,
       blockquote: Blockquote,
       code: Code,
-      h2: HeadingFactory("h2"),
-      h3: HeadingFactory("h3"),
-      h4: HeadingFactory("h4"),
-      h5: HeadingFactory("h5"),
-      h6: HeadingFactory("h6"),
+      h2: H2,
+      h3: H3,
+      h4: H4,
+      h5: H5,
+      h6: H6,
     },
   }).Compiler(htmlAst)
 }
