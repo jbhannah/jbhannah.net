@@ -3,3 +3,6 @@
 .vscode/
 node_modules/
 public/
+*.d.ts
+apollo.config.js
+schema.json

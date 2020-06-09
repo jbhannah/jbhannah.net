@@ -8,28 +8,28 @@
 // ====================================================
 
 export interface HeaderQuery_site_siteMetadata {
-  title: string | null
+  title: string | null;
 }
 
 export interface HeaderQuery_site {
-  siteMetadata: HeaderQuery_site_siteMetadata | null
+  siteMetadata: HeaderQuery_site_siteMetadata | null;
 }
 
 export interface HeaderQuery_file_childImageSharp_fixed {
-  src: string
-  srcSet: string
-  srcSetWebp: string | null
+  src: string;
+  srcSet: string;
+  srcSetWebp: string | null;
 }
 
 export interface HeaderQuery_file_childImageSharp {
-  fixed: HeaderQuery_file_childImageSharp_fixed | null
+  fixed: HeaderQuery_file_childImageSharp_fixed | null;
 }
 
 export interface HeaderQuery_file {
-  childImageSharp: HeaderQuery_file_childImageSharp | null
+  childImageSharp: HeaderQuery_file_childImageSharp | null;
 }
 
 export interface HeaderQuery {
-  site: HeaderQuery_site | null
-  file: HeaderQuery_file | null
+  site: HeaderQuery_site | null;
+  file: HeaderQuery_file | null;
 }

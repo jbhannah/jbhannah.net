@@ -8,19 +8,19 @@
 // ====================================================
 
 export interface ArticleInformation_fields {
-  slug: string | null
-  title: string | null
+  slug: string | null;
+  title: string | null;
 }
 
 export interface ArticleInformation_frontmatter {
-  date: any | null
-  link: string | null
+  date: any | null;
+  link: string | null;
 }
 
 export interface ArticleInformation {
-  fields: ArticleInformation_fields | null
-  frontmatter: ArticleInformation_frontmatter | null
-  excerpt: string | null
-  htmlAst: any | null
-  timeToRead: number | null
+  fields: ArticleInformation_fields | null;
+  frontmatter: ArticleInformation_frontmatter | null;
+  excerpt: string | null;
+  htmlAst: any | null;
+  timeToRead: number | null;
 }

@@ -8,44 +8,44 @@
 // ====================================================
 
 export interface ArticleQuery_article_fields {
-  slug: string | null
-  title: string | null
+  slug: string | null;
+  title: string | null;
 }
 
 export interface ArticleQuery_article_frontmatter {
-  date: any | null
-  link: string | null
+  date: any | null;
+  link: string | null;
 }
 
 export interface ArticleQuery_article {
-  fields: ArticleQuery_article_fields | null
-  frontmatter: ArticleQuery_article_frontmatter | null
-  excerpt: string | null
-  htmlAst: any | null
-  timeToRead: number | null
+  fields: ArticleQuery_article_fields | null;
+  frontmatter: ArticleQuery_article_frontmatter | null;
+  excerpt: string | null;
+  htmlAst: any | null;
+  timeToRead: number | null;
 }
 
 export interface ArticleQuery_site_siteMetadata_name {
-  first: string | null
-  last: string | null
+  first: string | null;
+  last: string | null;
 }
 
 export interface ArticleQuery_site_siteMetadata {
-  siteUrl: string | null
-  title: string | null
-  username: string | null
-  name: ArticleQuery_site_siteMetadata_name | null
+  siteUrl: string | null;
+  title: string | null;
+  username: string | null;
+  name: ArticleQuery_site_siteMetadata_name | null;
 }
 
 export interface ArticleQuery_site {
-  siteMetadata: ArticleQuery_site_siteMetadata | null
+  siteMetadata: ArticleQuery_site_siteMetadata | null;
 }
 
 export interface ArticleQuery {
-  article: ArticleQuery_article | null
-  site: ArticleQuery_site | null
+  article: ArticleQuery_article | null;
+  site: ArticleQuery_site | null;
 }
 
 export interface ArticleQueryVariables {
-  slug?: string | null
+  slug?: string | null;
 }
