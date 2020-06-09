@@ -1,10 +1,15 @@
 import { graphql } from "gatsby"
 import * as React from "react"
 import { Helmet } from "react-helmet"
-import Article from "../components/Article"
+import { Article } from "../components/Article"
 import { Layout } from "../components/Layout"
+import { ArticleQuery } from "./__generated__/ArticleQuery"
 
-const Template = ({ data }) => {
+interface TemplateProps {
+  data: ArticleQuery
+}
+
+const Template: React.FunctionComponent<TemplateProps> = ({ data }) => {
   const {
     article: {
       fields: { slug, title },
