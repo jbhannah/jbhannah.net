@@ -1,30 +1,37 @@
-import { shallow } from "enzyme"
+import { render } from "enzyme"
+import * as Gatsby from "gatsby"
 import * as React from "react"
-import Header from "."
+import { Header } from "."
 
-const TestHeader = (props = {}) =>
-  shallow(
-    <Header
-      title="Test Site"
-      avatar={{
-        src: "avatar-src.png",
-        srcSet: "avatar-srcSet.png",
-        srcSetWebp: "avatar-srcSet.webp",
-      }}
-      socialLinks={[
+const data = {
+  site: {
+    siteMetadata: {
+      title: "Test Site",
+      socialLinks: [
         {
           key: "Test Service",
           service: "Test Service",
           link: "https://www.example.com",
           name: "Test Name",
         },
-      ]}
-      {...props}
-    />
-  )
+      ],
+    },
+  },
+  file: {
+    childImageSharp: {
+      fixed: {
+        src: "avatar-src.png",
+        srcSet: "avatar-srcSet.png",
+        srcSetWebp: "avatar-srcSet.webp",
+      },
+    },
+  },
+}
+
+jest.spyOn(Gatsby, "useStaticQuery").mockImplementation(() => data)
 
 describe("Header", () => {
-  const tree = TestHeader()
+  const tree = render(<Header />)
 
   it("renders correctly", () => {
     expect(tree).toMatchSnapshot()
