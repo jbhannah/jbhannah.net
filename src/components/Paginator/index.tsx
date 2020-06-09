@@ -1,4 +1,4 @@
-import React, { Fragment } from "react"
+import * as React from "react"
 import { Link } from "../Link"
 
 const paginatorCSS = {
@@ -15,9 +15,9 @@ const paginatorCSS = {
   },
 }
 
-const backLinks = (base, pageBase, currentPage) =>
+const backLinks = (base: string, pageBase: string, currentPage: number) =>
   currentPage > 1 ? (
-    <Fragment>
+    <>
       <li>
         <Link href={base}>«</Link>
       </li>
@@ -26,32 +26,39 @@ const backLinks = (base, pageBase, currentPage) =>
           ‹
         </Link>
       </li>
-    </Fragment>
+    </>
   ) : (
-    <Fragment>
+    <>
       <li>«</li>
       <li>‹</li>
-    </Fragment>
+    </>
   )
 
-const forwardLinks = (pageBase, currentPage, numPages) =>
+const forwardLinks = (
+  pageBase: string,
+  currentPage: number,
+  numPages: number
+) =>
   currentPage < numPages ? (
-    <Fragment>
+    <>
       <li>
         <Link href={`${pageBase}/${currentPage + 1}`}>›</Link>
       </li>
       <li>
         <Link href={`${pageBase}/${numPages}`}>»</Link>
       </li>
-    </Fragment>
+    </>
   ) : (
-    <Fragment>
+    <>
       <li>›</li>
       <li>»</li>
-    </Fragment>
+    </>
   )
 
-const pageLink = (base, pageBase, currentPage) => (_, i) => {
+const pageLink = (base: string, pageBase: string, currentPage: number) => (
+  _: any,
+  i: number
+) => {
   const page = i + 1
   return (
     <li key={`paginate-${i}`}>
@@ -64,22 +71,32 @@ const pageLink = (base, pageBase, currentPage) => (_, i) => {
   )
 }
 
-const Paginator = ({ base, page: currentPage, numPages }) => {
-  const pageBase = base === "/" ? "/page" : `${base}/page`
-
-  return (
-    numPages > 1 && (
-      <footer>
-        <ul css={paginatorCSS}>
-          {backLinks(base, pageBase, currentPage)}
-          {Array.from({ length: numPages }).map(
-            pageLink(base, pageBase, currentPage)
-          )}
-          {forwardLinks(pageBase, currentPage, numPages)}
-        </ul>
-      </footer>
-    )
-  )
+interface PaginatorProps {
+  base: string
+  page: number
+  numPages: number
 }
 
-export default Paginator
+export const Paginator: React.FunctionComponent<PaginatorProps> = ({
+  base,
+  page: currentPage,
+  numPages,
+}) => {
+  if (numPages === 1) return
+
+  const pageBase = base === "/" ? "/page" : `${base}/page`
+  const back = backLinks(base, pageBase, currentPage)
+  const forward = forwardLinks(pageBase, currentPage, numPages)
+
+  return (
+    <footer>
+      <ul css={paginatorCSS}>
+        {back}
+        {Array.from({ length: numPages }).map(
+          pageLink(base, pageBase, currentPage)
+        )}
+        {forward}
+      </ul>
+    </footer>
+  )
+}

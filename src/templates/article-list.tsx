@@ -3,7 +3,7 @@ import * as React from "react"
 import { Article } from "../components/Article"
 import { H1 } from "../components/Heading"
 import { Layout } from "../components/Layout"
-import Paginator from "../components/Paginator"
+import { Paginator } from "../components/Paginator"
 import { ArticlesQuery } from "./__generated__/ArticlesQuery"
 
 interface ArticleListProps {

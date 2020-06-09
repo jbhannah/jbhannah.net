@@ -1,6 +1,6 @@
 import { shallow } from "enzyme"
 import * as React from "react"
-import Paginator from "."
+import { Paginator } from "."
 
 const lis = (tree) => tree.find("li")
 const linkAt = (tree, i) => lis(tree).at(i).find("Link")
