@@ -2,74 +2,26 @@
 
 exports[`Header renders correctly 1`] = `
 <header
-  css={
-    Object {
-      "@media only screen and (min-width: 59rem)": Object {
-        "flexDirection": "column",
-        "justifyContent": "flex-start",
-        "margin": 0,
-        "textAlign": "center",
-        "width": "12rem",
-      },
-      "@media only screen and (min-width: 70rem)": Object {
-        "marginLeft": "-12rem",
-      },
-      "display": "flex",
-      "flexDirection": "row",
-      "justifyContent": "space-between",
-      "margin": "0 auto",
-      "maxWidth": "42rem",
-      "padding": "0 1rem",
-      "width": "100%",
-    }
-  }
+  css="[object Object]"
 >
-  <Heading
-    css={
-      Object {
-        "@media only screen and (min-width: 28rem)": Object {
-          "fontSize": "1.25rem",
-        },
-        "fontSize": "1.15rem",
-      }
-    }
-    level="h1"
+  <h1
+    css="[object Object]"
   >
-    <Link
-      css={
-        Object {
-          "display": "block",
-        }
-      }
+    <a
+      aria-current="page"
+      class=""
+      css="[object Object]"
       href="/"
     >
       <picture
-        css={
-          Object {
-            "@media only screen and (min-width: 59rem)": Object {
-              "display": "block",
-              "marginBottom": "0.79rem",
-              "source, img": Object {
-                "a:hover > &": Object {
-                  "borderRadius": "15%",
-                },
-                "borderRadius": "50%",
-                "display": "block",
-                "margin": 0,
-                "transition": "border-radius 0.5s",
-              },
-              "width": "100%",
-            },
-            "display": "none",
-          }
-        }
+        css="[object Object]"
       >
         <source
-          srcSet="avatar-srcSet.webp"
+          srcset="avatar-srcSet.webp"
           type="image/webp"
         />
         <source
-          srcSet="avatar-srcSet.png"
+          srcset="avatar-srcSet.png"
           type="image/png"
         />
         <img
@@ -78,19 +30,31 @@ exports[`Header renders correctly 1`] = `
         />
       </picture>
       Test Site
-    </Link>
-  </Heading>
-  <SocialNav
-    socialLinks={
-      Array [
-        Object {
-          "key": "Test Service",
-          "link": "https://www.example.com",
-          "name": "Test Name",
-          "service": "Test Service",
-        },
-      ]
-    }
-  />
+    </a>
+  </h1>
+  <nav
+    css="[object Object]"
+  >
+    <ul
+      css="[object Object]"
+    >
+      <li
+        css="[object Object]"
+      >
+        <a
+          css="[object Object]"
+          href="https://www.example.com"
+          rel="noopener"
+          target="_blank"
+        >
+          <img
+            alt="Test Name on Test Service"
+            css="[object Object]"
+            src="test-file-stub"
+          />
+        </a>
+      </li>
+    </ul>
+  </nav>
 </header>
 `;

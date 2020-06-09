@@ -9,7 +9,7 @@ import {
   mq,
 } from "../../utils/styles"
 import Footer from "../Footer"
-import Header from "../Header"
+import { Header } from "../Header"
 import Global from "./global"
 import { LayoutQuery } from "./__generated__/LayoutQuery"
 
@@ -38,13 +38,7 @@ const mainCSS: InterpolationWithTheme<any> = {
 export const Layout: React.FunctionComponent = ({ children }) => {
   const {
     site: {
-      siteMetadata: {
-        siteUrl,
-        title,
-        description,
-        twitterCreator,
-        socialLinks,
-      },
+      siteMetadata: { siteUrl, title, description, twitterCreator },
     },
     file: {
       childImageSharp: { fixed: avatar },
@@ -65,7 +59,7 @@ export const Layout: React.FunctionComponent = ({ children }) => {
         <meta property="og:url" content={siteUrl} />
         <meta property="twitter:creator" content={twitterCreator} />
       </Helmet>
-      <Header {...{ title, avatar, socialLinks }} />
+      <Header />
       <main css={mainCSS}>{children}</main>
       <Footer {...{ title }} />
     </div>
@@ -80,20 +74,12 @@ const query = graphql`
         title
         description
         twitterCreator
-        socialLinks {
-          key: service
-          service
-          link
-          name
-        }
       }
     }
     file(sourceInstanceName: { eq: "images" }, name: { eq: "avatar" }) {
       childImageSharp {
         fixed(width: 160) {
           src
-          srcSet
-          srcSetWebp
         }
       }
     }

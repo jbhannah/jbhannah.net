@@ -5,6 +5,7 @@ module.exports = {
     "**/*.{ts,tsx}",
     "!*.js",
     "!.*.js",
+    "!**/*.d.ts",
     "!**/coverage/**",
     "!**/node_modules/**",
     "!**/public/**",
