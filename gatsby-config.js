@@ -82,12 +82,7 @@ module.exports = {
       },
     },
     "gatsby-plugin-sharp",
-    {
-      resolve: "gatsby-transformer-sharp",
-      options: {
-        plugins: ["gatsby-jbh-sharp-name"],
-      },
-    },
+    "gatsby-transformer-sharp",
     {
       resolve: "gatsby-transformer-remark",
       options: {
