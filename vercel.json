@@ -24,12 +24,12 @@
     },
     {
       "src": "/page/*",
-      "headers": ["X-Robots-Tag: noindex"],
+      "headers": { "X-Robots-Tag": "noindex" },
       "continue": true
     },
     {
       "src": "/*/page/*",
-      "headers": ["X-Robots-Tag: noindex"],
+      "headers": { "X-Robots-Tag": "noindex" },
       "continue": true
     },
     {
