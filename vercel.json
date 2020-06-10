@@ -13,28 +13,8 @@
       "source": "/(.*)",
       "headers": [
         {
-          "key": "Link",
-          "value": "</static/jetbrainsmono-regular.woff2>; rel=preload; as=font; type=font/woff2; crossorigin"
-        },
-        {
-          "key": "Link",
-          "value": "</static/lora-latin-400.woff2>; rel=preload; as=font; type=font/woff2; crossorigin"
-        },
-        {
-          "key": "Link",
-          "value": "</static/lora-latin-400italic.woff2>; rel=preload; as=font; type=font/woff2; crossorigin"
-        },
-        {
-          "key": "Link",
-          "value": "</static/lora-latin-700.woff2>; rel=preload; as=font; type=font/woff2; crossorigin"
-        },
-        {
-          "key": "Link",
-          "value": "</static/lora-latin-700italic.woff2>; rel=preload; as=font; type=font/woff2; crossorigin"
-        },
-        {
-          "key": "Link",
-          "value": "</static/varela-round-latin-400.woff2>; rel=preload; as=font; type=font/woff2; crossorigin"
+          "key": "link",
+          "value": "</static/jetbrainsmono-regular.woff2>; rel=preload; as=font; type=font/woff2; crossorigin, </static/lora-latin-400.woff2>; rel=preload; as=font; type=font/woff2; crossorigin, </static/lora-latin-400italic.woff2>; rel=preload; as=font; type=font/woff2; crossorigin, </static/lora-latin-700.woff2>; rel=preload; as=font; type=font/woff2; crossorigin, </static/lora-latin-700italic.woff2>; rel=preload; as=font; type=font/woff2; crossorigin, </static/varela-round-latin-400.woff2>; rel=preload; as=font; type=font/woff2; crossorigin"
         },
         { "key": "referrer-policy", "value": "same-origin" },
         {
