@@ -12,10 +12,6 @@
     {
       "source": "/(.*)",
       "headers": [
-        {
-          "key": "link",
-          "value": "</static/jetbrainsmono-regular.woff2>; rel=preload; as=font; type=font/woff2; crossorigin, </static/lora-latin-400.woff2>; rel=preload; as=font; type=font/woff2; crossorigin, </static/lora-latin-400italic.woff2>; rel=preload; as=font; type=font/woff2; crossorigin, </static/lora-latin-700.woff2>; rel=preload; as=font; type=font/woff2; crossorigin, </static/lora-latin-700italic.woff2>; rel=preload; as=font; type=font/woff2; crossorigin, </static/varela-round-latin-400.woff2>; rel=preload; as=font; type=font/woff2; crossorigin"
-        },
         { "key": "referrer-policy", "value": "same-origin" },
         {
           "key": "feature-policy",
