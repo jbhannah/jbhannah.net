@@ -10,7 +10,7 @@
   ],
   "headers": [
     {
-      "source": "/.*",
+      "source": "/(.*)",
       "headers": [
         {
           "key": "Link",
@@ -53,7 +53,7 @@
       ]
     },
     {
-      "source": "/(.*/)?page/.*",
+      "source": "/(.*/)?page/(.*)",
       "headers": [{ "key": "X-Robots-Tag", "value": "noindex" }]
     },
     {
@@ -66,7 +66,7 @@
       ]
     },
     {
-      "source": "^/.*\\.(js|css)$",
+      "source": "^/(.*)\\.(js|css)$",
       "headers": [
         {
           "key": "cache-control",
