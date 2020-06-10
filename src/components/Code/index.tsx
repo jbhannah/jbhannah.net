@@ -3,6 +3,7 @@ import * as React from "react"
 
 const codeCSS: InterpolationWithTheme<any> = {
   fontFamily: "JetBrainsMono, monospace !important",
+  fontSize: "0.95rem",
   WebkitFontSmoothing: "antialiased",
   textRendering: "optimizeLegibility",
 }
