@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "aliases": ["jbhannah.net"],
+  "alias": ["jbhannah.net"],
   "routes": [
     {
       "src": "/.*",
