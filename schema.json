@@ -13294,16 +13294,6 @@
               "defaultValue": null
             },
             {
-              "name": "globalHeaders",
-              "description": "",
-              "type": {
-                "kind": "INPUT_OBJECT",
-                "name": "StringQueryOperatorInput",
-                "ofType": null
-              },
-              "defaultValue": null
-            },
-            {
               "name": "includes",
               "description": "",
               "type": {
@@ -14665,22 +14655,6 @@
                 "kind": "OBJECT",
                 "name": "SitePluginPluginOptionsHeaders",
                 "ofType": null
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "globalHeaders",
-              "description": null,
-              "args": [],
-              "type": {
-                "kind": "LIST",
-                "name": null,
-                "ofType": {
-                  "kind": "SCALAR",
-                  "name": "String",
-                  "ofType": null
-                }
               },
               "isDeprecated": false,
               "deprecationReason": null
@@ -16554,12 +16528,6 @@
             },
             {
               "name": "pluginCreator___pluginOptions___headers____xxpagexx",
-              "description": null,
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "pluginCreator___pluginOptions___globalHeaders",
               "description": null,
               "isDeprecated": false,
               "deprecationReason": null
@@ -22874,12 +22842,6 @@
             },
             {
               "name": "pluginOptions___headers____xxpagexx",
-              "description": null,
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "pluginOptions___globalHeaders",
               "description": null,
               "isDeprecated": false,
               "deprecationReason": null
