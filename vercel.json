@@ -29,10 +29,6 @@
       ]
     },
     {
-      "source": "/(.*/)?page/(.*)",
-      "headers": [{ "key": "X-Robots-Tag", "value": "noindex" }]
-    },
-    {
       "source": "^/(icons|static)/(.*)$",
       "headers": [
         {
