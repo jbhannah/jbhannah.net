@@ -1,20 +1,23 @@
 import verticalRhythm from "compass-vertical-rhythm"
-import Typography from "typography"
+import Typography, { TypographyOptions } from "typography"
 import { MOBILE_MEDIA_QUERY } from "typography-breakpoint-constants"
 import lincolnTheme from "typography-theme-lincoln"
 import { mq } from "./styles"
 
-lincolnTheme.baseFontSize = "16px"
-lincolnTheme.googleFonts = []
+const theme: TypographyOptions = {
+  ...lincolnTheme,
+  baseFontSize: "16px",
+  bodyFontFamily: ["Libre Caslon Text", "serif"],
+}
 
-const vr = (size = lincolnTheme.baseFontSize) =>
+const vr = (size = theme.baseFontSize) =>
   verticalRhythm({
     baseFontSize: size,
-    baseLineHeight: lincolnTheme.baseLineHeight,
+    baseLineHeight: theme.baseLineHeight,
   })
 
-lincolnTheme.overrideThemeStyles = () => {
-  const html = { ...vr("17px").establishBaseline() }
+theme.overrideThemeStyles = () => {
+  const html = { ...vr().establishBaseline() }
 
   return {
     html,
@@ -29,7 +32,7 @@ lincolnTheme.overrideThemeStyles = () => {
   }
 }
 
-const typography = new Typography(lincolnTheme)
+const typography = new Typography(theme)
 const { rhythm, scale } = typography
 
 export { rhythm, scale, typography as default }

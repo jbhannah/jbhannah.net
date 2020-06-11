@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "Libre Caslon Text";
+  font-weight: 400;
+  font-style: normal;
+  src: url("libre-caslon-text.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Libre Caslon Text";
+  font-weight: 400;
+  font-style: italic;
+  src: url("libre-caslon-text-italic.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Libre Caslon Text";
+  font-weight: 700;
+  font-style: normal;
+  src: url("libre-caslon-text.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Libre Caslon Text";
+  font-weight: 700;
+  font-style: italic;
+  src: url("libre-caslon-text-italic.woff2") format("woff2");
+  font-display: swap;
+}
