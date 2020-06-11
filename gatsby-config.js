@@ -142,24 +142,6 @@ module.exports = {
           }),
       },
     },
-    "gatsby-plugin-netlify-cache",
-    {
-      resolve: "gatsby-plugin-netlify",
-      options: {
-        allPageHeaders: [
-          "Link: </static/jetbrainsmono-regular.woff2>; rel=preload; as=font; type=font/woff2; crossorigin",
-          "Link: </static/lora-latin-400.woff2>; rel=preload; as=font; type=font/woff2; crossorigin",
-          "Link: </static/lora-latin-400italic.woff2>; rel=preload; as=font; type=font/woff2; crossorigin",
-          "Link: </static/lora-latin-700.woff2>; rel=preload; as=font; type=font/woff2; crossorigin",
-          "Link: </static/lora-latin-700italic.woff2>; rel=preload; as=font; type=font/woff2; crossorigin",
-          "Link: </static/varela-round-latin-400.woff2>; rel=preload; as=font; type=font/woff2; crossorigin",
-        ],
-        headers: {
-          "/page/*": ["X-Robots-Tag: noindex"],
-          "/*/page/*": ["X-Robots-Tag: noindex"],
-        },
-      },
-    },
     {
       resolve: "gatsby-plugin-codegen",
       options: {

@@ -1157,26 +1157,6 @@
                   "defaultValue": null
                 },
                 {
-                  "name": "port",
-                  "description": "",
-                  "type": {
-                    "kind": "INPUT_OBJECT",
-                    "name": "StringQueryOperatorInput",
-                    "ofType": null
-                  },
-                  "defaultValue": null
-                },
-                {
-                  "name": "host",
-                  "description": "",
-                  "type": {
-                    "kind": "INPUT_OBJECT",
-                    "name": "StringQueryOperatorInput",
-                    "ofType": null
-                  },
-                  "defaultValue": null
-                },
-                {
                   "name": "polyfill",
                   "description": "",
                   "type": {
@@ -13294,26 +13274,6 @@
               "defaultValue": null
             },
             {
-              "name": "allPageHeaders",
-              "description": "",
-              "type": {
-                "kind": "INPUT_OBJECT",
-                "name": "StringQueryOperatorInput",
-                "ofType": null
-              },
-              "defaultValue": null
-            },
-            {
-              "name": "headers",
-              "description": "",
-              "type": {
-                "kind": "INPUT_OBJECT",
-                "name": "SitePluginPluginOptionsHeadersFilterInput",
-                "ofType": null
-              },
-              "defaultValue": null
-            },
-            {
               "name": "includes",
               "description": "",
               "type": {
@@ -13696,37 +13656,6 @@
           "inputFields": [
             {
               "name": "exclude",
-              "description": "",
-              "type": {
-                "kind": "INPUT_OBJECT",
-                "name": "StringQueryOperatorInput",
-                "ofType": null
-              },
-              "defaultValue": null
-            }
-          ],
-          "interfaces": null,
-          "enumValues": null,
-          "possibleTypes": null
-        },
-        {
-          "kind": "INPUT_OBJECT",
-          "name": "SitePluginPluginOptionsHeadersFilterInput",
-          "description": null,
-          "fields": null,
-          "inputFields": [
-            {
-              "name": "_page__",
-              "description": "",
-              "type": {
-                "kind": "INPUT_OBJECT",
-                "name": "StringQueryOperatorInput",
-                "ofType": null
-              },
-              "defaultValue": null
-            },
-            {
-              "name": "_xxpagexx",
               "description": "",
               "type": {
                 "kind": "INPUT_OBJECT",
@@ -14652,34 +14581,6 @@
               "deprecationReason": null
             },
             {
-              "name": "allPageHeaders",
-              "description": null,
-              "args": [],
-              "type": {
-                "kind": "LIST",
-                "name": null,
-                "ofType": {
-                  "kind": "SCALAR",
-                  "name": "String",
-                  "ofType": null
-                }
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "headers",
-              "description": null,
-              "args": [],
-              "type": {
-                "kind": "OBJECT",
-                "name": "SitePluginPluginOptionsHeaders",
-                "ofType": null
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
               "name": "includes",
               "description": null,
               "args": [],
@@ -15073,49 +14974,6 @@
           "fields": [
             {
               "name": "exclude",
-              "description": null,
-              "args": [],
-              "type": {
-                "kind": "LIST",
-                "name": null,
-                "ofType": {
-                  "kind": "SCALAR",
-                  "name": "String",
-                  "ofType": null
-                }
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            }
-          ],
-          "inputFields": null,
-          "interfaces": [],
-          "enumValues": null,
-          "possibleTypes": null
-        },
-        {
-          "kind": "OBJECT",
-          "name": "SitePluginPluginOptionsHeaders",
-          "description": null,
-          "fields": [
-            {
-              "name": "_page__",
-              "description": null,
-              "args": [],
-              "type": {
-                "kind": "LIST",
-                "name": null,
-                "ofType": {
-                  "kind": "SCALAR",
-                  "name": "String",
-                  "ofType": null
-                }
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "_xxpagexx",
               "description": null,
               "args": [],
               "type": {
@@ -16535,24 +16393,6 @@
               "deprecationReason": null
             },
             {
-              "name": "pluginCreator___pluginOptions___allPageHeaders",
-              "description": null,
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "pluginCreator___pluginOptions___headers____page__",
-              "description": null,
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "pluginCreator___pluginOptions___headers____xxpagexx",
-              "description": null,
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
               "name": "pluginCreator___pluginOptions___includes",
               "description": null,
               "isDeprecated": false,
@@ -17303,30 +17143,6 @@
               "deprecationReason": null
             },
             {
-              "name": "port",
-              "description": null,
-              "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "host",
-              "description": null,
-              "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
               "name": "polyfill",
               "description": null,
               "args": [],
@@ -17638,26 +17454,6 @@
               "defaultValue": null
             },
             {
-              "name": "port",
-              "description": "",
-              "type": {
-                "kind": "INPUT_OBJECT",
-                "name": "StringQueryOperatorInput",
-                "ofType": null
-              },
-              "defaultValue": null
-            },
-            {
-              "name": "host",
-              "description": "",
-              "type": {
-                "kind": "INPUT_OBJECT",
-                "name": "StringQueryOperatorInput",
-                "ofType": null
-              },
-              "defaultValue": null
-            },
-            {
               "name": "polyfill",
               "description": "",
               "type": {
@@ -17837,18 +17633,6 @@
             },
             {
               "name": "siteMetadata___socialLinks___name",
-              "description": null,
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "port",
-              "description": null,
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "host",
               "description": null,
               "isDeprecated": false,
               "deprecationReason": null
@@ -22900,24 +22684,6 @@
             },
             {
               "name": "pluginOptions___providers___exclude",
-              "description": null,
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "pluginOptions___allPageHeaders",
-              "description": null,
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "pluginOptions___headers____page__",
-              "description": null,
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "pluginOptions___headers____xxpagexx",
               "description": null,
               "isDeprecated": false,
               "deprecationReason": null
