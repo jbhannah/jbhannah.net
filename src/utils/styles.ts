@@ -1,10 +1,3 @@
-import "prismjs/plugins/command-line/prism-command-line.css"
-import "prismjs/plugins/line-numbers/prism-line-numbers.css"
-import "prismjs/themes/prism-solarizedlight.css"
-import "typeface-varela-round"
-import "../fonts/jetbrains-mono.css"
-import "../fonts/libre-caslon-text.css"
-
 export const breakpoints = { sm: 28, md: 38, lg: 59, xl: 70 }
 export const mq = Object.assign(
   {},
