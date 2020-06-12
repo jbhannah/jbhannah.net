@@ -55,7 +55,6 @@
     "rehype-react": "^6.0.0",
     "remark-html": "^11.0.2",
     "remark-parse": "^8.0.2",
-    "typeface-lora": "0.0.72",
     "typeface-varela-round": "0.0.71",
     "typography": "^0.16.19",
     "typography-theme-lincoln": "^0.16.19",

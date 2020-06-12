@@ -1,9 +1,8 @@
 # [jbhannah.net][]
 
-[![Build Status](https://dev.azure.com/jbhannah/jbhannah.net/_apis/build/status/jbhannah.net?branchName=master)](https://dev.azure.com/jbhannah/jbhannah.net/_build/latest?definitionId=1&branchName=master)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/c25c1c82-e91f-4536-bf7f-f7ef52c1e6b2/deploy-status)](https://app.netlify.com/sites/jbhannah-net/deploys)
+[![Node CI](https://github.com/jbhannah/jbhannah.net/workflows/Node%20CI/badge.svg)](https://github.com/jbhannah/jbhannah.net/actions)
 
-Built with [Gatsby][]. Hosted on [Netlify][].
+Built with [Gatsby][]. Hosted on [Vercel][].
 
 ## Development
 
@@ -31,6 +30,6 @@ Copyright © 2020 [Jesse B. Hannah][jbhannah.net]. Code licensed under the
 
 [jbhannah.net]: https://jbhannah.net
 [gatsby]: https://www.gatsbyjs.org
-[netlify]: https://www.netlify.com/
+[vercel]: https://www.vercel.com/
 [mit license]: LICENSE
 [cc by-sa 4.0]: https://creativecommons.org/licenses/by-sa/4.0/
