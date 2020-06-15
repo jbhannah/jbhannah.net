@@ -25,7 +25,7 @@ const processPage = async (path) => {
 
 const publishPages = async () => {
   try {
-    const files = await glob.promise(`${__dirname}/../src/pages/**/*.md`)
+    const files = await glob.promise(`${__dirname}/../contents/**/*.md`)
     const results = await Promise.all(
       files.map(async (path) => await processPage(path))
     )
