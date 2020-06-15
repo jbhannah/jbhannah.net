@@ -71,22 +71,8 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "css",
-        path: `${__dirname}/src/assets/css`,
-      },
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "images",
-        path: `${__dirname}/src/assets/images`,
-      },
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "fonts",
-        path: `${__dirname}/src/assets/fonts`,
+        name: "assets",
+        path: `${__dirname}/src/assets`,
       },
     },
     "gatsby-plugin-sharp",
@@ -127,6 +113,17 @@ module.exports = {
               providers: { exclude: ["Flickr", "Instagram", "Reddit"] },
             },
           },
+        ],
+      },
+    },
+    {
+      resolve: "gatsby-jbh-source-filesystem-parent",
+      options: {
+        fields: [
+          "name",
+          "relativeDirectory",
+          "relativePath",
+          "sourceInstanceName",
         ],
       },
     },
