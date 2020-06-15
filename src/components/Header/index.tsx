@@ -53,9 +53,7 @@ export const Header = () => {
     site: {
       siteMetadata: { title },
     },
-    file: {
-      childImageSharp: { fixed: avatar },
-    },
+    imageSharp: { fixed: avatar },
   } = useStaticQuery<HeaderQuery>(query)
 
   return (
@@ -82,13 +80,19 @@ const query = graphql`
         title
       }
     }
-    file(sourceInstanceName: { eq: "images" }, name: { eq: "avatar" }) {
-      childImageSharp {
-        fixed(width: 160) {
-          src
-          srcSet
-          srcSetWebp
+
+    imageSharp(
+      fields: {
+        parentFile: {
+          relativePath: { eq: "images/avatar.png" }
+          sourceInstanceName: { eq: "assets" }
         }
+      }
+    ) {
+      fixed(width: 160) {
+        src
+        srcSet
+        srcSetWebp
       }
     }
   }

@@ -17,13 +17,11 @@ const data = {
       ],
     },
   },
-  file: {
-    childImageSharp: {
-      fixed: {
-        src: "avatar-src.png",
-        srcSet: "avatar-srcSet.png",
-        srcSetWebp: "avatar-srcSet.webp",
-      },
+  imageSharp: {
+    fixed: {
+      src: "avatar-src.png",
+      srcSet: "avatar-srcSet.png",
+      srcSetWebp: "avatar-srcSet.webp",
     },
   },
 }

@@ -18,19 +18,15 @@ export interface LayoutQuery_site {
   siteMetadata: LayoutQuery_site_siteMetadata | null;
 }
 
-export interface LayoutQuery_file_childImageSharp_fixed {
+export interface LayoutQuery_imageSharp_fixed {
   src: string;
 }
 
-export interface LayoutQuery_file_childImageSharp {
-  fixed: LayoutQuery_file_childImageSharp_fixed | null;
-}
-
-export interface LayoutQuery_file {
-  childImageSharp: LayoutQuery_file_childImageSharp | null;
+export interface LayoutQuery_imageSharp {
+  fixed: LayoutQuery_imageSharp_fixed | null;
 }
 
 export interface LayoutQuery {
   site: LayoutQuery_site | null;
-  file: LayoutQuery_file | null;
+  imageSharp: LayoutQuery_imageSharp | null;
 }

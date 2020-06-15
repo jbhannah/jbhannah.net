@@ -15,21 +15,17 @@ export interface HeaderQuery_site {
   siteMetadata: HeaderQuery_site_siteMetadata | null;
 }
 
-export interface HeaderQuery_file_childImageSharp_fixed {
+export interface HeaderQuery_imageSharp_fixed {
   src: string;
   srcSet: string;
   srcSetWebp: string | null;
 }
 
-export interface HeaderQuery_file_childImageSharp {
-  fixed: HeaderQuery_file_childImageSharp_fixed | null;
-}
-
-export interface HeaderQuery_file {
-  childImageSharp: HeaderQuery_file_childImageSharp | null;
+export interface HeaderQuery_imageSharp {
+  fixed: HeaderQuery_imageSharp_fixed | null;
 }
 
 export interface HeaderQuery {
   site: HeaderQuery_site | null;
-  file: HeaderQuery_file | null;
+  imageSharp: HeaderQuery_imageSharp | null;
 }

@@ -40,9 +40,7 @@ export const Layout: React.FunctionComponent = ({ children }) => {
     site: {
       siteMetadata: { siteUrl, title, description, twitterCreator },
     },
-    file: {
-      childImageSharp: { fixed: avatar },
-    },
+    imageSharp: { fixed: avatar },
   } = useStaticQuery<LayoutQuery>(query)
 
   return (
@@ -76,11 +74,17 @@ const query = graphql`
         twitterCreator
       }
     }
-    file(sourceInstanceName: { eq: "images" }, name: { eq: "avatar" }) {
-      childImageSharp {
-        fixed(width: 160) {
-          src
+
+    imageSharp(
+      fields: {
+        parentFile: {
+          relativePath: { eq: "images/avatar.png" }
+          sourceInstanceName: { eq: "assets" }
         }
+      }
+    ) {
+      fixed(width: 160) {
+        src
       }
     }
   }
