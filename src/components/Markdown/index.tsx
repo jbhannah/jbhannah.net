@@ -20,6 +20,20 @@ const newSection = (
   return section
 }
 
+const compiler = new rehypeReact({
+  createElement: React.createElement,
+  components: {
+    a: Link,
+    blockquote: Blockquote,
+    code: Code,
+    h2: H2,
+    h3: H3,
+    h4: H4,
+    h5: H5,
+    h6: H6,
+  },
+}).Compiler
+
 const renderAst = (htmlAst: Node) => {
   let currentLevel: number, currentParent: Element, currentSection: Element
 
@@ -72,19 +86,7 @@ const renderAst = (htmlAst: Node) => {
     return index - 1
   })
 
-  return new rehypeReact({
-    createElement: React.createElement,
-    components: {
-      a: Link,
-      blockquote: Blockquote,
-      code: Code,
-      h2: H2,
-      h3: H3,
-      h4: H4,
-      h5: H5,
-      h6: H6,
-    },
-  }).Compiler(htmlAst)
+  return compiler(htmlAst)
 }
 
 interface MarkdownProps {
