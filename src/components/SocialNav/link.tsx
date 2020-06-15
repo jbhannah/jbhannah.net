@@ -49,7 +49,7 @@ export const SocialLink: React.FunctionComponent<SocialLinkProps> = ({
       <img
         css={socialLinkImgCSS}
         alt={`${name} on ${service}`}
-        src={require(`../../images/${service.toLowerCase()}.svg`)}
+        src={require(`../../assets/images/${service.toLowerCase()}.svg`)}
       />
     </Link>
   </li>
