@@ -116,6 +116,7 @@ module.exports = {
         ],
       },
     },
+    "gatsby-plugin-react-svg",
     {
       resolve: "gatsby-jbh-source-filesystem-parent",
       options: {

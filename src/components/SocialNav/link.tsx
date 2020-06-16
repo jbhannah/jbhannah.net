@@ -43,14 +43,14 @@ export const SocialLink: React.FunctionComponent<SocialLinkProps> = ({
   service,
   link,
   name,
-}) => (
-  <li css={socialLinkCSS}>
-    <Link css={socialLinkLinkCSS} href={link}>
-      <img
-        css={socialLinkImgCSS}
-        alt={`${name} on ${service}`}
-        src={require(`../../assets/images/${service.toLowerCase()}.svg`)}
-      />
-    </Link>
-  </li>
-)
+}) => {
+  const Icon = require(`../../assets/images/${service.toLowerCase()}.svg`)
+
+  return (
+    <li css={socialLinkCSS}>
+      <Link css={socialLinkLinkCSS} title={`${name} on ${service}`} href={link}>
+        <Icon css={socialLinkImgCSS} />
+      </Link>
+    </li>
+  )
+}
