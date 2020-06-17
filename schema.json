@@ -3653,21 +3653,21 @@
               "defaultValue": null
             },
             {
-              "name": "draft",
-              "description": "",
-              "type": {
-                "kind": "INPUT_OBJECT",
-                "name": "BooleanQueryOperatorInput",
-                "ofType": null
-              },
-              "defaultValue": null
-            },
-            {
               "name": "link",
               "description": "",
               "type": {
                 "kind": "INPUT_OBJECT",
                 "name": "StringQueryOperatorInput",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "draft",
+              "description": "",
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "BooleanQueryOperatorInput",
                 "ofType": null
               },
               "defaultValue": null
@@ -7948,24 +7948,24 @@
               "deprecationReason": null
             },
             {
-              "name": "draft",
-              "description": null,
-              "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "Boolean",
-                "ofType": null
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
               "name": "link",
               "description": null,
               "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
+                "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "draft",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "SCALAR",
+                "name": "Boolean",
                 "ofType": null
               },
               "isDeprecated": false,
@@ -10048,13 +10048,13 @@
               "deprecationReason": null
             },
             {
-              "name": "childMarkdownRemark___frontmatter___draft",
+              "name": "childMarkdownRemark___frontmatter___link",
               "description": null,
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
-              "name": "childMarkdownRemark___frontmatter___link",
+              "name": "childMarkdownRemark___frontmatter___draft",
               "description": null,
               "isDeprecated": false,
               "deprecationReason": null
@@ -13570,26 +13570,6 @@
               "defaultValue": null
             },
             {
-              "name": "omitGoogleFont",
-              "description": "",
-              "type": {
-                "kind": "INPUT_OBJECT",
-                "name": "BooleanQueryOperatorInput",
-                "ofType": null
-              },
-              "defaultValue": null
-            },
-            {
-              "name": "pathToConfigModule",
-              "description": "",
-              "type": {
-                "kind": "INPUT_OBJECT",
-                "name": "StringQueryOperatorInput",
-                "ofType": null
-              },
-              "defaultValue": null
-            },
-            {
               "name": "name",
               "description": "",
               "type": {
@@ -13651,6 +13631,26 @@
             },
             {
               "name": "fields",
+              "description": "",
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "StringQueryOperatorInput",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "omitGoogleFont",
+              "description": "",
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "BooleanQueryOperatorInput",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "pathToConfigModule",
               "description": "",
               "type": {
                 "kind": "INPUT_OBJECT",
@@ -14879,30 +14879,6 @@
               "deprecationReason": null
             },
             {
-              "name": "omitGoogleFont",
-              "description": null,
-              "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "Boolean",
-                "ofType": null
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "pathToConfigModule",
-              "description": null,
-              "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
               "name": "name",
               "description": null,
               "args": [],
@@ -14990,6 +14966,30 @@
                   "name": "String",
                   "ofType": null
                 }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "omitGoogleFont",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "SCALAR",
+                "name": "Boolean",
+                "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "pathToConfigModule",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
               },
               "isDeprecated": false,
               "deprecationReason": null
@@ -16753,18 +16753,6 @@
               "deprecationReason": null
             },
             {
-              "name": "pluginCreator___pluginOptions___omitGoogleFont",
-              "description": null,
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "pluginCreator___pluginOptions___pathToConfigModule",
-              "description": null,
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
               "name": "pluginCreator___pluginOptions___name",
               "description": null,
               "isDeprecated": false,
@@ -16814,6 +16802,18 @@
             },
             {
               "name": "pluginCreator___pluginOptions___fields",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "pluginCreator___pluginOptions___omitGoogleFont",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "pluginCreator___pluginOptions___pathToConfigModule",
               "description": null,
               "isDeprecated": false,
               "deprecationReason": null
@@ -20286,13 +20286,13 @@
               "deprecationReason": null
             },
             {
-              "name": "frontmatter___draft",
+              "name": "frontmatter___link",
               "description": null,
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
-              "name": "frontmatter___link",
+              "name": "frontmatter___draft",
               "description": null,
               "isDeprecated": false,
               "deprecationReason": null
@@ -23109,18 +23109,6 @@
               "deprecationReason": null
             },
             {
-              "name": "pluginOptions___omitGoogleFont",
-              "description": null,
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "pluginOptions___pathToConfigModule",
-              "description": null,
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
               "name": "pluginOptions___name",
               "description": null,
               "isDeprecated": false,
@@ -23170,6 +23158,18 @@
             },
             {
               "name": "pluginOptions___fields",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "pluginOptions___omitGoogleFont",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "pluginOptions___pathToConfigModule",
               "description": null,
               "isDeprecated": false,
               "deprecationReason": null

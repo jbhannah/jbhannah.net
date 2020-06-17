@@ -55,13 +55,6 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-typography",
-      options: {
-        omitGoogleFont: true,
-        pathToConfigModule: "src/utils/typography.ts",
-      },
-    },
-    {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "contents",
@@ -146,6 +139,13 @@ module.exports = {
               priority: root ? 1.0 : 0.7,
             }
           }),
+      },
+    },
+    {
+      resolve: "gatsby-plugin-typography",
+      options: {
+        omitGoogleFont: true,
+        pathToConfigModule: "src/utils/typography.ts",
       },
     },
     {

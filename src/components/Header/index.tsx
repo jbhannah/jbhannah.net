@@ -2,6 +2,7 @@ import { InterpolationWithTheme } from "@emotion/core"
 import { graphql, useStaticQuery } from "gatsby"
 import * as React from "react"
 import { contentWidth, headerWidth, hoverRadius, mq } from "../../utils/styles"
+import { rhythm } from "../../utils/typography"
 import { H1 } from "../Heading"
 import { Link } from "../Link"
 import { SocialNav } from "../SocialNav"
@@ -29,6 +30,7 @@ const headerCSS: InterpolationWithTheme<any> = {
 
 const titleCSS: InterpolationWithTheme<any> = {
   fontSize: "1.15rem",
+  marginBottom: rhythm(1 / 2),
   [mq.sm]: {
     fontSize: "1.25rem",
   },
@@ -39,7 +41,7 @@ const avatarCSS: InterpolationWithTheme<any> = {
   [mq.lg]: {
     display: "block",
     width: "100%",
-    marginBottom: "0.79rem",
+    marginBottom: rhythm(1 / 2),
     "source, img": {
       ...hoverRadius,
       display: "block",

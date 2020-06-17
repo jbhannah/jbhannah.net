@@ -2,6 +2,7 @@ import { graphql } from "gatsby"
 import { DateTime } from "luxon"
 import * as React from "react"
 import excerpt from "../../utils/excerpt"
+import { rhythm } from "../../utils/typography"
 import { Heading } from "../Heading"
 import { Link } from "../Link"
 import { MarginFix } from "../MarginFix"
@@ -13,9 +14,10 @@ const localDateFromDateTime = (date: string) =>
     .setZone("America/Phoenix")
     .toLocaleString(DateTime.DATE_HUGE)
 
-const metadataCSS = { fontSize: "0.75rem", marginBottom: "0.79rem" }
+const headingCSS = { marginBottom: rhythm(1 / 2) }
+const metadataCSS = { fontSize: rhythm(1 / 2), ...headingCSS }
 
-const footerCSS = { marginTop: "1.58rem" }
+const footerCSS = { marginTop: rhythm(1) }
 
 interface ArticleProps {
   list?: boolean
@@ -41,7 +43,9 @@ export const Article: React.FunctionComponent<ArticleProps> = ({
   return (
     <article>
       <header>
-        <Heading level={list ? "h2" : "h1"}>{title}</Heading>
+        <Heading css={headingCSS} level={list ? "h2" : "h1"}>
+          {title}
+        </Heading>
         <p css={metadataCSS}>
           <time dateTime={frontmatter.date}>
             {localDateFromDateTime(frontmatter.date)}

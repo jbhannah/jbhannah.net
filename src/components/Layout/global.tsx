@@ -1,6 +1,7 @@
 import { Global as EmotionGlobal } from "@emotion/core"
 import * as React from "react"
 import { mq } from "../../utils/styles"
+import { rhythm } from "../../utils/typography"
 
 const Global = () => (
   <EmotionGlobal
@@ -8,7 +9,7 @@ const Global = () => (
       ".gatsby-highlight": {
         backgroundColor: "#fdf6e3",
         borderRadius: "0.3em",
-        marginBottom: "1.58em",
+        marginBottom: rhythm(1),
         padding: "1em",
         overflow: "auto",
         "& pre[class*=language-]": {
