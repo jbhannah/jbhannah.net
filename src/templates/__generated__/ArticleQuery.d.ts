@@ -22,6 +22,7 @@ export interface ArticleQuery_article {
   frontmatter: ArticleQuery_article_frontmatter | null;
   excerpt: string | null;
   htmlAst: any | null;
+  listExcerptHtmlAst: any | null;
   timeToRead: number | null;
 }
 

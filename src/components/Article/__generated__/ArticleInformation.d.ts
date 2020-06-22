@@ -22,5 +22,6 @@ export interface ArticleInformation {
   frontmatter: ArticleInformation_frontmatter | null;
   excerpt: string | null;
   htmlAst: any | null;
+  listExcerptHtmlAst: any | null;
   timeToRead: number | null;
 }

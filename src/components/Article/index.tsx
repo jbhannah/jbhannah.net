@@ -1,7 +1,6 @@
 import { graphql } from "gatsby"
 import { DateTime } from "luxon"
 import * as React from "react"
-import excerpt from "../../utils/excerpt"
 import { rhythm } from "../../utils/typography"
 import { Heading } from "../Heading"
 import { Link } from "../Link"
@@ -28,8 +27,13 @@ export const Article: React.FunctionComponent<ArticleProps> = ({
   list,
   article,
 }) => {
-  const { fields, frontmatter, timeToRead } = article
-  const content = list ? excerpt(article) : article.htmlAst
+  const {
+    htmlAst,
+    listExcerptHtmlAst,
+    fields,
+    frontmatter,
+    timeToRead,
+  } = article
   let title
 
   if (frontmatter.link) {
@@ -55,7 +59,9 @@ export const Article: React.FunctionComponent<ArticleProps> = ({
         </p>
         {list && <MarginFix />}
       </header>
-      <Markdown htmlAst={content} />
+      <Markdown
+        htmlAst={frontmatter.link || !list ? htmlAst : listExcerptHtmlAst}
+      />
       {list && (
         <footer css={footerCSS}>
           <Link href={`${fields.slug}`}>
@@ -79,6 +85,7 @@ export const query = graphql`
     }
     excerpt
     htmlAst
+    listExcerptHtmlAst
     timeToRead
   }
 `
