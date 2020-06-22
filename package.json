@@ -21,7 +21,7 @@
     "debug": "npm run-script clean && NODE_TLS_REJECT_UNAUTHORIZED=0 node --inspect-brk=9229 --no-lazy node_modules/gatsby/dist/bin/gatsby develop --https",
     "format": "prettier --write \"**/*.{js,jsx,md,ts,tsx,yaml}\"",
     "lint": "eslint .",
-    "start": "gatsby develop",
+    "start": "GATSBY_GRAPHQL_IDE=playground gatsby develop",
     "test": "jest"
   },
   "dependencies": {
