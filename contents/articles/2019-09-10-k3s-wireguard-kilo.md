@@ -10,8 +10,8 @@ I've ended up collecting a handful of [SSDNodes][][^ssdn] VPSs, and have been
 fascinated with [Kubernetes][] lately, starting with projects at work and
 progressing into my own research, so putting the two together was obvious.
 The only hangup I had is that the VPSes were only assigned public IP
-addresses[^ips] and I wanted to ensure that intra-cluster communication would
-all be secure, preferably over [WireGuard][] for its combination of sufficient
+addresses and I wanted to ensure that intra-cluster communication would all
+be secure, preferably over [WireGuard][] for its combination of sufficient
 security with high performance and low overhead. I also wanted a frictionless
 experience with setting up the Kubernetes cluster itself, and had already
 used Rancher's [k3s][] on a Raspberry Pi cluster at home[^rpi]. After some
@@ -29,9 +29,12 @@ From a freshly-installed and -updated system, the first step is to install
 WireGuard:
 
 ```bash{promptUser: root}{promptHost: server}
+# On Ubuntu < 18.04:
 add-apt-repository ppa:wireguard/wireguard
-apt-get update
-apt-get install wireguard
+apt update
+
+# On Ubuntu >= 18.04, or after the above steps:
+apt install wireguard
 ```
 
 and allow communication between each node over the default port of `51820` (or
@@ -165,11 +168,6 @@ peer: (worker 3 public key)
     can't be beat with regards to pricing, especially if you catch one of their
     sales. All of mine were bought during a sale for the opening of a new
     datacenter, at \$79/year for 3 years for 4 vCPUs, 16 GB RAM, and 160 GB SSD.
-
-[^ips]:
-    Private IPs are available on request if you submit a support ticket, but
-    when I discovered this I had already done all of the legwork on setting up
-    Kilo and WireGuard and started writing this post, so ¯\\\_(ツ)\_/¯
 
 [^rpi]: That's a blog post for another time.
 [^src]:
