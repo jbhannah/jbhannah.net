@@ -76,7 +76,6 @@ module.exports = {
         plugins: [
           "gatsby-jbh-remark-first-header-title",
           "gatsby-jbh-remark-frontmatter",
-          "gatsby-jbh-remark-list-excerpt",
           "gatsby-jbh-remark-paginator",
           "gatsby-jbh-remark-slug",
           "gatsby-jbh-remark-source",

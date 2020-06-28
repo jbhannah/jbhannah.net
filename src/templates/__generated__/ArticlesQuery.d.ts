@@ -23,7 +23,6 @@ export interface ArticlesQuery_articles_edges_node {
   frontmatter: ArticlesQuery_articles_edges_node_frontmatter | null;
   excerpt: string | null;
   htmlAst: any | null;
-  listExcerptHtmlAst: any | null;
   timeToRead: number | null;
 }
 
