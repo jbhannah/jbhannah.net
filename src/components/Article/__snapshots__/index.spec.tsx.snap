@@ -4,6 +4,11 @@ exports[`Article in a list renders correctly 1`] = `
 <article>
   <header>
     <Heading
+      css={
+        Object {
+          "marginBottom": "0.79rem",
+        }
+      }
       level="h2"
     >
       <Link
@@ -15,7 +20,7 @@ exports[`Article in a list renders correctly 1`] = `
     <p
       css={
         Object {
-          "fontSize": "0.75rem",
+          "fontSize": "0.79rem",
           "marginBottom": "0.79rem",
         }
       }

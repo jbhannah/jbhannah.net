@@ -49,11 +49,10 @@ exports[`Layout renders correctly 1`] = `
             href="https://www.example.com"
             rel="noopener"
             target="_blank"
+            title="Test Name on Test Service"
           >
-            <img
-              alt="Test Name on Test Service"
+            <test-file-stub
               css="[object Object]"
-              src="test-file-stub"
             />
           </a>
         </li>
