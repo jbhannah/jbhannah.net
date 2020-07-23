@@ -100,7 +100,7 @@
     "prettier": "^2.0.5",
     "pretty-quick": "^2.0.1",
     "ts-jest": "^26.1.1",
-    "unified": "^9.0.0",
+    "unified": "^9.1.0",
     "vercel": "^19.1.1"
   }
 }
