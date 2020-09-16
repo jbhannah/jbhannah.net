@@ -1,6 +1,6 @@
-const tasks = (arr) => arr.join(" && ")
+const tasks = (...args) => args.join(" && ")
 
-const preCommit = tasks(["pretty-quick --staged", "node scripts/publish.js"])
+const preCommit = tasks("pretty-quick --staged", "node scripts/publish.js")
 
 module.exports = {
   hooks: {
