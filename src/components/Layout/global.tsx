@@ -59,7 +59,7 @@ const Global = () => (
         borderLeft: "0.25em solid #f99",
       },
       ".footnotes": {
-        "p:last-of-child": {
+        "p:last-of-type": {
           display: "inline",
         },
       },
