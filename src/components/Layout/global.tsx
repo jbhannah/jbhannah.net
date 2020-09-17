@@ -58,6 +58,11 @@ const Global = () => (
         paddingLeft: "0.75em",
         borderLeft: "0.25em solid #f99",
       },
+      ".footnotes": {
+        "p:last-of-child": {
+          display: "inline",
+        },
+      },
     }}
   />
 )
