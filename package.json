@@ -87,7 +87,7 @@
     "eslint-loader": "^4.0.2",
     "eslint-plugin-jest": "^24.0.2",
     "eslint-plugin-prettier": "^3.1.4",
-    "eslint-plugin-react": "^7.20.3",
+    "eslint-plugin-react": "^7.21.2",
     "gatsby-plugin-codegen": "^1.2.0",
     "glob": "^7.1.6",
     "gray-matter": "^4.0.2",
