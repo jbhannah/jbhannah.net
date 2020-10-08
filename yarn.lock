@@ -3003,10 +3003,10 @@ acorn@^7.1.1, acorn@^7.2.0, acorn@^7.4.0:
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-7.4.0.tgz#e1ad486e6c54501634c6c397c5c121daa383607c"
   integrity sha512-+G7P8jJmCHr+S+cLfQxygbWhXy+8YTVGzAkpEbcLo2mLoL7tij/VG41QSHACSf5QgYRhMZYHuNc6drJaO0Da+w==
 
-acorn@^8.0.1:
-  version "8.0.2"
-  resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.0.2.tgz#f7503a253311d4af42332bc188d5713edb2e030a"
-  integrity sha512-t0Dw7AOyeKs4nez4dhzkBDHB28ICo1pxk3UFsLfsCHOkLW+CwbAZJPMa0vBbq0Mqsslhb7n/7H4qB5txaVQ4ew==
+acorn@^8.0.4:
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.0.4.tgz#7a3ae4191466a6984eee0fe3407a4f3aa9db8354"
+  integrity sha512-XNP0PqF1XD19ZlLKvB7cMmnZswW4C/03pRHgirB30uSJTaS3A3V1/P4sS3HPvFmjoriPCJQs+JDSbm4bL1TxGQ==
 
 address@1.0.3:
   version "1.0.3"
