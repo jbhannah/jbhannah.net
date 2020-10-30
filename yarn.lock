@@ -8990,10 +8990,10 @@ hast-to-hyperscript@^5.0.0:
     unist-util-is "^2.0.0"
     web-namespaces "^1.1.2"
 
-hast-to-hyperscript@^9.0.0:
-  version "9.0.0"
-  resolved "https://registry.yarnpkg.com/hast-to-hyperscript/-/hast-to-hyperscript-9.0.0.tgz#768fb557765fe28749169c885056417342d71e83"
-  integrity sha512-NJvMYU3GlMLs7hN3CRbsNlMzusVNkYBogVWDGybsuuVQ336gFLiD+q9qtFZT2meSHzln3pNISZWTASWothMSMg==
+hast-to-hyperscript@^9.0.0, hast-to-hyperscript@^9.0.1:
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/hast-to-hyperscript/-/hast-to-hyperscript-9.0.1.tgz#9b67fd188e4c81e8ad66f803855334173920218d"
+  integrity sha512-zQgLKqF+O2F72S1aa4y2ivxzSlko3MAvxkwG8ehGmNiqd98BIN3JM1rAJPmplEyLmGLO2QZYJtIneOSZ2YbJuA==
   dependencies:
     "@types/unist" "^2.0.3"
     comma-separated-tokens "^1.0.0"

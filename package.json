@@ -91,7 +91,7 @@
     "gatsby-plugin-codegen": "^1.2.0",
     "glob": "^7.1.6",
     "gray-matter": "^4.0.2",
-    "hast-to-hyperscript": "^9.0.0",
+    "hast-to-hyperscript": "^9.0.1",
     "husky": "^4.2.5",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^26.1.0",
