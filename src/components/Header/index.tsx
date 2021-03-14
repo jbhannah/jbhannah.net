@@ -55,7 +55,11 @@ export const Header = () => {
     site: {
       siteMetadata: { title },
     },
-    imageSharp: { fixed: avatar },
+    file: {
+      childImageSharp: {
+        gatsbyImageData: { images: avatar },
+      },
+    },
   } = useStaticQuery<HeaderQuery>(query)
 
   return (
@@ -63,9 +67,10 @@ export const Header = () => {
       <H1 css={titleCSS}>
         <Link href="/" css={{ display: "block" }}>
           <picture css={avatarCSS}>
-            <source type="image/webp" srcSet={avatar.srcSetWebp} />
-            <source type="image/png" srcSet={avatar.srcSet} />
-            <img src={avatar.src} alt={title} />
+            {avatar.sources.map((src, i) => (
+              <source key={i} type={src.type} srcSet={src.srcSet} />
+            ))}
+            <img src={avatar.fallback.src} alt={title} />
           </picture>
           {title}
         </Link>
@@ -83,18 +88,12 @@ const query = graphql`
       }
     }
 
-    imageSharp(
-      fields: {
-        parentFile: {
-          relativePath: { eq: "images/avatar.png" }
-          sourceInstanceName: { eq: "assets" }
-        }
-      }
+    file(
+      relativePath: { eq: "images/avatar.png" }
+      sourceInstanceName: { eq: "assets" }
     ) {
-      fixed(width: 160) {
-        src
-        srcSet
-        srcSetWebp
+      childImageSharp {
+        gatsbyImageData(layout: FIXED, width: 160)
       }
     }
   }

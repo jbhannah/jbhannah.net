@@ -17,11 +17,21 @@ const data = {
       ],
     },
   },
-  imageSharp: {
-    fixed: {
-      src: "avatar-src.png",
-      srcSet: "avatar-srcSet.png",
-      srcSetWebp: "avatar-srcSet.webp",
+  file: {
+    childImageSharp: {
+      gatsbyImageData: {
+        images: {
+          fallback: {
+            src: "avatar.png",
+          },
+          sources: [
+            {
+              type: "image/webp",
+              srcSet: "avatar-srcSet.webp",
+            },
+          ],
+        },
+      },
     },
   },
 }

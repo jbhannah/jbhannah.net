@@ -21,13 +21,9 @@ exports[`Header renders correctly 1`] = `
           srcset="avatar-srcSet.webp"
           type="image/webp"
         />
-        <source
-          srcset="avatar-srcSet.png"
-          type="image/png"
-        />
         <img
           alt="Test Site"
-          src="avatar-src.png"
+          src="avatar.png"
         />
       </picture>
       Test Site

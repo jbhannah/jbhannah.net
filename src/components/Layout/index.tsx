@@ -41,7 +41,13 @@ export const Layout: React.FunctionComponent = ({ children }) => {
     site: {
       siteMetadata: { siteUrl, title, description, twitterCreator },
     },
-    imageSharp: { fixed: avatar },
+    file: {
+      childImageSharp: {
+        gatsbyImageData: {
+          images: { fallback: avatar },
+        },
+      },
+    },
   } = useStaticQuery<LayoutQuery>(query)
 
   return (
@@ -76,16 +82,12 @@ const query = graphql`
       }
     }
 
-    imageSharp(
-      fields: {
-        parentFile: {
-          relativePath: { eq: "images/avatar.png" }
-          sourceInstanceName: { eq: "assets" }
-        }
-      }
+    file(
+      relativePath: { eq: "images/avatar.png" }
+      sourceInstanceName: { eq: "assets" }
     ) {
-      fixed(width: 160) {
-        src
+      childImageSharp {
+        gatsbyImageData(formats: [AUTO], layout: FIXED, width: 160)
       }
     }
   }
