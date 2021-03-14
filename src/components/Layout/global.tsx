@@ -1,4 +1,4 @@
-import { Global as EmotionGlobal } from "@emotion/core"
+import { Global as EmotionGlobal } from "@emotion/react"
 import * as React from "react"
 import { mq } from "../../utils/styles"
 import { rhythm } from "../../utils/typography"

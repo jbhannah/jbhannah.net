@@ -1,17 +1,17 @@
-import { InterpolationWithTheme } from "@emotion/core"
+/** @jsx jsx */
+import { CSSObject, jsx } from "@emotion/react"
 import { graphql, useStaticQuery } from "gatsby"
-import * as React from "react"
 import { mq } from "../../utils/styles"
 import { SocialLink } from "./link"
 
-const socialNavCSS: InterpolationWithTheme<any> = {
+const socialNavCSS: CSSObject = {
   marginTop: "2.37rem",
   [mq.lg]: {
     marginTop: 0,
   },
 }
 
-const socialNavUlCSS: InterpolationWithTheme<any> = {
+const socialNavUlCSS: CSSObject = {
   display: "flex",
   flexDirection: "row",
   justifyContent: "flex-end",

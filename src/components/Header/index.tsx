@@ -1,6 +1,6 @@
-import { InterpolationWithTheme } from "@emotion/core"
+/** @jsx jsx */
+import { CSSObject, jsx } from "@emotion/react"
 import { graphql, useStaticQuery } from "gatsby"
-import * as React from "react"
 import { contentWidth, headerWidth, hoverRadius, mq } from "../../utils/styles"
 import { rhythm } from "../../utils/typography"
 import { H1 } from "../Heading"
@@ -8,7 +8,7 @@ import { Link } from "../Link"
 import { SocialNav } from "../SocialNav"
 import { HeaderQuery } from "./__generated__/HeaderQuery"
 
-const headerCSS: InterpolationWithTheme<any> = {
+const headerCSS: CSSObject = {
   display: "flex",
   flexDirection: "row",
   justifyContent: "space-between",
@@ -28,7 +28,7 @@ const headerCSS: InterpolationWithTheme<any> = {
   },
 }
 
-const titleCSS: InterpolationWithTheme<any> = {
+const titleCSS: CSSObject = {
   fontSize: "1.15rem",
   marginBottom: rhythm(1 / 2),
   [mq.sm]: {
@@ -36,7 +36,7 @@ const titleCSS: InterpolationWithTheme<any> = {
   },
 }
 
-const avatarCSS: InterpolationWithTheme<any> = {
+const avatarCSS: CSSObject = {
   display: "none",
   [mq.lg]: {
     display: "block",

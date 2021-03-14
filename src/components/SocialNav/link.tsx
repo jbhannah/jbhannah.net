@@ -1,9 +1,10 @@
-import { InterpolationWithTheme } from "@emotion/core"
+/** @jsx jsx */
+import { CSSObject, jsx } from "@emotion/react"
 import * as React from "react"
 import { hoverRadius, mq } from "../../utils/styles"
 import { Link } from "../Link"
 
-const socialLinkCSS: InterpolationWithTheme<any> = {
+const socialLinkCSS: CSSObject = {
   float: "right",
   marginBottom: 0,
   marginRight: "0.5rem",
@@ -18,14 +19,14 @@ const socialLinkCSS: InterpolationWithTheme<any> = {
   },
 }
 
-const socialLinkLinkCSS: InterpolationWithTheme<any> = {
+const socialLinkLinkCSS: CSSObject = {
   background: "none",
   display: "block",
   height: "100%",
   width: "100%",
 }
 
-const socialLinkImgCSS: InterpolationWithTheme<any> = {
+const socialLinkImgCSS: CSSObject = {
   display: "block",
   height: "100%",
   margin: 0,

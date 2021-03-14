@@ -1,7 +1,8 @@
-import { InterpolationWithTheme } from "@emotion/core"
+/** @jsx jsx */
+import { CSSObject, jsx } from "@emotion/react"
 import * as React from "react"
 
-const codeCSS: InterpolationWithTheme<any> = {
+const codeCSS: CSSObject = {
   fontFamily: "JetBrainsMono, monospace !important",
   fontSize: "0.95rem",
   WebkitFontSmoothing: "antialiased",

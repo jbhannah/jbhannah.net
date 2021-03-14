@@ -1,3 +1,5 @@
+import { CSSObject } from "@emotion/react"
+
 export const breakpoints = { sm: 28, md: 38, lg: 59, xl: 70 }
 export const mq = Object.assign(
   {},
@@ -10,14 +12,14 @@ export const contentWidth = "42rem"
 export const headerWidth = "12rem"
 export const linkColor = "#247829"
 
-export const contentWidthColumn = {
+export const contentWidthColumn: CSSObject = {
   margin: "0 auto",
   maxWidth: contentWidth,
   padding: "0 1rem",
   width: "100%",
 }
 
-export const hoverRadius = {
+export const hoverRadius: CSSObject = {
   transition: "border-radius 0.5s",
   borderRadius: "50%",
   "a:hover > &": {

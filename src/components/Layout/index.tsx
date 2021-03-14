@@ -1,4 +1,5 @@
-import { InterpolationWithTheme } from "@emotion/core"
+/** @jsx jsx */
+import { CSSObject, jsx } from "@emotion/react"
 import { graphql, useStaticQuery } from "gatsby"
 import * as React from "react"
 import { Helmet } from "react-helmet"
@@ -13,7 +14,7 @@ import { Header } from "../Header"
 import Global from "./global"
 import { LayoutQuery } from "./__generated__/LayoutQuery"
 
-const layoutCSS: InterpolationWithTheme<any> = {
+const layoutCSS: CSSObject = {
   display: "flex",
   flexDirection: "column",
   margin: "0 auto",
@@ -27,7 +28,7 @@ const layoutCSS: InterpolationWithTheme<any> = {
   },
 }
 
-const mainCSS: InterpolationWithTheme<any> = {
+const mainCSS: CSSObject = {
   ...contentWidthColumn,
   flexGrow: 1,
   [mq.lg]: {
