@@ -6,7 +6,7 @@
     "jest/globals": true,
     "node": true
   },
-  "extends": ["eslint:recommended", "prettier/react"],
+  "extends": ["eslint:recommended", "prettier"],
   "parserOptions": {
     "ecmaFeatures": {
       "impliedStrict": true,

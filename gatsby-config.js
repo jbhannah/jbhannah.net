@@ -68,6 +68,7 @@ module.exports = {
         path: `${__dirname}/src/assets`,
       },
     },
+    "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
@@ -146,13 +147,6 @@ module.exports = {
       options: {
         omitGoogleFont: true,
         pathToConfigModule: "src/utils/typography.ts",
-      },
-    },
-    {
-      resolve: "gatsby-plugin-codegen",
-      options: {
-        includes: ["./src/**/*.tsx", "./src/**/*.ts", "./plugins/**/*.js"],
-        excludes: ["./node_modules/gatsby-transformer-sharp/src/*.js"],
       },
     },
     "gatsby-redirect-from",

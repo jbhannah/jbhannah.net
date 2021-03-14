@@ -2,49 +2,47 @@
 
 exports[`Layout renders correctly 1`] = `
 <div
-  css="[object Object]"
+  class="css-1us33nt-Layout"
 >
   <header
-    css="[object Object]"
+    class="css-dm2l2k-Header"
   >
     <h1
+      class="css-rrosgf-Header"
       css="[object Object]"
     >
       <a
         aria-current="page"
-        class=""
+        class="css-1qnptjq-Header"
         css="[object Object]"
         href="/"
       >
         <picture
-          css="[object Object]"
+          class="css-o08s1i-Header"
         >
           <source
             srcset="avatar-srcSet.webp"
             type="image/webp"
           />
-          <source
-            srcset="avatar-srcSet.png"
-            type="image/png"
-          />
           <img
             alt="Test Site"
-            src="avatar-src.png"
+            src="avatar.png"
           />
         </picture>
         Test Site
       </a>
     </h1>
     <nav
-      css="[object Object]"
+      class="css-lx2ox9-SocialNav"
     >
       <ul
-        css="[object Object]"
+        class="css-1n7px8z-SocialNav"
       >
         <li
-          css="[object Object]"
+          class="css-h61ul7-SocialLink"
         >
           <a
+            class="css-q49akx-SocialLink"
             css="[object Object]"
             href="https://www.example.com"
             rel="noopener"
@@ -52,7 +50,7 @@ exports[`Layout renders correctly 1`] = `
             title="Test Name on Test Service"
           >
             <test-file-stub
-              css="[object Object]"
+              classname="css-78d5kl-SocialLink"
             />
           </a>
         </li>
@@ -60,13 +58,13 @@ exports[`Layout renders correctly 1`] = `
     </nav>
   </header>
   <main
-    css="[object Object]"
+    class="css-1yh2z2k-Layout"
   />
   <footer
     css="[object Object]"
   >
     <div>
-      Copyright © 2020 
+      Copyright © 2021 
       <a
         aria-current="page"
         class=""
