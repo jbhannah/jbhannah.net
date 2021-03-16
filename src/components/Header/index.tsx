@@ -31,6 +31,10 @@ const headerCSS: CSSObject = {
 const titleCSS: CSSObject = {
   fontSize: "1.15rem",
   marginBottom: rhythm(1 / 2),
+  small: {
+    marginTop: rhythm(1 / 4),
+    display: "block",
+  },
   [mq.sm]: {
     fontSize: "1.25rem",
   },
@@ -50,11 +54,18 @@ const avatarCSS: CSSObject = {
   },
 }
 
-export const Header = () => {
+interface HeaderProps {
+  title: string
+  fullname: string
+  pronouns: string
+}
+
+export const Header: React.FunctionComponent<HeaderProps> = ({
+  title,
+  fullname,
+  pronouns,
+}) => {
   const {
-    site: {
-      siteMetadata: { title },
-    },
     file: {
       childImageSharp: {
         gatsbyImageData: { images: avatar },
@@ -72,7 +83,8 @@ export const Header = () => {
             ))}
             <img src={avatar.fallback.src} alt={title} />
           </picture>
-          {title}
+          {fullname}
+          <small>({pronouns})</small>
         </Link>
       </H1>
       <SocialNav />
@@ -82,12 +94,6 @@ export const Header = () => {
 
 const query = graphql`
   query HeaderQuery {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-
     file(
       relativePath: { eq: "images/avatar.png" }
       sourceInstanceName: { eq: "assets" }

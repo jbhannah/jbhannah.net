@@ -9,11 +9,19 @@ import { IGatsbyImageData } from "gatsby-plugin-image";
 // GraphQL query operation: LayoutQuery
 // ====================================================
 
+export interface LayoutQuery_site_siteMetadata_name {
+  first: string | null;
+  mi: string | null;
+  last: string | null;
+}
+
 export interface LayoutQuery_site_siteMetadata {
   siteUrl: string | null;
   title: string | null;
   description: string | null;
   twitterCreator: string | null;
+  name: LayoutQuery_site_siteMetadata_name | null;
+  pronouns: string[] | null;
 }
 
 export interface LayoutQuery_site {

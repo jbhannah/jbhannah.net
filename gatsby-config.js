@@ -6,9 +6,12 @@ module.exports = {
     twitterCreator: "@jbhannah",
     name: {
       first: "Jesse",
+      mi: "B",
       last: "Hannah",
     },
     username: "jbhannah",
+    gender: "female",
+    pronouns: ["she", "her"],
     socialLinks: [
       {
         service: "GitHub",

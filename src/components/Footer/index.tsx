@@ -1,11 +1,16 @@
-import PropTypes from "prop-types"
-import * as React from "react"
+/** @jsx jsx */
+import { CSSObject, jsx } from "@emotion/react"
 import { contentWidthColumn, headerWidth, mq } from "../../utils/styles"
 import { Link } from "../Link"
 
+interface FooterProps {
+  fullname: string | null
+  pronouns: string | null
+}
+
 const year = new Date().getFullYear()
 
-const footerCSS = {
+const footerCSS: CSSObject = {
   ...contentWidthColumn,
   alignSelf: "flex-end",
   fontSize: "0.75rem",
@@ -14,10 +19,13 @@ const footerCSS = {
   [mq.xl]: { marginLeft: 0 },
 }
 
-const Footer = ({ title }) => (
+const Footer: React.FunctionComponent<FooterProps> = ({
+  fullname,
+  pronouns,
+}) => (
   <footer css={footerCSS}>
     <div>
-      Copyright © {year} <Link href="/">{title}</Link>.{" "}
+      Copyright © {year} <Link href="/">{fullname}</Link> ({pronouns}).{" "}
       <Link
         href="https://creativecommons.org/licenses/by-sa/4.0/"
         rel="license"
@@ -32,9 +40,5 @@ const Footer = ({ title }) => (
     </div>
   </footer>
 )
-
-Footer.propTypes = {
-  title: PropTypes.string,
-}
 
 export default Footer

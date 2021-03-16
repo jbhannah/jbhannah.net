@@ -27,6 +27,7 @@ export interface ArticleQuery_article {
 
 export interface ArticleQuery_site_siteMetadata_name {
   first: string | null;
+  mi: string | null;
   last: string | null;
 }
 
@@ -35,6 +36,8 @@ export interface ArticleQuery_site_siteMetadata {
   title: string | null;
   username: string | null;
   name: ArticleQuery_site_siteMetadata_name | null;
+  gender: string | null;
+  pronouns: string[] | null;
 }
 
 export interface ArticleQuery_site {

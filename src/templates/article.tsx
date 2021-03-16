@@ -16,9 +16,12 @@ const Template: React.FunctionComponent<TemplateProps> = ({ data }) => {
       excerpt,
     },
     site: {
-      siteMetadata: { siteUrl, title: siteTitle, username, name },
+      siteMetadata: { siteUrl, username, name, gender, pronouns },
     },
   } = data
+
+  const fullname = `${name.first} ${name.mi}. ${name.last}`
+  const siteTitle = `${fullname} (${pronouns.join("/")})`
 
   return (
     <Layout>
@@ -34,6 +37,7 @@ const Template: React.FunctionComponent<TemplateProps> = ({ data }) => {
         <meta property="og:article:author:first_name" content={name.first} />
         <meta property="og:article:author:last_name" content={name.last} />
         <meta property="og:article:author:username" content={username} />
+        <meta property="og:article:author:gender" content={gender} />
         <meta property="twitter:card" content="summary" />
       </Helmet>
       <Article {...data} />
@@ -51,12 +55,14 @@ export const query = graphql`
     site {
       siteMetadata {
         siteUrl
-        title
         username
         name {
           first
+          mi
           last
         }
+        gender
+        pronouns
       }
     }
   }

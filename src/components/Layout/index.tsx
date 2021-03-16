@@ -38,7 +38,13 @@ const mainCSS: CSSObject = {
 export const Layout: React.FunctionComponent = ({ children }) => {
   const {
     site: {
-      siteMetadata: { siteUrl, title, description, twitterCreator },
+      siteMetadata: {
+        siteUrl,
+        description,
+        twitterCreator,
+        name,
+        pronouns: prns,
+      },
     },
     file: {
       childImageSharp: {
@@ -48,6 +54,10 @@ export const Layout: React.FunctionComponent = ({ children }) => {
       },
     },
   } = useStaticQuery<LayoutQuery>(query)
+
+  const fullname = `${name.first} ${name.mi}. ${name.last}`
+  const pronouns = prns.join("/")
+  const title = `${fullname} (${pronouns})`
 
   return (
     <div css={layoutCSS}>
@@ -62,9 +72,9 @@ export const Layout: React.FunctionComponent = ({ children }) => {
         <meta property="og:url" content={siteUrl} />
         <meta property="twitter:creator" content={twitterCreator} />
       </Helmet>
-      <Header />
+      <Header {...{ title, fullname, pronouns }} />
       <main css={mainCSS}>{children}</main>
-      <Footer {...{ title }} />
+      <Footer {...{ fullname, pronouns }} />
     </div>
   )
 }
@@ -77,6 +87,12 @@ const query = graphql`
         title
         description
         twitterCreator
+        name {
+          first
+          mi
+          last
+        }
+        pronouns
       }
     }
 
