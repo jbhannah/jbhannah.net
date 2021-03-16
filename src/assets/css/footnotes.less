@@ -1,0 +1,17 @@
+.footnotes {
+  li {
+    position: relative;
+
+    .footnote-backref {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateX(-250%);
+      opacity: 0;
+    }
+
+    &:hover .footnote-backref {
+      opacity: 1;
+    }
+  }
+}
