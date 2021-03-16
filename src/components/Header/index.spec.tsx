@@ -6,7 +6,6 @@ import { Header } from "."
 const data = {
   site: {
     siteMetadata: {
-      title: "Test Site",
       socialLinks: [
         {
           key: "Test Service",
@@ -39,7 +38,11 @@ const data = {
 jest.spyOn(Gatsby, "useStaticQuery").mockImplementation(() => data)
 
 describe("Header", () => {
-  const tree = render(<Header />)
+  const tree = render(
+    <Header
+      {...{ title: "Title", fullname: "Fullname", pronouns: "Pronouns" }}
+    />
+  )
 
   it("renders correctly", () => {
     expect(tree).toMatchSnapshot()

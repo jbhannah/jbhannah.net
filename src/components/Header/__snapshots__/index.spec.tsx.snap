@@ -5,7 +5,7 @@ exports[`Header renders correctly 1`] = `
   class="css-dm2l2k-Header"
 >
   <h1
-    class="css-1h083gl-Header"
+    class="css-i0n5nb-Header"
   >
     <a
       aria-current="page"
@@ -21,11 +21,14 @@ exports[`Header renders correctly 1`] = `
           type="image/webp"
         />
         <img
-          alt="Test Site"
+          alt="Title"
           src="avatar.png"
         />
       </picture>
-      Test Site
+      Fullname
+      <small>
+        (Pronouns)
+      </small>
     </a>
   </h1>
   <nav

@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Footer renderes correctly 1`] = `
-<footer
+<EmotionCssPropInternal
+  __EMOTION_LABEL_PLEASE_DO_NOT_USE__="Footer"
+  __EMOTION_TYPE_PLEASE_DO_NOT_USE__="footer"
   css={
     Object {
       "@media only screen and (min-width: 59rem)": Object {
@@ -26,9 +28,11 @@ exports[`Footer renderes correctly 1`] = `
     <Link
       href="/"
     >
-      Test Site
+      Fullname
     </Link>
-    .
+     (
+    Pronouns
+    ).
      
     <Link
       href="https://creativecommons.org/licenses/by-sa/4.0/"
@@ -45,5 +49,5 @@ exports[`Footer renderes correctly 1`] = `
     </Link>
     .
   </div>
-</footer>
+</EmotionCssPropInternal>
 `;

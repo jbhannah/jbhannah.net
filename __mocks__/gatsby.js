@@ -15,6 +15,13 @@ const data = {
           name: "Test Name",
         },
       ],
+      name: {
+        first: "Jesse",
+        mi: "B",
+        last: "Hannah",
+      },
+      gender: "female",
+      pronouns: ["she", "her"],
     },
   },
   file: {

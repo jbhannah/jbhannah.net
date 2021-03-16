@@ -8,7 +8,7 @@ exports[`Layout renders correctly 1`] = `
     class="css-dm2l2k-Header"
   >
     <h1
-      class="css-1h083gl-Header"
+      class="css-i0n5nb-Header"
     >
       <a
         aria-current="page"
@@ -24,11 +24,14 @@ exports[`Layout renders correctly 1`] = `
             type="image/webp"
           />
           <img
-            alt="Test Site"
+            alt="Jesse B. Hannah (she/her)"
             src="avatar.png"
           />
         </picture>
-        Test Site
+        Jesse B. Hannah
+        <small>
+          (she/her)
+        </small>
       </a>
     </h1>
     <nav
@@ -60,7 +63,7 @@ exports[`Layout renders correctly 1`] = `
     class="css-1yh2z2k-Layout"
   />
   <footer
-    css="[object Object]"
+    class="css-jm4vdt-Footer"
   >
     <div>
       Copyright © 2021 
@@ -70,9 +73,9 @@ exports[`Layout renders correctly 1`] = `
         css="[object Object]"
         href="/"
       >
-        Test Site
+        Jesse B. Hannah
       </a>
-      . 
+       (she/her). 
       <a
         css="[object Object]"
         href="https://creativecommons.org/licenses/by-sa/4.0/"
