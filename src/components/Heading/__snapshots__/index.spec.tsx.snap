@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Heading with a valid heading level renders correctly 1`] = `
-<h1
+<EmotionCssPropInternal
+  __EMOTION_LABEL_PLEASE_DO_NOT_USE__="Heading"
+  __EMOTION_TYPE_PLEASE_DO_NOT_USE__="h1"
   css={
     Object {
       "a": Object {

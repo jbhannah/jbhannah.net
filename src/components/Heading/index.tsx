@@ -1,6 +1,8 @@
+/** @jsx jsx */
+import { CSSObject, jsx } from "@emotion/react"
 import * as React from "react"
 
-const headingCSS = {
+const headingCSS: CSSObject = {
   a: {
     background: "none",
     textShadow: "none",

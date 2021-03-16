@@ -156,7 +156,9 @@ exports[`Markdown with a root element renders correctly 1`] = `
         <Heading
           level="h2"
         >
-          <h2
+          <EmotionCssPropInternal
+            __EMOTION_LABEL_PLEASE_DO_NOT_USE__="Heading"
+            __EMOTION_TYPE_PLEASE_DO_NOT_USE__="h2"
             css={
               Object {
                 "a": Object {
@@ -169,8 +171,12 @@ exports[`Markdown with a root element renders correctly 1`] = `
               }
             }
           >
-            Test heading
-          </h2>
+            <h2
+              className="css-1oda7k0-Heading"
+            >
+              Test heading
+            </h2>
+          </EmotionCssPropInternal>
         </Heading>
       </Component>
       <Blockquote
@@ -211,7 +217,9 @@ exports[`Markdown with a root element renders correctly 1`] = `
           <Heading
             level="h3"
           >
-            <h3
+            <EmotionCssPropInternal
+              __EMOTION_LABEL_PLEASE_DO_NOT_USE__="Heading"
+              __EMOTION_TYPE_PLEASE_DO_NOT_USE__="h3"
               css={
                 Object {
                   "a": Object {
@@ -224,8 +232,12 @@ exports[`Markdown with a root element renders correctly 1`] = `
                 }
               }
             >
-              Test subheading
-            </h3>
+              <h3
+                className="css-1oda7k0-Heading"
+              >
+                Test subheading
+              </h3>
+            </EmotionCssPropInternal>
           </Heading>
         </Component>
         <Link
@@ -267,7 +279,9 @@ exports[`Markdown with a root element renders correctly 1`] = `
         <Heading
           level="h2"
         >
-          <h2
+          <EmotionCssPropInternal
+            __EMOTION_LABEL_PLEASE_DO_NOT_USE__="Heading"
+            __EMOTION_TYPE_PLEASE_DO_NOT_USE__="h2"
             css={
               Object {
                 "a": Object {
@@ -280,8 +294,12 @@ exports[`Markdown with a root element renders correctly 1`] = `
               }
             }
           >
-            Test heading 2
-          </h2>
+            <h2
+              className="css-1oda7k0-Heading"
+            >
+              Test heading 2
+            </h2>
+          </EmotionCssPropInternal>
         </Heading>
       </Component>
       <p
@@ -454,7 +472,9 @@ exports[`Markdown without a root element renders correctly 1`] = `
       <Heading
         level="h2"
       >
-        <h2
+        <EmotionCssPropInternal
+          __EMOTION_LABEL_PLEASE_DO_NOT_USE__="Heading"
+          __EMOTION_TYPE_PLEASE_DO_NOT_USE__="h2"
           css={
             Object {
               "a": Object {
@@ -467,8 +487,12 @@ exports[`Markdown without a root element renders correctly 1`] = `
             }
           }
         >
-          Test heading
-        </h2>
+          <h2
+            className="css-1oda7k0-Heading"
+          >
+            Test heading
+          </h2>
+        </EmotionCssPropInternal>
       </Heading>
     </Component>
     <Blockquote
@@ -509,7 +533,9 @@ exports[`Markdown without a root element renders correctly 1`] = `
         <Heading
           level="h3"
         >
-          <h3
+          <EmotionCssPropInternal
+            __EMOTION_LABEL_PLEASE_DO_NOT_USE__="Heading"
+            __EMOTION_TYPE_PLEASE_DO_NOT_USE__="h3"
             css={
               Object {
                 "a": Object {
@@ -522,8 +548,12 @@ exports[`Markdown without a root element renders correctly 1`] = `
               }
             }
           >
-            Test subheading
-          </h3>
+            <h3
+              className="css-1oda7k0-Heading"
+            >
+              Test subheading
+            </h3>
+          </EmotionCssPropInternal>
         </Heading>
       </Component>
       <Link
@@ -565,7 +595,9 @@ exports[`Markdown without a root element renders correctly 1`] = `
       <Heading
         level="h2"
       >
-        <h2
+        <EmotionCssPropInternal
+          __EMOTION_LABEL_PLEASE_DO_NOT_USE__="Heading"
+          __EMOTION_TYPE_PLEASE_DO_NOT_USE__="h2"
           css={
             Object {
               "a": Object {
@@ -578,8 +610,12 @@ exports[`Markdown without a root element renders correctly 1`] = `
             }
           }
         >
-          Test heading 2
-        </h2>
+          <h2
+            className="css-1oda7k0-Heading"
+          >
+            Test heading 2
+          </h2>
+        </EmotionCssPropInternal>
       </Heading>
     </Component>
     <p

@@ -5,8 +5,7 @@ exports[`Header renders correctly 1`] = `
   class="css-dm2l2k-Header"
 >
   <h1
-    class="css-rrosgf-Header"
-    css="[object Object]"
+    class="css-1h083gl-Header"
   >
     <a
       aria-current="page"

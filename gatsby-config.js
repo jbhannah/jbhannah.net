@@ -149,6 +149,7 @@ module.exports = {
         pathToConfigModule: "src/utils/typography.ts",
       },
     },
+    "gatsby-plugin-less",
     "gatsby-redirect-from",
     "gatsby-plugin-meta-redirect",
   ],

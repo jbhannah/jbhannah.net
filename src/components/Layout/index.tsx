@@ -11,7 +11,6 @@ import {
 } from "../../utils/styles"
 import Footer from "../Footer"
 import { Header } from "../Header"
-import Global from "./global"
 import { LayoutQuery } from "./__generated__/LayoutQuery"
 
 const layoutCSS: CSSObject = {
@@ -52,7 +51,6 @@ export const Layout: React.FunctionComponent = ({ children }) => {
 
   return (
     <div css={layoutCSS}>
-      <Global />
       <Helmet>
         <title>{title}</title>
         <meta name="description" content={description} />
