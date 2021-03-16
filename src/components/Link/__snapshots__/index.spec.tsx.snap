@@ -4,12 +4,12 @@ exports[`Link with an anchor link renders correctly 1`] = `
 <a
   css={
     Object {
-      "backgroundImage": "linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, #247829 1px, #247829 2px, rgba(0, 0, 0, 0) 2px)",
+      "backgroundImage": "linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, #447011 1px, #447011 2px, rgba(0, 0, 0, 0) 2px)",
       "borderRadius": "0.3em",
       "code": Object {
         "textShadow": "none",
       },
-      "color": "#247829",
+      "color": "#447011",
     }
   }
   href="#fn-1"
@@ -20,12 +20,12 @@ exports[`Link with an external link renders correctly 1`] = `
 <a
   css={
     Object {
-      "backgroundImage": "linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, #247829 1px, #247829 2px, rgba(0, 0, 0, 0) 2px)",
+      "backgroundImage": "linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, #447011 1px, #447011 2px, rgba(0, 0, 0, 0) 2px)",
       "borderRadius": "0.3em",
       "code": Object {
         "textShadow": "none",
       },
-      "color": "#247829",
+      "color": "#447011",
     }
   }
   href="https://www.example.com"
@@ -39,12 +39,12 @@ exports[`Link with an external link with a rel property renders correctly 1`] = 
 <a
   css={
     Object {
-      "backgroundImage": "linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, #247829 1px, #247829 2px, rgba(0, 0, 0, 0) 2px)",
+      "backgroundImage": "linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, #447011 1px, #447011 2px, rgba(0, 0, 0, 0) 2px)",
       "borderRadius": "0.3em",
       "code": Object {
         "textShadow": "none",
       },
-      "color": "#247829",
+      "color": "#447011",
     }
   }
   href="https://www.example.com"
@@ -58,12 +58,12 @@ exports[`Link with an internal link renders correctly 1`] = `
 <ForwardRef
   css={
     Object {
-      "backgroundImage": "linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, #247829 1px, #247829 2px, rgba(0, 0, 0, 0) 2px)",
+      "backgroundImage": "linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, #447011 1px, #447011 2px, rgba(0, 0, 0, 0) 2px)",
       "borderRadius": "0.3em",
       "code": Object {
         "textShadow": "none",
       },
-      "color": "#247829",
+      "color": "#447011",
     }
   }
   to="/"

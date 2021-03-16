@@ -186,16 +186,16 @@ exports[`Markdown with a root element renders correctly 1`] = `
           css={
             Object {
               "@media only screen and (max-width:480px)": Object {
-                "borderLeft": "0.29625rem solid #247829",
+                "borderLeft": "0.29625rem solid #447011",
                 "marginLeft": "-1.185rem",
                 "paddingLeft": "0.88875rem",
               },
               "@media only screen and (min-width: 28rem)": Object {
-                "borderLeft": "0.5925rem solid #247829",
+                "borderLeft": "0.5925rem solid #447011",
                 "marginLeft": 0,
                 "paddingLeft": "0.9875rem",
               },
-              "borderLeft": "0.29625rem solid #247829",
+              "borderLeft": "0.29625rem solid #447011",
               "marginLeft": "-1.185rem",
               "paddingLeft": "0.88875rem",
             }
@@ -247,12 +247,12 @@ exports[`Markdown with a root element renders correctly 1`] = `
           <a
             css={
               Object {
-                "backgroundImage": "linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, #247829 1px, #247829 2px, rgba(0, 0, 0, 0) 2px)",
+                "backgroundImage": "linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, #447011 1px, #447011 2px, rgba(0, 0, 0, 0) 2px)",
                 "borderRadius": "0.3em",
                 "code": Object {
                   "textShadow": "none",
                 },
-                "color": "#247829",
+                "color": "#447011",
               }
             }
             href="https://www.example.com"
@@ -502,16 +502,16 @@ exports[`Markdown without a root element renders correctly 1`] = `
         css={
           Object {
             "@media only screen and (max-width:480px)": Object {
-              "borderLeft": "0.29625rem solid #247829",
+              "borderLeft": "0.29625rem solid #447011",
               "marginLeft": "-1.185rem",
               "paddingLeft": "0.88875rem",
             },
             "@media only screen and (min-width: 28rem)": Object {
-              "borderLeft": "0.5925rem solid #247829",
+              "borderLeft": "0.5925rem solid #447011",
               "marginLeft": 0,
               "paddingLeft": "0.9875rem",
             },
-            "borderLeft": "0.29625rem solid #247829",
+            "borderLeft": "0.29625rem solid #447011",
             "marginLeft": "-1.185rem",
             "paddingLeft": "0.88875rem",
           }
@@ -563,12 +563,12 @@ exports[`Markdown without a root element renders correctly 1`] = `
         <a
           css={
             Object {
-              "backgroundImage": "linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, #247829 1px, #247829 2px, rgba(0, 0, 0, 0) 2px)",
+              "backgroundImage": "linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, #447011 1px, #447011 2px, rgba(0, 0, 0, 0) 2px)",
               "borderRadius": "0.3em",
               "code": Object {
                 "textShadow": "none",
               },
-              "color": "#247829",
+              "color": "#447011",
             }
           }
           href="https://www.example.com"
