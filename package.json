@@ -101,7 +101,7 @@
     "mockdate": "^3.0.3",
     "prettier": "^2.2.1",
     "pretty-quick": "^3.0.1",
-    "ts-jest": "^26.5.3",
+    "ts-jest": "^26.5.4",
     "unified": "^9.2.1",
     "vercel": "^21.3.3",
     "weak-napi": "^2.0.2"
