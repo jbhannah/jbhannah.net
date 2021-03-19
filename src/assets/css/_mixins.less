@@ -1,0 +1,15 @@
+.content-width-column {
+  margin: 0 auto;
+  max-width: @content-width;
+  padding: 0 1rem;
+  width: 100%;
+}
+
+.hover-radius {
+  transition: border-radius 0.5s;
+  border-radius: 50%;
+
+  a:hover > & {
+    border-radius: 15%;
+  }
+}

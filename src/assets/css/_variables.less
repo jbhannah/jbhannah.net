@@ -1,0 +1,30 @@
+// Baseline Values
+@rhythm: 1.58rem;
+
+// Breakpoints
+@breakpoints: {
+  sm: 28rem;
+  md: 38rem;
+  lg: 59rem;
+  xl: 70rem;
+};
+
+@sm: @breakpoints[sm];
+@md: @breakpoints[md];
+@lg: @breakpoints[lg];
+@xl: @breakpoints[xl];
+
+// Media Queries
+@mq: {
+  sm: ~"only screen and (min-width: @{sm})";
+  md: ~"only screen and (min-width: @{md})";
+  lg: ~"only screen and (min-width: @{lg})";
+  xl: ~"only screen and (min-width: @{xl})";
+};
+
+// Layout Measurements
+@content-width: 42rem;
+@header-width: 12rem;
+
+// Colors
+@link-color: #447011;

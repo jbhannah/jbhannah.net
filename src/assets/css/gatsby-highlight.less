@@ -1,7 +1,9 @@
+@import "_variables";
+
 .gatsby-highlight {
   background-color: #fdf6e3;
   border-radius: 0.3em;
-  margin-bottom: 1.58rem; // rhythm(1)
+  margin-bottom: 1 * @rhythm;
   padding: 1em;
   overflow: auto;
 
@@ -34,8 +36,7 @@
     & > span[data-user]:before {
       content: "$";
 
-      @media only screen and (min-width: 59rem) {
-        // mq.lg
+      @media @mq[lg] {
         content: "[" attr(data-user) "@" attr(data-host) "] $";
       }
     }
@@ -43,8 +44,7 @@
     & > span[data-user="root"]:before {
       content: "#";
 
-      @media only screen and (min-width: 59rem) {
-        // mq.lg
+      @media @mq[lg] {
         content: "[" attr(data-user) "@" attr(data-host) "] #";
       }
     }
