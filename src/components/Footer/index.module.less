@@ -1,0 +1,18 @@
+@import "../../assets/css/_mixins";
+@import "../../assets/css/_variables";
+
+.footer {
+  &:extend(.content-width-column);
+
+  align-self: flex-end;
+  font-size: 0.75rem;
+  margin: 1rem auto;
+
+  @media @mq[lg] {
+    margin-left: @header-width;
+  }
+
+  @media @mq[xl] {
+    margin-left: 0;
+  }
+}

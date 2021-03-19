@@ -10,7 +10,7 @@ const TestFooter = (props) => shallow(<Footer {...props} />)
 describe("Footer", () => {
   const tree = TestFooter({ fullname: "Fullname", pronouns: "Pronouns" })
 
-  it("renderes correctly", () => {
+  it("renders correctly", () => {
     expect(tree).toMatchSnapshot()
   })
 })

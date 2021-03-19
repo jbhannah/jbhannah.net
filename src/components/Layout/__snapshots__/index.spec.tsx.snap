@@ -62,9 +62,7 @@ exports[`Layout renders correctly 1`] = `
   <main
     class="css-1yh2z2k-Layout"
   />
-  <footer
-    class="css-jm4vdt-Footer"
-  >
+  <footer>
     <div>
       Copyright © 2021 
       <a

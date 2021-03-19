@@ -1,7 +1,6 @@
-/** @jsx jsx */
-import { CSSObject, jsx } from "@emotion/react"
-import { contentWidthColumn, headerWidth, mq } from "../../utils/styles"
+import * as React from "react"
 import { Link } from "../Link"
+import * as style from "./index.module.less"
 
 interface FooterProps {
   fullname: string | null
@@ -10,20 +9,11 @@ interface FooterProps {
 
 const year = new Date().getFullYear()
 
-const footerCSS: CSSObject = {
-  ...contentWidthColumn,
-  alignSelf: "flex-end",
-  fontSize: "0.75rem",
-  margin: "1rem auto",
-  [mq.lg]: { marginLeft: headerWidth },
-  [mq.xl]: { marginLeft: 0 },
-}
-
 const Footer: React.FunctionComponent<FooterProps> = ({
   fullname,
   pronouns,
 }) => (
-  <footer css={footerCSS}>
+  <footer className={style.footer}>
     <div>
       Copyright © {year} <Link href="/">{fullname}</Link> ({pronouns}).{" "}
       <Link
