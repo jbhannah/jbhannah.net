@@ -1,5 +1,4 @@
-/** @jsx jsx */
-import { CSSObject, jsx } from "@emotion/react"
+import styled from "@emotion/styled"
 import { graphql, useStaticQuery } from "gatsby"
 import * as React from "react"
 import { Helmet } from "react-helmet"
@@ -13,7 +12,7 @@ import Footer from "../Footer"
 import { Header } from "../Header"
 import { LayoutQuery } from "./__generated__/LayoutQuery"
 
-const layoutCSS: CSSObject = {
+const _Layout = styled.div({
   display: "flex",
   flexDirection: "column",
   margin: "0 auto",
@@ -25,15 +24,15 @@ const layoutCSS: CSSObject = {
   [mq.xl]: {
     maxWidth: contentWidth,
   },
-}
+})
 
-const mainCSS: CSSObject = {
+const Main = styled.main({
   ...contentWidthColumn,
   flexGrow: 1,
   [mq.lg]: {
     margin: 0,
   },
-}
+})
 
 export const Layout: React.FunctionComponent = ({ children }) => {
   const {
@@ -60,7 +59,7 @@ export const Layout: React.FunctionComponent = ({ children }) => {
   const title = `${fullname} (${pronouns})`
 
   return (
-    <div css={layoutCSS}>
+    <_Layout>
       <Helmet>
         <title>{title}</title>
         <meta name="description" content={description} />
@@ -73,9 +72,9 @@ export const Layout: React.FunctionComponent = ({ children }) => {
         <meta property="twitter:creator" content={twitterCreator} />
       </Helmet>
       <Header {...{ title, fullname, pronouns }} />
-      <main css={mainCSS}>{children}</main>
+      <Main>{children}</Main>
       <Footer {...{ fullname, pronouns }} />
-    </div>
+    </_Layout>
   )
 }
 

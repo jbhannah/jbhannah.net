@@ -2,34 +2,15 @@
 
 exports[`Link with an anchor link renders correctly 1`] = `
 <a
-  css={
-    Object {
-      "backgroundImage": "linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, #447011 1px, #447011 2px, rgba(0, 0, 0, 0) 2px)",
-      "borderRadius": "0.3em",
-      "code": Object {
-        "textShadow": "none",
-      },
-      "color": "#447011",
-    }
-  }
+  class="css-1fvugpk"
   href="#fn-1"
 />
 `;
 
 exports[`Link with an external link renders correctly 1`] = `
 <a
-  css={
-    Object {
-      "backgroundImage": "linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, #447011 1px, #447011 2px, rgba(0, 0, 0, 0) 2px)",
-      "borderRadius": "0.3em",
-      "code": Object {
-        "textShadow": "none",
-      },
-      "color": "#447011",
-    }
-  }
+  class="css-1fvugpk"
   href="https://www.example.com"
-  onClick={[Function]}
   rel="noopener"
   target="_blank"
 />
@@ -37,35 +18,17 @@ exports[`Link with an external link renders correctly 1`] = `
 
 exports[`Link with an external link with a rel property renders correctly 1`] = `
 <a
-  css={
-    Object {
-      "backgroundImage": "linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, #447011 1px, #447011 2px, rgba(0, 0, 0, 0) 2px)",
-      "borderRadius": "0.3em",
-      "code": Object {
-        "textShadow": "none",
-      },
-      "color": "#447011",
-    }
-  }
+  class="css-1fvugpk"
   href="https://www.example.com"
-  onClick={[Function]}
   rel="license noopener"
   target="_blank"
 />
 `;
 
 exports[`Link with an internal link renders correctly 1`] = `
-<ForwardRef
-  css={
-    Object {
-      "backgroundImage": "linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, #447011 1px, #447011 2px, rgba(0, 0, 0, 0) 2px)",
-      "borderRadius": "0.3em",
-      "code": Object {
-        "textShadow": "none",
-      },
-      "color": "#447011",
-    }
-  }
-  to="/"
+<a
+  aria-current="page"
+  class="css-1fvugpk"
+  href="/"
 />
 `;

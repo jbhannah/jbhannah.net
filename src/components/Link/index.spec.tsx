@@ -1,84 +1,68 @@
-import { shallow } from "enzyme"
+import { render } from "enzyme"
 import * as React from "react"
 import { Link } from "."
 
-const TestLink = (props) => shallow(<Link {...props} />)
+const TestLink = (props) => render(<Link {...props} />)
+const link = (t: cheerio.Cheerio) => t.find("a")
 
 describe("Link", () => {
   describe("with an internal link", () => {
     const tree = TestLink({ href: "/" })
-    const link = (t) => t.find("ForwardRef")
 
     it("renders correctly", () => {
       expect(tree).toMatchSnapshot()
     })
 
-    it("renders a ForwardRef", () => {
-      expect(link(tree).prop("to")).toBe("/")
+    it("renders an a", () => {
+      expect(tree.attr()).toHaveProperty("href", "/")
     })
 
     it("does not add a target property", () => {
-      expect(link(tree).props()).not.toHaveProperty("target")
+      expect(tree.attr()).not.toHaveProperty("target")
     })
 
     it("does not add a rel property", () => {
-      expect(link(tree).props()).not.toHaveProperty("rel")
+      expect(tree.attr()).not.toHaveProperty("rel")
     })
   })
 
   describe("with an anchor link", () => {
     const tree = TestLink({ href: "#fn-1" })
-    const link = (t) => t.find("a")
 
     it("renders correctly", () => {
       expect(tree).toMatchSnapshot()
     })
 
     it("renders an a", () => {
-      expect(link(tree).prop("href")).toBe("#fn-1")
+      expect(tree.attr()).toHaveProperty("href", "#fn-1")
     })
 
     it("does not add a target property", () => {
-      expect(link(tree).props()).not.toHaveProperty("target")
+      expect(tree.attr()).not.toHaveProperty("target")
     })
 
     it("does not add a rel property", () => {
-      expect(link(tree).props()).not.toHaveProperty("rel")
+      expect(tree.attr()).not.toHaveProperty("rel")
     })
   })
 
   describe("with an external link", () => {
     const tree = TestLink({ href: "https://www.example.com" })
-    const link = (t) => t.find("a")
 
     it("renders correctly", () => {
       expect(tree).toMatchSnapshot()
     })
 
     it("renders an a", () => {
-      expect(link(tree).prop("href")).toBe("https://www.example.com")
+      expect(tree.attr()).toHaveProperty("href", "https://www.example.com")
     })
 
     it("adds a target property", () => {
-      expect(link(tree).prop("target")).toBe("_blank")
+      expect(tree.attr()).toHaveProperty("target", "_blank")
     })
 
     it("adds a rel property", () => {
-      expect(link(tree).prop("rel")).toBe("noopener")
-    })
-
-    it("adds an onClick handler for Google Analytics", () => {
-      const onClick = link(tree).prop("onClick")
-      window.gtag = jest.fn()
-
-      expect(typeof onClick).toBe("function")
-
-      link(tree).simulate("click")
-      expect(window.gtag).toBeCalledWith("event", "click", {
-        event_category: "outbound",
-        event_label: "https://www.example.com",
-        transport_type: "beacon",
-      })
+      expect(tree.attr()).toHaveProperty("rel", "noopener")
     })
 
     describe("with a rel property", () => {
@@ -89,7 +73,7 @@ describe("Link", () => {
       })
 
       it("appends to the rel property", () => {
-        expect(link(tree).prop("rel")).toBe("license noopener")
+        expect(tree.attr()).toHaveProperty("rel", "license noopener")
       })
     })
   })

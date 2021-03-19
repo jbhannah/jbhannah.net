@@ -4,23 +4,7 @@ exports[`Paginator with one page renders correctly 1`] = `""`;
 
 exports[`Paginator with three pages on the first page renders correctly 1`] = `
 <footer>
-  <ul
-    css={
-      Object {
-        "display": "block",
-        "li": Object {
-          "a": Object {
-            "backgroundImage": "none",
-          },
-          "display": "inline-block",
-          "marginBottom": 0,
-          "marginRight": "1rem",
-        },
-        "listStyleType": "none",
-        "margin": 0,
-      }
-    }
-  >
+  <Styled(ul)>
     <li>
       «
     </li>
@@ -64,29 +48,13 @@ exports[`Paginator with three pages on the first page renders correctly 1`] = `
         »
       </Link>
     </li>
-  </ul>
+  </Styled(ul)>
 </footer>
 `;
 
 exports[`Paginator with three pages on the last page renders correctly 1`] = `
 <footer>
-  <ul
-    css={
-      Object {
-        "display": "block",
-        "li": Object {
-          "a": Object {
-            "backgroundImage": "none",
-          },
-          "display": "inline-block",
-          "marginBottom": 0,
-          "marginRight": "1rem",
-        },
-        "listStyleType": "none",
-        "margin": 0,
-      }
-    }
-  >
+  <Styled(ul)>
     <li>
       <Link
         href="/"
@@ -130,6 +98,6 @@ exports[`Paginator with three pages on the last page renders correctly 1`] = `
     <li>
       »
     </li>
-  </ul>
+  </Styled(ul)>
 </footer>
 `;

@@ -2,22 +2,21 @@
 
 exports[`Layout renders correctly 1`] = `
 <div
-  class="css-1us33nt-Layout"
+  class="css-q8kv08"
 >
   <header
-    class="css-dm2l2k-Header"
+    class="css-xutqz5"
   >
     <h1
-      class="css-i0n5nb-Header"
+      class="css-19x6mp6"
     >
       <a
         aria-current="page"
-        class="css-1qnptjq-Header"
-        css="[object Object]"
+        class="css-1yp6um2"
         href="/"
       >
         <picture
-          class="css-o08s1i-Header"
+          class="css-xik1rc"
         >
           <source
             srcset="avatar-srcSet.webp"
@@ -35,24 +34,23 @@ exports[`Layout renders correctly 1`] = `
       </a>
     </h1>
     <nav
-      class="css-lx2ox9-SocialNav"
+      class="css-7zh605"
     >
       <ul
-        class="css-1n7px8z-SocialNav"
+        class="css-1cxsv5l"
       >
         <li
-          class="css-h61ul7-SocialLink"
+          class="css-1cc6n5j"
         >
           <a
-            class="css-q49akx-SocialLink"
-            css="[object Object]"
+            class="css-7yagz8"
             href="https://www.example.com"
             rel="noopener"
             target="_blank"
             title="Test Name on Test Service"
           >
             <test-file-stub
-              classname="css-78d5kl-SocialLink"
+              classname="css-1k2mngo"
             />
           </a>
         </li>
@@ -60,24 +58,23 @@ exports[`Layout renders correctly 1`] = `
     </nav>
   </header>
   <main
-    class="css-1yh2z2k-Layout"
+    class="css-10zmcc1"
   />
   <footer
-    class="css-jm4vdt-Footer"
+    class="css-13br9d0"
   >
     <div>
       Copyright © 2021 
       <a
         aria-current="page"
-        class=""
-        css="[object Object]"
+        class="css-1fvugpk"
         href="/"
       >
         Jesse B. Hannah
       </a>
        (she/her). 
       <a
-        css="[object Object]"
+        class="css-1fvugpk"
         href="https://creativecommons.org/licenses/by-sa/4.0/"
         rel="license noopener"
         target="_blank"
@@ -86,7 +83,7 @@ exports[`Layout renders correctly 1`] = `
       </a>
       . 
       <a
-        css="[object Object]"
+        class="css-1fvugpk"
         href="https://github.com/jbhannah/jbhannah.net"
         rel="noopener"
         target="_blank"

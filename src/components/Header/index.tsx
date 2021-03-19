@@ -1,14 +1,20 @@
-/** @jsx jsx */
-import { CSSObject, jsx } from "@emotion/react"
+import styled from "@emotion/styled"
 import { graphql, useStaticQuery } from "gatsby"
+import * as React from "react"
 import { contentWidth, headerWidth, hoverRadius, mq } from "../../utils/styles"
 import { rhythm } from "../../utils/typography"
-import { H1 } from "../Heading"
-import { Link } from "../Link"
+import { H1 as _H1 } from "../Heading"
+import { Link as _Link } from "../Link"
 import { SocialNav } from "../SocialNav"
 import { HeaderQuery } from "./__generated__/HeaderQuery"
 
-const headerCSS: CSSObject = {
+interface HeaderProps {
+  title: string
+  fullname: string
+  pronouns: string
+}
+
+const _Header = styled.header({
   display: "flex",
   flexDirection: "row",
   justifyContent: "space-between",
@@ -26,9 +32,9 @@ const headerCSS: CSSObject = {
   [mq.xl]: {
     marginLeft: `-${headerWidth}`,
   },
-}
+})
 
-const titleCSS: CSSObject = {
+const H1 = styled(_H1)({
   fontSize: "1.15rem",
   marginBottom: rhythm(1 / 2),
   small: {
@@ -38,9 +44,13 @@ const titleCSS: CSSObject = {
   [mq.sm]: {
     fontSize: "1.25rem",
   },
-}
+})
 
-const avatarCSS: CSSObject = {
+const Link = styled(_Link)({
+  display: "block",
+})
+
+const Avatar = styled.picture({
   display: "none",
   [mq.lg]: {
     display: "block",
@@ -52,13 +62,7 @@ const avatarCSS: CSSObject = {
       margin: 0,
     },
   },
-}
-
-interface HeaderProps {
-  title: string
-  fullname: string
-  pronouns: string
-}
+})
 
 export const Header: React.FunctionComponent<HeaderProps> = ({
   title,
@@ -74,21 +78,21 @@ export const Header: React.FunctionComponent<HeaderProps> = ({
   } = useStaticQuery<HeaderQuery>(query)
 
   return (
-    <header css={headerCSS}>
-      <H1 css={titleCSS}>
-        <Link href="/" css={{ display: "block" }}>
-          <picture css={avatarCSS}>
+    <_Header>
+      <H1>
+        <Link href="/">
+          <Avatar>
             {avatar.sources.map((src, i) => (
               <source key={i} type={src.type} srcSet={src.srcSet} />
             ))}
             <img src={avatar.fallback.src} alt={title} />
-          </picture>
+          </Avatar>
           {fullname}
           <small>({pronouns})</small>
         </Link>
       </H1>
       <SocialNav />
-    </header>
+    </_Header>
   )
 }
 

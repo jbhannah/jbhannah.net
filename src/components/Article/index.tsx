@@ -1,9 +1,10 @@
+import styled, { CSSObject } from "@emotion/styled"
 import { graphql } from "gatsby"
 import { DateTime } from "luxon"
 import * as React from "react"
 import excerpt from "../../utils/excerpt"
 import { rhythm } from "../../utils/typography"
-import { Heading } from "../Heading"
+import { Heading as _Heading } from "../Heading"
 import { Link } from "../Link"
 import { MarginFix } from "../MarginFix"
 import { Markdown } from "../Markdown"
@@ -14,10 +15,11 @@ const localDateFromDateTime = (date: string) =>
     .setZone("America/Phoenix")
     .toLocaleString(DateTime.DATE_HUGE)
 
-const headingCSS = { marginBottom: rhythm(1 / 2) }
-const metadataCSS = { fontSize: rhythm(1 / 2), ...headingCSS }
+const headingCSS: CSSObject = { marginBottom: rhythm(1 / 2) }
 
-const footerCSS = { marginTop: rhythm(1) }
+const Heading = styled(_Heading)(headingCSS)
+const Metadata = styled.p({ fontSize: rhythm(1 / 2), ...headingCSS })
+const Footer = styled.footer({ marginTop: rhythm(1) })
 
 interface ArticleProps {
   list?: boolean
@@ -43,25 +45,23 @@ export const Article: React.FunctionComponent<ArticleProps> = ({
   return (
     <article>
       <header>
-        <Heading css={headingCSS} level={list ? "h2" : "h1"}>
-          {title}
-        </Heading>
-        <p css={metadataCSS}>
+        <Heading level={list ? "h2" : "h1"}>{title}</Heading>
+        <Metadata>
           <time dateTime={frontmatter.date}>
             {localDateFromDateTime(frontmatter.date)}
           </time>
           {" — "}
           {timeToRead} minute read
-        </p>
+        </Metadata>
         {list && <MarginFix />}
       </header>
       <Markdown htmlAst={content} />
       {list && (
-        <footer css={footerCSS}>
+        <Footer>
           <Link href={`${fields.slug}`}>
             {frontmatter.link ? "Permalink" : "Read More…"}
           </Link>
-        </footer>
+        </Footer>
       )}
     </article>
   )

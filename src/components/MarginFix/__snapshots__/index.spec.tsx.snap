@@ -2,10 +2,6 @@
 
 exports[`MarginFix renders correctly 1`] = `
 <span
-  css={
-    Object {
-      "display": "none",
-    }
-  }
+  className="css-1hyfx7x"
 />
 `;

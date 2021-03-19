@@ -1,5 +1,4 @@
-/** @jsx jsx */
-import { CSSObject, jsx } from "@emotion/react"
+import styled, { CSSObject } from "@emotion/styled"
 import * as React from "react"
 
 const headingCSS: CSSObject = {
@@ -23,10 +22,11 @@ interface HeadingProps extends HeadingBaseProps {
 }
 
 export const Heading: React.FunctionComponent<HeadingProps> = ({
-  level: H,
+  level,
   ...props
 }) => {
-  return <H css={headingCSS} {...props} />
+  const H = styled(level)(headingCSS)
+  return <H {...props} />
 }
 
 export const HeadingFactory = (level: HeadingLevel) => (

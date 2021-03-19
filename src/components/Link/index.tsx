@@ -1,8 +1,9 @@
-import { Link as GatsbyLink } from "gatsby"
+import styled, { CSSObject } from "@emotion/styled"
+import { Link as _GatsbyLink } from "gatsby"
 import * as React from "react"
 import { linkColor } from "../../utils/styles"
 
-const linkCSS = {
+const linkCSS: CSSObject = {
   backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, ${linkColor} 1px, ${linkColor} 2px, rgba(0, 0, 0, 0) 2px)`,
   borderRadius: "0.3em",
   color: linkColor,
@@ -10,6 +11,9 @@ const linkCSS = {
     textShadow: "none",
   },
 }
+
+const GatsbyLink = styled(_GatsbyLink)(linkCSS)
+const A = styled.a(linkCSS)
 
 const domainPattern = new RegExp(/^https?:\/\/(?!jbhannah\.net)/)
 
@@ -19,8 +23,6 @@ export const Link: React.FunctionComponent<LinkProps> = ({
   href,
   ...props
 }) => {
-  props.css = Object.assign({}, props.css, linkCSS)
-
   if (href.startsWith("/")) {
     return <GatsbyLink to={href} {...props} />
   }
@@ -39,5 +41,5 @@ export const Link: React.FunctionComponent<LinkProps> = ({
       })
   }
 
-  return <a {...{ href, ...props }} />
+  return <A {...{ href, ...props }} />
 }

@@ -1,3 +1,3 @@
-import * as React from "react"
+import styled from "@emotion/styled"
 
-export const MarginFix = () => <span css={{ display: "none" }} />
+export const MarginFix = styled.span({ display: "none" })

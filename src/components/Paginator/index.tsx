@@ -1,7 +1,8 @@
+import styled from "@emotion/styled"
 import * as React from "react"
 import { Link } from "../Link"
 
-const paginatorCSS = {
+const UL = styled.ul({
   display: "block",
   listStyleType: "none",
   margin: 0,
@@ -13,7 +14,7 @@ const paginatorCSS = {
       backgroundImage: "none",
     },
   },
-}
+})
 
 const backLinks = (base: string, pageBase: string, currentPage: number) =>
   currentPage > 1 ? (
@@ -90,13 +91,13 @@ export const Paginator: React.FunctionComponent<PaginatorProps> = ({
 
   return (
     <footer>
-      <ul css={paginatorCSS}>
+      <UL>
         {back}
         {Array.from({ length: numPages }).map(
           pageLink(base, pageBase, currentPage)
         )}
         {forward}
-      </ul>
+      </UL>
     </footer>
   )
 }

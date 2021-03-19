@@ -1,3 +1,4 @@
+import styled from "@emotion/styled"
 import { graphql } from "gatsby"
 import * as React from "react"
 import { Article } from "../components/Article"
@@ -14,19 +15,21 @@ interface ArticleListProps {
   }
 }
 
+const UL = styled.ul({ listStyleType: "none", margin: 0 })
+
 export const ArticleList: React.FunctionComponent<ArticleListProps> = ({
   data,
   pageContext: { page, numPages },
 }) => (
   <Layout>
     <H1>Recent Articles</H1>
-    <ul css={{ listStyleType: "none", margin: 0 }}>
+    <UL>
       {data.articles.edges.map(({ node: { id, ...article } }) => (
         <li key={id}>
           <Article list={true} {...{ article }} />
         </li>
       ))}
-    </ul>
+    </UL>
     <Paginator base="/" {...{ page, numPages }} />
   </Layout>
 )

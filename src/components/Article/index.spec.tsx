@@ -41,13 +41,13 @@ describe("Article", () => {
     })
 
     it("displays the article title in an h1", () => {
-      const heading = tree.find("header > Heading")
+      const heading = tree.find("header > Styled(Heading)")
       expect(heading.prop("level")).toBe("h1")
       expect(heading.render().text()).toBe("Test Article")
     })
 
     it("does not display the article title as a link", () => {
-      const heading = tree.find("header > Heading")
+      const heading = tree.find("header > Styled(Heading)")
       expect(heading.children("Link")).toHaveLength(0)
     })
 
@@ -72,7 +72,7 @@ describe("Article", () => {
       const tree = TestArticle({ article: linkArticle, site })
 
       it("displays the article title as a link", () => {
-        const title = tree.find("header > Heading > Link")
+        const title = tree.find("header > Styled(Heading) > Link")
         expect(title.prop("href")).toBe("https://example.com/test-link")
       })
     })
@@ -87,13 +87,13 @@ describe("Article", () => {
     })
 
     it("displays the article title in an h2", () => {
-      const heading = tree.find("header > Heading")
+      const heading = tree.find("header > Styled(Heading)")
       expect(heading.prop("level")).toBe("h2")
       expect(heading.render().text()).toBe("Test Article")
     })
 
     it("displays the article title as a link", () => {
-      const title = tree.find("header > Heading > Link")
+      const title = tree.find("header > Styled(Heading) > Link")
       expect(title.prop("href")).toBe("/test-slug")
       expect(title.render().text()).toBe("Test Article")
     })
@@ -106,7 +106,7 @@ describe("Article", () => {
     })
 
     it('renders a footer with "Read More…" link', () => {
-      const footer = tree.find("footer")
+      const footer = tree.find("Styled(footer)")
       expect(footer.find("Link").prop("href")).toBe("/test-slug")
       expect(footer.render().text()).toBe("Read More…")
     })
@@ -115,12 +115,12 @@ describe("Article", () => {
       const tree = TestArticle({ article: linkArticle, site, list: true })
 
       it("displays the article title as a link", () => {
-        const title = tree.find("header > Heading > Link")
+        const title = tree.find("header > Styled(Heading) > Link")
         expect(title.prop("href")).toBe("https://example.com/test-link")
       })
 
       it('renders a footer with "Permalink" link', () => {
-        const footer = tree.find("footer")
+        const footer = tree.find("Styled(footer)")
         expect(footer.find("Link").prop("href")).toBe("/test-slug")
         expect(footer.render().text()).toBe("Permalink")
       })

@@ -156,57 +156,29 @@ exports[`Markdown with a root element renders correctly 1`] = `
         <Heading
           level="h2"
         >
-          <EmotionCssPropInternal
-            __EMOTION_LABEL_PLEASE_DO_NOT_USE__="Heading"
-            __EMOTION_TYPE_PLEASE_DO_NOT_USE__="h2"
-            css={
-              Object {
-                "a": Object {
-                  "background": "none",
-                  "textShadow": "none",
-                },
-                "code": Object {
-                  "fontSize": "inherit",
-                },
-              }
-            }
-          >
+          <Styled(h2)>
             <h2
-              className="css-1oda7k0-Heading"
+              className="css-1qf3p84"
             >
               Test heading
             </h2>
-          </EmotionCssPropInternal>
+          </Styled(h2)>
         </Heading>
       </Component>
       <Blockquote
         key="h-5"
       >
-        <blockquote
-          css={
-            Object {
-              "@media only screen and (max-width:480px)": Object {
-                "borderLeft": "0.29625rem solid #447011",
-                "marginLeft": "-1.185rem",
-                "paddingLeft": "0.88875rem",
-              },
-              "@media only screen and (min-width: 28rem)": Object {
-                "borderLeft": "0.5925rem solid #447011",
-                "marginLeft": 0,
-                "paddingLeft": "0.9875rem",
-              },
-              "borderLeft": "0.29625rem solid #447011",
-              "marginLeft": "-1.185rem",
-              "paddingLeft": "0.88875rem",
-            }
-          }
-        >
-          <p
-            key="h-6"
+        <Styled(blockquote)>
+          <blockquote
+            className="css-rjrukj"
           >
-            Test blockquote
-          </p>
-        </blockquote>
+            <p
+              key="h-6"
+            >
+              Test blockquote
+            </p>
+          </blockquote>
+        </Styled(blockquote)>
       </Blockquote>
       <section
         key="h-7"
@@ -217,51 +189,35 @@ exports[`Markdown with a root element renders correctly 1`] = `
           <Heading
             level="h3"
           >
-            <EmotionCssPropInternal
-              __EMOTION_LABEL_PLEASE_DO_NOT_USE__="Heading"
-              __EMOTION_TYPE_PLEASE_DO_NOT_USE__="h3"
-              css={
-                Object {
-                  "a": Object {
-                    "background": "none",
-                    "textShadow": "none",
-                  },
-                  "code": Object {
-                    "fontSize": "inherit",
-                  },
-                }
-              }
-            >
+            <Styled(h3)>
               <h3
-                className="css-1oda7k0-Heading"
+                className="css-1qf3p84"
               >
                 Test subheading
               </h3>
-            </EmotionCssPropInternal>
+            </Styled(h3)>
           </Heading>
         </Component>
         <Link
           href="https://www.example.com"
           key="h-9"
         >
-          <a
-            css={
-              Object {
-                "backgroundImage": "linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, #447011 1px, #447011 2px, rgba(0, 0, 0, 0) 2px)",
-                "borderRadius": "0.3em",
-                "code": Object {
-                  "textShadow": "none",
-                },
-                "color": "#447011",
-              }
-            }
+          <Styled(a)
             href="https://www.example.com"
             onClick={[Function]}
             rel="noopener"
             target="_blank"
           >
-            Test link
-          </a>
+            <a
+              className="css-1fvugpk"
+              href="https://www.example.com"
+              onClick={[Function]}
+              rel="noopener"
+              target="_blank"
+            >
+              Test link
+            </a>
+          </Styled(a)>
         </Link>
         <p
           key="h-10"
@@ -279,27 +235,13 @@ exports[`Markdown with a root element renders correctly 1`] = `
         <Heading
           level="h2"
         >
-          <EmotionCssPropInternal
-            __EMOTION_LABEL_PLEASE_DO_NOT_USE__="Heading"
-            __EMOTION_TYPE_PLEASE_DO_NOT_USE__="h2"
-            css={
-              Object {
-                "a": Object {
-                  "background": "none",
-                  "textShadow": "none",
-                },
-                "code": Object {
-                  "fontSize": "inherit",
-                },
-              }
-            }
-          >
+          <Styled(h2)>
             <h2
-              className="css-1oda7k0-Heading"
+              className="css-1qf3p84"
             >
               Test heading 2
             </h2>
-          </EmotionCssPropInternal>
+          </Styled(h2)>
         </Heading>
       </Component>
       <p
@@ -472,57 +414,29 @@ exports[`Markdown without a root element renders correctly 1`] = `
       <Heading
         level="h2"
       >
-        <EmotionCssPropInternal
-          __EMOTION_LABEL_PLEASE_DO_NOT_USE__="Heading"
-          __EMOTION_TYPE_PLEASE_DO_NOT_USE__="h2"
-          css={
-            Object {
-              "a": Object {
-                "background": "none",
-                "textShadow": "none",
-              },
-              "code": Object {
-                "fontSize": "inherit",
-              },
-            }
-          }
-        >
+        <Styled(h2)>
           <h2
-            className="css-1oda7k0-Heading"
+            className="css-1qf3p84"
           >
             Test heading
           </h2>
-        </EmotionCssPropInternal>
+        </Styled(h2)>
       </Heading>
     </Component>
     <Blockquote
       key="h-5"
     >
-      <blockquote
-        css={
-          Object {
-            "@media only screen and (max-width:480px)": Object {
-              "borderLeft": "0.29625rem solid #447011",
-              "marginLeft": "-1.185rem",
-              "paddingLeft": "0.88875rem",
-            },
-            "@media only screen and (min-width: 28rem)": Object {
-              "borderLeft": "0.5925rem solid #447011",
-              "marginLeft": 0,
-              "paddingLeft": "0.9875rem",
-            },
-            "borderLeft": "0.29625rem solid #447011",
-            "marginLeft": "-1.185rem",
-            "paddingLeft": "0.88875rem",
-          }
-        }
-      >
-        <p
-          key="h-6"
+      <Styled(blockquote)>
+        <blockquote
+          className="css-rjrukj"
         >
-          Test blockquote
-        </p>
-      </blockquote>
+          <p
+            key="h-6"
+          >
+            Test blockquote
+          </p>
+        </blockquote>
+      </Styled(blockquote)>
     </Blockquote>
     <section
       key="h-7"
@@ -533,51 +447,35 @@ exports[`Markdown without a root element renders correctly 1`] = `
         <Heading
           level="h3"
         >
-          <EmotionCssPropInternal
-            __EMOTION_LABEL_PLEASE_DO_NOT_USE__="Heading"
-            __EMOTION_TYPE_PLEASE_DO_NOT_USE__="h3"
-            css={
-              Object {
-                "a": Object {
-                  "background": "none",
-                  "textShadow": "none",
-                },
-                "code": Object {
-                  "fontSize": "inherit",
-                },
-              }
-            }
-          >
+          <Styled(h3)>
             <h3
-              className="css-1oda7k0-Heading"
+              className="css-1qf3p84"
             >
               Test subheading
             </h3>
-          </EmotionCssPropInternal>
+          </Styled(h3)>
         </Heading>
       </Component>
       <Link
         href="https://www.example.com"
         key="h-9"
       >
-        <a
-          css={
-            Object {
-              "backgroundImage": "linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, #447011 1px, #447011 2px, rgba(0, 0, 0, 0) 2px)",
-              "borderRadius": "0.3em",
-              "code": Object {
-                "textShadow": "none",
-              },
-              "color": "#447011",
-            }
-          }
+        <Styled(a)
           href="https://www.example.com"
           onClick={[Function]}
           rel="noopener"
           target="_blank"
         >
-          Test link
-        </a>
+          <a
+            className="css-1fvugpk"
+            href="https://www.example.com"
+            onClick={[Function]}
+            rel="noopener"
+            target="_blank"
+          >
+            Test link
+          </a>
+        </Styled(a)>
       </Link>
       <p
         key="h-10"
@@ -595,27 +493,13 @@ exports[`Markdown without a root element renders correctly 1`] = `
       <Heading
         level="h2"
       >
-        <EmotionCssPropInternal
-          __EMOTION_LABEL_PLEASE_DO_NOT_USE__="Heading"
-          __EMOTION_TYPE_PLEASE_DO_NOT_USE__="h2"
-          css={
-            Object {
-              "a": Object {
-                "background": "none",
-                "textShadow": "none",
-              },
-              "code": Object {
-                "fontSize": "inherit",
-              },
-            }
-          }
-        >
+        <Styled(h2)>
           <h2
-            className="css-1oda7k0-Heading"
+            className="css-1qf3p84"
           >
             Test heading 2
           </h2>
-        </EmotionCssPropInternal>
+        </Styled(h2)>
       </Heading>
     </Component>
     <p

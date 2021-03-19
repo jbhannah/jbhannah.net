@@ -1,5 +1,5 @@
-/** @jsx jsx */
-import { CSSObject, jsx } from "@emotion/react"
+import styled from "@emotion/styled"
+import * as React from "react"
 import { contentWidthColumn, headerWidth, mq } from "../../utils/styles"
 import { Link } from "../Link"
 
@@ -10,20 +10,20 @@ interface FooterProps {
 
 const year = new Date().getFullYear()
 
-const footerCSS: CSSObject = {
+const _Footer = styled.footer({
   ...contentWidthColumn,
   alignSelf: "flex-end",
   fontSize: "0.75rem",
   margin: "1rem auto",
   [mq.lg]: { marginLeft: headerWidth },
   [mq.xl]: { marginLeft: 0 },
-}
+})
 
 const Footer: React.FunctionComponent<FooterProps> = ({
   fullname,
   pronouns,
 }) => (
-  <footer css={footerCSS}>
+  <_Footer>
     <div>
       Copyright © {year} <Link href="/">{fullname}</Link> ({pronouns}).{" "}
       <Link
@@ -38,7 +38,7 @@ const Footer: React.FunctionComponent<FooterProps> = ({
       </Link>
       .
     </div>
-  </footer>
+  </_Footer>
 )
 
 export default Footer

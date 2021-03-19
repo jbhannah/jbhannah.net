@@ -3,12 +3,7 @@
 exports[`Article in a list renders correctly 1`] = `
 <article>
   <header>
-    <Heading
-      css={
-        Object {
-          "marginBottom": "0.79rem",
-        }
-      }
+    <Styled(Heading)
       level="h2"
     >
       <Link
@@ -16,15 +11,8 @@ exports[`Article in a list renders correctly 1`] = `
       >
         Test Article
       </Link>
-    </Heading>
-    <p
-      css={
-        Object {
-          "fontSize": "0.79rem",
-          "marginBottom": "0.79rem",
-        }
-      }
-    >
+    </Styled(Heading)>
+    <Styled(p)>
       <time
         dateTime="2019-02-05T01:17:07.551Z"
       >
@@ -33,8 +21,8 @@ exports[`Article in a list renders correctly 1`] = `
        — 
       5
        minute read
-    </p>
-    <MarginFix />
+    </Styled(p)>
+    <Styled(span) />
   </header>
   <Markdown
     htmlAst={
@@ -43,43 +31,25 @@ exports[`Article in a list renders correctly 1`] = `
       }
     }
   />
-  <footer
-    css={
-      Object {
-        "marginTop": "1.58rem",
-      }
-    }
-  >
+  <Styled(footer)>
     <Link
       href="/test-slug"
     >
       Read More…
     </Link>
-  </footer>
+  </Styled(footer)>
 </article>
 `;
 
 exports[`Article standalone renders correctly 1`] = `
 <article>
   <header>
-    <Heading
-      css={
-        Object {
-          "marginBottom": "0.79rem",
-        }
-      }
+    <Styled(Heading)
       level="h1"
     >
       Test Article
-    </Heading>
-    <p
-      css={
-        Object {
-          "fontSize": "0.79rem",
-          "marginBottom": "0.79rem",
-        }
-      }
-    >
+    </Styled(Heading)>
+    <Styled(p)>
       <time
         dateTime="2019-02-05T01:17:07.551Z"
       >
@@ -88,7 +58,7 @@ exports[`Article standalone renders correctly 1`] = `
        — 
       5
        minute read
-    </p>
+    </Styled(p)>
   </header>
   <Markdown
     htmlAst={

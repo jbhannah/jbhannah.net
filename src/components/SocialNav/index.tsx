@@ -1,17 +1,17 @@
-/** @jsx jsx */
-import { CSSObject, jsx } from "@emotion/react"
+import styled from "@emotion/styled"
 import { graphql, useStaticQuery } from "gatsby"
+import * as React from "react"
 import { mq } from "../../utils/styles"
 import { SocialLink } from "./link"
 
-const socialNavCSS: CSSObject = {
+const Nav = styled.nav({
   marginTop: "2.37rem",
   [mq.lg]: {
     marginTop: 0,
   },
-}
+})
 
-const socialNavUlCSS: CSSObject = {
+const UL = styled.ul({
   display: "flex",
   flexDirection: "row",
   justifyContent: "flex-end",
@@ -20,7 +20,7 @@ const socialNavUlCSS: CSSObject = {
   [mq.lg]: {
     justifyContent: "center",
   },
-}
+})
 
 export const SocialNav = () => {
   const {
@@ -30,13 +30,13 @@ export const SocialNav = () => {
   } = useStaticQuery(query)
 
   return (
-    <nav css={socialNavCSS}>
-      <ul css={socialNavUlCSS}>
+    <Nav>
+      <UL>
         {socialLinks.map((l) => (
           <SocialLink {...l} />
         ))}
-      </ul>
-    </nav>
+      </UL>
+    </Nav>
   )
 }
 

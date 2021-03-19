@@ -1,10 +1,9 @@
-/** @jsx jsx */
-import { CSSObject, jsx } from "@emotion/react"
+import styled, { CSSObject } from "@emotion/styled"
 import * as React from "react"
 import { hoverRadius, mq } from "../../utils/styles"
-import { Link } from "../Link"
+import { Link as _Link } from "../Link"
 
-const socialLinkCSS: CSSObject = {
+const LI = styled.li({
   float: "right",
   marginBottom: 0,
   marginRight: "0.5rem",
@@ -17,14 +16,14 @@ const socialLinkCSS: CSSObject = {
     height: "1.5rem",
     width: "1.5rem",
   },
-}
+})
 
-const socialLinkLinkCSS: CSSObject = {
+const Link = styled(_Link)({
   background: "none",
   display: "block",
   height: "100%",
   width: "100%",
-}
+})
 
 const socialLinkImgCSS: CSSObject = {
   display: "block",
@@ -45,13 +44,15 @@ export const SocialLink: React.FunctionComponent<SocialLinkProps> = ({
   link,
   name,
 }) => {
-  const Icon = require(`../../assets/images/${service.toLowerCase()}.svg`)
+  const Icon = styled(
+    require(`../../assets/images/${service.toLowerCase()}.svg`)
+  )(socialLinkImgCSS)
 
   return (
-    <li css={socialLinkCSS}>
-      <Link css={socialLinkLinkCSS} title={`${name} on ${service}`} href={link}>
-        <Icon css={socialLinkImgCSS} />
+    <LI>
+      <Link title={`${name} on ${service}`} href={link}>
+        <Icon />
       </Link>
-    </li>
+    </LI>
   )
 }
