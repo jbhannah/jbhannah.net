@@ -106,7 +106,7 @@ more alive than I ever have.
 [^2]:
     "Cracking the egg" is the colloquial term for a trans person realizing
     that they're trans, which may or may not necessarily correlate with them
-    starting to come out to themselves. TikToker [@titan_of_joy][] has a
+    starting to come out to themselves. TikToker [@titan\_of\_joy][] has a
     [fantastic (and hilarious) video][] explaining it, with lots of
     incredible comments by other users with the stories of their own eggs
     cracking.
@@ -114,7 +114,7 @@ more alive than I ever have.
 [^3]: But it is fitting, given that this is me that I'm talking about, here.
 [^4]: [SKIRT GO SPINNY][]
 
-[@titan_of_joy]: https://www.tiktok.com/@titan_of_joy
+[@titan\_of\_joy]: https://www.tiktok.com/@titan_of_joy
 [fantastic (and hilarious) video]: https://www.tiktok.com/@titan_of_joy/video/6934463174582242566
 [june 29, 2020]: https://www.reallifecomics.com/comic.php?comic=june-29-2020
 [real life comics]: https://reallifecomics.com/
