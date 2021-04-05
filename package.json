@@ -63,7 +63,7 @@
     "typeface-varela-round": "1.1.13",
     "typography": "^0.16.19",
     "typography-theme-lincoln": "^0.16.19",
-    "unist-util-remove": "^2.0.1",
+    "unist-util-remove": "^2.1.0",
     "unist-util-remove-position": "^3.0.0",
     "unist-util-visit": "^2.0.2"
   },
