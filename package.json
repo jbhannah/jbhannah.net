@@ -42,7 +42,7 @@
     "gatsby-plugin-react-svg": "^3.0.1",
     "gatsby-plugin-sharp": "^3.2.1",
     "gatsby-plugin-sitemap": "^3.0.0",
-    "gatsby-plugin-typography": "^3.0.0",
+    "gatsby-plugin-typography": "^3.3.0",
     "gatsby-redirect-from": "^0.3.0",
     "gatsby-remark-autolink-headers": "^3.0.0",
     "gatsby-remark-numbered-footnotes": "^1.0.1",
