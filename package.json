@@ -26,7 +26,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@emotion/react": "^11.1.5",
+    "@emotion/react": "^11.4.0",
     "@emotion/styled": "^11.3.0",
     "@raae/gatsby-remark-oembed": "0.1.1",
     "acorn": "^8.1.0",
