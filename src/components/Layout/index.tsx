@@ -2,6 +2,7 @@ import styled from "@emotion/styled"
 import { graphql, useStaticQuery } from "gatsby"
 import * as React from "react"
 import { Helmet } from "react-helmet"
+import Twemoji from "react-twemoji"
 import {
   contentWidth,
   contentWidthColumn,
@@ -72,7 +73,9 @@ export const Layout: React.FunctionComponent = ({ children }) => {
         <meta property="twitter:creator" content={twitterCreator} />
       </Helmet>
       <Header {...{ title, fullname, pronouns }} />
-      <Main>{children}</Main>
+      <Main>
+        <Twemoji>{children}</Twemoji>
+      </Main>
       <Footer {...{ fullname, pronouns }} />
     </_Layout>
   )
