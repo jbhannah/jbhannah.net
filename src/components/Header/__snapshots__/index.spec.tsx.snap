@@ -9,7 +9,7 @@ exports[`Header renders correctly 1`] = `
   >
     <a
       aria-current="page"
-      class="css-1yp6um2"
+      class="css-uuv0t2"
       href="/"
     >
       <picture
@@ -40,7 +40,7 @@ exports[`Header renders correctly 1`] = `
         class="css-1cc6n5j"
       >
         <a
-          class="css-7yagz8"
+          class="css-zdg12z"
           href="https://www.example.com"
           rel="noopener"
           target="_blank"

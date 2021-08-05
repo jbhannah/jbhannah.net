@@ -170,7 +170,7 @@ exports[`Markdown with a root element renders correctly 1`] = `
       >
         <Styled(blockquote)>
           <blockquote
-            className="css-rjrukj"
+            className="css-2570gk"
           >
             <p
               key="h-6"
@@ -209,7 +209,7 @@ exports[`Markdown with a root element renders correctly 1`] = `
             target="_blank"
           >
             <a
-              className="css-1fvugpk"
+              className="css-nk3r0j"
               href="https://www.example.com"
               onClick={[Function]}
               rel="noopener"
@@ -428,7 +428,7 @@ exports[`Markdown without a root element renders correctly 1`] = `
     >
       <Styled(blockquote)>
         <blockquote
-          className="css-rjrukj"
+          className="css-2570gk"
         >
           <p
             key="h-6"
@@ -467,7 +467,7 @@ exports[`Markdown without a root element renders correctly 1`] = `
           target="_blank"
         >
           <a
-            className="css-1fvugpk"
+            className="css-nk3r0j"
             href="https://www.example.com"
             onClick={[Function]}
             rel="noopener"

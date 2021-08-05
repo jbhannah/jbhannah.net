@@ -2,14 +2,14 @@
 
 exports[`Link with an anchor link renders correctly 1`] = `
 <a
-  class="css-1fvugpk"
+  class="css-nk3r0j"
   href="#fn-1"
 />
 `;
 
 exports[`Link with an external link renders correctly 1`] = `
 <a
-  class="css-1fvugpk"
+  class="css-nk3r0j"
   href="https://www.example.com"
   rel="noopener"
   target="_blank"
@@ -18,7 +18,7 @@ exports[`Link with an external link renders correctly 1`] = `
 
 exports[`Link with an external link with a rel property renders correctly 1`] = `
 <a
-  class="css-1fvugpk"
+  class="css-nk3r0j"
   href="https://www.example.com"
   rel="license noopener"
   target="_blank"
@@ -28,7 +28,7 @@ exports[`Link with an external link with a rel property renders correctly 1`] = 
 exports[`Link with an internal link renders correctly 1`] = `
 <a
   aria-current="page"
-  class="css-1fvugpk"
+  class="css-nk3r0j"
   href="/"
 />
 `;

@@ -12,7 +12,7 @@ exports[`Layout renders correctly 1`] = `
     >
       <a
         aria-current="page"
-        class="css-1yp6um2"
+        class="css-uuv0t2"
         href="/"
       >
         <picture
@@ -43,7 +43,7 @@ exports[`Layout renders correctly 1`] = `
           class="css-1cc6n5j"
         >
           <a
-            class="css-7yagz8"
+            class="css-zdg12z"
             href="https://www.example.com"
             rel="noopener"
             target="_blank"
@@ -59,7 +59,9 @@ exports[`Layout renders correctly 1`] = `
   </header>
   <main
     class="css-10zmcc1"
-  />
+  >
+    <div />
+  </main>
   <footer
     class="css-13br9d0"
   >
@@ -67,14 +69,14 @@ exports[`Layout renders correctly 1`] = `
       Copyright © 2021 
       <a
         aria-current="page"
-        class="css-1fvugpk"
+        class="css-nk3r0j"
         href="/"
       >
         Jesse B. Hannah
       </a>
        (she/her). 
       <a
-        class="css-1fvugpk"
+        class="css-nk3r0j"
         href="https://creativecommons.org/licenses/by-sa/4.0/"
         rel="license noopener"
         target="_blank"
@@ -83,7 +85,7 @@ exports[`Layout renders correctly 1`] = `
       </a>
       . 
       <a
-        class="css-1fvugpk"
+        class="css-nk3r0j"
         href="https://github.com/jbhannah/jbhannah.net"
         rel="noopener"
         target="_blank"
