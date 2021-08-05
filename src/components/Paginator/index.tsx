@@ -56,21 +56,20 @@ const forwardLinks = (
     </>
   )
 
-const pageLink = (base: string, pageBase: string, currentPage: number) => (
-  _: any,
-  i: number
-) => {
-  const page = i + 1
-  return (
-    <li key={`paginate-${i}`}>
-      {currentPage === page ? (
-        page
-      ) : (
-        <Link href={i === 0 ? base : `${pageBase}/${page}`}>{page}</Link>
-      )}
-    </li>
-  )
-}
+const pageLink =
+  (base: string, pageBase: string, currentPage: number) =>
+  (_: any, i: number) => {
+    const page = i + 1
+    return (
+      <li key={`paginate-${i}`}>
+        {currentPage === page ? (
+          page
+        ) : (
+          <Link href={i === 0 ? base : `${pageBase}/${page}`}>{page}</Link>
+        )}
+      </li>
+    )
+  }
 
 interface PaginatorProps {
   base: string

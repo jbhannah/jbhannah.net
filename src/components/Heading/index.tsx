@@ -29,9 +29,9 @@ export const Heading: React.FunctionComponent<HeadingProps> = ({
   return <H {...props} />
 }
 
-export const HeadingFactory = (level: HeadingLevel) => (
-  props: HeadingBaseProps
-) => <Heading level={level} {...props} />
+export const HeadingFactory =
+  (level: HeadingLevel) => (props: HeadingBaseProps) =>
+    <Heading level={level} {...props} />
 
 export const H1 = HeadingFactory("h1")
 export const H2 = HeadingFactory("h2")
