@@ -1,4 +1,5 @@
 import { CSSObject } from "@emotion/react"
+import { adjustColor } from "../utils/color"
 
 export const breakpoints = { sm: 28, md: 38, lg: 59, xl: 70 }
 export const mq = Object.assign(
@@ -10,7 +11,9 @@ export const mq = Object.assign(
 
 export const contentWidth = "42rem"
 export const headerWidth = "12rem"
-export const linkColor = "#447011"
+
+export const baseColor = "#bff1c7"
+export const linkColor = adjustColor(baseColor, -0x80)
 
 export const contentWidthColumn: CSSObject = {
   margin: "0 auto",
