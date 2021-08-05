@@ -7,20 +7,21 @@ Built with [Gatsby][]. Hosted on [Vercel][].
 ## Development
 
 ```bash
-npm i
-npm start
+npm i -g yarn
+yarn
+yarn start
 ```
 
 ## Testing
 
 ```bash
-npm test
+yarn test
 ```
 
 ## Deployment
 
 ```bash
-npm run build
+yarn build
 ```
 
 ## Copyright
