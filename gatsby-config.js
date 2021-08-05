@@ -1,3 +1,5 @@
+const indexExpr = /^\/(page\/\d+)?$/
+
 module.exports = {
   siteMetadata: {
     siteUrl: "https://jbhannah.net",
@@ -129,21 +131,15 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        serialize: ({
-          site: {
-            siteMetadata: { siteUrl },
-          },
-          allSitePage: { edges },
-        }) =>
-          edges.map(({ node: { path } }) => {
-            const root = path === "/"
+        serialize: ({ path }) => {
+          const index = path.match(indexExpr)
 
-            return {
-              url: siteUrl + path,
-              changefreq: root ? "weekly" : "never",
-              priority: root ? 1.0 : 0.7,
-            }
-          }),
+          return {
+            url: path,
+            priority: index ? 1.0 : 0.7,
+            changefreq: index ? "weekly" : "never",
+          }
+        },
       },
     },
     {
