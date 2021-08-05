@@ -27,6 +27,7 @@ module.exports = {
       "<rootDir>/__mocks__/fileMock.js",
     "typeface-.+": "identity-obj-proxy",
   },
+  testEnvironment: "jsdom",
   testPathIgnorePatterns: ["node_modules", ".cache"],
   transformIgnorePatterns: ["node_modules/(?!(gatsby)/)"],
   snapshotSerializers: ["enzyme-to-json/serializer"],
