@@ -59,7 +59,7 @@
     "react-twemoji": "^0.3.0",
     "react-typography": "^0.16.20",
     "rehype-react": "^6.2.0",
-    "remark-html": "^13.0.1",
+    "remark-html": "^14.0.0",
     "remark-parse": "^9.0.0",
     "twemoji": "^13.1.0",
     "typeface-varela-round": "1.1.13",
