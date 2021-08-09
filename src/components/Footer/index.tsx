@@ -32,7 +32,7 @@ const Footer: React.FunctionComponent<FooterProps> = ({
       >
         Some Rights Reserved
       </Link>
-      .{" "}
+      . Emoji by <Link href="https://twemoji.twitter.com/">Twemoji</Link>.
       <Link href="https://github.com/jbhannah/jbhannah.net">
         Source on GitHub
       </Link>
