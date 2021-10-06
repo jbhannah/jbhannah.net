@@ -67,7 +67,7 @@
     "typography-theme-lincoln": "^0.16.19",
     "unist-util-remove": "^2.1.0",
     "unist-util-remove-position": "^3.0.0",
-    "unist-util-visit": "^2.0.3"
+    "unist-util-visit": "^4.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.15.5",
