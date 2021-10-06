@@ -21,8 +21,13 @@ exports[`Footer renderes correctly 1`] = `
     >
       Some Rights Reserved
     </Link>
+    . Emoji by 
+    <Link
+      href="https://twemoji.twitter.com/"
+    >
+      Twemoji
+    </Link>
     .
-     
     <Link
       href="https://github.com/jbhannah/jbhannah.net"
     >
