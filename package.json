@@ -110,7 +110,7 @@
     "pretty-quick": "^3.1.1",
     "ts-jest": "^27.0.5",
     "typescript": "^4.4.3",
-    "unified": "^9.2.2",
+    "unified": "^10.1.0",
     "vercel": "^23.1.2",
     "weak-napi": "^2.0.2",
     "webpack": "^5.57.1"
