@@ -92,7 +92,7 @@ exports[`Layout renders correctly 1`] = `
       >
         Twemoji
       </a>
-      .
+      . 
       <a
         class="css-nk3r0j"
         href="https://github.com/jbhannah/jbhannah.net"
