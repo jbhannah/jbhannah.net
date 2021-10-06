@@ -3619,10 +3619,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/luxon@npm:^1.27.1":
-  version: 1.27.1
-  resolution: "@types/luxon@npm:1.27.1"
-  checksum: 732405c7459dd9f991cff056b801620b92d7c18ddad3cd7c6d3b9c2de714dbfca0c48fc103a5544d19c6e7b9bb7a954bbd2369b30733c680a4633fa60cb03f1f
+"@types/luxon@npm:^2.0.4":
+  version: 2.0.4
+  resolution: "@types/luxon@npm:2.0.4"
+  checksum: b1877da73ce5e42641c7416fe2af501b197dfba150d7fb230b51c5b9171a17e928ccd7422ac9368040647aab64fd36950c8df7303188221d9a1518dde91bf377
   languageName: node
   linkType: hard
 
@@ -3675,10 +3675,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:14.17.21":
-  version: 14.17.21
-  resolution: "@types/node@npm:14.17.21"
-  checksum: f5fc54b1a857f6a3a266c25521cddda28c711979ec6e443187076b0c99df08b8578c5c0bef64af35f13fc1475f8fd8a71619dd708219b855a8f28629f7880bbb
+"@types/node@npm:16.10.3":
+  version: 16.10.3
+  resolution: "@types/node@npm:16.10.3"
+  checksum: 3fd429bce8a4acb497dcc62b536782a5e87ccf7cd91d64a78b263ae5d66cb72bf84be9eeeff6f84ae0567b065a40b267caa66d311f9e094990a5847bbd168a29
   languageName: node
   linkType: hard
 
@@ -7966,18 +7966,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-prettier@npm:^3.4.1":
-  version: 3.4.1
-  resolution: "eslint-plugin-prettier@npm:3.4.1"
+"eslint-plugin-prettier@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "eslint-plugin-prettier@npm:4.0.0"
   dependencies:
     prettier-linter-helpers: ^1.0.0
   peerDependencies:
-    eslint: ">=5.0.0"
-    prettier: ">=1.13.0"
+    eslint: ">=7.28.0"
+    prettier: ">=2.0.0"
   peerDependenciesMeta:
     eslint-config-prettier:
       optional: true
-  checksum: fa6a89f0d7cba1cc87064352f5a4a68dc3739448dd279bec2bced1bfa3b704467e603d13b69dcec853f8fa30b286b8b715912898e9da776e1b016cf0ee48bd99
+  checksum: 03d69177a3c21fa2229c7e427ce604429f0b20ab7f411e2e824912f572a207c7f5a41fd1f0a95b9b8afe121e291c1b1f1dc1d44c7aad4b0837487f9c19f5210d
   languageName: node
   linkType: hard
 
@@ -11797,8 +11797,8 @@ __metadata:
     "@types/enzyme": ^3.10.9
     "@types/hast": ^2.3.4
     "@types/jest": ^27.0.2
-    "@types/luxon": ^1.27.1
-    "@types/node": 14.17.21
+    "@types/luxon": ^2.0.4
+    "@types/node": 16.10.3
     "@types/react": ^17.0.27
     "@types/react-dom": ^17.0.9
     "@types/react-helmet": ^6.1.3
@@ -11818,7 +11818,7 @@ __metadata:
     eslint-config-prettier: ^8.3.0
     eslint-loader: ^4.0.2
     eslint-plugin-jest: ^24.5.2
-    eslint-plugin-prettier: ^3.4.1
+    eslint-plugin-prettier: ^4.0.0
     eslint-plugin-react: ^7.26.1
     gatsby: ^3.14.2
     gatsby-plugin-emotion: ^6.14.0
