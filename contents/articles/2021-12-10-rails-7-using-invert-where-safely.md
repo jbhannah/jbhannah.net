@@ -36,7 +36,7 @@ class Foobar < ApplicationRecord
   scope :published, -> { where(published: true) }
   scope :draft,     -> { published.invert_where }
 
-  scope :active, -> { where(expires_at: Time.zone.now..) }
+  scope :active,  -> { where(expires_at: Time.zone.now..) }
   scope :expired, -> { active.invert_where }
 end
 
