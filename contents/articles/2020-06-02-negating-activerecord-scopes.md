@@ -4,6 +4,11 @@ date: 2020-06-03T05:57:54.556Z
 
 # Negating ActiveRecord Scopes
 
+**Updated 10 December 2021:** Rails 7.0 is introducing a new `#invert_where`
+method, which has multiple gotchas that can cause unintended side effects, but
+can also be used to create a more [elegant and more efficient solution][iw] to
+this same problem.
+
 Here's a neat trick in Rails to use the plumbing of ActiveRecord to keep your
 models DRY and maintainable. Say you have a scope in an ActiveRecord model with
 an `expires_at` column, to find records that are still active[^1]:
@@ -90,3 +95,4 @@ scope.
 [^4]: `ruby›self.not` is required to distinguish the method from the Ruby keyword.
 
 [vmw]: https://tanzu.vmware.com/content/blog/logically-negating-an-activerecord-scope
+[iw]: https://jbhannah.net/articles/rails-7-using-invert-where-safely
