@@ -71,7 +71,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.15.5",
-    "@babel/eslint-parser": "^7.15.7",
+    "@babel/eslint-parser": "^7.17.0",
     "@babel/preset-typescript": "^7.15.0",
     "@types/compass-vertical-rhythm": "^1.4.2",
     "@types/enzyme": "^3.10.9",
