@@ -1,40 +1,53 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Footer renderes correctly 1`] = `
-<Styled(footer)>
+<footer
+  class="css-13br9d0"
+  data-testid="footer"
+>
   <div>
     Copyright © 
-    2021
+    2022
      
-    <Link
+    <a
+      aria-current="page"
+      class="css-nk3r0j"
       href="/"
     >
       Fullname
-    </Link>
+    </a>
      (
     Pronouns
     ).
      
-    <Link
+    <a
+      class="css-nk3r0j"
       href="https://creativecommons.org/licenses/by-sa/4.0/"
-      rel="license"
+      rel="license noopener"
+      target="_blank"
     >
       Some Rights Reserved
-    </Link>
+    </a>
     . Emoji by 
-    <Link
+    <a
+      class="css-nk3r0j"
       href="https://twemoji.twitter.com/"
+      rel="noopener"
+      target="_blank"
     >
       Twemoji
-    </Link>
+    </a>
     .
      
-    <Link
+    <a
+      class="css-nk3r0j"
       href="https://github.com/jbhannah/jbhannah.net"
+      rel="noopener"
+      target="_blank"
     >
       Source on GitHub
-    </Link>
+    </a>
     .
   </div>
-</Styled(footer)>
+</footer>
 `;

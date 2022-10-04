@@ -30,9 +30,8 @@ module.exports = {
   testEnvironment: "jsdom",
   testPathIgnorePatterns: ["node_modules", ".cache"],
   transformIgnorePatterns: ["node_modules/(?!(gatsby)/)"],
-  snapshotSerializers: ["enzyme-to-json/serializer"],
   globals: {
     __PATH_PREFIX__: "",
   },
-  setupFiles: ["<rootDir>/jest.setup.js"],
+  setupFilesAfterEnv: ["<rootDir>/jest.setup.js"],
 }

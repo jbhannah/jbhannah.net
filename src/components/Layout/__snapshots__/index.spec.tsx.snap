@@ -3,12 +3,14 @@
 exports[`Layout renders correctly 1`] = `
 <div
   class="css-q8kv08"
+  data-testid="layout"
 >
   <header
     class="css-xutqz5"
   >
     <h1
       class="css-19x6mp6"
+      role="heading"
     >
       <a
         aria-current="page"
@@ -29,7 +31,9 @@ exports[`Layout renders correctly 1`] = `
         </picture>
         Jesse B. Hannah
         <small>
-          (she/her)
+          (
+          she/her
+          )
         </small>
       </a>
     </h1>
@@ -66,7 +70,9 @@ exports[`Layout renders correctly 1`] = `
     class="css-13br9d0"
   >
     <div>
-      Copyright © 2021 
+      Copyright © 
+      2022
+       
       <a
         aria-current="page"
         class="css-nk3r0j"
@@ -74,7 +80,10 @@ exports[`Layout renders correctly 1`] = `
       >
         Jesse B. Hannah
       </a>
-       (she/her). 
+       (
+      she/her
+      ).
+       
       <a
         class="css-nk3r0j"
         href="https://creativecommons.org/licenses/by-sa/4.0/"
@@ -92,7 +101,8 @@ exports[`Layout renders correctly 1`] = `
       >
         Twemoji
       </a>
-      . 
+      .
+       
       <a
         class="css-nk3r0j"
         href="https://github.com/jbhannah/jbhannah.net"

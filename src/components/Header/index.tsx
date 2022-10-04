@@ -68,6 +68,7 @@ export const Header: React.FunctionComponent<HeaderProps> = ({
   title,
   fullname,
   pronouns,
+  ...props
 }) => {
   const {
     file: {
@@ -78,7 +79,7 @@ export const Header: React.FunctionComponent<HeaderProps> = ({
   } = useStaticQuery<HeaderQuery>(query)
 
   return (
-    <_Header>
+    <_Header {...props}>
       <H1>
         <Link href="/">
           <Avatar>

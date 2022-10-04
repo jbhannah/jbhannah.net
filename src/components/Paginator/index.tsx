@@ -81,15 +81,16 @@ export const Paginator: React.FunctionComponent<PaginatorProps> = ({
   base,
   page: currentPage,
   numPages,
+  ...props
 }) => {
-  if (numPages === 1) return
+  if (numPages === 1) return <></>
 
   const pageBase = base === "/" ? "/page" : `${base}/page`
   const back = backLinks(base, pageBase, currentPage)
   const forward = forwardLinks(pageBase, currentPage, numPages)
 
   return (
-    <footer>
+    <footer {...props}>
       <UL>
         {back}
         {Array.from({ length: numPages }).map(

@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`MarginFix renders correctly 1`] = `
-<span
-  className="css-1hyfx7x"
-/>
+<div>
+  <span
+    class="css-1hyfx7x"
+  />
+</div>
 `;

@@ -1,95 +1,101 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Paginator with one page renders correctly 1`] = `""`;
+exports[`Paginator with one page renders nothing 1`] = `<div />`;
 
 exports[`Paginator with three pages on the first page renders correctly 1`] = `
-<footer>
-  <Styled(ul)>
+<footer
+  data-testid="paginator"
+>
+  <ul
+    class="css-fm3157"
+  >
     <li>
       «
     </li>
     <li>
       ‹
     </li>
-    <li
-      key="paginate-0"
-    >
+    <li>
       1
     </li>
-    <li
-      key="paginate-1"
-    >
-      <Link
+    <li>
+      <a
+        class="css-nk3r0j"
         href="/page/2"
       >
         2
-      </Link>
+      </a>
     </li>
-    <li
-      key="paginate-2"
-    >
-      <Link
+    <li>
+      <a
+        class="css-nk3r0j"
         href="/page/3"
       >
         3
-      </Link>
+      </a>
     </li>
     <li>
-      <Link
+      <a
+        class="css-nk3r0j"
         href="/page/2"
       >
         ›
-      </Link>
+      </a>
     </li>
     <li>
-      <Link
+      <a
+        class="css-nk3r0j"
         href="/page/3"
       >
         »
-      </Link>
+      </a>
     </li>
-  </Styled(ul)>
+  </ul>
 </footer>
 `;
 
 exports[`Paginator with three pages on the last page renders correctly 1`] = `
-<footer>
-  <Styled(ul)>
+<footer
+  data-testid="paginator"
+>
+  <ul
+    class="css-fm3157"
+  >
     <li>
-      <Link
+      <a
+        aria-current="page"
+        class="css-nk3r0j"
         href="/"
       >
         «
-      </Link>
+      </a>
     </li>
     <li>
-      <Link
+      <a
+        class="css-nk3r0j"
         href="/page/2"
       >
         ‹
-      </Link>
+      </a>
     </li>
-    <li
-      key="paginate-0"
-    >
-      <Link
+    <li>
+      <a
+        aria-current="page"
+        class="css-nk3r0j"
         href="/"
       >
         1
-      </Link>
+      </a>
     </li>
-    <li
-      key="paginate-1"
-    >
-      <Link
+    <li>
+      <a
+        class="css-nk3r0j"
         href="/page/2"
       >
         2
-      </Link>
+      </a>
     </li>
-    <li
-      key="paginate-2"
-    >
+    <li>
       3
     </li>
     <li>
@@ -98,6 +104,6 @@ exports[`Paginator with three pages on the last page renders correctly 1`] = `
     <li>
       »
     </li>
-  </Styled(ul)>
+  </ul>
 </footer>
 `;

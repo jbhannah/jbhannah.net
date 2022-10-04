@@ -22,8 +22,9 @@ const _Footer = styled.footer({
 const Footer: React.FunctionComponent<FooterProps> = ({
   fullname,
   pronouns,
+  ...props
 }) => (
-  <_Footer>
+  <_Footer {...props}>
     <div>
       Copyright © {year} <Link href="/">{fullname}</Link> ({pronouns}).{" "}
       <Link

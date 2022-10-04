@@ -1,13 +1,14 @@
-import { shallow } from "enzyme"
+import { render, screen } from "@testing-library/react"
 import * as React from "react"
 import { Blockquote } from "."
 
-const TestBlockquote = (props = {}) => shallow(<Blockquote {...props} />)
+const TestBlockquote = (props = {}) =>
+  render(<Blockquote data-testid="blockquote" {...props} />)
 
 describe("Blockquote", () => {
-  const tree = TestBlockquote()
+  beforeEach(() => TestBlockquote())
 
   it("renders correctly", () => {
-    expect(tree).toMatchSnapshot()
+    expect(screen.getByTestId("blockquote")).toMatchSnapshot()
   })
 })

@@ -1,11 +1,11 @@
-import { render } from "enzyme"
+import { render, screen } from "@testing-library/react"
 import * as React from "react"
 import { Layout } from "."
 
 describe("Layout", () => {
-  const tree = render(<Layout />)
+  beforeEach(() => render(<Layout data-testid="layout" />))
 
   it("renders correctly", () => {
-    expect(tree).toMatchSnapshot()
+    expect(screen.getByTestId("layout")).toMatchSnapshot()
   })
 })

@@ -1,24 +1,12 @@
-import { render, shallow } from "enzyme"
+import { render, screen } from "@testing-library/react"
 import * as React from "react"
-import { Heading, HeadingFactory } from "."
+import { Heading } from "."
 
-const TestHeading = (props) => shallow(<Heading {...props} />)
+test("Heading with level h1 renders an h1 tag", () => {
+  render(<Heading level="h1">Test H1</Heading>)
 
-describe("Heading", () => {
-  describe("with a valid heading level", () => {
-    const tree = TestHeading({ level: "h1" })
+  const h1 = screen.getByRole("heading")
 
-    it("renders correctly", () => {
-      expect(tree).toMatchSnapshot()
-    })
-  })
-})
-
-describe("HeadingFactory", () => {
-  const H1 = HeadingFactory("h1")
-  const tree = render(<H1></H1>)
-
-  it("returns a Heading", () => {
-    expect(tree.is("h1")).toBeTruthy()
-  })
+  expect(h1.tagName).toEqual("H1")
+  expect(h1).toHaveTextContent("Test H1")
 })

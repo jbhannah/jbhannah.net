@@ -1,12 +1,13 @@
-import { shallow } from "enzyme"
+import { render } from "@testing-library/react"
 import * as React from "react"
 import { MarginFix } from "."
 
-const TestMarginFix = (props = {}) => shallow(<MarginFix {...props} />)
+const TestMarginFix = (props = {}) => render(<MarginFix {...props} />)
 
 describe("MarginFix", () => {
   it("renders correctly", () => {
-    const tree = TestMarginFix()
-    expect(tree).toMatchSnapshot()
+    const { container } = TestMarginFix()
+
+    expect(container).toMatchSnapshot()
   })
 })

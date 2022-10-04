@@ -3,9 +3,11 @@
 exports[`Header renders correctly 1`] = `
 <header
   class="css-xutqz5"
+  data-testid="header"
 >
   <h1
     class="css-19x6mp6"
+    role="heading"
   >
     <a
       aria-current="page"
@@ -26,7 +28,9 @@ exports[`Header renders correctly 1`] = `
       </picture>
       Fullname
       <small>
-        (Pronouns)
+        (
+        Pronouns
+        )
       </small>
     </a>
   </h1>

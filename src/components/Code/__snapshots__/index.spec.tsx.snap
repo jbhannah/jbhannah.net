@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Code renders correctly 1`] = `
+<code
+  class="css-em50vd"
+  data-testid="code"
+/>
+`;

@@ -1,76 +1,76 @@
-import { shallow } from "enzyme"
+import { render, screen } from "@testing-library/react"
 import * as React from "react"
 import { Paginator } from "."
 
-const lis = (tree) => tree.find("li")
-const linkAt = (tree, i) => lis(tree).at(i).find("Link")
-const hrefAt = (tree, i) => linkAt(tree, i).prop("href")
+const lis = (tree) => tree.querySelectorAll("li")
+const linkAt = (tree, i) => lis(tree)[i].querySelector("a")
+const hrefAt = (tree, i) => linkAt(tree, i).getAttribute("href")
 
-const TestPaginator = (props) => shallow(<Paginator {...props} />)
+const TestPaginator = (props) =>
+  render(<Paginator data-testid="paginator" {...props} />)
 
 describe("Paginator", () => {
   describe("with one page", () => {
-    const tree = TestPaginator({ base: "test", page: 1, numPages: 1 })
+    it("renders nothing", () => {
+      const { container } = TestPaginator({
+        base: "test",
+        page: 1,
+        numPages: 1,
+      })
 
-    it("renders correctly", () => {
-      expect(tree).toMatchSnapshot()
-    })
-
-    it("is empty", () => {
-      expect(tree.children()).toHaveLength(0)
+      expect(container).toMatchSnapshot()
     })
   })
 
   describe("with three pages", () => {
-    const base = "/"
-    const numPages = 3
-
     describe("on the first page", () => {
-      const tree = TestPaginator({ base, page: 1, numPages })
+      beforeEach(() => TestPaginator({ base: "/", page: 1, numPages: 3 }))
 
       it("renders correctly", () => {
-        expect(tree).toMatchSnapshot()
+        expect(screen.getByTestId("paginator")).toMatchSnapshot()
       })
 
       it("contains seven <li> elements", () => {
-        expect(lis(tree)).toHaveLength(7)
+        expect(lis(screen.getByTestId("paginator"))).toHaveLength(7)
       })
 
       it("does not link to the first page", () => {
-        expect(tree.find("Link")).toHaveLength(4)
-        expect(linkAt(tree, 0)).toHaveLength(0)
-        expect(linkAt(tree, 1)).toHaveLength(0)
-        expect(linkAt(tree, 2)).toHaveLength(0)
+        expect(
+          screen.getByTestId("paginator").querySelectorAll("a")
+        ).toHaveLength(4)
+        expect(linkAt(screen.getByTestId("paginator"), 0)).toBeNull()
+        expect(linkAt(screen.getByTestId("paginator"), 1)).toBeNull()
+        expect(linkAt(screen.getByTestId("paginator"), 2)).toBeNull()
       })
 
       it("links to the next page", () => {
-        expect(hrefAt(tree, 5)).toBe("/page/2")
+        expect(hrefAt(screen.getByTestId("paginator"), 5)).toBe("/page/2")
       })
 
       it("links to the last page", () => {
-        expect(hrefAt(tree, 6)).toBe("/page/3")
+        expect(hrefAt(screen.getByTestId("paginator"), 6)).toBe("/page/3")
       })
     })
 
     describe("on the last page", () => {
-      const tree = TestPaginator({ base, page: 3, numPages })
+      beforeEach(() => TestPaginator({ base: "/", page: 3, numPages: 3 }))
 
       it("renders correctly", () => {
-        expect(tree).toMatchSnapshot()
+        expect(screen.getByTestId("paginator")).toMatchSnapshot()
       })
 
       it("links to the first page", () => {
-        expect(hrefAt(tree, 0)).toBe("/")
+        expect(hrefAt(screen.getByTestId("paginator"), 0)).toBe("/")
       })
 
       it("links to the previous page", () => {
-        expect(hrefAt(tree, 1)).toBe("/page/2")
+        expect(hrefAt(screen.getByTestId("paginator"), 1)).toBe("/page/2")
       })
 
       it("does not link to the last page", () => {
-        expect(linkAt(tree, 4)).toHaveLength(0)
-        expect(linkAt(tree, 5)).toHaveLength(0)
-        expect(linkAt(tree, 6)).toHaveLength(0)
+        expect(linkAt(screen.getByTestId("paginator"), 4)).toBeNull()
+        expect(linkAt(screen.getByTestId("paginator"), 5)).toBeNull()
+        expect(linkAt(screen.getByTestId("paginator"), 6)).toBeNull()
       })
     })
   })

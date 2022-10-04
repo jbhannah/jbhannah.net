@@ -1,10 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Link with a rel property renders correctly 1`] = `
+<a
+  class="css-nk3r0j"
+  href="https://www.example.com"
+  rel="license noopener"
+  target="_blank"
+>
+  Test Link
+</a>
+`;
+
 exports[`Link with an anchor link renders correctly 1`] = `
 <a
   class="css-nk3r0j"
   href="#fn-1"
-/>
+>
+  Test Link
+</a>
 `;
 
 exports[`Link with an external link renders correctly 1`] = `
@@ -13,16 +26,9 @@ exports[`Link with an external link renders correctly 1`] = `
   href="https://www.example.com"
   rel="noopener"
   target="_blank"
-/>
-`;
-
-exports[`Link with an external link with a rel property renders correctly 1`] = `
-<a
-  class="css-nk3r0j"
-  href="https://www.example.com"
-  rel="license noopener"
-  target="_blank"
-/>
+>
+  Test Link
+</a>
 `;
 
 exports[`Link with an internal link renders correctly 1`] = `
@@ -30,5 +36,7 @@ exports[`Link with an internal link renders correctly 1`] = `
   aria-current="page"
   class="css-nk3r0j"
   href="/"
-/>
+>
+  Test Link
+</a>
 `;

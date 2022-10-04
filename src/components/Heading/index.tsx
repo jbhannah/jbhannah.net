@@ -26,7 +26,7 @@ export const Heading: React.FunctionComponent<HeadingProps> = ({
   ...props
 }) => {
   const H = styled(level)(headingCSS)
-  return <H {...props} />
+  return <H role="heading" {...props} />
 }
 
 export const HeadingFactory =

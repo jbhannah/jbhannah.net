@@ -35,7 +35,7 @@ const Main = styled.main({
   },
 })
 
-export const Layout: React.FunctionComponent = ({ children }) => {
+export const Layout: React.FunctionComponent = ({ children, ...props }) => {
   const {
     site: {
       siteMetadata: {
@@ -60,7 +60,7 @@ export const Layout: React.FunctionComponent = ({ children }) => {
   const title = `${fullname} (${pronouns})`
 
   return (
-    <_Layout>
+    <_Layout {...props}>
       <Helmet>
         <title>{title}</title>
         <meta name="description" content={description} />

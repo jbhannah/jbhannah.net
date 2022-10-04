@@ -1,4 +1,4 @@
-import { render } from "enzyme"
+import { render, screen } from "@testing-library/react"
 import * as Gatsby from "gatsby"
 import * as React from "react"
 import { Header } from "."
@@ -38,13 +38,16 @@ const data = {
 jest.spyOn(Gatsby, "useStaticQuery").mockImplementation(() => data)
 
 describe("Header", () => {
-  const tree = render(
-    <Header
-      {...{ title: "Title", fullname: "Fullname", pronouns: "Pronouns" }}
-    />
+  beforeEach(() =>
+    render(
+      <Header
+        data-testid="header"
+        {...{ title: "Title", fullname: "Fullname", pronouns: "Pronouns" }}
+      />
+    )
   )
 
   it("renders correctly", () => {
-    expect(tree).toMatchSnapshot()
+    expect(screen.getByTestId("header")).toMatchSnapshot()
   })
 })
