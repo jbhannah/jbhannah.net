@@ -46,7 +46,7 @@ exports[`Header renders correctly 1`] = `
         <a
           class="css-zdg12z"
           href="https://www.example.com"
-          rel="noopener"
+          rel="me noopener"
           target="_blank"
           title="Test Name on Test Service"
         >
