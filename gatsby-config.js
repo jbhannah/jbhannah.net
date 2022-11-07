@@ -31,6 +31,11 @@ module.exports = {
         name: "jbhannah",
       },
       {
+        service: "Mastodon",
+        link: "https://mastodon.social/@jbhannah",
+        name: "@jbhannah@mastodon.social",
+      },
+      {
         service: "Twitter",
         link: "https://twitter.com/jbhannah",
         name: "@jbhannah",

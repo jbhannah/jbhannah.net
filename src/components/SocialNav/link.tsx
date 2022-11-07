@@ -50,7 +50,7 @@ export const SocialLink: React.FunctionComponent<SocialLinkProps> = ({
 
   return (
     <LI>
-      <Link title={`${name} on ${service}`} href={link}>
+      <Link rel="me" title={`${name} on ${service}`} href={link}>
         <Icon />
       </Link>
     </LI>
