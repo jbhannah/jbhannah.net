@@ -29,7 +29,7 @@ export const Link: React.FunctionComponent<LinkProps> = ({
 
   if (domainPattern.test(href)) {
     const { rel } = props
-    props.rel = `${rel ? `${rel} ` : ""}noopener`
+    if (rel !== "me") props.rel = `${rel ? `${rel} ` : ""}noopener`
     props.target = "_blank"
 
     props.onClick = () =>

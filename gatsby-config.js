@@ -3,7 +3,7 @@ const indexExpr = /^\/(page\/\d+)?$/
 module.exports = {
   siteMetadata: {
     siteUrl: "https://jbhannah.net",
-    title: "Jesse B. Hannah",
+    title: "Jesse Brooklyn Hannah",
     description: "jbhannah's personal website and blog",
     twitterCreator: "@jbhannah",
     name: {
@@ -16,13 +16,13 @@ module.exports = {
     pronouns: ["she", "her"],
     socialLinks: [
       {
-        service: "GitHub",
-        link: "https://github.com/jbhannah",
-        name: "jbhannah",
+        service: "Discord",
+        link: "http://discordapp.com/users/142402796803588096",
+        name: "BolderBrooklyn#2200",
       },
       {
-        service: "Keybase",
-        link: "https://keybase.io/jbhannah",
+        service: "GitHub",
+        link: "https://github.com/jbhannah",
         name: "jbhannah",
       },
       {

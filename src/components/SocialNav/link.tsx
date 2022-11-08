@@ -22,6 +22,7 @@ const Link = styled(_Link)({
   background: "none",
   display: "block",
   height: "100%",
+  textShadow: "none",
   width: "100%",
 })
 
