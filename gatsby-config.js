@@ -32,8 +32,8 @@ module.exports = {
       },
       {
         service: "Mastodon",
-        link: "https://mastodon.social/@jbhannah",
-        name: "@jbhannah@mastodon.social",
+        link: "https://eightpoint.app/@BolderBrooklyn",
+        name: "@BolderBrooklyn@eightpoint.app",
       },
       {
         service: "Twitter",
