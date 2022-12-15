@@ -16,6 +16,11 @@ module.exports = {
     pronouns: ["she", "her"],
     socialLinks: [
       {
+        service: "Mastodon",
+        link: "https://eightpoint.app/@BolderBrooklyn",
+        name: "@BolderBrooklyn@eightpoint.app",
+      },
+      {
         service: "Discord",
         link: "http://discordapp.com/users/142402796803588096",
         name: "BolderBrooklyn#2200",
@@ -29,11 +34,6 @@ module.exports = {
         service: "LinkedIn",
         link: "https://www.linkedin.com/in/jbhannah",
         name: "jbhannah",
-      },
-      {
-        service: "Mastodon",
-        link: "https://eightpoint.app/@BolderBrooklyn",
-        name: "@BolderBrooklyn@eightpoint.app",
       },
       {
         service: "Twitter",
