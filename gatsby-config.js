@@ -13,12 +13,12 @@ module.exports = {
     },
     username: "jbhannah",
     gender: "female",
-    pronouns: ["she", "her"],
+    pronouns: ["she", "her", "hers"],
     socialLinks: [
       {
         service: "Mastodon",
-        link: "https://eightpoint.app/@BolderBrooklyn",
-        name: "@BolderBrooklyn@eightpoint.app",
+        link: "https://tech.lgbt/@BolderBrooklyn",
+        name: "@BolderBrooklyn@tech.lgbt",
       },
       {
         service: "Discord",
