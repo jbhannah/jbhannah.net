@@ -4742,10 +4742,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/luxon@npm:^2.0.4":
-  version: 2.0.4
-  resolution: "@types/luxon@npm:2.0.4"
-  checksum: b1877da73ce5e42641c7416fe2af501b197dfba150d7fb230b51c5b9171a17e928ccd7422ac9368040647aab64fd36950c8df7303188221d9a1518dde91bf377
+"@types/luxon@npm:^3.2.0":
+  version: 3.2.0
+  resolution: "@types/luxon@npm:3.2.0"
+  checksum: 051bfbf841c6ce98728df6538342ce4aaddfcf0ec6e8b473e0195dcfc3ba6b1fe4b3ce17f2ba6d25344f41cb70032c1debe96da9e384e5f6e639665c1e6d368c
   languageName: node
   linkType: hard
 
@@ -13147,7 +13147,7 @@ __metadata:
     "@types/compass-vertical-rhythm": ^1.4.2
     "@types/hast": ^2.3.4
     "@types/jest": ^29.1.1
-    "@types/luxon": ^2.0.4
+    "@types/luxon": ^3.2.0
     "@types/node": 18.8.1
     "@types/react": ^18.0.21
     "@types/react-dom": ^18.0.6
@@ -13195,7 +13195,7 @@ __metadata:
     jest: ^29.1.2
     jest-environment-jsdom: ^29.1.2
     jest-junit: ^14.0.1
-    luxon: ^2.0.2
+    luxon: ^3.2.1
     mockdate: ^3.0.5
     prettier: ^2.7.1
     pretty-quick: ^3.1.3
@@ -14610,10 +14610,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"luxon@npm:^2.0.2":
-  version: 2.0.2
-  resolution: "luxon@npm:2.0.2"
-  checksum: eb2e366cf41a129704ae3213e0aea3e1504390af2a84322a5bbb6a22c92d96c7cb70e58b941a109c5e1bfbed51784d08130278feeee6cdf169940af90a68ded5
+"luxon@npm:^3.2.1":
+  version: 3.2.1
+  resolution: "luxon@npm:3.2.1"
+  checksum: 3fa3def2c5f5d3032b4c46220c4da8aeb467ac979888fc9d2557adcd22195f93516b4ad5909a75862bec8dc6ddc0953b0f38e6d2f4a8ab8450ddc531a83cf20d
   languageName: node
   linkType: hard
 
