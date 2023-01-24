@@ -13215,7 +13215,7 @@ __metadata:
     typography: ^0.16.21
     typography-theme-lincoln: ^0.16.19
     unified: ^9.2.2
-    unist-util-remove: ^2.1.0
+    unist-util-remove: ^3.1.1
     unist-util-remove-position: ^3.0.0
     unist-util-visit: ^2.0.3
     vercel: ^28.4.6
@@ -20384,6 +20384,13 @@ typescript@^4.8.4:
   languageName: node
   linkType: hard
 
+"unist-util-is@npm:^5.0.0":
+  version: 5.2.0
+  resolution: "unist-util-is@npm:5.2.0"
+  checksum: b80debe1ce5d40a8d685c510f597e5c8b8f7089540e9e268bda1b05bcce735c10bf36d5b0e4ecded50c63fa43b8a11b0e4b784beecf1559f153a2f2855e8526c
+  languageName: node
+  linkType: hard
+
 "unist-util-modify-children@npm:^2.0.0":
   version: 2.0.0
   resolution: "unist-util-modify-children@npm:2.0.0"
@@ -20409,12 +20416,14 @@ typescript@^4.8.4:
   languageName: node
   linkType: hard
 
-"unist-util-remove@npm:^2.1.0":
-  version: 2.1.0
-  resolution: "unist-util-remove@npm:2.1.0"
+"unist-util-remove@npm:^3.1.1":
+  version: 3.1.1
+  resolution: "unist-util-remove@npm:3.1.1"
   dependencies:
-    unist-util-is: ^4.0.0
-  checksum: 99e54f3ea0523f8cf957579a6e84e5b58427bffab929cc7f6aa5119581f929db683dd4691ea5483df0c272f486dda9dbd04f4ab74dca6cae1f3ebe8e4261a4d9
+    "@types/unist": ^2.0.0
+    unist-util-is: ^5.0.0
+    unist-util-visit-parents: ^5.0.0
+  checksum: ed7c762941e6a9b6db230e9417697c8eb7d36093240b6f6d4ec265c4237d33e332a96a18307c8fb322a1842e3feb2a7564b032b5535fa0634eb1e075a6e344cb
   languageName: node
   linkType: hard
 
@@ -20463,6 +20472,16 @@ typescript@^4.8.4:
   dependencies:
     unist-util-is: ^3.0.0
   checksum: 048edbb590a8c4bc0043eec9f50d3fe76faa58f1ac663a7e6dee5e895ddd0ce8bc52f2cfe2e633849fa93671e8de021070667acb1518e3d40220768c7f70a3d3
+  languageName: node
+  linkType: hard
+
+"unist-util-visit-parents@npm:^5.0.0":
+  version: 5.1.1
+  resolution: "unist-util-visit-parents@npm:5.1.1"
+  dependencies:
+    "@types/unist": ^2.0.0
+    unist-util-is: ^5.0.0
+  checksum: c699d18f5b26461dee37612b84c243fd5457c98f4c0540d9ba8bee05062aece5f3b4fb1af6b07423ce6750d8926e8c01fc2b1a4de1e54925ef6795c177ed8e18
   languageName: node
   linkType: hard
 
